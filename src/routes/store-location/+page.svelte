@@ -3,6 +3,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Lokasi Toko - Glam Stitch | Alamat & Jam Operasional</title>
+  <meta name="description" content="Temukan lokasi toko Glam Stitch dan jam operasional kami. Kunjungi workshop konveksi kami untuk konsultasi langsung dan melihat proses produksi." />
+  <meta name="keywords" content="lokasi toko, alamat konveksi, jam operasional, workshop konveksi, konsultasi langsung" />
+</svelte:head>
+
 <!-- Header -->
 <section class="relative isolate overflow-hidden bg-white dark:bg-gray-900 pt-32 sm:pt-36 pb-20 sm:pb-32">
     <!-- Background Image -->

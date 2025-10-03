@@ -4,6 +4,12 @@
   import poto6 from '$lib/assets/image/poto6.jpg'
 </script>
 
+<svelte:head>
+  <title>Kaos Polo - Glam Stitch | Konveksi Kaos Polo Premium</title>
+  <meta name="description" content="Pesan kaos polo berkualitas premium dari Glam Stitch. Konveksi kaos polo dengan bahan terbaik, model elegan, dan teknik sablon profesional." />
+  <meta name="keywords" content="kaos polo, konveksi polo, kaos polo premium, sablon polo, model polo, bahan polo" />
+</svelte:head>
+
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->

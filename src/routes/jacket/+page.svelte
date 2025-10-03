@@ -3,6 +3,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Jaket - Glam Stitch | Konveksi Jaket Fashion & Casual</title>
+  <meta name="description" content="Pesan jaket fashion dan casual berkualitas dari Glam Stitch. Konveksi jaket dengan berbagai model, bahan premium, dan desain trendy." />
+  <meta name="keywords" content="jaket, konveksi jaket, jaket fashion, jaket casual, bahan premium, desain trendy" />
+</svelte:head>
+
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->

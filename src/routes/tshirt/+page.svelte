@@ -3,6 +3,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Kaos - Glam Stitch | Konveksi Kaos Berkualitas Tinggi</title>
+  <meta name="description" content="Pesan kaos berkualitas tinggi dari Glam Stitch. Konveksi kaos dengan berbagai model, ukuran, dan teknik sablon terbaik. Harga kompetitif dan hasil memuaskan." />
+  <meta name="keywords" content="kaos, konveksi kaos, sablon kaos, kaos berkualitas, harga kaos, model kaos" />
+</svelte:head>
+
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->

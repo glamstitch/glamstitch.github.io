@@ -3,6 +3,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Hubungi Kami - Glam Stitch | Konsultasi & Pemesanan Konveksi</title>
+  <meta name="description" content="Hubungi Glam Stitch untuk konsultasi dan pemesanan konveksi. Tim customer service kami siap membantu kebutuhan konveksi Anda dengan layanan terbaik." />
+  <meta name="keywords" content="hubungi kami, konsultasi konveksi, customer service, pemesanan konveksi, layanan terbaik" />
+</svelte:head>
+
 <!-- Header -->
 <div class="relative isolate overflow-hidden pt-6">
     <img src="https://img.freepik.com/free-photo/young-stylist-looking-through-set-shirts-fashion-shooting_1153-5249.jpg" alt="Stylish tailor working on shirts" class="absolute inset-0 -z-10 w-full h-full object-cover">

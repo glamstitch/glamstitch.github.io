@@ -4,6 +4,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Tentang Kami - Glam Stitch | Konveksi Profesional & Terpercaya</title>
+  <meta name="description" content="Pelajari lebih lanjut tentang Glam Stitch, konveksi profesional dengan pengalaman bertahun-tahun. Tim ahli kami siap melayani kebutuhan konveksi Anda dengan kualitas terbaik." />
+  <meta name="keywords" content="tentang kami, konveksi profesional, tim ahli, pengalaman konveksi, kualitas terbaik" />
+</svelte:head>
+
 <!--header -->
 <section class="relative isolate overflow-hidden pt-6">
     <!-- Background Image -->

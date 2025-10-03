@@ -4,6 +4,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Kemeja - Glam Stitch | Konveksi Kemeja Formal & Casual</title>
+  <meta name="description" content="Pesan kemeja formal dan casual berkualitas tinggi dari Glam Stitch. Konveksi kemeja dengan bahan premium, jahitan rapi, dan desain profesional." />
+  <meta name="keywords" content="kemeja, konveksi kemeja, kemeja formal, kemeja casual, bahan premium, jahitan rapi" />
+</svelte:head>
+
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->

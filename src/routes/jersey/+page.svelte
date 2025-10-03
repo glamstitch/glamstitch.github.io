@@ -3,6 +3,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Jersey - Glam Stitch | Konveksi Jersey Olahraga Berkualitas</title>
+  <meta name="description" content="Pesan jersey olahraga berkualitas tinggi dari Glam Stitch. Konveksi jersey dengan bahan breathable, desain sporty, dan teknik sablon tahan lama." />
+  <meta name="keywords" content="jersey, konveksi jersey, jersey olahraga, sablon jersey, bahan breathable, desain sporty" />
+</svelte:head>
+
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->
@@ -74,7 +80,7 @@
       
         <!-- Gambar kiri - hanya tampil di desktop -->
         <div class="hidden lg:block">
-          <img src="https://i.pinimg.com/736x/c8/53/30/c853300742a8b06a7771b4070228cfad.jpg"
+          <img src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448803.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
             alt="Beberapa jersey olahraga warna biru, merah, dan putih yang diletakkan secara rapi."
             class="aspect-[3/4] w-full max-w-sm mx-auto rounded-lg object-cover">
         </div>
@@ -91,7 +97,7 @@
   
         <!-- Gambar utama -->
         <div>
-          <img src="https://i.pinimg.com/736x/d3/86/02/d38602b4b641f410ca0edba8aae7aa43.jpg"
+          <img src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448801.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
             alt="Model mengenakan jersey putih premium."
             class="aspect-[4/5] w-full max-w-sm mx-auto rounded-lg object-cover lg:aspect-[3/4]">
         </div>
@@ -253,8 +259,9 @@
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
               <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
               <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
+              <li><a href="/faq" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">FAQ</a></li>
             </ul>
-          </div>
+          </div>  
           
           <!-- Products -->
           <div>

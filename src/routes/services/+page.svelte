@@ -3,6 +3,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Layanan - Glam Stitch | Sablon, Bordir & Konveksi Berkualitas</title>
+  <meta name="description" content="Layanan konveksi lengkap dari Glam Stitch: sablon, bordir, konveksi kaos, jersey, jaket, dan kemeja. Kualitas terjamin dengan harga kompetitif." />
+  <meta name="keywords" content="layanan konveksi, sablon, bordir, konveksi kaos, jersey, jaket, kemeja, kualitas terjamin" />
+</svelte:head>
+
 <!--header-->
 <section class="relative isolate overflow-hidden bg-gray-900 dark:bg-gray-950 pt-4">
     <!-- Background Image -->

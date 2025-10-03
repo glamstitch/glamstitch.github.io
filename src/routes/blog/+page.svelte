@@ -2,6 +2,12 @@
   // Page content only - dark mode handled by layout
 </script>
 
+<svelte:head>
+  <title>Blog - Glam Stitch | Tips & Informasi Konveksi Terkini</title>
+  <meta name="description" content="Baca artikel dan tips terbaru tentang konveksi, fashion, dan industri tekstil dari Glam Stitch. Informasi berguna untuk kebutuhan konveksi Anda." />
+  <meta name="keywords" content="blog konveksi, tips fashion, industri tekstil, artikel konveksi, informasi terkini" />
+</svelte:head>
+
 <!--header -->
 <section class="relative isolate overflow-hidden pt-6">
   <!-- Background Image -->

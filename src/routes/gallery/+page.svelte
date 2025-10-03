@@ -9,6 +9,12 @@
   import poto7 from '$lib/assets/image/poto7.jpg'
 </script>
 
+<svelte:head>
+  <title>Galeri - Glam Stitch | Portfolio Karya Konveksi Terbaik</title>
+  <meta name="description" content="Lihat portfolio karya konveksi terbaik dari Glam Stitch. Galeri lengkap hasil sablon, bordir, dan konveksi berkualitas tinggi untuk berbagai kebutuhan." />
+  <meta name="keywords" content="galeri konveksi, portfolio karya, hasil sablon, bordir berkualitas, konveksi terbaik" />
+</svelte:head>
+
 <!-- Hero Header -->
 <section class="relative isolate overflow-hidden pt-6">
 	<img

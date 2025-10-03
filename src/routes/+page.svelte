@@ -8,6 +8,12 @@
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
+<svelte:head>
+  <title>Glam Stitch - Konveksi Berkualitas Tinggi | Kaos, Jersey, Jaket & Kemeja</title>
+  <meta name="description" content="Glam Stitch adalah konveksi terpercaya yang menyediakan kaos, jersey, jaket, dan kemeja berkualitas tinggi. Layanan konveksi profesional dengan harga kompetitif dan hasil terbaik." />
+  <meta name="keywords" content="konveksi, kaos, jersey, jaket, kemeja, sablon, bordir, konveksi berkualitas" />
+</svelte:head>
+
 <!--header-->
 <main>
   <section class="relative isolate overflow-hidden pt-6">
