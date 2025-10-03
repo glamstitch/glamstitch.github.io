@@ -7,9 +7,15 @@ export default {
   preprocess: vitePreprocess(),
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: '404.html',
+      precompress: false,
+      strict: true
+    }),
     paths: {
-      base: dev ? '' : (process.env.BASE_PATH || '')
+      base: dev ? '' : '/glamstitch.github.io'
     },
     alias: {
       $components: 'src/components',
