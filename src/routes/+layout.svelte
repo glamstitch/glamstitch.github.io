@@ -320,32 +320,7 @@
 		transition: color 0.2s ease, background-color 0.2s ease;
 	}
 	
-	/* Hamburger icon specific styling for dark mode */
-	:global(html.dark nav label svg) {
-		color: #111827 !important;
-	}
-	
-	/* More specific hamburger icon override */
-	:global(html.dark nav .lg\\:hidden svg) {
-		color: #111827 !important;
-	}
-	
-	/* Force hamburger icon color in dark mode */
-	:global(html.dark nav label[for="menu-toggle"] svg) {
-		color: #111827 !important;
-	}
-	
-	/* Hamburger icon class specific styling */
-	:global(html.dark .hamburger-icon) {
-		color: #111827 !important;
-		stroke: #111827 !important;
-	}
-	
-	/* Override any global nav styling for hamburger */
-	:global(html.dark nav .hamburger-icon) {
-		color: #111827 !important;
-		stroke: #111827 !important;
-	}
+	/* Hamburger icon styling for dark mode - removed conflicting rules */
 	
 	/* Override any conflicting styles */
 	:global(html.dark nav a.navbar-link) {
@@ -382,6 +357,103 @@
 	:global(html.dark .dropdown-menu) {
 		border: 0 !important;
 		outline: none !important;
+	}
+	
+	
+	/* Global: Remove all dark overlays that cover images */
+	:global(html.dark .bg-black\/50),
+	:global(html.dark .bg-black\/60),
+	:global(html.dark .bg-black\/40),
+	:global(html.dark .bg-black\/30),
+	:global(html.dark .bg-black\/20),
+	:global(html.dark .bg-black\/10) {
+		background-color: transparent !important;
+		display: none !important;
+	}
+	
+	/* Global: Remove any div with bg-black classes that cover images */
+	:global(html.dark div[class*="bg-black"]) {
+		background-color: transparent !important;
+		display: none !important;
+	}
+	
+	/* Global: Ensure hero sections don't have dark overlays */
+	:global(html.dark .hero-section) {
+		background-color: transparent !important;
+	}
+	
+	/* Global: Force all sections to not have dark overlays */
+	:global(html.dark section) {
+		background-color: transparent !important;
+	}
+	
+	/* Global: Remove dark overlays from any absolute positioned elements */
+	:global(html.dark .absolute.inset-0.-z-10.bg-black\/50),
+	:global(html.dark .absolute.inset-0.-z-10.bg-black\/60),
+	:global(html.dark .absolute.inset-0.-z-10.bg-black\/40),
+	:global(html.dark .absolute.inset-0.-z-10.bg-black\/30),
+	:global(html.dark .absolute.inset-0.-z-10.bg-black\/20),
+	:global(html.dark .absolute.inset-0.-z-10.bg-black\/10) {
+		background-color: transparent !important;
+		display: none !important;
+	}
+	
+	/* Mobile menu dark mode improvements */
+	:global(html.dark .mobile-menu-item) {
+		transition: all 0.2s ease-in-out;
+	}
+	
+	:global(html.dark .mobile-menu-item:hover) {
+		transform: translateX(4px);
+		background-color: rgba(75, 85, 99, 0.1) !important;
+	}
+	
+	/* Mobile menu dropdown animations for dark mode */
+	:global(html.dark .peer-checked\/products:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	:global(html.dark .peer-checked\/discover:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	/* Smooth dropdown transitions for dark mode */
+	:global(html.dark .overflow-hidden) {
+		transition: max-height 0.3s ease-in-out;
+	}
+	
+	/* Mobile menu hover effects for dark mode */
+	:global(html.dark nav .mobile-menu-item:hover) {
+		background-color: rgba(99, 102, 241, 0.1) !important;
+		color: #a5b4fc !important;
+		transform: translateX(4px);
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Mobile menu label hover effects for dark mode */
+	:global(html.dark nav label:hover) {
+		background-color: rgba(75, 85, 99, 0.1) !important;
+		transform: translateX(2px);
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Mobile menu close button hover for dark mode */
+	:global(html.dark .mobile-menu-close:hover) {
+		background-color: rgba(75, 85, 99, 0.2) !important;
+		transform: scale(1.05);
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Ensure close button X is clearly visible in dark mode */
+	:global(html.dark .mobile-menu-close svg) {
+		color: #9f9f9f !important;
+
+	}
+	
+	
+	:global(html.dark .mobile-menu-close:hover) {
+		background-color: rgba(69, 75, 84, 0.3) !important;
+		border-color: rgba(75, 85, 99, 0.5);
 	}
 </style>
 
@@ -534,7 +606,7 @@
 
 			<!-- Mobile Menu Toggle -->
 			<label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer">
-				<svg class="w-6 h-6 hamburger-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #111827; stroke: #111827;">
+				<svg class="w-6 h-6 text-gray-700 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 				</svg>
 			</label>
@@ -551,23 +623,23 @@
 	<label for="menu-toggle" class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 cursor-pointer"></label>
 	
 	<!-- Menu Panel -->
-	<div class="fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-whitedark:bg-gray-900 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-out overflow-y-auto">
+	<div class="fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-out overflow-y-auto">
 		<!-- Header -->
 		<div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
 			<div class="flex items-center gap-2">
 				<img src={logoGlint} alt="Logo" class="h-10 w-10" />
 				<span class="text-lg font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
 			</div>
-			<label for="menu-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer">
-				<svg class="w-6 h-6 text-gray-900 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+			<label for="menu-toggle" class="mobile-menu-close p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer">
+				<svg class="w-6 h-6 text-gray-900 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 				</svg>
 			</label>
 		</div>
 
 		<!-- Navigation -->
 		<nav class="p-4 space-y-2">
-			<a href="{base}/" class="block px-4 py-3 rounded-lg text-gray-700dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
+			<a href="{base}/" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
 				Beranda
 			</a>
 
@@ -624,7 +696,7 @@
 				</div>
 			</div>
 
-			<a href="{base}/services" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
+			<a href="{base}/services" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
 				Layanan
 			</a>
 

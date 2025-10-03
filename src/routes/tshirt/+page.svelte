@@ -17,30 +17,30 @@
     <img loading="lazy" src="https://img.freepik.com/free-photo/close-up-collection-black-white-color-monochrome-t-shirt-hanging-clothes-hanger_158595-6518.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" 
       alt="Kaos polos" class="hero-section absolute inset-0 -z-10 w-full h-full object-cover">
   
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 -z-10 bg-black/50"></div>
+    <!-- Light Overlay for better text readability -->
+    <div class="absolute inset-0 -z-10 bg-white/20"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32 text-center">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+          <div class="relative rounded-full px-3 py-1 text-sm text-gray-700 bg-white/90 ring-1 ring-gray-300 hover:ring-gray-400">
             Koleksi kaos polos berkualitas dari Glam Stitch untuk segala kebutuhan Anda.
-            <a href="/" class="font-semibold text-white">
+            <a href="/" class="font-semibold text-gray-900">
               <span class="absolute inset-0" aria-hidden="true"></span>Beranda <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
-        <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+        <h1 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
           Produk Kaos Polos Glam Stitch
         </h1>
-        <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">
+        <p class="mt-8 text-lg font-medium text-gray-700 sm:text-xl">
           Didesain untuk kenyamanan dan tampil stylish, kaos polos kami cocok untuk keperluan komunitas, bisnis, hingga kebutuhan sehari-hari.
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
             <a href="/contact-us" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Pesan Sekarang
             </a>
-            <a href="/product" class="text-sm font-semibold text-white hover:text-indigo-400 dark:text-gray-300 dark:hover:text-indigo-400 transition-all transform hover:scale-105">
+            <a href="/product" class="text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-all transform hover:scale-105">
               Lihat Produk Lainnya <span aria-hidden="true">→</span>
             </a>
           </div>

@@ -27,7 +27,7 @@
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
             Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
-            <a href="/product" class="font-semibold text-white">
+            <a href="/product" class="font-semibold text-indigo-600">
               <span class="absolute inset-0" aria-hidden="true"></span>Selengkapnya <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -35,7 +35,7 @@
   
         <!-- Main Heading and Description with Animation -->
         <div class="text-center animate__animated animate__fadeIn animate__delay-1s">
-          <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl animate__animated animate__fadeIn animate__delay-1s">
+          <h1 class="text-4xl font-semibold tracking-tight text-white dark:text-white sm:text-7xl animate__animated animate__fadeIn animate__delay-1s">
             Glam Stitch Mitra Konveksi Terpercaya Anda
           </h1>
           <p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl animate__animated animate__fadeIn animate__delay-2s">
@@ -48,7 +48,6 @@
             <a href="/contact-us"
               class="group relative px-8 py-4 bg-indigo-500  text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
               <span class="relative z-10">Mulai Sekarang</span>
-              <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a href="/product" class="group text-white font-semibold hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
               Jelajahi Produk Kami 
@@ -104,7 +103,6 @@
                 class="group relative px-6 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
             >
                 <span class="relative z-10">Hubungi Kami</span>
-                <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a href="/gallery" class="group text-indigo-600 dark:text-indigo-400 font-semibold hover:text-indigo-500 dark:hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
                 Lihat Portofolio 
