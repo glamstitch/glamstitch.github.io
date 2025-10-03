@@ -11,9 +11,9 @@
 </svelte:head>
 
 <!--header -->
-<section class="relative isolate overflow-hidden pt-6">
+<section class="hero-section relative isolate overflow-hidden pt-6">
     <!-- Background Image -->
-    <img
+    <img loading="lazy"
       src="https://img.freepik.com/premium-photo/fashion-designer-cutting-tailor-made-concept_53876-45794.jpg"
       alt="Fashion designer working on tailoring"
       class="absolute inset-0 -z-10 w-full h-full object-cover"
@@ -99,8 +99,8 @@
   
       <!-- Kanan: Gambar -->
       <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 flex items-center justify-center h-full">
-        <img
-          class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg mt-10 object-contain rounded-2xl shadow-lg
+        <img loading="lazy"
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg mt-10 object-cover rounded-2xl shadow-lg
                  motion-safe:animate-zoom-in-up motion-safe:duration-1000 motion-safe:ease-out"
           src={logoGlint}
           alt="Logo Glam Stitch"
@@ -216,7 +216,7 @@
           <div class="relative animate__animated animate__fadeIn animate__delay-1s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2020</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2020" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2020" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Awal mula berdirinya Glam Stitch, dimulai dari sebuah rumah kecil di Cijoged dengan mesin jahit sederhana dan semangat besar untuk memberikan kualitas terbaik.
               </div>
@@ -227,7 +227,7 @@
           <div class="relative animate__animated animate__fadeIn animate__delay-2s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2021</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2021" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2021" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Memperluas layanan dengan mulai menerima pesanan dalam jumlah besar dari komunitas dan sekolah. Glam Stitch mulai dikenal di wilayah lokal.
               </div>
@@ -238,7 +238,7 @@
           <div class="relative animate__animated animate__fadeIn animate__delay-3s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2022</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2022" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2022" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Tahun inovasi. Kami memperkenalkan layanan custom desain dan menambah 5 mesin jahit industri untuk meningkatkan kapasitas produksi.
               </div>
@@ -249,7 +249,7 @@
           <div class="relative animate__animated animate__fadeIn animate__delay-4s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2023</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2023" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2023" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Glam Stitch meluncurkan website resmi dan menjangkau pelanggan dari seluruh Indonesia. Jaringan reseller pun mulai dibentuk.
               </div>
@@ -260,7 +260,7 @@
           <div class="relative animate__animated animate__fadeIn animate__delay-5s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2024</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img src="https://img.freepik.com/free-vector/new-employee-concept-illustration_114360-7805.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2024" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-vector/new-employee-concept-illustration_114360-7805.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2024" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Kini Glam Stitch telah menjadi konveksi terpercaya dengan lebih dari 100 klien aktif. Kami terus berkomitmen memberikan pelayanan terbaik.
               </div>
@@ -282,7 +282,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

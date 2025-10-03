@@ -13,8 +13,8 @@
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->
-<div class="relative isolate overflow-hidden pt-6">
-    <img 
+<div class="hero-section relative isolate overflow-hidden pt-6">
+    <img loading="lazy" 
       src="https://img.freepik.com/free-photo/dressmaker-is-measuring-fabric-with-meter-his-studio-man-is-looking-camera-he-is-wearing-denim-cap-glasses-there-are-lot-sewing-tools-background_613910-21802.jpg" 
       alt="Dressmaker working in a studio" 
       class="absolute inset-0 -z-10 w-full h-full object-cover"
@@ -81,23 +81,23 @@
       <div class="mx-auto mt-6 max-w-2xl px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-16 space-y-4 lg:space-y-0">
         <!-- Left Image (only for desktop) -->
         <div class="hidden lg:block">
-          <img src="https://img.freepik.com/premium-photo/this-model-look-pose-you-graphic-design_891936-2635.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+          <img loading="lazy" src="https://img.freepik.com/premium-photo/this-model-look-pose-you-graphic-design_891936-2635.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
             alt="Beberapa kaos warna abu, putih, dan hitam yang diletakkan secara datar."
             class="aspect-[3/4] w-full max-w-sm mx-auto rounded-lg object-cover">
         </div>
   
         <!-- Center Images (two vertically stacked) - for mobile view -->
         <div class="grid grid-cols-1 gap-y-4">
-          <img src="https://media.istockphoto.com/id/162368681/id/foto/potret-fashion-pemuda-berbaju-hitam.jpg?s=612x612&w=0&k=20&c=LZY5r_8zNI0IONWIMUzVQMInfxhqBgbk__1OfIq-ni0=" alt="Model mengenakan kaos hitam polos."
+          <img loading="lazy" src="https://media.istockphoto.com/id/162368681/id/foto/potret-fashion-pemuda-berbaju-hitam.jpg?s=612x612&w=0&k=20&c=LZY5r_8zNI0IONWIMUzVQMInfxhqBgbk__1OfIq-ni0=" alt="Model mengenakan kaos hitam polos."
             class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-          <img src="https://img.freepik.com/free-photo/shirt_1203-8194.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+          <img loading="lazy" src="https://img.freepik.com/free-photo/shirt_1203-8194.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
             alt="Model mengenakan kaos abu polos."
             class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
         </div>
   
         <!-- Main Image -->
         <div>
-          <img src="https://img.freepik.com/premium-photo/young-handsome-man-standing_251136-20866.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+          <img loading="lazy" src="https://img.freepik.com/premium-photo/young-handsome-man-standing_251136-20866.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
             alt="Model mengenakan kaos putih polos."
             class="aspect-[4/5] w-full max-w-sm mx-auto rounded-lg object-cover lg:aspect-[3/4]">
         </div>
@@ -123,13 +123,13 @@
   
           <!-- Highlights -->
           <div class="mt-10">
-            <h3 class="text-sm font-medium text-gray-900 dark:text-white">Fitur Unggulan</h3>
+            <h3 class="text-sm font-medium text-gray-900dark:text-white">Fitur Unggulan</h3>
             <div class="mt-4">
-              <ul role="list" class="list-disc space-y-2 pl-4 text-sm text-gray-600 dark:text-gray-300">
-                <li><span class="text-gray-600 dark:text-white">Dijahit secara manual oleh tenaga lokal</span></li>
-                <li><span class="text-gray-600 dark:text-white">Menggunakan pewarna eksklusif</span></li>
-                <li><span class="text-gray-600 dark:text-white">Sudah dicuci dan disusutkan sebelumnya</span></li>
-                <li><span class="text-gray-600 dark:text-white">100% katun super lembut</span></li>
+              <ul role="list" class="list-disc space-y-2 pl-4 text-sm text-gray-600dark:text-gray-300">
+                <li><span class="text-gray-600dark:text-white">Dijahit secara manual oleh tenaga lokal</span></li>
+                <li><span class="text-gray-600dark:text-white">Menggunakan pewarna eksklusif</span></li>
+                <li><span class="text-gray-600dark:text-white">Sudah dicuci dan disusutkan sebelumnya</span></li>
+                <li><span class="text-gray-600dark:text-white">100% katun super lembut</span></li>
               </ul>
             </div>
           </div>
@@ -148,19 +148,18 @@
   
       <!-- Related Products -->
       <section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
-        <div class="mx-auto max-w-2xl px-16 py-24 sm:px-16 lg:max-w-7xl lg:px-16">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Produk Terkait</h2>
-          <p class="mt-2 text-lg text-gray-400 dark:text-gray-300 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
+          <p class="mt-2 text-lg text-gray-600 dark:text-gray-400 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
           <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
       
             <!-- Product 1 -->
-            <div class="group relative animate__animated animate__fadeIn animate__delay-500ms">
-              <img src={kemejaImg} alt="Kaos Glam Stitch warna hitam."
-                class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80 transition duration-500 transform hover:scale-105 hover:shadow-2xl">
+            <div class="group relative">
+              <img loading="lazy" src={kemejaImg} alt="Kaos Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-white">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja | Flannel</a>
+                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                    <a href="/tshirt"><span aria-hidden="true" class="absolute inset-0"></span>Kaos</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru</p>
                 </div>
@@ -169,13 +168,12 @@
             </div>
       
             <!-- Product 2 -->
-            <div class="group relative animate__animated animate__fadeIn animate__delay-800ms">
-              <img src="https://i.pinimg.com/474x/dc/0c/f8/dc0cf89c241e8da2ec335ab995fbfd3a.jpg" alt="Kaos Glam Stitch warna putih."
-                class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80 transition duration-500 transform hover:scale-105 hover:shadow-2xl">
+            <div class="group relative">
+              <img loading="lazy" src="https://i.pinimg.com/474x/dc/0c/f8/dc0cf89c241e8da2ec335ab995fbfd3a.jpg" alt="Kaos Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-white">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja | Lengan Panjang</a>
+                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                    <a href="/polo"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
                 </div>
@@ -184,14 +182,12 @@
             </div>
       
             <!-- Product 3 -->
-            <div class="group relative animate__animated animate__fadeIn animate__delay-1200ms">
-              <img src="https://img.freepik.com/premium-photo/mens-black-short-sleeve-shirt_53876-1021210.jpg?ga=GA1.1.1868222757.1738365469&w=740"
-                alt="Kaos Glam Stitch warna charcoal."
-                class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80 transition duration-500 transform hover:scale-105 hover:shadow-2xl">
+            <div class="group relative">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/mens-black-short-sleeve-shirt_53876-1021210.jpg?ga=GA1.1.1868222757.1738365469&w=740" alt="Kaos Glam Stitch warna charcoal." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-white">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja | Lengan Pendek</a>
+                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                    <a href="/jersey"><span aria-hidden="true" class="absolute inset-0"></span>Jersey</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
                 </div>
@@ -200,14 +196,12 @@
             </div>
       
             <!-- Product 4 -->
-            <div class="group relative animate__animated animate__fadeIn animate__delay-1500ms">
-              <img src="https://img.freepik.com/premium-photo/black-denim-jacket-mock-up-front-back-views-jeans-jacket-set_1008660-4054.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&w=740"
-                alt="Kaos Glam Stitch warna sienna."
-                class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80 transition duration-500 transform hover:scale-105 hover:shadow-2xl">
+            <div class="group relative">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/black-denim-jacket-mock-up-front-back-views-jeans-jacket-set_1008660-4054.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&w=740" alt="Kaos Glam Stitch warna sienna." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-white">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja | Denim</a>
+                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                    <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Jaket</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
                 </div>
@@ -230,7 +224,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

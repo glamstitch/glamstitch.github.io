@@ -57,7 +57,7 @@
   
   
   <!-- CTA Section -->
-<section class="py-24 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-900">
+<section class="py-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-16">
       <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl font-bold text-gray-800 dark:text-white tracking-tight">
@@ -280,7 +280,7 @@
           <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img src="https://img.freepik.com/premium-photo/female-fashion-designer-cutting-fabric-workbench_1048944-5011017.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Desain Custom Icon" class="w-full max-w-xs h-auto rounded-2xl object-cover shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
             <dt class="text-2xl font-semibold text-gray-900 dark:text-white">Desain Pakaian Custom</dt>
-            <dd class="mt-3 text-lg text-gray-600 dark:text-gray-300">
+            <dd class="mt-3 text-lg text-gray-600dark:text-gray-300">
               Kami melayani desain pakaian sesuai kebutuhan Anda, baik untuk brand, komunitas, maupun keperluan pribadi.
               <p class="mt-4">
                 <a href="/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
@@ -292,7 +292,7 @@
           <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img src="https://img.freepik.com/free-photo/portrait-cheerful-good-looking-male-clothes-designer-with-dark-hair-fashionable-outfit-standing-workshop-posing-article-about-his-brand-artist-standing-his-comfy-studio_176420-11848.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Produksi Icon" class="w-full max-w-xs h-auto rounded-2xl object-cover shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
             <dt class="text-2xl font-semibold text-gray-900 dark:text-white">Manajemen Produksi</dt>
-            <dd class="mt-3 text-lg text-gray-600 dark:text-gray-300">
+            <dd class="mt-3 text-lg text-gray-600dark:text-gray-300">
               Glam Stitch memiliki tim produksi profesional untuk menangani pemesanan dalam jumlah besar secara efisien dan tepat waktu.
               <p class="mt-4">
                 <a href="/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
@@ -304,7 +304,7 @@
           <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img src="https://img.freepik.com/premium-photo/beautiful-young-woman-sewing-clothes-with-sewing-machine_255667-49856.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Quality Check Icon" class="w-full max-w-xs h-auto rounded-2xl object-cover shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
             <dt class="text-2xl font-semibold text-gray-900 dark:text-white">Pemeriksaan Kualitas</dt>
-            <dd class="mt-3 text-lg text-gray-600 dark:text-gray-300">
+            <dd class="mt-3 text-lg text-gray-600dark:text-gray-300">
               Setiap produk melalui tahapan quality control untuk memastikan kualitas maksimal sebelum dikirimkan kepada Anda.
               <p class="mt-4">
                 <a href="/project-sveltekit/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>

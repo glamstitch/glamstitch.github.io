@@ -16,11 +16,11 @@
 </svelte:head>
 
 <!-- Hero Header -->
-<section class="relative isolate overflow-hidden pt-6">
-	<img
+<section class="hero-section relative isolate overflow-hidden pt-6">
+	<img loading="lazy"
 		src={galleryMain}
 		alt="Glam Stitch Gallery"
-		class="absolute inset-0 -z-10 w-full h-full object-cover"/>
+		class="hero-section absolute inset-0 -z-10 w-full h-full object-cover"/>
 	<div class="absolute inset-0 -z-10 bg-black/50"></div>
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -40,10 +40,10 @@
 
 		<!-- 1. Toko -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
-			<img
+			<img loading="lazy"
 				src={gallery4}
 				alt="Toko Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Toko Utama Glam Stitch</h2>
@@ -67,19 +67,19 @@
 					Kebersihan dan sirkulasi udara gudang selalu dijaga untuk mempertahankan kualitas bahan terbaik.
 				</p>
 			</div>
-			<img
+			<img loading="lazy"
 				src={poto7}
 				alt="Gudang Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 		</div>
 
 		<!-- 3. Gudang -->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
-			<img
+			<img loading="lazy"
 				src={gallery1}
 				alt="Gudang Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Gudang Penyimpanan</h2>
@@ -104,19 +104,19 @@
 					Kami selalu mengutamakan ketelitian dan kebersihan di setiap tahap untuk menghasilkan produk yang sempurna.
 				</p>
 			</div>
-			<img
+			<img loading="lazy"
 			src={gallery2}
 			alt="Tempat Produksi Glam Stitch"
-			class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+			class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 		/>
 		</div>
 
 		<!-- 5. Kasir -->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
-			<img
+			<img loading="lazy"
 				src={gallery3}
 				alt="Kasir Glam Stitch"
-				class="w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Kasir & Pelayanan</h2>
@@ -141,7 +141,7 @@
 
 			<!-- Logo & Description -->
 			<div class="space-y-6">
-				<img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+				<img loading="lazy" class="footer-logo h-16 w-16 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
 				<div class="flex space-x-6">
 
 					<!-- Facebook -->

@@ -1,33 +1,62 @@
 <script lang="ts">
 	import '../app.css';
-	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import logoGlint from '$lib/assets/image/logo glint.png';
-	
-	let isDark = $state(false);
-	let isTransitioning = $state(false);
-	
-	onMount(() => {
-	  const storedDark = localStorage.getItem('theme') === 'dark';
-	  isDark = storedDark;
-	  
-	  const isSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	  isDark = isSystemDarkMode || isDark; 
-	  document.documentElement.classList.toggle('dark', isDark);
-	  
-	  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-		isDark = e.matches;
-		document.documentElement.classList.toggle('dark', isDark);
-	  });
-	});
-	
-	function toggleDarkMode() {
-	  isDark = !isDark;
-	  document.documentElement.classList.toggle('dark', isDark);
-	  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-	}
+	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import { onMount } from 'svelte';
   
 	let { children } = $props();
+	
+	// State for dropdown menus
+	let productsDropdownOpen = $state(false);
+	let discoverDropdownOpen = $state(false);
+	
+	// Toggle functions
+	function toggleProductsDropdown() {
+		productsDropdownOpen = !productsDropdownOpen;
+		discoverDropdownOpen = false; // Close other dropdown
+		
+		// Reset animations when closing
+		if (!productsDropdownOpen) {
+			resetDropdownAnimations();
+		}
+	}
+	
+	function toggleDiscoverDropdown() {
+		discoverDropdownOpen = !discoverDropdownOpen;
+		productsDropdownOpen = false; // Close other dropdown
+		
+		// Reset animations when closing
+		if (!discoverDropdownOpen) {
+			resetDropdownAnimations();
+		}
+	}
+	
+	// Close dropdowns when clicking outside
+	function handleClickOutside(event: MouseEvent) {
+		const target = event.target as HTMLElement;
+		if (!target.closest('.dropdown-container')) {
+			productsDropdownOpen = false;
+			discoverDropdownOpen = false;
+			resetDropdownAnimations();
+		}
+	}
+	
+	// Reset dropdown animations
+	function resetDropdownAnimations() {
+		const items = document.querySelectorAll('.dropdown-item');
+		items.forEach(item => {
+			item.classList.remove('show');
+		});
+	}
+	
+	// Add click outside listener
+	onMount(() => {
+		document.addEventListener('click', handleClickOutside);
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	});
 </script>
 
 <style>
@@ -35,91 +64,477 @@
 	:global(html) {
 		scroll-behavior: smooth;
 	}
+	
+	/* Fast dark mode transitions */
+	:global(*) {
+		transition-property: background-color, border-color, color, fill, stroke, box-shadow, opacity, transform;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 200ms;
+	}
+	
+	/* Ensure dark mode works properly */
+	:global(html.dark) {
+		color-scheme: dark;
+	}
+	
+	:global(html:not(.dark)) {
+		color-scheme: light;
+	}
+	
+	/* Force dark mode styles */
+	:global(html.dark body) {
+		background-color: #111827;
+		color: #f9fafb;
+	}
+	
+	:global(html:not(.dark) body) {
+		background-color: #ffffff;
+		color: #111827;
+	}
+	
+	/* Ensure all elements respect dark mode */
+	:global(html.dark) {
+		color-scheme: dark;
+	}
+	
+	:global(html:not(.dark)) {
+		color-scheme: light;
+	}
+	
+	/* Fast theme application */
+	:global(html.dark *) {
+		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+					color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					fill 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Ensure all elements respect theme */
+	:global(html.dark) {
+		background-color: #111827;
+		color: #f9fafb;
+	}
+	
+	:global(html:not(.dark)) {
+		background-color: #ffffff;
+		color: #111827;
+	}
+	
+	/* Force dark mode on all elements */
+	:global(html.dark body),
+	:global(html.dark main),
+	:global(html.dark section),
+	:global(html.dark div),
+	:global(html.dark p),
+	:global(html.dark h1),
+	:global(html.dark h2),
+	:global(html.dark h3),
+	:global(html.dark h4),
+	:global(html.dark h5),
+	:global(html.dark h6) {
+		background-color: inherit;
+		color: inherit;
+	}
+	
+	/* Mobile dropdown animations */
+	:global(.peer-checked\/products:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	:global(.peer-checked\/discover:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	/* Smooth dropdown transitions */
+	:global(.overflow-hidden) {
+		transition: max-height 0.3s ease-in-out;
+	}
+	
+	/* Mobile menu improvements */
+	:global(.mobile-menu-item) {
+		transition: all 0.2s ease-in-out;
+	}
+	
+	:global(.mobile-menu-item:hover) {
+		transform: translateX(4px);
+	}
+	
+	/* Fast theme transitioning class */
+	:global(html.theme-transitioning *) {
+		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+					color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					fill 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Fast theme transitions for navbar */
+	:global(html.theme-transitioning nav) {
+		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+					color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Fast theme transitions for buttons and links */
+	:global(html.theme-transitioning button),
+	:global(html.theme-transitioning a) {
+		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+					color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+					transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Dropdown container */
+	:global(.dropdown-container) {
+		position: relative;
+	}
+	
+	/* Dropdown menu */
+	:global(.dropdown-menu) {
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 0.2s ease-in-out;
+		pointer-events: auto;
+	}
+	
+	/* Dropdown items */
+	:global(.dropdown-item) {
+		transform: translateX(0);
+		opacity: 1;
+		transition: all 0.2s ease-in-out;
+	}
+	
+	/* Hover effects for dropdown items */
+	:global(.dropdown-item:hover) {
+		transform: translateX(2px);
+		transition: all 0.2s ease-in-out;
+	}
+	
+	/* Responsive dropdown positioning */
+	@media (max-width: 1024px) {
+		:global(.dropdown-menu) {
+			right: 0;
+			left: auto;
+			width: 200px;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		:global(.dropdown-menu) {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 90vw;
+			max-width: 300px;
+			z-index: 9999;
+		}
+	}
+	
+	/* Mobile dropdown improvements */
+	@media (max-width: 640px) {
+		:global(.dropdown-menu) {
+			width: 95vw;
+			max-width: 280px;
+			font-size: 0.9rem;
+		}
+		
+		:global(.dropdown-item) {
+			padding: 0.75rem 1rem;
+		}
+	}
+	
+	/* Mobile menu dropdown animations */
+	:global(.peer-checked\/products:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	:global(.peer-checked\/discover:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	/* Smooth dropdown transitions */
+	:global(.overflow-hidden) {
+		transition: max-height 0.3s ease-in-out;
+	}
+	
+	/* Mobile menu improvements */
+	:global(.mobile-menu-item) {
+		transition: all 0.2s ease-in-out;
+	}
+	
+	:global(.mobile-menu-item:hover) {
+		transform: translateX(4px);
+	}
+	
+	
+	/* Force navbar dark mode styling */
+	:global(html.dark nav rounded-full) {
+		background-color: #111827 !important;
+		color: #f9fafb !important;
+	}
+	
+	:global(html.dark nav div) {
+		background-color: #111827 !important;
+		color: #f9fafb !important;
+	}
+	
+	:global(html.dark nav a) {
+		color: #e5e7eb !important;
+	}
+	
+	:global(html.dark nav button) {
+		color: #e5e7eb !important;
+	}
+	
+	:global(html.dark nav span) {
+		color: #ffffff !important;
+	}
+	
+	
+	
+	:global(html.dark .navbar-link) {
+		color: #e5e7eb !important;
+	}
+	
+	:global(html.dark .navbar-link:hover) {
+		color: #818cf8 !important;
+	}
+	
+	/* Specific navbar container dark mode */
+	:global(html.dark nav .mx-auto) {
+		background-color: #111827 !important;
+	}
+	
+	/* Force all navbar elements to respect dark mode */
+	:global(html.dark nav *) {
+		transition: color 0.2s ease, background-color 0.2s ease;
+	}
+	
+	/* Hamburger icon specific styling for dark mode */
+	:global(html.dark nav label svg) {
+		color: #111827 !important;
+	}
+	
+	/* More specific hamburger icon override */
+	:global(html.dark nav .lg\\:hidden svg) {
+		color: #111827 !important;
+	}
+	
+	/* Force hamburger icon color in dark mode */
+	:global(html.dark nav label[for="menu-toggle"] svg) {
+		color: #111827 !important;
+	}
+	
+	/* Hamburger icon class specific styling */
+	:global(html.dark .hamburger-icon) {
+		color: #111827 !important;
+		stroke: #111827 !important;
+	}
+	
+	/* Override any global nav styling for hamburger */
+	:global(html.dark nav .hamburger-icon) {
+		color: #111827 !important;
+		stroke: #111827 !important;
+	}
+	
+	/* Override any conflicting styles */
+	:global(html.dark nav a.navbar-link) {
+		color: #e5e7eb !important;
+	}
+	
+	:global(html.dark nav button.navbar-link) {
+		color: #e5e7eb !important;
+	}
+	
+	:global(html.dark nav a.navbar-link:hover) {
+		color: #818cf8 !important;
+	}
+	
+	:global(html.dark nav button.navbar-link:hover) {
+		color: #818cf8 !important;
+	}
+	
+	/* Dark mode dropdown styling */
+	:global(html.dark .dropdown-menu) {
+		background-color: #111827 !important;
+		border: none !important;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+	}
+	
+	/* Dark mode dropdown items hover */
+	:global(html.dark .dropdown-item:hover) {
+		background-color: #1f2937 !important;
+		transform: translateX(2px);
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* Remove any borders from dark mode dropdown */
+	:global(html.dark .dropdown-menu) {
+		border: 0 !important;
+		outline: none !important;
+	}
 </style>
 
 {@render children()}
   
 <!-- Navbar -->
-<nav class="fixed top-4 inset-x-0 z-50 px-4">
-	<div class="mx-auto max-w-7xl px-6 py-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-xl rounded-full border border-gray-200/50 dark:border-gray-700/50 flex items-center justify-between transition-all duration-300">
+<nav class="fixed top-4 inset-x-4 z-50">
+	<div class="mx-auto max-w-7xl px-6 py-4 bg-white/95 dark:bg-gray-900/95 border border-gray-100 shadow-lg flex items-center justify-between rounded-full transition-colors duration-200">
 		<!-- Logo -->
-		<a href="{base}/" class="flex items-center gap-2 group">
-			<img src={logoGlint} alt="Glam Stitch Logo" class="h-12 w-12 object-contain transition-transform group-hover:scale-110 group-hover:rotate-3">
-			<span class="hidden sm:block text-xl font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
+		<a href="{base}/" class="flex items-center gap-2">
+			<img src={logoGlint} alt="Glam Stitch Logo" class="h-10 w-10 object-contain">
+			<span class="hidden sm:block text-lg font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
 		</a>
 
-		<!-- Enhanced Desktop Navigation -->
-		<div class="hidden lg:flex items-center space-x-2">
-			<a href="{base}/" class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">
-				<span class="relative z-10">Beranda</span>
+		<!-- Desktop Navigation -->
+		<div class="hidden lg:flex items-center space-x-8">
+			<a href="{base}/" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
+				Beranda
 			</a>
 
-			<!-- Enhanced Products Dropdown -->
-			<div class="relative group">
-				<button class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium flex items-center gap-2">
-					<span class="relative z-10">Produk</span>
-					<svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<!-- Products Dropdown -->
+			<div class="relative dropdown-container">
+				<button onclick={toggleProductsDropdown} class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 transition-colors duration-200">
+					Produk
+					<svg class="w-4 h-4 transition-transform duration-200 {productsDropdownOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</button>
-				<div class="absolute left-0 top-full mt-3 w-52 bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform scale-95 group-hover:scale-100">
-					<div class="p-2 space-y-1">
-						<a href="{base}/tshirt" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kaos</a>
-						<a href="{base}/polo" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kaos Polo</a>
-						<a href="{base}/jersey" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Jersey</a>
-						<a href="{base}/jacket" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Jaket</a>
-						<a href="{base}/shirts" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Kemeja</a>
+				{#if productsDropdownOpen}
+					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-0 z-50 backdrop-blur-sm">
+					<div class="py-2">
+						<a href="{base}/tshirt" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+								</svg>
+								Kaos
+							</span>
+						</a>
+						<a href="{base}/polo" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+								</svg>
+								Kaos Polo
+							</span>
+						</a>
+						<a href="{base}/jersey" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+								</svg>
+								Jersey
+							</span>
+						</a>
+						<a href="{base}/jacket" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+								</svg>
+								Jaket
+							</span>
+						</a>
+						<a href="{base}/shirts" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+								</svg>
+								Kemeja
+							</span>
+						</a>
 					</div>
-				</div>
+					</div>
+				{/if}
 			</div>
 
-			<a href="{base}/services" class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">
-				<span class="relative z-10">Layanan</span>
+			<a href="{base}/services" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
+				Layanan
 			</a>
 
-			<!-- Enhanced Discover Us Dropdown -->
-			<div class="relative group">
-				<button class="px-4 py-2 rounded-xl text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium flex items-center gap-2">
-					<span class="relative z-10">Jelajahi</span>
-					<svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<!-- Discover Us Dropdown -->
+			<div class="relative dropdown-container">
+				<button onclick={toggleDiscoverDropdown} class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 transition-colors duration-200">
+					Jelajahi
+					<svg class="w-4 h-4 transition-transform duration-200 {discoverDropdownOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</button>
-				<div class="absolute left-0 top-full mt-3 w-56 bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform scale-95 group-hover:scale-100">
-					<div class="p-2 space-y-1">
-						<a href="{base}/about-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Tentang Kami</a>
-						<a href="{base}/blog" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Blog</a>
-						<a href="{base}/faq" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">FAQ</a>
-						<a href="{base}/contact-us" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Hubungi Kami</a>
-						<a href="{base}/store-location" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Lokasi Toko</a>
-						<a href="{base}/gallery" class="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 rounded-xl font-medium">Galeri</a>
+				{#if discoverDropdownOpen}
+					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-0 z-50 backdrop-blur-sm">
+					<div class="py-2">
+						<a href="{base}/about-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+								Tentang Kami
+							</span>
+						</a>
+						<a href="{base}/blog" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+								</svg>
+								Blog
+							</span>
+						</a>
+						<a href="{base}/faq" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+								FAQ
+							</span>
+						</a>
+						<a href="{base}/contact-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+								Hubungi Kami
+							</span>
+						</a>
+						<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20l-4.172-4.172a2 2 0 00-2.828 0L4 18.172V4a2 2 0 012-2h12a2 2 0 012 2v12.172l-2.343-2.343a2 2 0 00-2.828 0z" />
+								</svg>
+								Lokasi Toko
+							</span>
+						</a>
+						<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+							<span class="flex items-center gap-2">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+								</svg>
+								Galeri
+							</span>
+						</a>
 					</div>
-				</div>
+					</div>
+				{/if}
 			</div>
 		</div>
 
-		<!-- Enhanced Right Side Actions -->
-		<div class="flex items-center gap-3">
-			<!-- Enhanced Dark Mode Toggle Button -->
-			<button 
-				onclick={toggleDarkMode}
-				class="relative p-3 rounded-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group overflow-hidden"
-				aria-label="Toggle dark mode"
-			>
-				{#if isDark}
-					<svg class="w-5 h-5 text-yellow-500 relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" fill="currentColor" viewBox="0 0 20 20">
-						<path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
-					</svg>
-				{:else}
-					<svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" fill="currentColor" viewBox="0 0 20 20">
-						<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-					</svg>
-				{/if}
-			</button>
+		<!-- Right Side Actions -->
+		<div class="flex items-center gap-4">
+			<!-- Theme Switcher Component -->
+			<ThemeSwitcher />
 
 			<!-- Mobile Menu Toggle -->
-			<label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all cursor-pointer">
-				<svg class="w-6 h-6 text-gray-900 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer">
+				<svg class="w-6 h-6 hamburger-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #111827; stroke: #111827;">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 				</svg>
 			</label>
@@ -136,7 +551,7 @@
 	<label for="menu-toggle" class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 cursor-pointer"></label>
 	
 	<!-- Menu Panel -->
-	<div class="fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-out overflow-y-auto">
+	<div class="fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-whitedark:bg-gray-900 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-out overflow-y-auto">
 		<!-- Header -->
 		<div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
 			<div class="flex items-center gap-2">
@@ -152,34 +567,59 @@
 
 		<!-- Navigation -->
 		<nav class="p-4 space-y-2">
-			<a href="{base}/" class="block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
+			<a href="{base}/" class="block px-4 py-3 rounded-lg text-gray-700dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all">
 				Beranda
 			</a>
 
 			<!-- Products Dropdown -->
-			<div>
+			<div class="relative">
 				<input type="checkbox" id="mobile-products" class="peer/products hidden" />
 				<label for="mobile-products" class="flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-all">
 					<span>Produk</span>
-					<svg class="w-5 h-5 transition-transform peer-checked/products:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/products:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/products:max-h-72 transition-all duration-300 ml-4 space-y-1">
-					<a href="{base}/tshirt" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Kaos
+				<div class="overflow-hidden max-h-0 peer-checked/products:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
+					<a href="{base}/tshirt" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+							</svg>
+							Kaos
+						</span>
 					</a>
-					<a href="{base}/polo" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Kaos Polo
+					<a href="{base}/polo" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+							</svg>
+							Kaos Polo
+						</span>
 					</a>
-					<a href="{base}/jersey" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Jersey
+					<a href="{base}/jersey" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+							</svg>
+							Jersey
+						</span>
 					</a>
-					<a href="{base}/jacket" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Jaket
+					<a href="{base}/jacket" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+							</svg>
+							Jaket
+						</span>
 					</a>
-					<a href="{base}/shirts" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Kemeja
+					<a href="{base}/shirts" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+							</svg>
+							Kemeja
+						</span>
 					</a>
 				</div>
 			</div>
@@ -189,29 +629,63 @@
 			</a>
 
 			<!-- Discover Dropdown -->
-			<div>
+			<div class="relative">
 				<input type="checkbox" id="mobile-discover" class="peer/discover hidden" />
 				<label for="mobile-discover" class="flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-all">
 					<span>Jelajahi</span>
-					<svg class="w-5 h-5 transition-transform peer-checked/discover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/discover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/discover:max-h-64 transition-all duration-300 ml-4 space-y-1">
-					<a href="{base}/about-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Tentang Kami
+				<div class="overflow-hidden max-h-0 peer-checked/discover:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
+					<a href="{base}/about-us" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+							Tentang Kami
+						</span>
 					</a>
-					<a href="{base}/faq" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						FAQ
+					<a href="{base}/blog" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+							</svg>
+							Blog
+						</span>
 					</a>
-					<a href="{base}/contact-us" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Hubungi Kami
+					<a href="{base}/faq" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+							FAQ
+						</span>
 					</a>
-					<a href="{base}/store-location" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Lokasi Toko
+					<a href="{base}/contact-us" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+							</svg>
+							Hubungi Kami
+						</span>
 					</a>
-					<a href="{base}/gallery" class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">
-						Galeri
+					<a href="{base}/store-location" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+							</svg>
+							Lokasi Toko
+						</span>
+					</a>
+					<a href="{base}/gallery" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
+						<span class="flex items-center gap-3">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+							</svg>
+							Galeri
+						</span>
 					</a>
 				</div>
 			</div>

@@ -12,8 +12,8 @@
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->
-<div class="relative isolate overflow-hidden pt-6">
-    <img src="https://img.freepik.com/free-photo/fashionable-men-jacket-hanging-clothing-store-generated-by-ai_188544-40066.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Jaket Glam Stitch" class="absolute inset-0 -z-10 w-full h-full object-cover">
+<div class="hero-section relative isolate overflow-hidden pt-6">
+    <img loading="lazy" src="https://img.freepik.com/free-photo/fashionable-men-jacket-hanging-clothing-store-generated-by-ai_188544-40066.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Jaket Glam Stitch" class="absolute inset-0 -z-10 w-full h-full object-cover">
     <div class="absolute inset-0 -z-10 bg-black/50"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -68,25 +68,32 @@
       </nav>
   
       <!-- Galeri Gambar -->
-      <div class="mx-auto mt-6 max-w-2xl px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-16 space-y-4 lg:space-y-0">
-        <!-- Gambar kiri - hanya tampil di desktop -->
-        <div class="hidden lg:block">
-          <img src="https://media.istockphoto.com/id/1383411717/id/foto/potret-pemuda-yang-ramah.jpg?s=612x612&w=0&k=20&c=v8oJf-Volmp1s_Rt6oSzZRsKIb5GznshSDSuAH4_Dmc=" alt="Beberapa kaos warna abu, putih, dan hitam yang diletakkan secara datar."
-            class="aspect-[3/4] w-full max-w-sm mx-auto rounded-lg object-cover">
-        </div>
+      <div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
+          
+          <!-- Gambar utama - lebih besar -->
+          <div class="lg:col-span-2">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://media.istockphoto.com/id/1366972069/id/foto/potret-pria-ceria-berkerudung-oranye.jpg?s=612x612&w=0&k=20&c=HjDQsGzANZ35dxYBk6VPK48ilGN4sXYPHA8Mwu0XRws=" 
+                alt="Model mengenakan jaket oranye."
+                class="h-full w-full object-cover object-center">
+            </div>
+          </div>
   
-        <!-- Gambar tengah (dua vertikal) - tampil di mobile -->
-        <div class="grid grid-cols-1 gap-y-4">
-          <img src="https://media.istockphoto.com/id/1393264537/id/foto/model-mengenakan-hoodie-pria-kulit-hitam-maket-untuk-desain-anda-sendiri.jpg?s=612x612&w=0&k=20&c=8gN8pachrbhpSFlX5VQxUDKQsvaYNk9hb69vPwr577w=" alt="Model mengenakan kaos hitam polos."
-            class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-          <img src="https://media.istockphoto.com/id/1438595781/id/foto/wanita-muda-berkacamata-dan-hoodie-hitam.jpg?s=612x612&w=0&k=20&c=yGm0UL4DqOxXym5Payfd1d4uSwigr-qgOCY3mHEMlrk=" alt="Model mengenakan kaos abu polos."
-            class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-        </div>
+          <!-- Gambar samping -->
+          <div class="grid grid-cols-1 gap-6">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://media.istockphoto.com/id/1393264537/id/foto/model-mengenakan-hoodie-pria-kulit-hitam-maket-untuk-desain-anda-sendiri.jpg?s=612x612&w=0&k=20&c=8gN8pachrbhpSFlX5VQxUDKQsvaYNk9hb69vPwr577w=" 
+                alt="Model mengenakan hoodie hitam."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://media.istockphoto.com/id/1438595781/id/foto/wanita-muda-berkacamata-dan-hoodie-hitam.jpg?s=612x612&w=0&k=20&c=yGm0UL4DqOxXym5Payfd1d4uSwigr-qgOCY3mHEMlrk=" 
+                alt="Model mengenakan hoodie hitam."
+                class="h-full w-full object-cover object-center">
+            </div>
+          </div>
   
-        <!-- Gambar utama -->
-        <div>
-          <img src="https://media.istockphoto.com/id/1366972069/id/foto/potret-pria-ceria-berkerudung-oranye.jpg?s=612x612&w=0&k=20&c=HjDQsGzANZ35dxYBk6VPK48ilGN4sXYPHA8Mwu0XRws=" alt="Model mengenakan kaos putih polos."
-            class="aspect-[4/5] w-full max-w-sm mx-auto rounded-lg object-cover lg:aspect-[3/4]">
         </div>
       </div>
   
@@ -134,18 +141,17 @@
       </div>
       <!-- Produk Terkait -->
 <section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
-    <div class="mx-auto max-w-2xl px-16 py-24 sm:px-16 lg:max-w-7xl lg:px-16">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
       <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Produk Terkait</h2>
       <p class="mt-2 text-lg text-gray-400 dark:text-gray-200 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
       <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         <!-- Produk 1 -->
         <div class="group relative">
-          <img src="https://media.istockphoto.com/id/2085676478/id/foto/mockup-hoodie-putih-pada-pria-berjanggut-kaus-oversized-dengan-saku-untuk-desain-branding.jpg?s=612x612&w=0&k=20&c=7QKD-7q--IDD5CV0p5JDNuWy6f26zHLa0qCI3cF8wOc=" alt="Jaket Glim Stitch warna hitam."
-            class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-700 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <img loading="lazy" src="https://media.istockphoto.com/id/2085676478/id/foto/mockup-hoodie-putih-pada-pria-berjanggut-kaus-oversized-dengan-saku-untuk-desain-branding.jpg?s=612x612&w=0&k=20&c=7QKD-7q--IDD5CV0p5JDNuWy6f26zHLa0qCI3cF8wOc=" alt="Jaket Glim Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700 dark:text-white">
-                <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jaket Glim Stitch</a>
+              <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                <a href="/tshirt"><span aria-hidden="true" class="absolute inset-0"></span>Kaos</a>
               </h3>
               <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
             </div>
@@ -155,46 +161,43 @@
   
         <!-- Produk 2 -->
         <div class="group relative">
-          <img src="https://media.istockphoto.com/id/2147500282/id/foto/template-hoodie-hitam-besar-pada-seorang-pria-brutal-dengan-tangan-di-saku-pakaian-lebar-untuk.jpg?s=612x612&w=0&k=20&c=O5ypltazwnlEkG_6VFkZjUN77G5hTlSzdoW5tGCnbhk=" alt="Jaket Glim Stitch warna putih."
-            class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-700 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <img loading="lazy" src="https://media.istockphoto.com/id/2147500282/id/foto/template-hoodie-hitam-besar-pada-seorang-pria-brutal-dengan-tangan-di-saku-pakaian-lebar-untuk.jpg?s=612x612&w=0&k=20&c=O5ypltazwnlEkG_6VFkZjUN77G5hTlSzdoW5tGCnbhk=" alt="Jaket Glim Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700 dark:text-white">
-                <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jaket Glim Stitch</a>
+              <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                <a href="/polo"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo</a>
               </h3>
               <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
             </div>
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
+            <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
           </div>
         </div>
   
         <!-- Produk 3 -->
         <div class="group relative">
-          <img src="https://media.istockphoto.com/id/1314499049/id/foto/wanita-pirang-fasion-dalam-hoodie-besar-coklat-kacamata-dan-jeans-biru-mockup-untuk-logo-atau.jpg?s=612x612&w=0&k=20&c=CvvE5nL93XofC5kdnAQcVli9cB8nrOaDZvZ2vs7XhNs=" alt="Jaket Glim Stitch warna charcoal."
-            class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-700 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <img loading="lazy" src="https://media.istockphoto.com/id/1314499049/id/foto/wanita-pirang-fasion-dalam-hoodie-besar-coklat-kacamata-dan-jeans-biru-mockup-untuk-logo-atau.jpg?s=612x612&w=0&k=20&c=CvvE5nL93XofC5kdnAQcVli9cB8nrOaDZvZ2vs7XhNs=" alt="Jaket Glim Stitch warna charcoal." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700 dark:text-white">
-                <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jaket Glim Stitch</a>
+              <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                <a href="/jersey"><span aria-hidden="true" class="absolute inset-0"></span>Jersey</a>
               </h3>
               <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Charcoal</p>
             </div>
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
+            <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
           </div>
         </div>
   
         <!-- Produk 4 -->
         <div class="group relative">
-          <img src="https://media.istockphoto.com/id/1652781007/id/foto/wanita-muda-tersenyum-dengan-hoodie-ungu-biru-di-mockup-ruang-copy-latar-belakang-merah-ramah.jpg?s=612x612&w=0&k=20&c=y-fN3CbRpMECwJ1epGMKPf7Ys8GAXWNoBF3xZBF-Vyo=" alt="Jaket Glim Stitch warna merah."
-            class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-700 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <img loading="lazy" src="https://media.istockphoto.com/id/1652781007/id/foto/wanita-muda-tersenyum-dengan-hoodie-ungu-biru-di-mockup-ruang-copy-latar-belakang-merah-ramah.jpg?s=612x612&w=0&k=20&c=y-fN3CbRpMECwJ1epGMKPf7Ys8GAXWNoBF3xZBF-Vyo=" alt="Jaket Glim Stitch warna merah." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
-              <h3 class="text-sm text-gray-700 dark:text-white">
-                <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jaket Glim Stitch</a>
+              <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                <a href="/shirts"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja</a>
               </h3>
               <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru</p>
             </div>
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
+            <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 650.000</p>
           </div>
         </div>
       </div>
@@ -213,7 +216,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

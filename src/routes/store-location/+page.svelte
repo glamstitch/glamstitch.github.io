@@ -10,9 +10,9 @@
 </svelte:head>
 
 <!-- Header -->
-<section class="relative isolate overflow-hidden bg-white dark:bg-gray-900 pt-32 sm:pt-36 pb-20 sm:pb-32">
+<section class="hero-section relative isolate overflow-hidden bg-white dark:bg-gray-900 pt-32 sm:pt-36 pb-20 sm:pb-32">
     <!-- Background Image -->
-    <img
+    <img loading="lazy"
       src="https://img.freepik.com/premium-photo/asian-seamstress-work-sewing-machine_50401-138.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
       alt="Seamstress bekerja dengan mesin jahit"
       class="absolute inset-0 -z-10 w-full h-full object-cover object-center"
@@ -86,8 +86,8 @@
           <!-- Address -->
           <div class="flex items-start gap-4">
             <div class="flex-shrink-0">
-              <img src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg?ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-                alt="Icon Lokasi" class="h-14 w-14 object-contain rounded-xl shadow-md transition-transform transform hover:scale-105">
+              <img loading="lazy" src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg?ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+                alt="Icon Lokasi" class="h-14 w-14 object-cover rounded-xl shadow-md transition-transform transform hover:scale-105">
             </div>
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Alamat</h3>
@@ -98,8 +98,8 @@
           <!-- Operating Hours -->
           <div class="flex items-start gap-4">
             <div class="flex-shrink-0">
-              <img src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo=" 
-                alt="Icon Jam" class="h-14 w-14 object-contain rounded-xl shadow-md transition-transform transform hover:scale-105">
+              <img loading="lazy" src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo=" 
+                alt="Icon Jam" class="h-14 w-14 object-cover rounded-xl shadow-md transition-transform transform hover:scale-105">
             </div>
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Jam Operasional</h3>
@@ -129,7 +129,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

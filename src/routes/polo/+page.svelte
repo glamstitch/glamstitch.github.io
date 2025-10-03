@@ -13,9 +13,9 @@
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->
-<div class="relative isolate overflow-hidden pt-6">
+<div class="hero-section relative isolate overflow-hidden pt-6">
     <!-- Background Image -->
-    <img src={poto6}
+    <img loading="lazy" src={poto6}
       alt="Kaos polo" class="absolute inset-0 -z-10 w-full h-full object-cover">
   
     <!-- Dark Overlay -->
@@ -77,32 +77,33 @@
       </nav>
   
       <!-- Galeri Gambar -->
-      <div class="mx-auto mt-6 max-w-2xl px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-16 space-y-4 lg:space-y-0">
-      
-        <!-- Gambar kiri - hanya tampil di desktop -->
-        <div class="hidden lg:block">
-          <img src="https://img.fantaskycdn.com/c2c74c9fb69f55e818e630fc5973e57c_750x.jpeg"
-            alt="Beberapa kaos polo warna navy, putih, dan hitam yang diletakkan secara rapi."
-            class="aspect-[3/4] w-full max-w-sm mx-auto rounded-lg object-cover">
-        </div>
+      <div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
+          
+          <!-- Gambar utama - lebih besar -->
+          <div class="lg:col-span-2">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/26/8e/fc/268efc157e9aeb9e100916cd9f987bcb.jpg"
+                alt="Model mengenakan kaos polo putih premium."
+                class="h-full w-full object-cover object-center">
+            </div>
+          </div>
   
-        <!-- Gambar tengah (dua vertikal) - tampil di mobile -->
-        <div class="grid grid-cols-1 gap-y-4">
-          <img src="https://i.pinimg.com/1200x/b9/cf/13/b9cf1394d45966487e2ab76281d9fe21.jpg"
-            alt="Model mengenakan kaos polo hitam."
-            class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-          <img src="https://i.pinimg.com/1200x/d5/c8/bb/d5c8bb224ae8411e2fea73d085853a33.jpg"
-            alt="Model mengenakan kaos polo navy."
-            class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-        </div>
+          <!-- Gambar samping -->
+          <div class="grid grid-cols-1 gap-6">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/b9/cf/13/b9cf1394d45966487e2ab76281d9fe21.jpg"
+                alt="Model mengenakan kaos polo hitam."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/d5/c8/bb/d5c8bb224ae8411e2fea73d085853a33.jpg"
+                alt="Model mengenakan kaos polo navy."
+                class="h-full w-full object-cover object-center">
+            </div>
+          </div>
   
-        <!-- Gambar utama -->
-        <div>
-          <img src="https://i.pinimg.com/1200x/26/8e/fc/268efc157e9aeb9e100916cd9f987bcb.jpg"
-            alt="Model mengenakan kaos polo putih premium."
-            class="aspect-[4/5] w-full max-w-sm mx-auto rounded-lg object-cover lg:aspect-[3/4]">
         </div>
-  
       </div>
       
       <!-- Info Produk -->
@@ -125,14 +126,14 @@
   
           <!-- Highlight -->
           <div class="mt-10">
-            <h3 class="text-sm font-medium text-gray-900 dark:text-white">Fitur Unggulan</h3>
+            <h3 class="text-sm font-medium text-gray-900dark:text-white">Fitur Unggulan</h3>
             <div class="mt-4">
               <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
-                <li class="text-gray-400 dark:text-gray-500"><span class="text-gray-600 dark:text-gray-400">Kerah polo dengan kancing berkualitas tinggi</span></li>
-                <li class="text-gray-400 dark:text-gray-500"><span class="text-gray-600 dark:text-gray-400">Bahan pique cotton premium yang breathable</span></li>
-                <li class="text-gray-400 dark:text-gray-500"><span class="text-gray-600 dark:text-gray-400">Jahitan double-stitch untuk ketahanan maksimal</span></li>
-                <li class="text-gray-400 dark:text-gray-500"><span class="text-gray-600 dark:text-gray-400">Pre-shrunk fabric anti-susut</span></li>
-                <li class="text-gray-400 dark:text-gray-500"><span class="text-gray-600 dark:text-gray-400">Fit reguler yang nyaman untuk segala aktivitas</span></li>
+                <li class="text-gray-400dark:text-white"><span class="text-gray-600dark:text-white">Kerah polo dengan kancing berkualitas tinggi</span></li>
+                <li class="text-gray-400dark:text-white"><span class="text-gray-600dark:text-white">Bahan pique cotton premium yang breathable</span></li>
+                <li class="text-gray-400dark:text-white"><span class="text-gray-600dark:text-white">Jahitan double-stitch untuk ketahanan maksimal</span></li>
+                <li class="text-gray-400dark:text-white"><span class="text-gray-600dark:text-white">Pre-shrunk fabric anti-susut</span></li>
+                <li class="text-gray-400dark:text-white"><span class="text-gray-600dark:text-white">Fit reguler yang nyaman untuk segala aktivitas</span></li>
               </ul>
             </div>
           </div>
@@ -141,7 +142,7 @@
           <section aria-labelledby="shipping-heading" class="mt-10">
             <h2 id="shipping-heading" class="text-sm font-medium text-gray-900 dark:text-white">Detail Produk</h2>
             <div class="mt-4 space-y-8">
-              <p class="text-sm text-gray-600 dark:text-gray-400">
+              <p class="text-sm text-gray-600 dark:text-gray-300">
                 Temukan koleksi Kaos Polo Glam Stitch berkualitas premium, dirancang khusus untuk tampilan profesional dan kasual yang elegan. Daftar sekarang untuk mendapatkan informasi koleksi terbaru, termasuk edisi limited "Maroon Premium" yang segera hadir.
               </p>
             </div>              
@@ -151,64 +152,64 @@
   
       <!-- Produk Terkait -->
       <section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
-        <div class="mx-auto max-w-2xl px-16 py-24 sm:px-16 lg:max-w-7xl lg:px-16">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Produk Terkait</h2>
-          <p class="mt-2 text-lg text-gray-400 dark:text-gray-400 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
+          <p class="mt-2 text-lg text-gray-600 dark:text-gray-300 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
           <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
   
             <!-- Produk 1 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/1200x/9a/4c/81/9a4c811400ad7f828dc939839b51bc91.jpg" alt="Kaos Polo Glam Stitch warna navy." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/55/35/e7/5535e7c317e5c98887da060ef5694470.jpg" alt="Kaos Polo Glam Stitch warna navy." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo Glam Stitch</a>
+                    <a href="/tshirt"><span aria-hidden="true" class="absolute inset-0"></span>Kaos</a>
                   </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Navy</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">Navy</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
               </div>
             </div>
   
             <!-- Produk 2 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/1200x/34/70/e2/3470e25804ca2235f271b865a367eb49.jpg" alt="Kaos Polo Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/01/22/29/012229e1a04151b3b6c0210eee6b259b.jpg" alt="Kaos Polo Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo Glam Stitch</a>
+                    <a href="/jersey"><span aria-hidden="true" class="absolute inset-0"></span>Jersey</a>
                   </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih Premium</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">Putih</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
               </div>
             </div>
   
             <!-- Produk 3 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/1200x/e1/29/f8/e129f8cbbd978329b2428f9fc5eb6ae3.jpg" alt="Kaos Polo Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/e1/29/f8/e129f8cbbd978329b2428f9fc5eb6ae3.jpg" alt="Kaos Polo Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo Glam Stitch</a>
+                    <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Jaket</a>
                   </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">Hitam</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 750.000</p>
               </div>
             </div>
   
             <!-- Produk 4 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/736x/ed/9d/96/ed9d96d3337265eab4ad4b8d43362c79.jpg" alt="Kaos Polo Glam Stitch warna abu-abu." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/736x/ed/9d/96/ed9d96d3337265eab4ad4b8d43362c79.jpg" alt="Kaos Polo Glam Stitch warna abu-abu." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo Glam Stitch</a>
+                    <a href="/shirts"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja</a>
                   </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Abu-abu</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">Abu-abu</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 650.000</p>
               </div>
             </div>
   
@@ -228,7 +229,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

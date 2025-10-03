@@ -1,5 +1,27 @@
 <script lang="ts">
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import { onMount } from 'svelte';
+  import { initializeTheme, forceTheme, getInitialTheme } from '$lib/utils/theme';
+  
+  // Ensure theme is applied on page load
+  onMount(() => {
+    const isDark = getInitialTheme();
+    forceTheme(isDark);
+    
+    // Listen for theme changes
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'theme') {
+        const isDark = e.newValue === 'dark';
+        forceTheme(isDark);
+      }
+    };
+    
+    window.addEventListener('storage', handleStorageChange);
+    
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  });
   
   const faqData = [
     {
@@ -73,7 +95,7 @@
 
 <!-- Hero Section -->
 <section class="relative isolate overflow-hidden pt-6">
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+  <img loading="lazy" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
     alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
   <div class="absolute inset-0 -z-10 bg-black/10"></div>
 
@@ -196,7 +218,7 @@
       
       <!-- Logo & Description -->
       <div class="space-y-6">
-        <img class="h-24 w-24" src={logoGlint} alt="Glam Stitch Logo">
+        <img loading="lazy" class="h-24 w-24" src={logoGlint} alt="Glam Stitch Logo">
         <div class="flex space-x-6">
           
           <!-- Facebook -->

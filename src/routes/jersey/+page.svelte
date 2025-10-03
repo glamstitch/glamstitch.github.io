@@ -12,9 +12,9 @@
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->
-<div class="relative isolate overflow-hidden pt-6">
+<div class="hero-section relative isolate overflow-hidden pt-6">
     <!-- Background Image -->
-    <img src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448801.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" 
+    <img loading="lazy" src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448801.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" 
       alt="Jersey olahraga" class="absolute inset-0 -z-10 w-full h-full object-cover">
   
     <!-- Dark Overlay -->
@@ -76,32 +76,33 @@
       </nav>
   
       <!-- Galeri Gambar -->
-      <div class="mx-auto mt-6 max-w-2xl px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-16 space-y-4 lg:space-y-0">
-      
-        <!-- Gambar kiri - hanya tampil di desktop -->
-        <div class="hidden lg:block">
-          <img src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448803.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-            alt="Beberapa jersey olahraga warna biru, merah, dan putih yang diletakkan secara rapi."
-            class="aspect-[3/4] w-full max-w-sm mx-auto rounded-lg object-cover">
-        </div>
+      <div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
+          
+          <!-- Gambar utama - lebih besar -->
+          <div class="lg:col-span-2">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448801.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+                alt="Model mengenakan jersey putih premium."
+                class="h-full w-full object-cover object-center">
+            </div>
+          </div>
   
-        <!-- Gambar tengah (dua vertikal) - tampil di mobile -->
-        <div class="grid grid-cols-1 gap-y-4">
-          <img src="https://i.pinimg.com/1200x/22/3e/77/223e777f25f31fa86fa7db15bd9d8b51.jpg"
-            alt="Model mengenakan jersey biru."
-            class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-          <img src="https://i.pinimg.com/1200x/59/75/9e/59759e16383e2061fa7f6dcb8b1fb0e1.jpg"
-            alt="Model mengenakan jersey merah."
-            class="aspect-[3/2] w-full max-w-sm mx-auto rounded-lg object-cover">
-        </div>
+          <!-- Gambar samping -->
+          <div class="grid grid-cols-1 gap-6">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/22/3e/77/223e777f25f31fa86fa7db15bd9d8b51.jpg"
+                alt="Model mengenakan jersey biru."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/59/75/9e/59759e16383e2061fa7f6dcb8b1fb0e1.jpg"
+                alt="Model mengenakan jersey merah."
+                class="h-full w-full object-cover object-center">
+            </div>
+          </div>
   
-        <!-- Gambar utama -->
-        <div>
-          <img src="https://img.freepik.com/free-photo/soccer-jersey-mockup-concept_23-2149448801.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-            alt="Model mengenakan jersey putih premium."
-            class="aspect-[4/5] w-full max-w-sm mx-auto rounded-lg object-cover lg:aspect-[3/4]">
         </div>
-  
       </div>
       
       <!-- Info Produk -->
@@ -151,64 +152,64 @@
   
       <!-- Produk Terkait -->
       <section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
-        <div class="mx-auto max-w-2xl px-16 py-24 sm:px-16 lg:max-w-7xl lg:px-16">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Produk Terkait</h2>
           <p class="mt-2 text-lg text-gray-400 dark:text-gray-400 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
           <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
   
             <!-- Produk 1 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg" alt="Jersey Glam Stitch warna biru royal." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg" alt="Jersey Glam Stitch warna biru royal." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jersey Glam Stitch</a>
+                    <a href="/tshirt"><span aria-hidden="true" class="absolute inset-0"></span>Kaos</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru Royal</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
               </div>
             </div>
   
             <!-- Produk 2 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/736x/41/bb/b0/41bbb08d32e9a922edff196d732a497f.jpg" alt="Jersey Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/736x/41/bb/b0/41bbb08d32e9a922edff196d732a497f.jpg" alt="Jersey Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jersey Glam Stitch</a>
+                    <a href="/polo"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo</a>
                   </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih Premium</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
               </div>
             </div>
   
             <!-- Produk 3 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/736x/ed/bb/f2/edbbf2e37109ace2298f5d45cca938d7.jpg" alt="Jersey Glam Stitch warna merah." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/736x/ed/bb/f2/edbbf2e37109ace2298f5d45cca938d7.jpg" alt="Jersey Glam Stitch warna merah." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jersey Glam Stitch</a>
+                    <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Jaket</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Merah</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 750.000</p>
               </div>
             </div>
   
             <!-- Produk 4 -->
             <div class="group relative">
-              <img src="https://i.pinimg.com/736x/29/bf/c2/29bfc2c2abd2a741cbc6af3b144b48f3.jpg" alt="Jersey Glam Stitch warna hijau." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+              <img loading="lazy" src="https://i.pinimg.com/736x/29/bf/c2/29bfc2c2abd2a741cbc6af3b144b48f3.jpg" alt="Jersey Glam Stitch warna hijau." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
                   <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/#"><span aria-hidden="true" class="absolute inset-0"></span>Jersey Glam Stitch</a>
+                    <a href="/shirts"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja</a>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hijau</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 650.000</p>
               </div>
             </div>
   
@@ -228,7 +229,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

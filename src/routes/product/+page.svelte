@@ -4,12 +4,12 @@
 </script>
   
 <!-- Hero Section Produk -->
-  <section class="relative isolate overflow-hidden pt-6">
+  <section class="hero-section relative isolate overflow-hidden pt-6">
     <!-- Background Image -->
-    <img
+    <img loading="lazy"
       src="https://img.freepik.com/free-photo/family-tailors-having-leather-industry_1303-23397.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
       alt="Tailor background"
-      class="absolute inset-0 -z-10 w-full h-full object-cover object-center"
+      class="hero-section absolute inset-0 -z-10 w-full h-full object-cover object-center"
     />
   
     <!-- Overlay Hitam -->
@@ -58,10 +58,10 @@
   
         <!-- Left: Image -->
         <div class="w-full lg:w-1/2 animate-fade-slide-left">
-          <img
+          <img loading="lazy"
             src="https://img.freepik.com/free-photo/carpenter-works-with-tree_1157-18667.jpg"
             alt="Produk Konveksi"
-            class="rounded-lg shadow-xl w-full h-auto object-cover"
+            class="product-image rounded-lg shadow-xl w-full h-auto object-cover"
           />
         </div>
   
@@ -108,7 +108,7 @@
         <div class="flex flex-col items-center text-center space-y-6">
           <a href="/tshirt" class="block w-full max-w-sm mx-auto group">
             <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img 
+              <img loading="lazy" 
                 src="https://media.istockphoto.com/id/185941321/id/foto/tubuh-bagian-atas-pria.jpg?s=612x612&w=0&k=20&c=iS9nQtGYKbNusFB7N6ygJZPdkmSvK1OwkhinmalwW3o=" 
                 alt="Kaos Polos Glam Stitch" 
                 class="w-full aspect-[4/5] object-cover"
@@ -125,7 +125,7 @@
         <div class="flex flex-col items-center text-center space-y-6">
           <a href="/jacket" class="block w-full max-w-sm mx-auto group">
             <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img 
+              <img loading="lazy" 
                 src="https://media.istockphoto.com/id/2085676478/id/foto/mockup-hoodie-putih-pada-pria-berjanggut-kaus-oversized-dengan-saku-untuk-desain-branding.jpg?s=612x612&w=0&k=20&c=7QKD-7q--IDD5CV0p5JDNuWy6f26zHLa0qCI3cF8wOc=" 
                 alt="Jaket Glam Stitch" 
                 class="w-full aspect-[4/5] object-cover"
@@ -142,7 +142,7 @@
         <div class="flex flex-col items-center text-center space-y-6">
           <a href="/shirts" class="block w-full max-w-sm mx-auto group">
             <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img 
+              <img loading="lazy" 
                 src="https://img.freepik.com/free-photo/business-casual-shirt-white-closeup-outdoor-photoshoot_53876-119744.jpg?ga=GA1.1.1868222757.1738365469&w=740" 
                 alt="Kemeja Glam Stitch" 
                 class="w-full aspect-[4/5] object-cover"
@@ -159,8 +159,8 @@
   </section>
 
   <!-- Reviews Section -->
-<section class="bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 py-24">
-    <div class="max-w-7xl mx-auto px-6 lg:px-16">
+<section class="bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16 py-16">
       <div class="text-center">
         <h2 class="text-4xl sm:text-2xl font-bold text-gray-900 dark:text-white">Testimoni Pelanggan: Pengalaman Memuaskan dari Glam Stitch!</h2>
         <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Review dari para pelanggan setia kami.</p>
@@ -171,7 +171,7 @@
         <!-- Review Card -->
         <div class="bg-white dark:bg-gray-700 shadow-xl rounded-3xl p-8 border border-gray-100 dark:border-gray-600 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
           <div class="flex items-center gap-4 mb-4">
-            <img class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Putri Aulia">
+            <img loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Putri Aulia">
             <div>
               <h4 class="font-semibold text-gray-900 dark:text-white text-base">Putri Aulia</h4>
               <span class="text-sm text-indigo-600 font-medium bg-indigo-50 dark:bg-indigo-900 dark:text-indigo-100 rounded-full px-2 py-0.5">Kaos Polos</span>
@@ -197,7 +197,7 @@
         <!-- Example Review Card -->
         <div class="bg-white dark:bg-gray-700 shadow-xl rounded-3xl p-8 border border-gray-100 dark:border-gray-600 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
           <div class="flex items-center gap-4 mb-4">
-            <img class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" src="https://media.istockphoto.com/id/483627817/id/foto/memamerkan-putih-mutiaranya.jpg?s=612x612&w=0&k=20&c=0dXbdlR-Ten2QPyJ7E6WtpRjGAwLFLbfWywDJ0RCs_E=" alt="Arifki Pratama">
+            <img loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" src="https://media.istockphoto.com/id/483627817/id/foto/memamerkan-putih-mutiaranya.jpg?s=612x612&w=0&k=20&c=0dXbdlR-Ten2QPyJ7E6WtpRjGAwLFLbfWywDJ0RCs_E=" alt="Arifki Pratama">
             <div>
               <h4 class="font-semibold text-gray-900 dark:text-white text-base">Arifki Pratama</h4>
               <span class="text-sm text-indigo-600 font-medium bg-indigo-50 dark:bg-indigo-900 dark:text-indigo-100 rounded-full px-2 py-0.5">Jaket</span>
@@ -220,7 +220,7 @@
 
         <div class="bg-white dark:bg-gray-700 shadow-xl rounded-3xl p-8 border border-gray-100 dark:border-gray-600 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
             <div class="flex items-center gap-4 mb-4">
-              <img class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" src="https://media.istockphoto.com/id/1325882419/id/foto/wanita-meniup-ciuman-udara-pada-latar-belakang-biru-muda.jpg?s=612x612&w=0&k=20&c=xBVLOjJkZ2AAPBMi-bPeYzDKTQLQq48z0xPpWb7rUVE=" alt="Sri Rahayu">
+              <img loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" src="https://media.istockphoto.com/id/1325882419/id/foto/wanita-meniup-ciuman-udara-pada-latar-belakang-biru-muda.jpg?s=612x612&w=0&k=20&c=xBVLOjJkZ2AAPBMi-bPeYzDKTQLQq48z0xPpWb7rUVE=" alt="Sri Rahayu">
               <div>
                 <h4 class="font-semibold text-gray-900 dark:text-white text-base">Sri Rahayu</h4>
                 <span class="text-sm text-indigo-600 font-medium bg-indigo-50 dark:bg-indigo-900 dark:text-indigo-100 rounded-full px-2 py-0.5">Kemeja</span>
@@ -256,7 +256,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="footer-logo h-16 w-16 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->

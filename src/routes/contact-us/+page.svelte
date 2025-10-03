@@ -10,8 +10,8 @@
 </svelte:head>
 
 <!-- Header -->
-<div class="relative isolate overflow-hidden pt-6">
-    <img src="https://img.freepik.com/free-photo/young-stylist-looking-through-set-shirts-fashion-shooting_1153-5249.jpg" alt="Stylish tailor working on shirts" class="absolute inset-0 -z-10 w-full h-full object-cover">
+<div class="hero-section relative isolate overflow-hidden pt-6">
+    <img loading="lazy" src="https://img.freepik.com/free-photo/young-stylist-looking-through-set-shirts-fashion-shooting_1153-5249.jpg" alt="Stylish tailor working on shirts" class="absolute inset-0 -z-10 w-full h-full object-cover">
     <div class="absolute inset-0 -z-10 bg-black/50"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -57,21 +57,21 @@
         <div>
           <form class="grid grid-cols-1 gap-y-6">
             <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Nama Lengkap</label>
+              <label for="name" class="block text-sm font-medium text-gray-900dark:text-white">Nama Lengkap</label>
               <input type="text" id="name" name="name" autocomplete="name"
-                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
+                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-black shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
                 required>
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Email</label>
+              <label for="email" class="block text-sm font-medium text-gray-900dark:text-white">Email</label>
               <input type="email" id="email" name="email" autocomplete="email"
-                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
+                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-black shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
                 required>
             </div>
             <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Pesan</label>
+              <label for="message" class="block text-sm font-medium text-gray-900dark:text-white">Pesan</label>
               <textarea id="message" name="message" rows="4"
-                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
+                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-black shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
                 required></textarea>
             </div>
             <div>
@@ -88,7 +88,7 @@
           <!-- Email -->
           <div class="flex items-start gap-4">
             <div class="flex h-16 w-16 items-center justify-center">
-              <img src="https://img.freepik.com/premium-vector/envelope-vector-illustration_1186366-13489.jpg" alt="Email Icon" class="h-16 w-16 object-contain">
+              <img loading="lazy" src="https://img.freepik.com/premium-vector/envelope-vector-illustration_1186366-13489.jpg" alt="Email Icon" class="h-16 w-16 object-cover">
             </div>
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-mail</h3>
@@ -99,7 +99,7 @@
           <!-- WhatsApp -->
           <div class="flex items-start gap-4">
             <div class="flex h-16 w-16 items-center justify-center">
-              <img src="https://img.freepik.com/premium-photo/whatsapp-logo_1080029-96.jpg" alt="WhatsApp Icon" class="h-16 w-16 object-contain">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/whatsapp-logo_1080029-96.jpg" alt="WhatsApp Icon" class="h-16 w-16 object-cover">
             </div>
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Whatsapp</h3>
@@ -110,7 +110,7 @@
           <!-- Instagram -->
           <div class="flex items-start gap-4">
             <div class="flex h-16 w-16 items-center justify-center">
-              <img src="https://img.freepik.com/premium-vector/art-illustration_929495-37.jpg" alt="Instagram Icon" class="h-16 w-16 object-contain">
+              <img loading="lazy" src="https://img.freepik.com/premium-vector/art-illustration_929495-37.jpg" alt="Instagram Icon" class="h-16 w-16 object-cover">
             </div>
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Instagram</h3>
@@ -121,7 +121,7 @@
           <!-- Location -->
           <div class="flex items-start gap-4">
             <div class="flex h-16 w-16 items-center justify-center">
-              <img src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg" alt="Location Icon" class="h-16 w-16 object-contain">
+              <img loading="lazy" src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg" alt="Location Icon" class="h-16 w-16 object-cover">
             </div>
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lokasi</h3>
@@ -135,84 +135,7 @@
   </section>
   
   
-<!-- FAQ Section with Image -->
-<section class="bg-white dark:bg-gray-900 py-24 sm:py-32 relative overflow-hidden">
-    <!-- Background Gradient -->
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800"></div>
-  
-    <div class="max-w-7xl mx-auto px-6 lg:px-24">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
-        <!-- FAQ Content -->
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Pertanyaan yang Sering Diajukan
-          </h2>
-          <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
-            Jelajahi jawaban atas pertanyaan umum mengenai layanan konveksi kami.
-          </p>
-  
-          <div class="mt-10 space-y-8">
-            <!-- FAQ Item -->
-            <div class="border-l-4 border-indigo-500 pl-4">
-              <h3 class="text-lg font-semibold text-indigo-600 dark:text-indigo-400">
-                Apakah saya bisa memesan desain custom?
-              </h3>
-              <p class="mt-1 text-sm text-gray-700 dark:text-gray-300">
-                Tentu! Kirimkan desain Anda, dan tim kami akan memproduksinya dengan kualitas terbaik sesuai permintaan Anda.
-              </p>
-            </div>
-  
-            <div class="border-l-4 border-indigo-500 pl-4">
-              <h3 class="text-lg font-semibold text-indigo-600 dark:text-indigo-400">
-                Berapa minimal order?
-              </h3>
-              <p class="mt-1 text-sm text-gray-700 dark:text-gray-300">
-                Minimal pemesanan adalah 12 pcs per desain. Untuk jumlah besar, kami siap bernegosiasi harga terbaik.
-              </p>
-            </div>
-  
-            <div class="border-l-4 border-indigo-500 pl-4">
-              <h3 class="text-lg font-semibold text-indigo-600 dark:text-indigo-400">
-                Berapa lama proses produksinya?
-              </h3>
-              <p class="mt-1 text-sm text-gray-700 dark:text-gray-300">
-                Proses produksi membutuhkan waktu sekitar 7–14 hari kerja, tergantung kompleksitas desain dan jumlah pesanan.
-              </p>
-            </div>
-  
-            <div class="border-l-4 border-indigo-500 pl-4">
-              <h3 class="text-lg font-semibold text-indigo-600 dark:text-indigo-400">
-                Apakah bisa kirim ke luar kota?
-              </h3>
-              <p class="mt-1 text-sm text-gray-700 dark:text-gray-300">
-                Kami melayani pengiriman ke seluruh Indonesia dengan berbagai pilihan ekspedisi yang dapat disesuaikan.
-              </p>
-            </div>
-          </div>
-  
-          <p class="mt-10 text-sm text-gray-700 dark:text-gray-300">
-            Masih punya pertanyaan?
-            <a href="/contact-us" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline">Hubungi kami</a>.
-          </p>
-        </div>
-  
-        <!-- Image -->
-        <div class="relative rounded-xl shadow-xl overflow-hidden">
-          <img src="https://img.freepik.com/free-vector/flat-people-asking-questions-illustration_23-2148910850.jpg"
-               alt="Produksi Konveksi"
-               class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-indigo-600/30 dark:bg-indigo-500/20 mix-blend-multiply"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  
 
-   
-
-  
   <!-- Footer -->
   <footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -221,7 +144,7 @@
         
         <!-- Logo & Description -->
         <div class="space-y-6">
-          <img class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
+          <img loading="lazy" class="h-24 w-24 animate__animated animate__zoomIn animate__delay-1s" src={logoGlint} alt="Glam Stitch Logo">
           <div class="flex space-x-6">
             
             <!-- Facebook -->
