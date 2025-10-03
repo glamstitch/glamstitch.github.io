@@ -15,7 +15,7 @@ export default {
       strict: true
     }),
     paths: {
-      base: dev ? '' : '/glamstitch.github.io'
+      base: ''
     },
     alias: {
       $components: 'src/components',
