@@ -13,37 +13,39 @@
   
 <!-- Hero Section -->
 <div class="hero-section relative isolate overflow-hidden pt-6">
-    <!-- Background Image -->
-    <img loading="lazy" src="https://img.freepik.com/free-photo/close-up-collection-black-white-color-monochrome-t-shirt-hanging-clothes-hanger_158595-6518.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" 
-      alt="Kaos polos" class="hero-section absolute inset-0 -z-10 w-full h-full object-cover">
-  
-    <!-- Light Overlay for better text readability -->
-    <div class="absolute inset-0 -z-10 bg-white/20"></div>
+    <img loading="lazy" 
+      src="https://img.freepik.com/free-photo/close-up-collection-black-white-color-monochrome-t-shirt-hanging-clothes-hanger_158595-6518.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" 
+      alt="Kaos polos" 
+      class="absolute inset-0 -z-10 w-full h-full object-cover"
+    >
+    <div class="absolute inset-0 -z-10 bg-black/50 dark:bg-black/75"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32 text-center">
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm text-gray-700 bg-white/90 ring-1 ring-gray-300 hover:ring-gray-400">
+          <div class="relative rounded-full px-3 py-1 text-sm text-gray-400 ring-1 ring-white/10 hover:ring-white/20 dark:ring-gray-600 dark:hover:ring-gray-500 transition">
             Koleksi kaos polos berkualitas dari Glam Stitch untuk segala kebutuhan Anda.
-            <a href="/" class="font-semibold text-gray-900">
+            <a href="/" class="font-semibold text-white hover:underline dark:text-gray-300 dark:hover:text-indigo-400">
               <span class="absolute inset-0" aria-hidden="true"></span>Beranda <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
-        <h1 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-          Produk Kaos Polos Glam Stitch
-        </h1>
-        <p class="mt-8 text-lg font-medium text-gray-700 sm:text-xl">
-          Didesain untuk kenyamanan dan tampil stylish, kaos polos kami cocok untuk keperluan komunitas, bisnis, hingga kebutuhan sehari-hari.
-        </p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl dark:text-white">
+            Produk Kaos Polos Glam Stitch
+          </h1>
+          <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl dark:text-gray-300">
+            Didesain untuk kenyamanan dan tampil stylish, kaos polos kami cocok untuk keperluan komunitas, bisnis, hingga kebutuhan sehari-hari.
+          </p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
             <a href="/contact-us" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Pesan Sekarang
             </a>
-            <a href="/product" class="text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-all transform hover:scale-105">
+            <a href="/product" class="text-sm font-semibold text-white hover:text-indigo-400 dark:text-gray-300 dark:hover:text-indigo-400 transition-all transform hover:scale-105">
               Lihat Produk Lainnya <span aria-hidden="true">→</span>
             </a>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -173,23 +175,23 @@
           <!-- Detail Produk -->
           <div class="space-y-8">
             <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-              <h3 class="text-lg font-semibold text-gray-900dark:text-white mb-4">Detail Produk</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Detail Produk</h3>
               <div class="space-y-4">
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600dark:text-gray-400">Bahan</span>
-                  <span class="text-sm text-gray-900dark:text-white">100% Katun Combed</span>
+                  <span class="text-sm text-gray-900 dark:text-white">100% Katun Combed</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Berat</span>
-                  <span class="text-sm text-gray-900dark:text-white">180 GSM</span>
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Berat</span>
+                  <span class="text-sm text-gray-900 dark:text-white">180 GSM</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Ukuran</span>
-                  <span class="text-sm text-gray-900dark:text-white">S, M, L, XL, XXL</span>
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
+                  <span class="text-sm text-gray-900 dark:text-white">S, M, L, XL, XXL</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Warna</span>
-                  <span class="text-sm text-gray-900dark:text-white">Putih, Hitam, Abu Heather</span>
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
+                  <span class="text-sm text-gray-900 dark:text-white">Putih, Hitam, Abu Heather</span>
                 </div>
               </div>
             </div>
@@ -202,7 +204,7 @@
                 </svg>
                 Pesan Sekarang
               </a>
-              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
+              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
                 Lihat Produk Lainnya
               </a>
             </div>

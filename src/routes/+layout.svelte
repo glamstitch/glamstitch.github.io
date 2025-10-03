@@ -359,7 +359,6 @@
 		outline: none !important;
 	}
 	
-	
 	/* Global: Remove all dark overlays that cover images */
 	:global(html.dark .bg-black\/50),
 	:global(html.dark .bg-black\/60),

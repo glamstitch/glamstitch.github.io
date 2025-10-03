@@ -35,10 +35,10 @@
   
         <!-- Main Heading and Description with Animation -->
         <div class="text-center animate__animated animate__fadeIn animate__delay-1s">
-          <h1 class="text-4xl font-semibold tracking-tight text-white dark:text-white sm:text-7xl animate__animated animate__fadeIn animate__delay-1s">
+          <h1 class="text-4xl font-semibold tracking-tight text-white dark:text-gray-900 sm:text-7xl animate__animated animate__fadeIn animate__delay-1s" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
             Glam Stitch Mitra Konveksi Terpercaya Anda
           </h1>
-          <p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl animate__animated animate__fadeIn animate__delay-2s">
+          <p class="mt-8 text-lg font-medium text-gray-400 dark:text-gray-700 sm:text-xl animate__animated animate__fadeIn animate__delay-2s" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
             
             Kami menyediakan layanan produksi pakaian yang terpercaya dan profesional untuk membantu pertumbuhan bisnis Anda — dengan kualitas tinggi, proses cepat, dan harga bersaing.
           </p>
@@ -49,7 +49,7 @@
               class="group relative px-8 py-4 bg-indigo-500  text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
               <span class="relative z-10">Mulai Sekarang</span>
             </a>
-            <a href="/product" class="group text-white font-semibold hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
+            <a href="/product" class="group text-white dark:text-gray-900 font-semibold hover:text-indigo-300 dark:hover:text-indigo-600 transition-all duration-300 flex items-center gap-2" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
               Jelajahi Produk Kami 
               <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-2">→</span>
             </a>
@@ -90,7 +90,7 @@
             Kami menghadirkan layanan konveksi berkualitas tinggi dengan proses mudah, hasil presisi, dan pelayanan profesional.
             <span class="text-indigo-600 dark:text-indigo-400 font-semibold">Glam Stitch</span> adalah solusi terpercaya untuk kebutuhan pakaian custom Anda.
             </p>
-            <ul class="mt-6 space-y-3 text-base leading-relaxed text-gray-600dark:text-gray-400">
+            <ul class="mt-6 space-y-3 text-base leading-relaxed text-gray-600 dark:text-gray-400">
             <li>✅ Bahan Berkualitas Premium</li>
             <li>✅ Tim Desain dan Produksi Profesional</li>
             <li>✅ Waktu Pengerjaan Cepat dan Tepat Waktu</li>
