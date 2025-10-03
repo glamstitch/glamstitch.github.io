@@ -31,7 +31,6 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/glamstitch-company-profile'
           NODE_ENV: production
         run: npm run build
 
