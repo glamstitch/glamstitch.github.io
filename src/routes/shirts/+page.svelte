@@ -104,45 +104,102 @@
       </div>
   
       <!-- Product Information -->
-      <div class="mx-auto max-w-2xl px-4 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-16 lg:pt-16">
-        <div class="lg:col-span-2 lg:pr-8">
-          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Kemeja Glam Stitch</h1>
-        </div>
-  
-        <!-- Options -->
-        <div class="py-10 lg:col-span-2 lg:col-start-1 lg:pt-6 lg:pr-8 lg:pb-16">
-          <!-- Description -->
-          <div>
-            <h3 class="sr-only">Deskripsi</h3>
+      <div class="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          
+          <!-- Product Information -->
+          <div class="space-y-8">
+            <div>
+              <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                Kemeja Premium
+              </h1>
+              <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                Kemeja berkualitas tinggi dengan desain klasik dan elegan
+              </p>
+            </div>
+
+            <!-- Deskripsi -->
             <div class="space-y-6">
-              <p class="text-base text-gray-900 dark:text-gray-300">
-                Kemeja Glam Stitch hadir dengan gaya simpel dan elegan dalam tiga pilihan warna menawan. Ingin tampil berani? Pilih warna "Abu Heather". Untuk kesan premium, warna "Hitam" adalah pilihan tepat. Butuh tampilan segar dan bersih? Warna "Putih" siap menyempurnakan gayamu.
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deskripsi Produk</h3>
+              <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                Kemeja Glam Stitch hadir dengan desain klasik yang timeless dan elegan. Terbuat dari bahan berkualitas tinggi dengan potongan yang sempurna, cocok untuk keperluan formal, semi-formal, maupun casual. Didesain untuk memberikan kenyamanan maksimal sepanjang hari.
               </p>
             </div>
-          </div>
-  
-          <!-- Highlights -->
-          <div class="mt-10">
-            <h3 class="text-sm font-medium text-gray-900dark:text-white">Fitur Unggulan</h3>
-            <div class="mt-4">
-              <ul role="list" class="list-disc space-y-2 pl-4 text-sm text-gray-600dark:text-gray-300">
-                <li><span class="text-gray-600dark:text-white">Dijahit secara manual oleh tenaga lokal</span></li>
-                <li><span class="text-gray-600dark:text-white">Menggunakan pewarna eksklusif</span></li>
-                <li><span class="text-gray-600dark:text-white">Sudah dicuci dan disusutkan sebelumnya</span></li>
-                <li><span class="text-gray-600dark:text-white">100% katun super lembut</span></li>
-              </ul>
+
+            <!-- Fitur Unggulan -->
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Fitur Unggulan</h3>
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div class="flex items-start space-x-3">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Bahan katun premium yang lembut dan breathable</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Potongan klasik yang timeless dan elegan</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Jahitan berkualitas tinggi dan tahan lama</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Cocok untuk formal, semi-formal, dan casual</p>
+                </div>
+              </div>
             </div>
           </div>
-  
-          <!-- Product Details -->
-          <section aria-labelledby="shipping-heading" class="mt-10">
-            <h2 id="shipping-heading" class="text-sm font-medium text-gray-900 dark:text-white">Detail Produk</h2>
-            <div class="mt-4 space-y-8">
-              <p class="text-sm text-gray-600 dark:text-gray-300">
-                Temukan kemeja Glam Stitch berkualitas tinggi, dirancang untuk kenyamanan dan ketahanan maksimal. Daftar sekarang untuk mendapatkan informasi warna-warna terbaru, termasuk edisi terbatas "Abu Tua" yang segera hadir.
-              </p>
+
+          <!-- Detail Produk -->
+          <div class="space-y-8">
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Detail Produk</h3>
+              <div class="space-y-4">
+                <div class="flex justify-between">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Bahan</span>
+                  <span class="text-sm text-gray-900 dark:text-white">100% Cotton Premium</span>
+                </div>
+              
+                <div class="flex justify-between">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
+                  <span class="text-sm text-gray-900 dark:text-white">S, M, L, XL, XXL, XXXL</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
+                  <span class="text-sm text-gray-900 dark:text-white">Putih, Hitam, Navy, Abu-abu, Krim</span>
+                </div>
+              </div>
             </div>
-          </section>
+
+            <!-- CTA Button -->
+            <div class="space-y-4">
+              <a href="/contact-us" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Pesan Sekarang
+              </a>
+              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
+                Lihat Produk Lainnya
+              </a>
+            </div>
+          </div>
         </div>
       </div>
   
@@ -153,59 +210,43 @@
           <p class="mt-2 text-lg text-gray-600 dark:text-gray-400 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
           <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
       
-            <!-- Product 1 -->
+            <!-- Kemeja 1 -->
             <div class="group relative">
-              <img loading="lazy" src={kemejaImg} alt="Kaos Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+              <img loading="lazy" src={kemejaImg} alt="Kemeja Glam Stitch warna biru." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/tshirt"><span aria-hidden="true" class="absolute inset-0"></span>Kaos</a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru Navy</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
               </div>
             </div>
       
-            <!-- Product 2 -->
+            <!-- Kemeja 2 -->
             <div class="group relative">
-              <img loading="lazy" src="https://i.pinimg.com/474x/dc/0c/f8/dc0cf89c241e8da2ec335ab995fbfd3a.jpg" alt="Kaos Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+              <img loading="lazy" src="https://i.pinimg.com/474x/dc/0c/f8/dc0cf89c241e8da2ec335ab995fbfd3a.jpg" alt="Kemeja Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/polo"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo</a>
-                  </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
               </div>
             </div>
       
-            <!-- Product 3 -->
+            <!-- Kemeja 3 -->
             <div class="group relative">
-              <img loading="lazy" src="https://img.freepik.com/premium-photo/mens-black-short-sleeve-shirt_53876-1021210.jpg?ga=GA1.1.1868222757.1738365469&w=740" alt="Kaos Glam Stitch warna charcoal." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/mens-black-short-sleeve-shirt_53876-1021210.jpg?ga=GA1.1.1868222757.1738365469&w=740" alt="Kemeja Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/jersey"><span aria-hidden="true" class="absolute inset-0"></span>Jersey</a>
-                  </h3>
                   <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
               </div>
             </div>
       
-            <!-- Product 4 -->
+            <!-- Kemeja 4 -->
             <div class="group relative">
-              <img loading="lazy" src="https://img.freepik.com/premium-photo/black-denim-jacket-mock-up-front-back-views-jeans-jacket-set_1008660-4054.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&w=740" alt="Kaos Glam Stitch warna sienna." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/black-denim-jacket-mock-up-front-back-views-jeans-jacket-set_1008660-4054.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&w=740" alt="Kemeja Glam Stitch warna abu-abu." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Jaket</a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Abu-abu</p>
                 </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 525.000</p>
               </div>
             </div>
       

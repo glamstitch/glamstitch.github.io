@@ -8,23 +8,10 @@
 	let { children } = $props();
 	
 	// State for dropdown menus
-	let productsDropdownOpen = $state(false);
 	let discoverDropdownOpen = $state(false);
-	
-	// Toggle functions
-	function toggleProductsDropdown() {
-		productsDropdownOpen = !productsDropdownOpen;
-		discoverDropdownOpen = false; // Close other dropdown
-		
-		// Reset animations when closing
-		if (!productsDropdownOpen) {
-			resetDropdownAnimations();
-		}
-	}
 	
 	function toggleDiscoverDropdown() {
 		discoverDropdownOpen = !discoverDropdownOpen;
-		productsDropdownOpen = false; // Close other dropdown
 		
 		// Reset animations when closing
 		if (!discoverDropdownOpen) {
@@ -36,7 +23,6 @@
 	function handleClickOutside(event: MouseEvent) {
 		const target = event.target as HTMLElement;
 		if (!target.closest('.dropdown-container')) {
-			productsDropdownOpen = false;
 			discoverDropdownOpen = false;
 			resetDropdownAnimations();
 		}
@@ -396,6 +382,31 @@
 		background-color: transparent !important;
 		display: none !important;
 	}
+
+	/* Specific: Ensure product collection images are visible in dark mode */
+	:global(html.dark section[class*="Product Gallery"] img),
+	:global(html.dark section[class*="Product Gallery"] .aspect-square img) {
+		opacity: 1 !important;
+		filter: none !important;
+		visibility: visible !important;
+		display: block !important;
+	}
+
+	/* Specific: Ensure product collection text is visible with proper background in dark mode */
+	:global(html.dark section[class*="Product Gallery"] .absolute.bottom-0),
+	:global(html.dark .bg-gradient-to-t.from-black\/60.to-transparent) {
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent) !important;
+		display: block !important;
+	}
+
+	/* Specific: Ensure text is visible in dark mode */
+	:global(html.dark section[class*="Product Gallery"] .text-white h3),
+	:global(html.dark section[class*="Product Gallery"] .text-white p) {
+		color: white !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+		display: block !important;
+	}
 	
 	/* Mobile menu dark mode improvements */
 	:global(html.dark .mobile-menu-item) {
@@ -473,61 +484,10 @@
 				Beranda
 			</a>
 
-			<!-- Products Dropdown -->
-			<div class="relative dropdown-container">
-				<button onclick={toggleProductsDropdown} class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 transition-colors duration-200">
-					Produk
-					<svg class="w-4 h-4 transition-transform duration-200 {productsDropdownOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-				</button>
-				{#if productsDropdownOpen}
-					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-0 z-50 backdrop-blur-sm">
-					<div class="py-2">
-						<a href="{base}/tshirt" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-								</svg>
-								Kaos
-							</span>
-						</a>
-						<a href="{base}/polo" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-								</svg>
-								Kaos Polo
-							</span>
-						</a>
-						<a href="{base}/jersey" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-								</svg>
-								Jersey
-							</span>
-						</a>
-						<a href="{base}/jacket" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-								</svg>
-								Jaket
-							</span>
-						</a>
-						<a href="{base}/shirts" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-								</svg>
-								Kemeja
-							</span>
-						</a>
-					</div>
-					</div>
-				{/if}
-			</div>
+			<!-- Products Link -->
+			<a href="{base}/product" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
+				Produk
+			</a>
 
 			<a href="{base}/services" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
 				Layanan
@@ -642,58 +602,10 @@
 				Beranda
 			</a>
 
-			<!-- Products Dropdown -->
-			<div class="relative">
-				<input type="checkbox" id="mobile-products" class="peer/products hidden" />
-				<label for="mobile-products" class="flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-all">
-					<span>Produk</span>
-					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/products:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/products:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
-					<a href="{base}/tshirt" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-							</svg>
-							Kaos
-						</span>
-					</a>
-					<a href="{base}/polo" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-							</svg>
-							Kaos Polo
-						</span>
-					</a>
-					<a href="{base}/jersey" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-							</svg>
-							Jersey
-						</span>
-					</a>
-					<a href="{base}/jacket" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-							</svg>
-							Jaket
-						</span>
-					</a>
-					<a href="{base}/shirts" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-							</svg>
-							Kemeja
-						</span>
-					</a>
-				</div>
-			</div>
+			<!-- Products Link -->
+			<a href="{base}/product" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
+				Produk
+			</a>
 
 			<a href="{base}/services" class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
 				Layanan

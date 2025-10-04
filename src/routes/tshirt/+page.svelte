@@ -126,9 +126,10 @@
             <div class="space-y-6">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deskripsi Produk</h3>
               <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                Kaos Glam Stitch hadir dengan gaya simpel dan elegan dalam tiga pilihan warna menawan. 
-                Ingin tampil berani? Pilih warna "Abu Heather". Untuk kesan premium, warna "Hitam" adalah pilihan tepat. 
-                Butuh tampilan segar dan bersih? Warna "Putih" siap menyempurnakan gayamu.
+                Kaos Glam Stitch dibuat dengan bahan katun yang super nyaman dan adem di kulit. 
+                Bahan berkualitas tinggi ini memiliki tekstur halus, tidak mudah kusut, dan menyerap keringat dengan baik. 
+                Jahitan rapi dan presisi memastikan kaos tahan lama meski dicuci berkali-kali. 
+                Cocok untuk aktivitas sehari-hari dengan kenyamanan maksimal sepanjang hari.
               </p>
             </div>
 
@@ -179,19 +180,16 @@
               <div class="space-y-4">
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600dark:text-gray-400">Bahan</span>
-                  <span class="text-sm text-gray-900 dark:text-white">100% Katun Combed</span>
+                  <span class="text-sm text-gray-900 dark:text-white">100% Katun</span>
                 </div>
-                <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Berat</span>
-                  <span class="text-sm text-gray-900 dark:text-white">180 GSM</span>
-                </div>
+              
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
                   <span class="text-sm text-gray-900 dark:text-white">S, M, L, XL, XXL</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
-                  <span class="text-sm text-gray-900 dark:text-white">Putih, Hitam, Abu Heather</span>
+                  <span class="text-sm text-gray-900 dark:text-white">30++ Pilihan Warna</span>
                 </div>
               </div>
             </div>
@@ -215,63 +213,51 @@
       <!-- Produk Terkait -->
       <section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Produk Terkait</h2>
-          <p class="mt-2 text-lg text-gray-600 dark:text-gray-400 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
+          <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Contoh Produk</h2>
+          <p class="mt-2 text-lg text-gray-600 dark:text-gray-400 text-center">Tersedia berbagai pilihan stylish dan warna untuk setiap kesempatan.</p>
           <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
   
             <!-- Produk 1 -->
             <div class="group relative">
               <img loading="lazy" src="https://i.pinimg.com/736x/50/31/57/5031570ca2bae383dc3d83f004bc0dfe.jpg" alt="Kaos Glam Stitch warna hitam." class="product-image aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
-              <div class="mt-4 flex justify-between">
-                <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/polo"><span aria-hidden="true" class="absolute inset-0"></span>Kaos Polo</a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hitam</p>
-                </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 675.000</p>
+              <div class="mt-4">
+                <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                  Kaos Polos
+                </h3>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Hitam</p>
               </div>
             </div>
   
             <!-- Produk 2 -->
             <div class="group relative">
               <img loading="lazy" src="https://i.pinimg.com/1200x/13/b2/76/13b276b0d66c061db118c221cedede16.jpg" alt="Kaos Glam Stitch warna putih." class="product-image aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
-              <div class="mt-4 flex justify-between">
-                <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/jersey"><span aria-hidden="true" class="absolute inset-0"></span>Jersey</a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
-                </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 425.000</p>
+              <div class="mt-4">
+                <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                  Kaos Polos
+                </h3>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Putih</p>
               </div>
             </div>
   
             <!-- Produk 3 -->
             <div class="group relative">
               <img loading="lazy" src="https://i.pinimg.com/736x/ce/ce/1d/cece1df8b729e01bd3d83bc40ef05719.jpg" alt="Kaos Glam Stitch warna charcoal." class="product-image aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
-              <div class="mt-4 flex justify-between">
-                <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Jaket</a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Abu Tua</p>
-                </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 750.000</p>
+              <div class="mt-4">
+                <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                  Kaos Polos
+                </h3>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Abu Tua</p>
               </div>
             </div>
   
             <!-- Produk 4 -->
             <div class="group relative">
               <img loading="lazy" src="https://i.pinimg.com/1200x/4c/65/50/4c655089c21ad4e55e97bf7dfa626d6a.jpg" alt="Kaos Glam Stitch warna sienna." class="product-image aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
-              <div class="mt-4 flex justify-between">
-                <div>
-                  <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                    <a href="/shirts"><span aria-hidden="true" class="absolute inset-0"></span>Kemeja</a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Sienna</p>
-                </div>
-                <p class="text-sm font-medium text-gray-900 dark:text-white">Rp 650.000</p>
+              <div class="mt-4">
+                <h3 class="text-sm text-gray-700 dark:text-gray-200">
+                  Kaos Polos
+                </h3>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Coklat</p>
               </div>
             </div>
   
