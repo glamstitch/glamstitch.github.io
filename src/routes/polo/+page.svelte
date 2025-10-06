@@ -183,8 +183,8 @@
                 </div>
               
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Ukuran</span>
-                  <span class="text-sm text-gray-900dark:text-white">S, M, L, XL, XXL</span>
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
+                  <span class="text-sm text-gray-900 dark:text-white">XS, S, M, L, XL, XXL, XXXL, XXXXL</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600dark:text-gray-400">Warna</span>
@@ -260,6 +260,165 @@
               </div>
             </div>
   
+          </div>
+        </div>
+      </section>
+
+      <!-- Size Chart Section -->
+      <section aria-labelledby="size-chart-heading" class="bg-white dark:bg-gray-900 py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 id="size-chart-heading" class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              Panduan Ukuran Kaos Polo
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Gunakan panduan ukuran berikut untuk memastikan Anda mendapatkan kaos polo dengan ukuran yang tepat dan nyaman.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Size Chart Table -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
+                Tabel Ukuran Kaos Polo Glam Stitch
+              </h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                      <th class="text-left py-3 px-2 font-semibold text-gray-900 dark:text-white">Ukuran</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900 dark:text-white">Panjang (cm)</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900 dark:text-white">Lebar (cm)</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900 dark:text-white">Lingkar Dada (cm)</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XS</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">66</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">44</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">88</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">S</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">68</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">47</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">93</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">M</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">70</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">50</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">98</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">L</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">72</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">53</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">103</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XL</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">74</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">56</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">108</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XXL</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">76</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">59</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">113</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XXXL</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">78</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">62</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">118</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XXXXL</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">80</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">65</td>
+                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">123</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <!-- Tips -->
+              <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h4 class="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-1">Tips Memilih Ukuran Polo</h4>
+                    <p class="text-sm text-blue-800 dark:text-blue-200">
+                      Kaos polo memiliki potongan yang lebih fitted dibanding kaos biasa. Pertimbangkan untuk memilih satu ukuran lebih besar untuk kenyamanan optimal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Size Chart Image -->
+            <div class="space-y-6">
+              <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+                <img loading="lazy" 
+                  src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=600&fit=crop&crop=center" 
+                  alt="Panduan ukuran kaos polo - cara mengukur kaos polo dengan benar"
+                  class="h-full w-full object-cover object-center hover:scale-105 transition-transform duration-300">
+              </div>
+              
+              <!-- How to Measure Guide -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  Cara Mengukur Kaos Polo
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3">
+                    <div class="flex-shrink-0 w-6 h-6 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
+                      <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">1</span>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Panjang Polo</h4>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur dari bahu hingga bagian bawah kaos polo</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <div class="flex-shrink-0 w-6 h-6 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
+                      <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">2</span>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Lebar Polo</h4>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur dari ketiak kiri hingga ketiak kanan</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <div class="flex-shrink-0 w-6 h-6 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
+                      <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">3</span>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Lingkar Dada</h4>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur keliling dada pada bagian terlebar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="mt-12 text-center">
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
+              Masih bingung dengan ukuran? Tim customer service kami siap membantu Anda!
+            </p>
+            <a href="/contact-us" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              Konsultasi Ukuran
+            </a>
           </div>
         </div>
       </section>
