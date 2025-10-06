@@ -135,7 +135,7 @@
             <!-- Fitur Unggulan -->
             <div class="space-y-4">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Fitur Unggulan</h3>
-              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div class="grid grid-cols-1 gap-4">
                 <div class="flex items-start space-x-3">
                   <div class="flex-shrink-0">
                     <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
@@ -178,17 +178,17 @@
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Detail Produk</h3>
               <div class="space-y-4">
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Bahan</span>
-                  <span class="text-sm text-gray-900 dark:text-white">100% Pique Cotton</span>
+                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Bahan</span>
+                  <span class="text-sm text-gray-900dark:text-white">100% Pique Cotton</span>
                 </div>
               
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
-                  <span class="text-sm text-gray-900 dark:text-white">S, M, L, XL, XXL</span>
+                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Ukuran</span>
+                  <span class="text-sm text-gray-900dark:text-white">S, M, L, XL, XXL</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
-                  <span class="text-sm text-gray-900 dark:text-white">15+ Pilihan Warna</span>
+                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Warna</span>
+                  <span class="text-sm text-gray-900dark:text-white">15+ Pilihan Warna</span>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@
                 </svg>
                 Pesan Sekarang
               </a>
-              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
+              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
                 Lihat Produk Lainnya
               </a>
             </div>
@@ -307,7 +307,6 @@
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
               <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
               <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
-              <li><a href="/faq" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">FAQ</a></li>
             </ul>
           </div>
           
@@ -318,7 +317,7 @@
               <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
               <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -328,10 +327,11 @@
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
               <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>

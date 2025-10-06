@@ -28,10 +28,7 @@
         <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">
           Ada pertanyaan atau ingin memulai pemesanan? Kami dengan senang hati akan membantu Anda mendapatkan solusi terbaik.
         </p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="/contact-us" class="rounded-md bg-indigo-500 px-6 py-3 text-sm font-semibold text-white hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" aria-label="Hubungi Kami">Hubungi Kami</a>
-          <a href="/blog" class="text-sm font-semibold text-white hover:text-indigo-400" aria-label="Lihat Artikel Blog">Lihat Artikel <span aria-hidden="true">→</span></a>
-        </div>
+        ]
       </div>
     </div>
   </div>
@@ -51,81 +48,36 @@
         </p>
       </div>
   
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-1 gap-16 items-center">
   
-        <!-- Left: Form -->
-        <div>
-          <form class="grid grid-cols-1 gap-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-900dark:text-white">Nama Lengkap</label>
-              <input type="text" id="name" name="name" autocomplete="name"
-                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-black shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
-                required>
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-900dark:text-white">Email</label>
-              <input type="email" id="email" name="email" autocomplete="email"
-                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-black shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
-                required>
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-900dark:text-white">Pesan</label>
-              <textarea id="message" name="message" rows="4"
-                class="mt-2 w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-black shadow-sm focus:border-indigo-500 focus:ring-indigo-500 px-4 py-3"
-                required></textarea>
-            </div>
-            <div>
-              <button type="submit"
-                class="w-full inline-flex justify-center items-center rounded-xl bg-indigo-600 px-6 py-3 text-white font-semibold hover:bg-indigo-700 transition">
-                Kirim Pesan
-              </button>
-            </div>
-          </form>
-        </div>
-  
-        <!-- Right: Contact Info -->
-        <div class="space-y-8">
-          <!-- Email -->
-          <div class="flex items-start gap-4">
-            <div class="flex h-16 w-16 items-center justify-center">
-              <img loading="lazy" src="https://img.freepik.com/premium-vector/envelope-vector-illustration_1186366-13489.jpg" alt="Email Icon" class="h-16 w-16 object-cover">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-mail</h3>
-              <p><a href="mailto:glamstitch@gmail.com" class="text-indigo-600 dark:text-indigo-400 hover:underline">glamstitch@gmail.com</a></p>
-            </div>
-          </div>
-  
+        <!-- Contact Info -->
+        <div class="space-y-8 max-w-4xl mx-auto">
           <!-- WhatsApp -->
-          <div class="flex items-start gap-4">
-            <div class="flex h-16 w-16 items-center justify-center">
-              <img loading="lazy" src="https://img.freepik.com/premium-photo/whatsapp-logo_1080029-96.jpg" alt="WhatsApp Icon" class="h-16 w-16 object-cover">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Whatsapp</h3>
-              <p><a href="https://wa.me/6288222885137" class="text-indigo-600 dark:text-indigo-400 hover:underline">+61-882-2288-5137</a></p>
-            </div>
-          </div>
-  
-          <!-- Instagram -->
-          <div class="flex items-start gap-4">
-            <div class="flex h-16 w-16 items-center justify-center">
-              <img loading="lazy" src="https://img.freepik.com/premium-vector/art-illustration_929495-37.jpg" alt="Instagram Icon" class="h-16 w-16 object-cover">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Instagram</h3>
-              <p><a href="https://www.instagram.com/kaospolosglamstitch/" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">@glamstitch</a></p>
-            </div>
-          </div>
-  
-          <!-- Location -->
-          <div class="flex items-start gap-4">
-            <div class="flex h-16 w-16 items-center justify-center">
-              <img loading="lazy" src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg" alt="Location Icon" class="h-16 w-16 object-cover">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lokasi</h3>
-              <p><a href="https://maps.app.goo.gl/yofiVrQbDJmkiRkY7" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">Kabupaten Subang, Jawa Barat 41271</a></p>
+          <div class="rounded-2xl p-8 shadow-lg border border-green-100dark:border-green-800 hover:shadow-xl transition-all duration-300">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <!-- WhatsApp Icon -->
+              <div class="flex-shrink-0">
+                <div class="bg-green-500 p-4 rounded-full shadow-lg">
+                  <svg class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                  </svg>
+                </div>
+              </div>
+              
+              <!-- Content -->
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl font-bold text-gray-900dark:text-white mb-2">Hubungi Kami via WhatsApp</h3>
+                <p class="text-gray-600dark:text-gray-300 mb-4 text-lg">
+                  Dapatkan konsultasi langsung dan respon cepat untuk kebutuhan konveksi Anda
+                </p>
+                <a href="https://wa.me/6285172202151" 
+                   class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                  Chat Sekarang
+                </a>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-3">
+                  ⏰ Operasional 08.00 - 17.00 WIB
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -175,7 +127,6 @@
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
               <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
               <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
-              <li><a href="/faq" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">FAQ</a></li>
             </ul>
           </div>
           
@@ -186,7 +137,7 @@
               <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
               <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -196,10 +147,11 @@
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
               <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>

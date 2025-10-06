@@ -124,7 +124,8 @@
             <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div class="mb-4 p-3 bg-indigo-600 text-white rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l2-2 2 2M12 10v4M19 10v6a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2h12a2 2 0 012 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Visi</h3>
@@ -137,7 +138,7 @@
             <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div class="mb-4 p-3 bg-indigo-600 text-white rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-4 4m0 0l4 4m-4-4h16"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Misi 1</h3>
@@ -150,7 +151,7 @@
             <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div class="mb-4 p-3 bg-indigo-600 text-white rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Misi 2</h3>
@@ -163,7 +164,7 @@
             <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div class="mb-4 p-3 bg-indigo-600 text-white rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Komitmen Kualitas</h3>
@@ -176,7 +177,7 @@
             <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div class="mb-4 p-3 bg-indigo-600 text-white rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l-3-3m0 0L7 7m3-3v14"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Inovasi</h3>
@@ -189,7 +190,7 @@
             <div class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
                 <div class="mb-4 p-3 bg-indigo-600 text-white rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5l8-3 8 3v12l-8 3-8-3V5z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Keberlanjutan</h3>
@@ -212,60 +213,50 @@
         <!-- Timeline -->
         <div class="space-y-16 relative border-l-4 border-indigo-500 dark:border-indigo-300 pl-8">
           
-          <!-- 2020 -->
+          <!-- 2017 -->
           <div class="relative animate__animated animate__fadeIn animate__delay-1s">
+            <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2017</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <img loading="lazy" src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2017" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <div class="text-gray-700 dark:text-gray-300 text-lg">
+                Awal mula berdirinya Glam Stitch di Kecamatan Kalijati pada tahun 2017, dimulai dari sebuah rumah kecil dengan mesin jahit sederhana dan semangat besar untuk memberikan kualitas terbaik.
+              </div>
+            </div>
+          </div>
+
+          <!-- 2020 -->
+          <div class="relative animate__animated animate__fadeIn animate__delay-2s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2020</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img loading="lazy" src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2020" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2020" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
-                Awal mula berdirinya Glam Stitch, dimulai dari sebuah rumah kecil di Cijoged dengan mesin jahit sederhana dan semangat besar untuk memberikan kualitas terbaik.
-              </div>
-            </div>
-          </div>
-
-          <!-- 2021 -->
-          <div class="relative animate__animated animate__fadeIn animate__delay-2s">
-            <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2021</div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img loading="lazy" src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2021" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700 dark:text-gray-300 text-lg">
-                Memperluas layanan dengan mulai menerima pesanan dalam jumlah besar dari komunitas dan sekolah. Glam Stitch mulai dikenal di wilayah lokal.
-              </div>
-            </div>
-          </div>
-
-          <!-- 2022 -->
-          <div class="relative animate__animated animate__fadeIn animate__delay-3s">
-            <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2022</div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img loading="lazy" src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2022" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700 dark:text-gray-300 text-lg">
-                Tahun inovasi. Kami memperkenalkan layanan custom desain dan menambah 5 mesin jahit industri untuk meningkatkan kapasitas produksi.
+                Mulai meluaskan layanan dengan menerima pesanan dalam jumlah besar dari komunitas dan sekolah. Glam Stitch mulai dikenal di wilayah lokal dan sekitarnya.
               </div>
             </div>
           </div>
 
           <!-- 2023 -->
-          <div class="relative animate__animated animate__fadeIn animate__delay-4s">
+          <div class="relative animate__animated animate__fadeIn animate__delay-3s">
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2023</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img loading="lazy" src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2023" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2023" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
-                Glam Stitch meluncurkan website resmi dan menjangkau pelanggan dari seluruh Indonesia. Jaringan reseller pun mulai dibentuk.
+                Pembangunan pabrik baru untuk meningkatkan kapasitas produksi dan melayani permintaan yang semakin besar dari pelanggan.
               </div>
             </div>
           </div>
 
-          <!-- 2024 -->
-          <div class="relative animate__animated animate__fadeIn animate__delay-5s">
-            <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2024</div>
+          <!-- 2025 -->
+          <div class="relative animate__animated animate__fadeIn animate__delay-4s">
+            <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2025</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img loading="lazy" src="https://img.freepik.com/free-vector/new-employee-concept-illustration_114360-7805.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2024" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
+              <img loading="lazy" src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2025" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
               <div class="text-gray-700 dark:text-gray-300 text-lg">
-                Kini Glam Stitch telah menjadi konveksi terpercaya dengan lebih dari 100 klien aktif. Kami terus berkomitmen memberikan pelayanan terbaik.
+                Mencapai pencapaian luar biasa dengan 1000+ pelanggan aktif dan 150 ribu pcs terjual per tahun. Glam Stitch telah menjadi konveksi terpercaya di Indonesia.
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -313,7 +304,6 @@
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
               <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
               <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
-              <li><a href="/faq" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">FAQ</a></li>
             </ul>
           </div>
           
@@ -324,7 +314,7 @@
               <li><a href="{base}/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="{base}/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="{base}/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="{base}/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="{base}/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
               <li><a href="{base}/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -334,10 +324,11 @@
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
               <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>

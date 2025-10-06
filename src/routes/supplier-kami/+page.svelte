@@ -1,130 +1,124 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
-  import galleryMain from '$lib/assets/image/gallery.jpg';
-  import gallery1 from '$lib/assets/image/gallery1.jpg';
-  import gallery2 from '$lib/assets/image/gallery2.jpg';
-  import gallery3 from '$lib/assets/image/gallery3.jpg';
-  import gallery4 from '$lib/assets/image/gallery4.jpg';
+  import supplierMain from '$lib/assets/image/gallery.jpg';
+  import supplier1 from '$lib/assets/image/gallery1.jpg';
+  import supplier2 from '$lib/assets/image/gallery2.jpg';
+  import supplier3 from '$lib/assets/image/gallery3.jpg';
+  import supplier4 from '$lib/assets/image/gallery4.jpg';
   import logoGlint from '$lib/assets/image/logo glint.png';
   import poto7 from '$lib/assets/image/poto7.jpg'
 </script>
 
 <svelte:head>
-  <title>Tim Kami - Glam Stitch | Portfolio Karya Konveksi Terbaik</title>
-  <meta name="description" content="Lihat portfolio karya konveksi terbaik dari Glam Stitch. Galeri lengkap hasil sablon, bordir, dan konveksi berkualitas tinggi untuk berbagai kebutuhan." />
-  <meta name="keywords" content="galeri konveksi, portfolio karya, hasil sablon, bordir berkualitas, konveksi terbaik" />
+  <title>Supplier Kami - Glam Stitch | Mitra Terpercaya Konveksi Berkualitas</title>
+  <meta name="description" content="Temukan supplier terpercaya Glam Stitch yang menyediakan bahan berkualitas tinggi untuk konveksi, sablon, dan bordir. Mitra terbaik untuk kebutuhan produksi Anda." />
+  <meta name="keywords" content="supplier konveksi, bahan berkualitas, mitra terpercaya, supplier kain, bahan sablon" />
 </svelte:head>
 
 <!-- Hero Header -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
 	<img loading="lazy"
-		src={galleryMain}
-		alt="Glam Stitch Gallery"
+		src={supplierMain}
+		alt="Supplier Glam Stitch"
 		class="hero-section absolute inset-0 -z-10 w-full h-full object-cover"/>
 	<div class="absolute inset-0 -z-10 bg-black/50"></div>
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40 text-center">
-			<h1 class="text-4xl sm:text-6xl font-bold text-white">Informasi Tim Glam Stitch</h1>
+			<h1 class="text-4xl sm:text-6xl font-bold text-white">Supplier Terpercaya Kami</h1>
 			<p class="mt-6 text-lg text-gray-300 sm:text-xl">
-				Menyajikan gambaran lengkap tentang aktivitas dan suasana kerja di Glam Stitch —
-				mulai dari toko utama, gudang penyimpanan, proses produksi hingga area kasir.
+				Bekerja sama dengan supplier terbaik untuk menyediakan bahan berkualitas tinggi —
+				mulai dari kain premium, benang berkualitas, hingga aksesoris konveksi terbaik.
 			</p>
 		</div>
 	</div>
 </section>
 
-<!-- Gallery Section -->
+<!-- Supplier Section -->
 <section class="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16 space-y-32">
 
-		<!-- 1. Toko -->
+		<!-- 1. Supplier Kain Premium -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
 			<img loading="lazy"
-				src={gallery4}
-				alt="Toko Glam Stitch"
+				src={supplier4}
+				alt="Supplier Kain Premium"
 				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Toko Utama Glam Stitch</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Supplier Kain Premium</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Di toko utama Glam Stitch, pelanggan dapat melihat langsung beragam contoh produk seperti kaos polos,
-					jaket, dan seragam custom. Area ini dirancang dengan nuansa modern dan pencahayaan hangat
-					agar pelanggan merasa nyaman saat berkonsultasi maupun memilih bahan.
-					Tim kami siap membantu Anda menemukan desain terbaik sesuai kebutuhan bisnis, komunitas, atau acara.
+					Kami bekerja sama dengan supplier kain terpercaya yang menyediakan berbagai jenis kain berkualitas tinggi.
+					Dari katun combed, polyester, hingga kain khusus untuk seragam. Setiap supplier telah melalui proses seleksi ketat
+					untuk memastikan kualitas bahan yang konsisten dan sesuai standar internasional.
 				</p>
 			</div>
 		</div>
 
-		<!-- 2. Tim Glam Stitch-->
+		<!-- 2. Supplier Benang & Aksesoris-->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Tim Kami</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Supplier Benang & Aksesoris</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Tim profesional Glam Stitch terdiri dari desainer berpengalaman, penjahit terampil, dan teknisi sablon ahli.
-					Setiap anggota tim memiliki keahlian khusus dalam bidangnya masing-masing, mulai dari desain grafis,
-					teknik jahit, hingga proses finishing. Kami bekerja sama dengan kompak untuk menghasilkan produk berkualitas tinggi
-					yang memenuhi standar terbaik sesuai kebutuhan pelanggan.
+					Untuk memastikan kualitas jahitan yang sempurna, kami bermitra dengan supplier benang terbaik.
+					Benang yang kami gunakan memiliki ketahanan tinggi, tidak mudah putus, dan memberikan hasil jahitan yang rapi.
+					Selain itu, kami juga bekerja sama dengan supplier aksesoris seperti kancing, resleting, dan label berkualitas.
 				</p>
 			</div>
 			<img loading="lazy"
 				src={poto7}
-				alt="Tim Glam Stitch"
+				alt="Supplier Benang & Aksesoris"
 				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 		</div>
 
-		<!-- 3. Gudang -->
+		<!-- 3. Supplier Bahan Sablon -->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
 			<img loading="lazy"
-				src={gallery1}
-				alt="Gudang Glam Stitch"
+				src={supplier1}
+				alt="Supplier Bahan Sablon"
 				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Gudang Penyimpanan</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Supplier Bahan Sablon</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Gudang Glam Stitch menjadi pusat penyimpanan bahan baku seperti kain, benang, dan aksesoris jahit.
-					Sistem penyimpanan kami tertata rapi dengan labelisasi digital untuk memastikan
-					setiap bahan mudah dilacak dan diambil kapan saja dibutuhkan.
-					Kebersihan dan sirkulasi udara gudang selalu dijaga untuk mempertahankan kualitas bahan terbaik.
+					Untuk layanan sablon berkualitas tinggi, kami bermitra dengan supplier tinta sablon dan bahan pendukung terbaik.
+					Tinta yang kami gunakan memiliki daya tahan warna yang excellent dan ramah lingkungan.
+					Setiap supplier telah teruji kualitasnya untuk memastikan hasil sablon yang tajam dan tahan lama.
 				</p>
 			</div>
-	
 		</div>
 
-		<!-- 4. Tempat Produksi -->
+		<!-- 4. Supplier Mesin & Peralatan -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Produksi & Penjahitan</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Supplier Mesin & Peralatan</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Area produksi adalah jantung dari Glam Stitch. Di sinilah seluruh proses penjahitan, sablon, dan finishing dilakukan.
-					Dilengkapi dengan mesin jahit industri modern dan peralatan sablon berkualitas tinggi,
-					setiap produk dikerjakan oleh tenaga profesional berpengalaman.
-					Kami selalu mengutamakan ketelitian dan kebersihan di setiap tahap untuk menghasilkan produk yang sempurna.
+					Kami bekerja sama dengan supplier mesin jahit dan peralatan konveksi terpercaya untuk memastikan
+					proses produksi berjalan lancar dan efisien. Mesin-mesin yang kami gunakan adalah produk terbaru
+					dengan teknologi canggih untuk menghasilkan kualitas jahitan yang sempurna dan konsisten.
 				</p>
 			</div>
 			<img loading="lazy"
-			src={gallery2}
-			alt="Tempat Produksi Glam Stitch"
+			src={supplier2}
+			alt="Supplier Mesin & Peralatan"
 			class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 		/>
 		</div>
 
-		<!-- 5. Kasir -->
+		<!-- 5. Komitmen Kualitas -->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
 			<img loading="lazy"
-				src={gallery3}
-				alt="Kasir Glam Stitch"
+				src={supplier3}
+				alt="Komitmen Kualitas Supplier"
 				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Kasir & Pelayanan</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Komitmen Kualitas Bersama</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Bagian kasir merupakan tempat akhir dari pengalaman berbelanja pelanggan di Glam Stitch.
-					Di sini, staf kami memberikan pelayanan ramah dan cepat dalam proses pembayaran maupun konsultasi akhir.
-					Selain itu, area kasir juga menjadi tempat untuk pengambilan produk jadi bagi pelanggan yang telah melakukan pemesanan sebelumnya.
-					Kami berkomitmen memberikan pengalaman terbaik dari awal hingga akhir proses pembelian Anda.
+					Setiap supplier yang bermitra dengan kami telah menandatangani komitmen kualitas yang ketat.
+					Kami melakukan audit berkala untuk memastikan standar kualitas terjaga dan sesuai dengan ekspektasi pelanggan.
+					Hubungan kemitraan yang saling menguntungkan ini memungkinkan kami memberikan produk terbaik dengan harga kompetitif.
 				</p>
 			</div>
 		</div>
@@ -132,7 +126,6 @@
 	</div>
 </section>
 
-<!-- Footer -->
 <!-- Footer -->
 <footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -208,4 +201,3 @@
 		</div>
 	</div>
 </footer>
-

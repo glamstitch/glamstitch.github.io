@@ -4,30 +4,30 @@
 </script>
 
 <svelte:head>
-  <title>Hoodie/Sweater - Glam Stitch | Konveksi Hoodie & Sweater Fashion</title>
-  <meta name="description" content="Pesan hoodie dan sweater fashion berkualitas dari Glam Stitch. Konveksi hoodie/sweater dengan berbagai model, bahan premium, dan desain trendy." />
-  <meta name="keywords" content="hoodie, sweater, konveksi hoodie, konveksi sweater, hoodie fashion, sweater casual, bahan premium, desain trendy" />
+  <title>Sweater - Glam Stitch | Konveksi Sweater Fashion Berkualitas</title>
+  <meta name="description" content="Pesan sweater fashion berkualitas dari Glam Stitch. Konveksi sweater dengan berbagai model, bahan premium, dan desain trendy untuk gaya kasual yang stylish." />
+  <meta name="keywords" content="sweater, konveksi sweater, sweater fashion, sweater casual, bahan premium, desain trendy, sweater hangat" />
 </svelte:head>
 
 <style type="text/tailwindcss"></style>
   
 <!-- Hero Section -->
 <div class="hero-section relative isolate overflow-hidden pt-6">
-    <img loading="lazy" src="https://img.freepik.com/free-photo/fashionable-men-jacket-hanging-clothing-store-generated-by-ai_188544-40066.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Hoodie/Sweater Glam Stitch" class="absolute inset-0 -z-10 w-full h-full object-cover">
+    <img loading="lazy" src="https://img.freepik.com/free-photo/fashionable-men-jacket-hanging-clothing-store-generated-by-ai_188544-40066.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Sweater Glam Stitch" class="absolute inset-0 -z-10 w-full h-full object-cover">
     <div class="absolute inset-0 -z-10 bg-black/50"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32 text-center">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full px-3 py-1 text-sm text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-            Eksplor pilihan hoodie/sweater custom berkualitas dari Glam Stitch.
+            Eksplor pilihan sweater custom berkualitas dari Glam Stitch.
             <a href="/" class="font-semibold text-white">
               <span class="absolute inset-0" aria-hidden="true"></span>Beranda <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
-        <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Produk Hoodie/Sweater Glam Stitch</h1>
-        <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">Temukan berbagai model hoodie/sweater custom yang stylish, hangat, dan cocok untuk keperluan komunitas, kantor, hingga kebutuhan brand Anda.</p>
+        <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Produk Sweater Glam Stitch</h1>
+        <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">Temukan berbagai model sweater custom yang stylish, hangat, dan cocok untuk keperluan komunitas, kantor, hingga kebutuhan brand Anda.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
             <a href="/jacket" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
               Pesan Sekarang
@@ -46,13 +46,13 @@
     <section aria-labelledby="sale-heading" class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-24 text-center sm:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <h2 id="sale-heading" class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-5xl">
-          Dapatkan Kualitas Terbaik untuk Hoodie/Sweater Glam Stitch Anda
+          Dapatkan Kualitas Terbaik untuk Sweater Glam Stitch Anda
         </h2>
         <p class="mx-auto mt-8 max-w-xl text-base text-gray-600 dark:text-gray-400">
-          Sebagian besar produk kami dibuat dalam jumlah terbatas. Segera pesan Hoodie/Sweater Glam Stitch berkualitas tinggi sebelum habis!
+          Sebagian besar produk kami dibuat dalam jumlah terbatas. Segera pesan Sweater Glam Stitch berkualitas tinggi sebelum habis!
         </p>
         <a href="/#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 text-white px-8 py-3 font-medium hover:bg-gray-800 sm:w-auto focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-indigo-600 dark:hover:bg-indigo-500">
-            Dapatkan Akses ke Produk Hoodie/Sweater Glam Stitch Kami
+            Dapatkan Akses ke Produk Sweater Glam Stitch Kami
         </a>
       </div>
     </section>
@@ -105,10 +105,10 @@
           <div class="space-y-8">
             <div>
               <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                Hoodie & Sweater Premium
+                Sweater Premium
               </h1>
               <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                Hoodie/Sweater berkualitas tinggi dengan desain modern dan stylish
+                Sweater berkualitas tinggi dengan desain modern dan stylish
               </p>
             </div>
 
@@ -116,14 +116,14 @@
             <div class="space-y-6">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deskripsi Produk</h3>
               <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                Hoodie dan Sweater Glam Stitch hadir dengan desain modern yang memadukan kenyamanan dan gaya. Terbuat dari bahan berkualitas tinggi dengan berbagai pilihan warna yang trendy. Cocok untuk aktivitas outdoor, hangout santai, atau sebagai bagian dari koleksi fashion Anda.
+                Sweater Glam Stitch dirancang khusus untuk memberikan kehangatan dan kenyamanan dengan desain yang stylish dan modern. Terbuat dari bahan berkualitas tinggi yang lembut dan hangat, sweater kami cocok untuk aktivitas sehari-hari, hangout santai, atau sebagai pelengkap fashion statement Anda. Dengan teknologi breathable dan fit yang ergonomis, sweater ini memberikan kenyamanan maksimal dalam berbagai kesempatan.
               </p>
             </div>
 
             <!-- Fitur Unggulan -->
             <div class="space-y-4">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Fitur Unggulan</h3>
-              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div class="grid grid-cols-1 gap-4">
                 <div class="flex items-start space-x-3">
                   <div class="flex-shrink-0">
                     <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
@@ -156,6 +156,14 @@
                   </div>
                   <p class="text-sm text-gray-700 dark:text-gray-300">Berbagai pilihan warna yang trendy</p>
                 </div>
+                <div class="flex items-start space-x-3">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Cocok untuk berbagai kesempatan dan gaya</p>
+                </div>
               </div>
             </div>
           </div>
@@ -165,18 +173,19 @@
             <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Detail Produk</h3>
               <div class="space-y-4">
-                <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Bahan</span>
-                  <span class="text-sm text-gray-900 dark:text-white">Fleece Premium / Cotton Fleece</span>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-medium text-gray-600dark:text-white">Bahan</span>
+                  <span class="text-sm text-gray-900dark:text-white">Fleece Premium / Cotton Fleece</span>
                 </div>
               
-                <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
-                  <span class="text-sm text-gray-900 dark:text-white">S, M, L, XL, XXL, XXXL</span>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-medium text-gray-600dark:text-white">Ukuran</span>
+                  <span class="text-sm text-gray-900dark:text-white">S, M, L, XL, XXL, XXXL</span>
                 </div>
-                <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
-                  <span class="text-sm text-gray-900 dark:text-white">10+ Pilihan Warna</span>
+                
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-medium text-gray-600dark:text-white">Warna</span>
+                  <span class="text-sm text-gray-900dark:text-white">10+ Pilihan Warna</span>
                 </div>
               </div>
             </div>
@@ -189,7 +198,7 @@
                 </svg>
                 Pesan Sekarang
               </a>
-              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
+              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700dark:text-gray-200 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
                 Lihat Produk Lainnya
               </a>
             </div>
@@ -199,7 +208,7 @@
       <!-- Produk Terkait -->
 <section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Produk Terkait</h2>
+      <h2 id="related-products-heading" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Contoh Produk</h2>
       <p class="mt-2 text-lg text-gray-400 dark:text-gray-200 text-center">Lihat produk Glam Stitch lainnya yang bisa kamu sukai. Tersedia berbagai pilihan stylish untuk setiap kesempatan.</p>
       <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         <!-- Hoodie/Sweater 1 -->
@@ -296,7 +305,6 @@
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
               <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
               <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
-              <li><a href="/faq" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">FAQ</a></li>
             </ul>
           </div>
           
@@ -317,10 +325,11 @@
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
               <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>

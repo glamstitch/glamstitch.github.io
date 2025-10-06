@@ -127,9 +127,9 @@
               Custom
             </div>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Custom Desain Baju</h3>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Custom</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Bebaskan kreativitasmu! Bekerja sama dengan tim desain kami untuk menciptakan pakaian yang unik.
+            Bebaskan kreativitasmu! Bekerja sama dengan tim desain kami untuk menciptakan pakaian yang unik sesuai kebutuhan Anda.
           </p>
           <a href="/project-sveltekit/#" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
             Pelajari Lebih Lanjut
@@ -139,7 +139,7 @@
           </a>
           <div class="mt-6">
             <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-xl transition">
-              Konsultasi Desain
+              Pesan Custom
             </button>
           </div>
         </div>
@@ -182,7 +182,7 @@
         <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
           <dt class="text-2xl font-semibold text-white">Ukuran Lengkap</dt>
           <dd class="mt-2 text-white text-sm">
-            Tersedia semua ukuran dari XS sampai XXL. Bisa juga custom sesuai permintaan.
+            Tersedia semua ukuran dari XS sampai XXXXL. Bisa juga custom sesuai permintaan.
           </dd>
         </div>
   
@@ -226,26 +226,14 @@
       </div>
       
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Senin - Jumat -->
+        <!-- Senin - Sabtu -->
         <div class="flex justify-center items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-105">
           <div class="text-center">
-            <img src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo=" alt="Senin-Jumat" class="mx-auto mb-4 h-16 w-16 text-indigo-600">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Senin - Jumat</h3>
-            <p class="text-lg text-blue-500 dark:text-blue-400">09:00 - 18:00</p>
+            <img src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo=" alt="Senin-Sabtu" class="mx-auto mb-4 h-16 w-16 text-indigo-600">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Senin - Sabtu</h3>
+            <p class="text-lg text-blue-500 dark:text-blue-400">09:00 - 15:00</p>
             <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Kami siap melayani Anda pada hari kerja, Senin hingga Jumat, dari pukul 09:00 hingga 18:00. Anda bisa menghubungi kami untuk berbagai kebutuhan, mulai dari konsultasi hingga pemesanan produk.
-            </p>
-          </div>
-        </div>
-        
-        <!-- Sabtu -->
-        <div class="flex justify-center items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-105">
-          <div class="text-center">
-            <img src="https://media.istockphoto.com/id/1780573447/id/vektor/ikon-doodle-kartun-yang-digambar-tangan-tanda-pintu-terbuka-dengan-latar-belakang-putih.jpg?s=612x612&w=0&k=20&c=jn27-Nm3EE_J92m_vuFezE0jVOAIoHIrFErW_5DEi6I=" alt="Sabtu" class="mx-auto mb-4 h-16 w-16 text-indigo-600">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Sabtu</h3>
-            <p class="text-lg text-blue-500 dark:text-blue-400">09:00 - 14:00</p>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Sabtu adalah hari kerja setengah hari, dari pukul 09:00 hingga 14:00. Meskipun waktunya terbatas, kami tetap siap melayani kebutuhan Anda dengan cepat.
+              Kami siap melayani Anda dari Senin hingga Sabtu, dari pukul 09:00 hingga 15:00. Anda bisa menghubungi kami untuk berbagai kebutuhan, mulai dari konsultasi hingga pemesanan produk.
             </p>
           </div>
         </div>
@@ -261,61 +249,22 @@
             </p>
           </div>
         </div>
+        
+        <!-- Layanan Online -->
+        <div class="flex justify-center items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-105">
+          <div class="text-center">
+            <img src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo=" alt="Layanan Online" class="mx-auto mb-4 h-16 w-16 text-indigo-600">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Layanan Online</h3>
+            <p class="text-lg text-blue-500 dark:text-blue-400">24/7</p>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              Website dan media sosial kami tersedia 24/7 untuk informasi produk, katalog, dan konsultasi awal. Tim kami akan merespons secepat mungkin.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   
-<!-- Layanan Konveksi -->
-<section class="bg-gray-100 dark:bg-gray-900 py-24 sm:py-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-16">
-      <div class="mx-auto max-w-2xl lg:mx-0 text-center lg:text-left">
-        <h2 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">Layanan Konveksi dari Glam Stitch</h2>
-        <p class="mt-6 text-lg text-gray-600 dark:text-gray-300">Glam Stitch siap memenuhi kebutuhan produksi pakaian Anda — dari desain custom, manajemen produksi skala besar, hingga kontrol kualitas yang ketat.</p>
-      </div>
-  
-      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-        <dl class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-  
-          <!-- Desain Custom -->
-          <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img src="https://img.freepik.com/premium-photo/female-fashion-designer-cutting-fabric-workbench_1048944-5011017.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Desain Custom Icon" class="w-full max-w-xs h-auto rounded-2xl object-cover shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
-            <dt class="text-2xl font-semibold text-gray-900 dark:text-white">Desain Pakaian Custom</dt>
-            <dd class="mt-3 text-lg text-gray-600dark:text-gray-300">
-              Kami melayani desain pakaian sesuai kebutuhan Anda, baik untuk brand, komunitas, maupun keperluan pribadi.
-              <p class="mt-4">
-                <a href="/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
-              </p>
-            </dd>
-          </div>
-  
-          <!-- Manajemen Produksi -->
-          <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img src="https://img.freepik.com/free-photo/portrait-cheerful-good-looking-male-clothes-designer-with-dark-hair-fashionable-outfit-standing-workshop-posing-article-about-his-brand-artist-standing-his-comfy-studio_176420-11848.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Produksi Icon" class="w-full max-w-xs h-auto rounded-2xl object-cover shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
-            <dt class="text-2xl font-semibold text-gray-900 dark:text-white">Manajemen Produksi</dt>
-            <dd class="mt-3 text-lg text-gray-600dark:text-gray-300">
-              Glam Stitch memiliki tim produksi profesional untuk menangani pemesanan dalam jumlah besar secara efisien dan tepat waktu.
-              <p class="mt-4">
-                <a href="/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
-              </p>
-            </dd>
-          </div>
-  
-          <!-- Quality Control -->
-          <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img src="https://img.freepik.com/premium-photo/beautiful-young-woman-sewing-clothes-with-sewing-machine_255667-49856.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Quality Check Icon" class="w-full max-w-xs h-auto rounded-2xl object-cover shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
-            <dt class="text-2xl font-semibold text-gray-900 dark:text-white">Pemeriksaan Kualitas</dt>
-            <dd class="mt-3 text-lg text-gray-600dark:text-gray-300">
-              Setiap produk melalui tahapan quality control untuk memastikan kualitas maksimal sebelum dikirimkan kepada Anda.
-              <p class="mt-4">
-                <a href="/project-sveltekit/#" class="text-base font-semibold text-indigo-600 hover:underline">Selengkapnya <span aria-hidden="true">→</span></a>
-              </p>
-            </dd>
-          </div>
-  
-        </dl>
-      </div>
-    </div>
-  </section>
 
   <!-- Incentives -->
   <section class="bg-white dark:bg-gray-900">
@@ -423,7 +372,6 @@
               <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
               <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
               <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
-              <li><a href="/faq" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">FAQ</a></li>
             </ul>
           </div>
           
@@ -434,7 +382,7 @@
               <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
               <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -444,10 +392,11 @@
             <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/blog" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Blog</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
               <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>

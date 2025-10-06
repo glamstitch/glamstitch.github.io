@@ -4,13 +4,9 @@
 
   import gambar4 from '$lib/assets/image/gambar4.jpg';
   import gambar5 from '$lib/assets/image/gambar5.png';
-
   import gambar6 from '$lib/assets/image/gambar6.png';
-
   import ukurankemeja from '$lib/assets/image/ukurankemeja.jpg';
-
   import gallery5 from '$lib/assets/image/gallery5.jpg';
-
   import logoGlint from '$lib/assets/image/logo glint.png';
 
 
@@ -460,8 +456,18 @@
          </a>
 
          <!-- View All Products -->
-         <a href="/product" class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 shadow-xl animate__animated animate__fadeInUp animate__delay-2100ms">
-           <div class="aspect-square flex items-center justify-center">
+         <a href="/product" class="relative overflow-hidden rounded-2xl shadow-xl animate__animated animate__fadeInUp animate__delay-2100ms">
+           <!-- Background Image -->
+           <img 
+             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
+             alt="Koleksi Produk Glam Stitch" 
+             class="absolute inset-0 w-full h-full object-cover"
+             loading="lazy"
+           />
+           <!-- Overlay -->
+           <div class="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-800/70"></div>
+           
+           <div class="aspect-square flex items-center justify-center relative z-10">
              <div class="text-center text-white">
                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -663,7 +669,6 @@
 
               <li><a href="/services" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Layanan</a></li>
 
-              <li><a href="/faq" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">FAQ</a></li>
 
             </ul>
 
@@ -685,7 +690,7 @@
 
               <li><a href="/jersey" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jersey</a></li>
 
-              <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jaket</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Sweater</a></li>
 
               <li><a href="/shirts" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kemeja</a></li>
 
@@ -705,13 +710,16 @@
 
               <li><a href="/about-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
 
-              <li><a href="/blog" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Blog</a></li>
 
               <li><a href="/contact-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
 
               <li><a href="/store-location" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
 
               <li><a href="/gallery" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Galeri</a></li>
+
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+
+              <li><a href="/supplier-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
 
