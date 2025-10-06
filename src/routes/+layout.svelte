@@ -59,11 +59,12 @@
 		scroll-behavior: smooth;
 	}
 	
-	/* Fast dark mode transitions */
+	/* Smooth dark mode transitions */
 	:global(*) {
-		transition-property: background-color, border-color, color, fill, stroke, box-shadow, opacity, transform;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 200ms;
+		transition: background-color 0.2s ease, 
+					color 0.2s ease, 
+					border-color 0.2s ease,
+					box-shadow 0.2s ease;
 	}
 	
 	/* Ensure dark mode works properly */
@@ -75,7 +76,7 @@
 		color-scheme: light;
 	}
 	
-	/* Force dark mode styles */
+	/* Comprehensive dark mode styles */
 	:global(html.dark body) {
 		background-color: #111827;
 		color: #f9fafb;
@@ -85,107 +86,70 @@
 		background-color: #ffffff;
 		color: #111827;
 	}
-	
-	/* Ensure all elements respect dark mode */
-	:global(html.dark) {
-		color-scheme: dark;
+
+	/* Ensure images are visible in dark mode */
+	:global(html.dark img) {
+		opacity: 1 !important;
+		filter: none !important;
+		visibility: visible !important;
+		display: block !important;
 	}
-	
-	:global(html:not(.dark)) {
-		color-scheme: light;
-	}
-	
-	/* Fast theme application */
-	:global(html.dark *) {
-		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-					color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					fill 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	
-	/* Ensure all elements respect theme */
-	:global(html.dark) {
-		background-color: #111827;
-		color: #f9fafb;
-	}
-	
-	:global(html:not(.dark)) {
-		background-color: #ffffff;
-		color: #111827;
-	}
-	
-	/* Force dark mode on all elements */
-	:global(html.dark body),
-	:global(html.dark main),
-	:global(html.dark section),
-	:global(html.dark div),
-	:global(html.dark p),
+
+	/* Dark mode text colors */
 	:global(html.dark h1),
 	:global(html.dark h2),
 	:global(html.dark h3),
 	:global(html.dark h4),
 	:global(html.dark h5),
 	:global(html.dark h6) {
-		background-color: inherit;
-		color: inherit;
+		color: #f9fafb !important;
 	}
-	
-	/* Mobile dropdown animations */
-	:global(.peer-checked\/products:max-h-80) {
-		max-height: 20rem;
+
+	:global(html.dark p) {
+		color: #d1d5db !important;
 	}
-	
-	:global(.peer-checked\/discover:max-h-80) {
-		max-height: 20rem;
+
+	:global(html.dark .text-gray-600) {
+		color: #9ca3af !important;
 	}
-	
-	/* Smooth dropdown transitions */
-	:global(.overflow-hidden) {
-		transition: max-height 0.3s ease-in-out;
+
+	:global(html.dark .text-gray-500) {
+		color: #6b7280 !important;
 	}
-	
-	/* Mobile menu improvements */
-	:global(.mobile-menu-item) {
-		transition: all 0.2s ease-in-out;
+
+	:global(html.dark .text-gray-400) {
+		color: #9ca3af !important;
 	}
-	
-	:global(.mobile-menu-item:hover) {
-		transform: translateX(4px);
+
+	/* Dark mode background colors */
+	:global(html.dark .bg-white) {
+		background-color: #1f2937 !important;
 	}
-	
-	/* Fast theme transitioning class */
-	:global(html.theme-transitioning *) {
-		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-					color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					fill 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+	:global(html.dark .bg-gray-50) {
+		background-color: #374151 !important;
 	}
-	
-	/* Fast theme transitions for navbar */
-	:global(html.theme-transitioning nav) {
-		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-					color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+	:global(html.dark .bg-gray-100) {
+		background-color: #4b5563 !important;
 	}
-	
-	/* Fast theme transitions for buttons and links */
-	:global(html.theme-transitioning button),
-	:global(html.theme-transitioning a) {
-		transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-					color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-					transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+	/* Dark mode borders */
+	:global(html.dark .border-gray-200) {
+		border-color: #374151 !important;
 	}
+
+	:global(html.dark .border-gray-300) {
+		border-color: #4b5563 !important;
+	}
+
+	/* Dark mode shadows */
+	:global(html.dark .shadow-md),
+	:global(html.dark .shadow-lg),
+	:global(html.dark .shadow-xl) {
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+	}
+
 	
 	/* Dropdown container */
 	:global(.dropdown-container) {
@@ -196,21 +160,28 @@
 	:global(.dropdown-menu) {
 		opacity: 1;
 		transform: translateY(0);
-		transition: all 0.2s ease-in-out;
+		transition: opacity 0.2s ease, transform 0.2s ease;
 		pointer-events: auto;
 	}
 	
 	/* Dropdown items */
 	:global(.dropdown-item) {
-		transform: translateX(0);
-		opacity: 1;
-		transition: all 0.2s ease-in-out;
+		transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 	}
 	
 	/* Hover effects for dropdown items */
 	:global(.dropdown-item:hover) {
 		transform: translateX(2px);
-		transition: all 0.2s ease-in-out;
+	}
+	
+	/* Mobile dropdown animations */
+	:global(.peer-checked\/company:max-h-80) {
+		max-height: 20rem;
+	}
+	
+	/* Smooth dropdown transitions */
+	:global(.overflow-hidden) {
+		transition: max-height 0.3s ease-in-out;
 	}
 	
 	/* Responsive dropdown positioning */
@@ -247,231 +218,184 @@
 		}
 	}
 	
-	/* Mobile menu dropdown animations */
-	:global(.peer-checked\/products:max-h-80) {
-		max-height: 20rem;
+	
+	/* Light mode navbar styling */
+	:global(html:not(.dark) nav > div) {
+		background-color: rgba(255, 255, 255, 0.95) !important;
+		border-color: #e5e7eb !important;
+		backdrop-filter: blur(12px);
+		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+	}
+
+	/* Clean dark mode navbar styling */
+	:global(html.dark nav > div) {
+		background-color: rgba(17, 24, 39, 0.95) !important;
+		border-color: #374151 !important;
+		backdrop-filter: blur(12px);
+		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+	}
+
+	/* Dark mode navbar links */
+	:global(html.dark .navbar-link) {
+		color: #e5e7eb !important;
+	}
+
+	:global(html.dark .navbar-link:hover) {
+		color: #818cf8 !important;
+	}
+
+	/* Dark mode dropdown styling */
+	:global(html.dark .dropdown-menu) {
+		background-color: rgba(17, 24, 39, 0.98) !important;
+		border-color: #374151 !important;
+		backdrop-filter: blur(12px);
+	}
+
+	:global(html.dark .dropdown-item) {
+		color: #e5e7eb !important;
+	}
+
+	:global(html.dark .dropdown-item:hover) {
+		background-color: rgba(31, 41, 55, 0.8) !important;
+		color: #f9fafb !important;
+	}
+
+	/* Dark mode mobile menu */
+	:global(html.dark .mobile-menu-panel) {
+		background-color: rgba(17, 24, 39, 0.98) !important;
+		border-color: #374151 !important;
+		backdrop-filter: blur(12px);
+	}
+
+	:global(html.dark .mobile-menu-item) {
+		color: #e5e7eb !important;
+	}
+
+	:global(html.dark .mobile-menu-item:hover) {
+		background-color: rgba(31, 41, 55, 0.8) !important;
+		color: #f9fafb !important;
+	}
+
+	:global(html.dark .mobile-menu-close) {
+		color: #f9fafb !important;
+	}
+
+	:global(html.dark .mobile-menu-close:hover) {
+		background-color: rgba(31, 41, 55, 0.8) !important;
+	}
+
+
+	/* Optimized navbar animations */
+	:global(.navbar-link) {
+		transition: color 0.2s ease, transform 0.2s ease;
 	}
 	
-	:global(.peer-checked\/discover:max-h-80) {
-		max-height: 20rem;
+	:global(.navbar-link:hover) {
+		transform: translateY(-1px);
 	}
 	
-	/* Smooth dropdown transitions */
-	:global(.overflow-hidden) {
-		transition: max-height 0.3s ease-in-out;
+	/* Hamburger button animations */
+	:global(label[for="menu-toggle"]) {
+		transition: transform 0.2s ease, background-color 0.2s ease;
 	}
 	
-	/* Mobile menu improvements */
+	:global(label[for="menu-toggle"]:hover) {
+		transform: scale(1.05);
+	}
+	
+	:global(label[for="menu-toggle"]:active) {
+		transform: scale(0.95);
+	}
+	
+	/* Logo animation */
+	:global(.navbar-logo) {
+		transition: transform 0.2s ease;
+	}
+	
+	:global(.navbar-logo:hover) {
+		transform: scale(1.05);
+	}
+	
+	/* Dropdown animation */
+	:global(.dropdown-menu) {
+		animation: slideDown 0.2s ease-out;
+	}
+	
+	@keyframes slideDown {
+		from {
+			opacity: 0;
+			transform: translateY(-8px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	
+	/* Mobile menu panel animations */
+	:global(.mobile-menu-panel) {
+		animation: slideInFromRight 0.3s ease-out;
+	}
+	
+	@keyframes slideInFromRight {
+		from {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+		to {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+	
+	/* Mobile menu items */
 	:global(.mobile-menu-item) {
-		transition: all 0.2s ease-in-out;
+		transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 	}
 	
 	:global(.mobile-menu-item:hover) {
 		transform: translateX(4px);
 	}
 	
-	
-	/* Force navbar dark mode styling */
-	:global(html.dark nav rounded-full) {
-		background-color: #111827 !important;
-		color: #f9fafb !important;
+	/* Backdrop animation */
+	:global(.mobile-menu-backdrop) {
+		animation: fadeInBackdrop 0.3s ease-out;
 	}
 	
-	:global(html.dark nav div) {
-		background-color: #111827 !important;
-		color: #f9fafb !important;
+	@keyframes fadeInBackdrop {
+		from {
+			opacity: 0;
+			backdrop-filter: blur(0px);
+		}
+		to {
+			opacity: 1;
+			backdrop-filter: blur(4px);
+		}
 	}
 	
-	:global(html.dark nav a) {
-		color: #e5e7eb !important;
+	/* Mobile menu responsive improvements */
+	@media (max-width: 640px) {
+		:global(.mobile-menu-panel) {
+			width: 100vw;
+			max-width: 100vw;
+		}
+		
+		:global(.mobile-menu-item) {
+			padding: 1rem;
+			font-size: 1rem;
+		}
 	}
 	
-	:global(html.dark nav button) {
-		color: #e5e7eb !important;
-	}
-	
-	:global(html.dark nav span) {
-		color: #ffffff !important;
-	}
-	
-	
-	
-	:global(html.dark .navbar-link) {
-		color: #e5e7eb !important;
-	}
-	
-	:global(html.dark .navbar-link:hover) {
-		color: #818cf8 !important;
-	}
-	
-	/* Specific navbar container dark mode */
-	:global(html.dark nav .mx-auto) {
-		background-color: #111827 !important;
-	}
-	
-	/* Force all navbar elements to respect dark mode */
-	:global(html.dark nav *) {
-		transition: color 0.2s ease, background-color 0.2s ease;
-	}
-	
-	/* Hamburger icon styling for dark mode - removed conflicting rules */
-	
-	/* Override any conflicting styles */
-	:global(html.dark nav a.navbar-link) {
-		color: #e5e7eb !important;
-	}
-	
-	:global(html.dark nav button.navbar-link) {
-		color: #e5e7eb !important;
-	}
-	
-	:global(html.dark nav a.navbar-link:hover) {
-		color: #818cf8 !important;
-	}
-	
-	:global(html.dark nav button.navbar-link:hover) {
-		color: #818cf8 !important;
-	}
-	
-	/* Dark mode dropdown styling */
-	:global(html.dark .dropdown-menu) {
-		background-color: #111827 !important;
-		border: none !important;
-		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
-	}
-	
-	/* Dark mode dropdown items hover */
-	:global(html.dark .dropdown-item:hover) {
-		background-color: #1f2937 !important;
-		transform: translateX(2px);
-		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	
-	/* Remove any borders from dark mode dropdown */
-	:global(html.dark .dropdown-menu) {
-		border: 0 !important;
-		outline: none !important;
-	}
-	
-	/* Global: Remove all dark overlays that cover images */
-	:global(html.dark .bg-black\/50),
-	:global(html.dark .bg-black\/60),
-	:global(html.dark .bg-black\/40),
-	:global(html.dark .bg-black\/30),
-	:global(html.dark .bg-black\/20),
-	:global(html.dark .bg-black\/10) {
-		background-color: transparent !important;
-		display: none !important;
-	}
-	
-	/* Global: Remove any div with bg-black classes that cover images */
-	:global(html.dark div[class*="bg-black"]) {
-		background-color: transparent !important;
-		display: none !important;
-	}
-	
-	/* Global: Ensure hero sections don't have dark overlays */
-	:global(html.dark .hero-section) {
-		background-color: transparent !important;
-	}
-	
-	/* Global: Force all sections to not have dark overlays */
-	:global(html.dark section) {
-		background-color: transparent !important;
-	}
-	
-	/* Global: Remove dark overlays from any absolute positioned elements */
-	:global(html.dark .absolute.inset-0.-z-10.bg-black\/50),
-	:global(html.dark .absolute.inset-0.-z-10.bg-black\/60),
-	:global(html.dark .absolute.inset-0.-z-10.bg-black\/40),
-	:global(html.dark .absolute.inset-0.-z-10.bg-black\/30),
-	:global(html.dark .absolute.inset-0.-z-10.bg-black\/20),
-	:global(html.dark .absolute.inset-0.-z-10.bg-black\/10) {
-		background-color: transparent !important;
-		display: none !important;
-	}
-
-	/* Specific: Ensure product collection images are visible in dark mode */
-	:global(html.dark section[class*="Product Gallery"] img),
-	:global(html.dark section[class*="Product Gallery"] .aspect-square img) {
-		opacity: 1 !important;
-		filter: none !important;
-		visibility: visible !important;
-		display: block !important;
-	}
-
-	/* Specific: Ensure product collection text is visible with proper background in dark mode */
-	:global(html.dark section[class*="Product Gallery"] .absolute.bottom-0),
-	:global(html.dark .bg-gradient-to-t.from-black\/60.to-transparent) {
-		background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent) !important;
-		display: block !important;
-	}
-
-	/* Specific: Ensure text is visible in dark mode */
-	:global(html.dark section[class*="Product Gallery"] .text-white h3),
-	:global(html.dark section[class*="Product Gallery"] .text-white p) {
-		color: white !important;
-		opacity: 1 !important;
-		visibility: visible !important;
-		display: block !important;
-	}
-	
-	/* Mobile menu dark mode improvements */
-	:global(html.dark .mobile-menu-item) {
-		transition: all 0.2s ease-in-out;
-	}
-	
-	:global(html.dark .mobile-menu-item:hover) {
-		transform: translateX(4px);
-		background-color: rgba(75, 85, 99, 0.1) !important;
-	}
-	
-	/* Mobile menu dropdown animations for dark mode */
-	:global(html.dark .peer-checked\/products:max-h-80) {
-		max-height: 20rem;
-	}
-	
-	:global(html.dark .peer-checked\/discover:max-h-80) {
-		max-height: 20rem;
-	}
-	
-	/* Smooth dropdown transitions for dark mode */
-	:global(html.dark .overflow-hidden) {
-		transition: max-height 0.3s ease-in-out;
-	}
-	
-	/* Mobile menu hover effects for dark mode */
-	:global(html.dark nav .mobile-menu-item:hover) {
-		background-color: rgba(99, 102, 241, 0.1) !important;
-		color: #a5b4fc !important;
-		transform: translateX(4px);
-		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	
-	/* Mobile menu label hover effects for dark mode */
-	:global(html.dark nav label:hover) {
-		background-color: rgba(75, 85, 99, 0.1) !important;
-		transform: translateX(2px);
-		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	
-	/* Mobile menu close button hover for dark mode */
-	:global(html.dark .mobile-menu-close:hover) {
-		background-color: rgba(75, 85, 99, 0.2) !important;
-		transform: scale(1.05);
-		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	
-	/* Ensure close button X is clearly visible in dark mode */
-	:global(html.dark .mobile-menu-close svg) {
-		color: #9f9f9f !important;
-
-	}
-	
-	
-	:global(html.dark .mobile-menu-close:hover) {
-		background-color: rgba(69, 75, 84, 0.3) !important;
-		border-color: rgba(75, 85, 99, 0.5);
+	@media (max-width: 480px) {
+		:global(.mobile-menu-panel) {
+			width: 100vw;
+			max-width: 100vw;
+		}
+		
+		:global(.mobile-menu-item) {
+			padding: 0.875rem;
+			font-size: 0.9rem;
+		}
 	}
 </style>
 
@@ -479,83 +403,87 @@
   
 <!-- Navbar -->
 <nav class="fixed top-4 inset-x-4 z-50">
-	<div class="mx-auto max-w-7xl px-6 py-4 bg-white/95 dark:bg-gray-900/95 border border-gray-100 shadow-lg flex items-center justify-between rounded-full transition-colors duration-200">
+	<div class="mx-auto max-w-7xl px-6 py-4 bg-white/95 dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 shadow-lg dark:shadow-2xl flex items-center justify-between rounded-full backdrop-blur-md">
 		<!-- Logo -->
-		<a href="{base}/" class="flex items-center gap-2">
-			<img src={logoGlint} alt="Glam Stitch Logo" class="h-10 w-10 object-contain">
-			<span class="hidden sm:block text-lg font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
+		<a href="{base}/" class="navbar-logo flex items-center gap-2 group">
+			<img src={logoGlint} alt="Glam Stitch Logo" class="h-10 w-10 object-contain dark:brightness-110">
+			<span class="hidden sm:block text-lg font-semibold text-gray-900dark:text-white  transition-colors duration-200">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-8">
-			<a href="{base}/" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
+			<a href="{base}/" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
 				Beranda
+				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
 			<!-- Products Link -->
-			<a href="{base}/product" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
+			<a href="{base}/product" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
 				Produk
+				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
-			<a href="{base}/services" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
+			<a href="{base}/services" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
 				Layanan
+				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
 			<!-- Company Info Dropdown -->
 			<div class="relative dropdown-container">
-				<button onclick={toggleCompanyDropdown} class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 transition-colors duration-200">
+				<button onclick={toggleCompanyDropdown} class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
 					Perusahaan
-					<svg class="w-4 h-4 transition-transform duration-200 {companyDropdownOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
+					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 				</button>
 				{#if companyDropdownOpen}
-					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-0 z-50 backdrop-blur-sm">
+					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white/95 dark:bg-gray-900/95 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 backdrop-blur-md">
 					<div class="py-2">
-						<a href="{base}/about-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+						<a href="{base}/about-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
 								Tentang Kami
 							</span>
 						</a>
 
-						<a href="{base}/contact-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+						<a href="{base}/contact-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 								</svg>
 								Hubungi Kami
 							</span>
 						</a>
-						<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+						<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20l-4.172-4.172a2 2 0 00-2.828 0L4 18.172V4a2 2 0 012-2h12a2 2 0 012 2v12.172l-2.343-2.343a2 2 0 00-2.828 0z" />
 								</svg>
 								Lokasi Toko
 							</span>
 						</a>
-						<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+						<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
 								</svg>
 								Tim Kami
 							</span>
 						</a>
-						<a href="{base}/supplier-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+						<a href="{base}/supplier-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
 								</svg>
 								Supplier Kami
 							</span>
 						</a>
-						<a href="{base}/pelanggan-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-200 rounded-lg mx-2">
+						<a href="{base}/pelanggan-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
 								</svg>
 								Pelanggan Kami
@@ -571,11 +499,13 @@
 		<!-- Right Side Actions -->
 		<div class="flex items-center gap-4">
 			<!-- Theme Switcher Component -->
-			<ThemeSwitcher />
+			<div>
+				<ThemeSwitcher />
+			</div>
 
 			<!-- Mobile Menu Toggle -->
-			<label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer">
-				<svg class="w-6 h-6 text-gray-700 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-400 cursor-pointer transition-all duration-300 group">
+				<svg class="w-6 h-6 text-gray-700dark:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 				</svg>
 			</label>
@@ -589,18 +519,18 @@
 	<input type="checkbox" id="menu-toggle" class="peer hidden" autocomplete="off" />
 
 	<!-- Backdrop -->
-	<label for="menu-toggle" class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 cursor-pointer"></label>
+	<label for="menu-toggle" class="mobile-menu-backdrop fixed inset-0 z-40 bg-black/50 backdrop-blur-sm opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 cursor-pointer"></label>
 	
 	<!-- Menu Panel -->
-	<div class="fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-out overflow-y-auto">
+	<div class="mobile-menu-panel fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-white/95 dark:bg-gray-900/95 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 ease-out overflow-y-auto backdrop-blur-md">
 		<!-- Header -->
 		<div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
 			<div class="flex items-center gap-2">
-				<img src={logoGlint} alt="Logo" class="h-10 w-10" />
-				<span class="text-lg font-semibold text-gray-900 dark:text-white">Glam Stitch</span>
+				<img src={logoGlint} alt="Logo" class="h-10 w-10 dark:brightness-110" />
+				<span class="text-lg font-semibold text-gray-900dark:text-white">Glam Stitch</span>
 			</div>
-			<label for="menu-toggle" class="mobile-menu-close p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer">
-				<svg class="w-6 h-6 text-gray-900 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+			<label for="menu-toggle" class="mobile-menu-close p-2 rounded-lg hover:bg-gray-400 transition-colors cursor-pointer">
+				<svg class="w-6 h-6 text-gray-900dark:text-white transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 				</svg>
 			</label>
@@ -608,78 +538,78 @@
 
 		<!-- Navigation -->
 		<nav class="p-4 space-y-2">
-			<a href="{base}/" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
+			<a href="{base}/" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
 				Beranda
 			</a>
 
 			<!-- Products Link -->
-			<a href="{base}/product" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
+			<a href="{base}/product" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
 				Produk
 			</a>
 
-			<a href="{base}/services" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-gray-100 font-medium transition-all">
+			<a href="{base}/services" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
 				Layanan
 			</a>
 
 			<!-- Company Info Dropdown -->
 			<div class="relative">
 				<input type="checkbox" id="mobile-company" class="peer/company hidden" />
-				<label for="mobile-company" class="flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-all">
+				<label for="mobile-company" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
 					<span>Perusahaan</span>
-					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
 				<div class="overflow-hidden max-h-0 peer-checked/company:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
-					<a href="{base}/about-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-							</svg>
-							Tentang Kami
-						</span>
-					</a>
-					<a href="{base}/contact-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-							</svg>
-							Hubungi Kami
-						</span>
-					</a>
-					<a href="{base}/store-location" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-							</svg>
-							Lokasi Toko
-						</span>
-					</a>
-					<a href="{base}/gallery" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-							</svg>
-							Tim Kami
-						</span>
-					</a>
-					<a href="{base}/supplier-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-							</svg>
-							Supplier Kami
-						</span>
-					</a>
-					<a href="{base}/pelanggan-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200">
-						<span class="flex items-center gap-3">
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-							</svg>
-							Pelanggan Kami
-						</span>
-					</a>
+						<a href="{base}/about-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+								Tentang Kami
+							</span>
+						</a>
+						<a href="{base}/contact-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+								Hubungi Kami
+							</span>
+						</a>
+						<a href="{base}/store-location" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+								</svg>
+								Lokasi Toko
+							</span>
+						</a>
+						<a href="{base}/gallery" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+								</svg>
+								Tim Kami
+							</span>
+						</a>
+						<a href="{base}/supplier-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+								</svg>
+								Supplier Kami
+							</span>
+						</a>
+						<a href="{base}/pelanggan-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+								</svg>
+								Pelanggan Kami
+							</span>
+						</a>
 				</div>
 			</div>
 

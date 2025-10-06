@@ -102,91 +102,99 @@
         </p>
       </div>
   
-      <div class="grid grid-cols-1 gap-y-12 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <!-- Products Grid - Horizontal Layout with Scrollbar -->
+      <div class="overflow-x-auto pb-4">
+        <div class="flex gap-6 min-w-max">
         
         <!-- Kaos Polos -->
-        <div class="flex flex-col items-center text-center space-y-4 animate__animated animate__fadeInUp animate__delay-200ms">
-          <a href="/tshirt" class="block w-full max-w-sm mx-auto group">
-            <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img loading="lazy" 
-                src="https://i.pinimg.com/736x/50/31/57/5031570ca2bae383dc3d83f004bc0dfe.jpg" 
-                alt="Kaos Polos Glam Stitch" 
-                class="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-          </a>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Kaos Polos</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 px-2 max-w-sm">
-            Nyaman dipakai seharian, hadir dalam berbagai warna dan bahan premium yang adem dan awet.
-          </p>
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img loading="lazy" 
+              src="https://i.pinimg.com/736x/50/31/57/5031570ca2bae383dc3d83f004bc0dfe.jpg" 
+              alt="Kaos Polos Glam Stitch" 
+              class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kaos Polos Premium</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">30+ Pilihan Warna</p>
+            <a href="/tshirt" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+              Lihat Detail
+            </a>
+          </div>
         </div>
   
         <!-- Kaos Polo -->
-        <div class="flex flex-col items-center text-center space-y-4 animate__animated animate__fadeInUp animate__delay-400ms">
-          <a href="/polo" class="block w-full max-w-sm mx-auto group">
-            <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img loading="lazy" 
-                src="https://i.pinimg.com/1200x/01/22/29/012229e1a04151b3b6c0210eee6b259b.jpg" 
-                alt="Kaos Polo Glam Stitch" 
-                class="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-          </a>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Kaos Polo</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 px-2 max-w-sm">
-            Elegan dan stylish dengan kerah polo yang klasik, cocok untuk acara semi-formal maupun casual.
-          </p>
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img loading="lazy" 
+              src="https://i.pinimg.com/1200x/01/22/29/012229e1a04151b3b6c0210eee6b259b.jpg" 
+              alt="Kaos Polo Glam Stitch" 
+              class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kaos Polo Elegan</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">15+ Pilihan Warna</p>
+            <a href="/polo" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+              Lihat Detail
+            </a>
+          </div>
         </div>
   
         <!-- Jersey -->
-        <div class="flex flex-col items-center text-center space-y-4 animate__animated animate__fadeInUp animate__delay-600ms">
-          <a href="/jersey" class="block w-full max-w-sm mx-auto group">
-            <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img loading="lazy" 
-                src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg" 
-                alt="Jersey Glam Stitch" 
-                class="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-          </a>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Jersey</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 px-2 max-w-sm">
-            Nyaman untuk aktivitas olahraga dan casual, dengan bahan yang menyerap keringat dan mudah dicuci.
-          </p>
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img loading="lazy" 
+              src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg" 
+              alt="Jersey Glam Stitch" 
+              class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Jersey Olahraga</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">15+ Pilihan Warna</p>
+            <a href="/jersey" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+              Lihat Detail
+            </a>
+          </div>
         </div>
   
         <!-- Hoodie/Sweater -->
-        <div class="flex flex-col items-center text-center space-y-4 animate__animated animate__fadeInUp animate__delay-800ms">
-          <a href="/jacket" class="block w-full max-w-sm mx-auto group">
-            <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img loading="lazy" 
-                src="https://i.pinimg.com/1200x/5a/6d/b1/5a6db1b76d8dcacfb279079a82e8bf4e.jpg" 
-                alt="Hoodie/Sweater Glam Stitch" 
-                class="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-          </a>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Hoodie/Sweater</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 px-2 max-w-sm">
-            Hangat dan stylish, cocok untuk aktivitas luar ruangan maupun casual harian.
-          </p>
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img loading="lazy" 
+              src="https://i.pinimg.com/1200x/5a/6d/b1/5a6db1b76d8dcacfb279079a82e8bf4e.jpg" 
+              alt="Hoodie/Sweater Glam Stitch" 
+              class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Hoodie Premium</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">10+ Pilihan Warna</p>
+            <a href="/jacket" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+              Lihat Detail
+            </a>
+          </div>
         </div>
-  
+
         <!-- Kemeja -->
-        <div class="flex flex-col items-center text-center space-y-4 animate__animated animate__fadeInUp animate__delay-1000ms">
-          <a href="/shirts" class="block w-full max-w-sm mx-auto group">
-            <div class="overflow-hidden rounded-xl shadow-md transition-all duration-300 transform group-hover:scale-105">
-              <img loading="lazy" 
-                src="https://i.pinimg.com/1200x/a3/9f/93/a39f9311f2367a33dcbba0f849fc5c8c.jpg" 
-                alt="Kemeja Glam Stitch" 
-                class="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-          </a>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Kemeja</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 px-2 max-w-sm">
-            Tampil rapi dan profesional dengan kemeja berkualitas tinggi dari Glam Stitch.
-          </p>
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+          <div class="relative overflow-hidden rounded-t-lg">
+            <img loading="lazy" 
+              src="https://i.pinimg.com/1200x/a3/9f/93/a39f9311f2367a33dcbba0f849fc5c8c.jpg" 
+              alt="Kemeja Glam Stitch" 
+              class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kemeja Formal</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">10+ Pilihan Warna</p>
+            <a href="/shirts" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+              Lihat Detail
+            </a>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -473,7 +481,7 @@
               <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
               <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -485,7 +493,7 @@
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
-              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
               <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
               <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 

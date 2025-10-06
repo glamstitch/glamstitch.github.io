@@ -45,11 +45,11 @@
   
           <!-- CTA Buttons -->
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/#"
+            <a href="/contact-us"
               class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Mulai Sekarang
+              Hubungi Kami
             </a>
-            <a href="/#" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
+            <a href="/services" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Lihat Layanan <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
@@ -58,25 +58,25 @@
   
 <!-- Hero Section -->
 <section class="relative bg-white dark:bg-gray-900 overflow-hidden transition-colors duration-300">
-    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-16">
+    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-12 lg:px-16">
   
       <!-- Kiri: Konten Teks -->
-      <div class="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-40 lg:pb-16 xl:col-span-6 flex items-center">
+      <div class="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-32 lg:pb-16 xl:col-span-6 flex items-center">
         <div class="mx-auto max-w-lg lg:mx-0 animate-fade-in-up duration-700 ease-out">
   
           <!-- Badge -->
-          <div class="hidden sm:flex sm:mt-32 lg:mt-16">
+          <div class="hidden sm:flex sm:mt-24 lg:mt-12">
             <div class="relative rounded-full px-3 py-1 text-sm text-gray-500 dark:text-gray-300 ring-1 ring-gray-900/10 dark:ring-white/10 hover:ring-gray-900/20 dark:hover:ring-white/20 transition">
               Kami bangga melayani berbagai klien dengan produk pakaian berkualitas tinggi.
-              <a href="/#" class="ml-2 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+              <a href="/services" class="ml-2 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
                 <span class="absolute inset-0" aria-hidden="true"></span>
-                Temukan lebih lanjut <span aria-hidden="true">&rarr;</span>
+                Lihat Layanan <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
   
           <!-- Judul -->
-          <h1 class="mt-24 text-4xl sm:text-6xl font-bold tracking-tight text-gray-900 dark:text-white sm:mt-10">
+          <h1 class="mt-16 text-4xl sm:text-6xl font-bold tracking-tight text-gray-900 dark:text-white sm:mt-8">
             Glam Stitch Konveksi Profesional
           </h1>
   
@@ -87,11 +87,11 @@
   
           <!-- Tombol CTA -->
           <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
-            <a href="/services" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition">
-              Layanan Kami
+            <a href="/contact-us" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition">
+              Hubungi Kami
             </a>
-            <a href="/about" class="text-sm font-semibold text-gray-900 dark:text-white hover:underline">
-              Pelajari lebih lanjut <span aria-hidden="true">→</span>
+            <a href="/product" class="text-sm font-semibold text-gray-900 dark:text-white hover:underline">
+              Lihat Produk <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
@@ -100,7 +100,7 @@
       <!-- Kanan: Gambar -->
       <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 flex items-center justify-center h-full">
         <img loading="lazy"
-          class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg mt-10 object-cover rounded-2xl shadow-lg
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg object-contain rounded-2xl shadow-lg
                  motion-safe:animate-zoom-in-up motion-safe:duration-1000 motion-safe:ease-out"
           src={logoGlint}
           alt="Logo Glam Stitch"
@@ -218,7 +218,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2017</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2017" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700 dark:text-gray-300 text-lg">
+              <div class="text-gray-700dark:text-gray-300 text-lg">
                 Awal mula berdirinya Glam Stitch di Kecamatan Kalijati pada tahun 2017, dimulai dari sebuah rumah kecil dengan mesin jahit sederhana dan semangat besar untuk memberikan kualitas terbaik.
               </div>
             </div>
@@ -229,7 +229,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2020</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2020" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700 dark:text-gray-300 text-lg">
+              <div class="text-gray-700dark:text-gray-300 text-lg">
                 Mulai meluaskan layanan dengan menerima pesanan dalam jumlah besar dari komunitas dan sekolah. Glam Stitch mulai dikenal di wilayah lokal dan sekitarnya.
               </div>
             </div>
@@ -240,7 +240,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2023</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2023" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700 dark:text-gray-300 text-lg">
+              <div class="text-gray-700dark:text-gray-300 text-lg">
                 Pembangunan pabrik baru untuk meningkatkan kapasitas produksi dan melayani permintaan yang semakin besar dari pelanggan.
               </div>
             </div>
@@ -251,7 +251,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2025</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2025" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700 dark:text-gray-300 text-lg">
+              <div class="text-gray-700dark:text-gray-300 text-lg">
                 Mencapai pencapaian luar biasa dengan 1000+ pelanggan aktif dan 150 ribu pcs terjual per tahun. Glam Stitch telah menjadi konveksi terpercaya di Indonesia.
               </div>
             </div>
@@ -262,11 +262,8 @@
     </div>
 </section>
 
-   
-
-  
   <!-- Footer -->
-  <footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">
+  <footer class="bg-gray-900 dark:bg-gray-800" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8 animate__animated animate__fadeInUp">
@@ -314,7 +311,7 @@
               <li><a href="{base}/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="{base}/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="{base}/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="{base}/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
               <li><a href="{base}/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -326,7 +323,7 @@
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
-              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
               <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
               <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
@@ -337,7 +334,7 @@
   
       <!-- Footer Bottom -->
       <div class="mt-16 border-t border-white/10 pt-8 text-center animate__animated animate__fadeInUp animate__delay-3s">
-        <p class="text-sm leading-5 text-gray-400 dark:text-gray-900">&copy; 2025 Glam Stitch. All rights reserved.</p>
+        <p class="text-sm leading-5 text-gray-400 dark:text-gray-300">&copy; 2025 Glam Stitch. All rights reserved.</p>
       </div>
     </div>
   </footer>

@@ -29,8 +29,8 @@
   function toggleDarkMode() {
     isDark = !isDark;
     
-    // Apply theme immediately with force
-    forceTheme(isDark);
+    // Apply theme immediately
+    applyTheme(isDark);
     
     // Save to localStorage
     saveTheme(isDark);

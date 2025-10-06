@@ -2,9 +2,6 @@
 export function applyTheme(isDark: boolean) {
   if (typeof document === 'undefined') return;
   
-  // Add transition class for smooth animation
-  document.documentElement.classList.add('theme-transitioning');
-  
   if (isDark) {
     document.documentElement.classList.add('dark');
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -18,11 +15,6 @@ export function applyTheme(isDark: boolean) {
     document.body.style.backgroundColor = '#ffffff';
     document.body.style.color = '#111827';
   }
-  
-  // Remove transition class after animation completes
-  setTimeout(() => {
-    document.documentElement.classList.remove('theme-transitioning');
-  }, 200);
 }
 
 export function getInitialTheme(): boolean {
@@ -49,12 +41,9 @@ export function initializeTheme() {
   return isDark;
 }
 
-// Force theme application for immediate effect with smooth transitions
+// Force theme application for immediate effect
 export function forceTheme(isDark: boolean) {
   if (typeof document === 'undefined') return;
-  
-  // Add transition class for smooth animation
-  document.documentElement.classList.add('theme-transitioning');
   
   // Remove all existing theme classes
   document.documentElement.classList.remove('dark');
@@ -72,9 +61,4 @@ export function forceTheme(isDark: boolean) {
     document.body.style.backgroundColor = '#ffffff';
     document.body.style.color = '#111827';
   }
-  
-  // Remove transition class after animation completes
-  setTimeout(() => {
-    document.documentElement.classList.remove('theme-transitioning');
-  }, 200);
 }

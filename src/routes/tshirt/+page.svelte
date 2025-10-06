@@ -18,7 +18,7 @@
       alt="Kaos polos" 
       class="absolute inset-0 -z-10 w-full h-full object-cover"
     >
-    <div class="absolute inset-0 -z-10 bg-black/50 dark:bg-black/75"></div>
+    <div class="absolute inset-0 -z-10 bg-black/50"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
@@ -77,14 +77,14 @@
         </ol>
       </nav>
   
-      <!-- Galeri Gambar -->
+      <!-- Galeri Produk -->
       <div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
           
           <!-- Gambar utama - lebih besar -->
           <div class="lg:col-span-2">
             <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
-              <img loading="lazy" src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-02-featured-product-shot.jpg"
+              <img loading="lazy" src="https://i.pinimg.com/1200x/69/8c/0b/698c0bc6c0735846460fd45c9a5ab58f.jpg"
                 alt="Model mengenakan kaos putih polos."
                 class="h-full w-full object-cover object-center">
             </div>
@@ -93,7 +93,7 @@
           <!-- Gambar samping -->
           <div class="grid grid-cols-1 gap-6">
             <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
-              <img loading="lazy" src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"
+              <img loading="lazy" src="https://i.pinimg.com/736x/02/bc/ed/02bced26b270af2ae2f32bded7440a77.jpg"
                 alt="Model mengenakan kaos hitam polos."
                 class="h-full w-full object-cover object-center">
             </div>
@@ -180,16 +180,16 @@
               <div class="space-y-4">
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600dark:text-gray-400">Bahan</span>
-                  <span class="text-sm text-gray-900 dark:text-white">100% Katun</span>
+                  <span class="text-sm text-gray-900dark:text-white">100% Katun</span>
                 </div>
               
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
-                  <span class="text-sm text-gray-900 dark:text-white">XS, S, M, L, XL, XXL, XXXL, XXXXL</span>
+                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Ukuran</span>
+                  <span class="text-sm text-gray-900dark:text-white">XS, S, M, L, XL, XXL, XXXL, XXXXL</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
-                  <span class="text-sm text-gray-900 dark:text-white">30++ Pilihan Warna</span>
+                  <span class="text-sm font-medium text-gray-600dark:text-gray-400">Warna</span>
+                  <span class="text-sm text-gray-900dark:text-white">30++ Pilihan Warna</span>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@
                 </svg>
                 Pesan Sekarang
               </a>
-              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
+              <a href="/product" class="w-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">
                 Lihat Produk Lainnya
               </a>
             </div>
@@ -287,74 +287,74 @@
                 <table class="w-full text-sm">
                   <thead>
                     <tr class="border-b border-gray-200 dark:border-gray-700">
-                      <th class="text-left py-3 px-2 font-semibold text-gray-900 dark:text-white">Ukuran</th>
-                      <th class="text-center py-3 px-2 font-semibold text-gray-900 dark:text-white">Panjang (cm)</th>
-                      <th class="text-center py-3 px-2 font-semibold text-gray-900 dark:text-white">Lebar (cm)</th>
-                      <th class="text-center py-3 px-2 font-semibold text-gray-900 dark:text-white">Lingkar Dada (cm)</th>
+                      <th class="text-left py-3 px-2 font-semibold text-gray-900dark:text-white">Ukuran</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Panjang (cm)</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Lebar (cm)</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Lingkar Dada (cm)</th>
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XS</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">63</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">42</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">85</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XS</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">63</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">42</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">85</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">S</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">65</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">45</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">90</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">S</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">65</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">45</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">90</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">M</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">67</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">48</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">95</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">M</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">67</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">48</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">95</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">L</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">69</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">51</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">100</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">L</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">69</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">51</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">100</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XL</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">71</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">54</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">105</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XL</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">71</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">54</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">105</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XXL</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">73</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">57</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">110</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XXL</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">73</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">57</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">110</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XXXL</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">75</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">60</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">115</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XXXL</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">75</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">60</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">115</td>
                     </tr>
-                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                      <td class="py-3 px-2 font-medium text-gray-900 dark:text-white">XXXXL</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">77</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">63</td>
-                      <td class="py-3 px-2 text-center text-gray-700 dark:text-gray-300">120</td>
+                    <tr>
+                      <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XXXXL</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">77</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">63</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">120</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               
               <!-- Tips -->
-              <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+              <div class="mt-6 p-4 bg-blue-50dark:bg-blue-900/20 rounded-lg">
                 <div class="flex items-start">
-                  <svg class="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-600dark:text-blue-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <h4 class="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-1">Tips Memilih Ukuran</h4>
-                    <p class="text-sm text-blue-800 dark:text-blue-200">
+                    <h4 class="text-sm font-semibold text-blue-900dark:text-blue-100 mb-1">Tips Memilih Ukuran</h4>
+                    <p class="text-sm text-blue-800dark:text-blue-200">
                       Ukuran ini adalah panduan umum. Untuk hasil terbaik, ukur kaos yang sudah ada dan bandingkan dengan tabel di atas.
                     </p>
                   </div>
@@ -477,7 +477,7 @@
               <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
               <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
               <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Sweater</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
               <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
@@ -489,7 +489,7 @@
               <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
               <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
               <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
-              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
               <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
               <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 

@@ -99,13 +99,13 @@
 
         <div class="text-center animate__animated animate__fadeIn animate__delay-1s">
 
-          <h1 class="text-4xl font-semibold tracking-tight text-white dark:text-gray-900 sm:text-7xl animate__animated animate__fadeIn animate__delay-1s" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+          <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-7xl animate__animated animate__fadeIn animate__delay-1s" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
 
             Glam Stitch Mitra Konveksi Terpercaya Anda
 
           </h1>
 
-          <p class="mt-8 text-lg font-medium text-gray-400 dark:text-gray-700 sm:text-xl animate__animated animate__fadeIn animate__delay-2s" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
+          <p class="mt-8 text-lg font-medium text-gray-300 sm:text-xl animate__animated animate__fadeIn animate__delay-2s" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
 
             
 
@@ -261,7 +261,7 @@
 
             alt="Tim produksi Glam Stitch sedang menjahit kaos custom"
 
-            class="product-image w-full h-96 lg:h-[500px] rounded-2xl shadow-2xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl" loading="lazy" />
+            class="product-image w-full h-96 lg:h-[500px] rounded-2xl shadow-2xl object-cover transition duration-500 transform hover:scale-105 hover:shadow-2xl bg-white dark:bg-gray-800" loading="lazy" />
 
         </div>
 
@@ -281,7 +281,7 @@
 
       <h2 class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-white text-center animate__animated animate__fadeIn animate__delay-300ms">Cara Pemesanan</h2>
 
-      <p class="mt-4 text-lg text-gray-500 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat, aman, dan terpercaya.</p>
+      <p class="mt-4 text-lg text-gray-500 dark:text-gray-300 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat, aman, dan terpercaya.</p>
       
 
       <div class="mt-16 flex flex-col lg:flex-row items-center lg:items-start gap-10">
@@ -296,7 +296,7 @@
 
               alt="Ilustrasi cara pemesanan" 
 
-              class="product-image w-full h-full lg:h-[400px] rounded-2xl shadow-2xl object-contain bg-white p-4 transition duration-500 transform hover:scale-105 hover:shadow-2xl" loading="lazy">
+              class="product-image w-full h-full lg:h-[400px] rounded-2xl shadow-2xl object-contain bg-white dark:bg-gray-800 p-4 transition duration-500 transform hover:scale-105 hover:shadow-2xl" loading="lazy">
 
         </div>
 
@@ -345,149 +345,6 @@
   
 
 <!-- Product Gallery -->
-  <section class="bg-white text-black py-6 sm:py-16">
-
-    <div class="mx-auto max-w-7xl px-6 lg:px-16">
-
-      
-
-      <!-- Judul dan deskripsi -->
-
-      <div class="max-w-2xl lg:mx-0 text-left animate__animated animate__fadeInUp animate__delay-300ms">
-
-        <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-
-          Koleksi Produk Terbaik Kami
-
-        </h2>
-
-        <p class="mt-6 text-base leading-7 text-gray-600">
-
-          Jelajahi berbagai produk fashion berkualitas tinggi yang dirancang khusus untuk memenuhi kebutuhan Anda.
-
-        </p>
-
-      </div>      
-
-  
-
-      <!-- Product Gallery Grid -->
-      <div class="mx-auto mt-16 grid grid-cols-1 gap-8 lg:mt-20 lg:grid-cols-2 xl:grid-cols-3">
-        
-         <!-- Kaos Polos -->
-         <a href="/tshirt" class="relative overflow-hidden rounded-2xl bg-white shadow-xl animate__animated animate__fadeInUp animate__delay-600ms">
-           <div class="aspect-square overflow-hidden">
-             <img 
-               src="https://media.istockphoto.com/id/185941321/id/foto/tubuh-bagian-atas-pria.jpg?s=612x612&w=0&k=20&c=iS9nQtGYKbNusFB7N6ygJZPdkmSvK1OwkhinmalwW3o=" 
-               alt="Kaos Polos Glam Stitch" 
-               class="h-full w-full object-cover"
-               loading="lazy"
-             />
-           </div>
-           <div class="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/60 to-transparent">
-             <h3 class="text-2xl font-bold mb-2">Kaos Polos</h3>
-             <p class="text-sm opacity-90">Nyaman dipakai seharian dengan bahan premium</p>
-           </div>
-         </a>
-
-         <!-- Kaos Polo -->
-         <a href="/polo" class="relative overflow-hidden rounded-2xl bg-white shadow-xl animate__animated animate__fadeInUp animate__delay-900ms">
-           <div class="aspect-square overflow-hidden">
-             <img 
-               src="https://i.pinimg.com/1200x/d5/c8/bb/d5c8bb224ae8411e2fea73d085853a33.jpg" 
-               alt="Kaos Polo Glam Stitch" 
-               class="h-full w-full object-cover"
-               loading="lazy"
-             />
-           </div>
-           <div class="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/60 to-transparent">
-             <h3 class="text-2xl font-bold mb-2">Kaos Polo</h3>
-             <p class="text-sm opacity-90">Elegan dan stylish untuk acara semi-formal</p>
-           </div>
-         </a>
-
-         <!-- Jersey -->
-         <a href="/jersey" class="relative overflow-hidden rounded-2xl bg-white shadow-xl animate__animated animate__fadeInUp animate__delay-1200ms">
-           <div class="aspect-square overflow-hidden">
-             <img 
-               src="https://i.pinimg.com/736x/71/6f/fe/716ffe3e69e6cc63bc177bf7a110f810.jpg" 
-               alt="Jersey Glam Stitch" 
-               class="h-full w-full object-cover"
-               loading="lazy"
-             />
-           </div>
-           <div class="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/60 to-transparent">
-             <h3 class="text-2xl font-bold mb-2">Jersey</h3>
-             <p class="text-sm opacity-90">Nyaman untuk aktivitas olahraga dan casual</p>
-           </div>
-         </a>
-
-         <!-- Hoodie/Sweater -->
-         <a href="/jacket" class="relative overflow-hidden rounded-2xl bg-white shadow-xl animate__animated animate__fadeInUp animate__delay-1500ms">
-           <div class="aspect-square overflow-hidden">
-             <img 
-               src="https://i.pinimg.com/1200x/ef/7c/0b/ef7c0bb8b5659de5812dfdf3b43755af.jpg" 
-               alt="Hoodie/Sweater Glam Stitch" 
-               class="h-full w-full object-cover"
-               loading="lazy"
-             />
-           </div>
-           <div class="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/60 to-transparent">
-             <h3 class="text-2xl font-bold mb-2">Hoodie/Sweater</h3>
-             <p class="text-sm opacity-90">Hangat dan stylish untuk cuaca dingin</p>
-           </div>
-         </a>
-  
-
-         <!-- Kemeja -->
-         <a href="/shirts" class="relative overflow-hidden rounded-2xl bg-white shadow-xl animate__animated animate__fadeInUp animate__delay-1800ms">
-           <div class="aspect-square overflow-hidden">
-             <img 
-               src="https://i.pinimg.com/1200x/b8/93/12/b893125cc3ee0cc1edd7b7952513c44e.jpg" 
-               alt="Kemeja Glam Stitch" 
-               class="h-full w-full object-cover"
-               loading="lazy"
-             />
-           </div>
-           <div class="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/60 to-transparent">
-             <h3 class="text-2xl font-bold mb-2">Kemeja</h3>
-             <p class="text-sm opacity-90">Tampil rapi dan profesional</p>
-           </div>
-         </a>
-
-         <!-- View All Products -->
-         <a href="/product" class="relative overflow-hidden rounded-2xl shadow-xl animate__animated animate__fadeInUp animate__delay-2100ms">
-           <!-- Background Image -->
-           <img 
-             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
-             alt="Koleksi Produk Glam Stitch" 
-             class="absolute inset-0 w-full h-full object-cover"
-             loading="lazy"
-           />
-           <!-- Overlay -->
-           <div class="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-800/70"></div>
-           
-           <div class="aspect-square flex items-center justify-center relative z-10">
-             <div class="text-center text-white">
-               <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                 </svg>
-               </div>
-               <h3 class="text-2xl font-bold mb-2">Lihat Semua</h3>
-               <p class="text-sm opacity-90">Jelajahi koleksi lengkap kami</p>
-           </div>
-
-         </div>
-
-         </a>
-      </div>
-
-    </div>  
-
-  </section>
-
-
 
   <!--stats-->
 
@@ -593,7 +450,7 @@
 
   <!-- Footer -->
 
-  <footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">
+  <footer class="bg-gray-900 dark:bg-gray-900" aria-labelledby="footer-heading">
 
     <h2 id="footer-heading" class="sr-only">Footer</h2>
 
@@ -690,7 +547,7 @@
 
               <li><a href="/jersey" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jersey</a></li>
 
-              <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Sweater</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
 
               <li><a href="/shirts" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kemeja</a></li>
 
@@ -715,7 +572,7 @@
 
               <li><a href="/store-location" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
 
-              <li><a href="/gallery" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Galeri</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
 
               <li><a href="/pelanggan-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
 
