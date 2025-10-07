@@ -1,197 +1,237 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Tidak Ditemukan - Glam Stitch</title>
-    <meta name="description" content="Halaman yang Anda cari tidak ditemukan. Kembali ke beranda Glam Stitch untuk melihat produk konveksi terbaik kami.">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="description" content="Halaman yang Anda cari tidak ditemukan. Kembali ke beranda Glam Stitch untuk menjelajahi produk konveksi berkualitas tinggi kami.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Custom styles -->
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
     <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        /* Custom styles for dark mode */
+        html.dark {
+            color-scheme: dark;
         }
         
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        html:not(.dark) {
+            color-scheme: light;
         }
         
-        .animate-bounce-slow {
-            animation: bounce 2s infinite;
+        /* Smooth transitions */
+        * {
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         }
         
-        .animate-pulse-slow {
-            animation: pulse 3s infinite;
+        /* Dark mode styles */
+        html.dark body {
+            background-color: #111827;
+            color: #f9fafb;
         }
         
+        html:not(.dark) body {
+            background-color: #ffffff;
+            color: #111827;
+        }
+        
+        /* Custom animations */
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-10px); }
         }
         
-        .animate-float {
+        .float-animation {
             animation: float 3s ease-in-out infinite;
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body class="min-h-screen gradient-bg flex items-center justify-center p-4">
-    <div class="max-w-4xl mx-auto text-center">
-        <!-- Logo -->
-        <div class="mb-8 animate-float">
-            <img src="/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-20 w-20 mx-auto mb-4">
-            <h1 class="text-4xl font-bold text-white mb-2">Glam Stitch</h1>
+
+<body class="h-full bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-4 inset-x-4 z-50">
+        <div class="mx-auto max-w-7xl px-6 py-4 bg-white/95 dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 shadow-lg dark:shadow-2xl flex items-center justify-between rounded-full backdrop-blur-md">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2 group">
+                <img src="/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-10 w-10 object-contain dark:brightness-110">
+                <span class="hidden sm:block text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-200">Glam Stitch</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+                    Beranda
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/product" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+                    Produk
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/services" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+                    Layanan
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/contact-us" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+                    Hubungi Kami
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
-        
-        <!-- 404 Content -->
-        <div class="glass-effect rounded-3xl p-8 md:p-12 mb-8">
-            <div class="text-8xl md:text-9xl font-bold text-white mb-4 animate-bounce-slow">404</div>
-            <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Halaman Tidak Ditemukan</h2>
-            <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-                Maaf, halaman yang Anda cari tidak dapat ditemukan. Mungkin halaman tersebut telah dipindahkan, dihapus, atau URL yang Anda masukkan salah.
-            </p>
-            
+    </nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen flex items-center justify-center px-4 pt-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- 404 Illustration -->
+            <div class="mb-8 animate-fade-in">
+                <div class="relative inline-block">
+                    <!-- Custom 404 illustration -->
+                    <div class="w-64 h-64 mx-auto bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-full flex items-center justify-center float-animation">
+                        <div class="text-8xl font-bold text-indigo-600 dark:text-indigo-400">404</div>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-bounce-slow"></div>
+                    <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-pink-400 rounded-full animate-bounce-slow" style="animation-delay: 1s;"></div>
+                    <div class="absolute top-1/2 -left-8 w-4 h-4 bg-green-400 rounded-full animate-bounce-slow" style="animation-delay: 2s;"></div>
+                </div>
+            </div>
+
+            <!-- Error Message -->
+            <div class="mb-8 animate-slide-up">
+                <h1 class="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+                    Oops! Halaman Tidak Ditemukan
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
+                    Maaf, halaman yang Anda cari tidak dapat ditemukan. Mungkin halaman tersebut telah dipindahkan atau tidak ada.
+                </p>
+            </div>
+
             <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    🏠 Kembali ke Beranda
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up">
+                <a href="/" class="group relative px-8 py-4 bg-indigo-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
+                    <span class="relative z-10">Kembali ke Beranda</span>
                 </a>
-                <a href="/product" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    👕 Lihat Produk
-                </a>
-            </div>
-        </div>
-        
-        <!-- Quick Links -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <a href="/" class="glass-effect rounded-xl p-4 text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                <div class="text-2xl mb-2">🏠</div>
-                <div class="text-sm font-medium">Beranda</div>
-            </a>
-            <a href="/product" class="glass-effect rounded-xl p-4 text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                <div class="text-2xl mb-2">👕</div>
-                <div class="text-sm font-medium">Produk</div>
-            </a>
-            <a href="/services" class="glass-effect rounded-xl p-4 text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                <div class="text-2xl mb-2">⚙️</div>
-                <div class="text-sm font-medium">Layanan</div>
-            </a>
-            <a href="/contact-us" class="glass-effect rounded-xl p-4 text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                <div class="text-2xl mb-2">📞</div>
-                <div class="text-sm font-medium">Kontak</div>
-            </a>
-        </div>
-        
-        <!-- Popular Products -->
-        <div class="glass-effect rounded-2xl p-6">
-            <h3 class="text-xl font-semibold text-white mb-4">Produk Populer</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <a href="/tshirt" class="text-white hover:text-indigo-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">👕</div>
-                    <div class="text-sm">Kaos</div>
-                </a>
-                <a href="/polo" class="text-white hover:text-indigo-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">👔</div>
-                    <div class="text-sm">Polo</div>
-                </a>
-                <a href="/jersey" class="text-white hover:text-indigo-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">⚽</div>
-                    <div class="text-sm">Jersey</div>
-                </a>
-                <a href="/jacket" class="text-white hover:text-indigo-300 transition-colors duration-300">
-                    <div class="text-3xl mb-2">🧥</div>
-                    <div class="text-sm">Jaket</div>
+                <a href="/product" class="group text-indigo-600 dark:text-indigo-400 font-semibold hover:text-indigo-500 dark:hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
+                    Lihat Produk Kami 
+                    <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
                 </a>
             </div>
+
+            <!-- Quick Links -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 animate-slide-up">
+                <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Jelajahi Situs Kami</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="/product" class="group p-4 bg-white dark:bg-gray-700 rounded-lg hover:shadow-md transition-all duration-300 transform hover:scale-105">
+                        <div class="text-2xl mb-2">👕</div>
+                        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Produk</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Kaos, Jersey, Jaket</p>
+                    </a>
+                    <a href="/services" class="group p-4 bg-white dark:bg-gray-700 rounded-lg hover:shadow-md transition-all duration-300 transform hover:scale-105">
+                        <div class="text-2xl mb-2">⚙️</div>
+                        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Layanan</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Konveksi & Sablon</p>
+                    </a>
+                    <a href="/about-us" class="group p-4 bg-white dark:bg-gray-700 rounded-lg hover:shadow-md transition-all duration-300 transform hover:scale-105">
+                        <div class="text-2xl mb-2">🏢</div>
+                        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Tentang</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Profil Perusahaan</p>
+                    </a>
+                    <a href="/contact-us" class="group p-4 bg-white dark:bg-gray-700 rounded-lg hover:shadow-md transition-all duration-300 transform hover:scale-105">
+                        <div class="text-2xl mb-2">📞</div>
+                        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Kontak</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Hubungi Kami</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        
-        <!-- Footer -->
-        <div class="mt-8 text-white/60 text-sm">
-            <p>&copy; 2025 Glam Stitch. All rights reserved.</p>
-            <p class="mt-2">Konveksi & Sablon Berkualitas Tinggi</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-900 mt-16">
+        <div class="mx-auto max-w-7xl px-6 py-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <img src="/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-8 w-8 dark:brightness-110">
+                    <span class="text-lg font-semibold text-white">Glam Stitch</span>
+                </div>
+                <p class="text-sm text-gray-400">&copy; 2025 Glam Stitch. All rights reserved.</p>
+            </div>
         </div>
-    </div>
-    
-    <!-- JavaScript for enhanced interactivity -->
+    </footer>
+
+    <!-- Theme Toggle Script -->
     <script>
-        // Add some interactive effects
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add click effects to buttons
-            const buttons = document.querySelectorAll('a[href]');
-            buttons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    // Create ripple effect
-                    const ripple = document.createElement('span');
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.width, rect.height);
-                    const x = e.clientX - rect.left - size / 2;
-                    const y = e.clientY - rect.top - size / 2;
-                    
-                    ripple.style.width = ripple.style.height = size + 'px';
-                    ripple.style.left = x + 'px';
-                    ripple.style.top = y + 'px';
-                    ripple.classList.add('ripple');
-                    
-                    this.appendChild(ripple);
-                    
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 600);
-                });
-            });
-            
-            // Add floating animation to logo
-            const logo = document.querySelector('img[alt="Glam Stitch Logo"]');
-            if (logo) {
-                logo.addEventListener('mouseenter', function() {
-                    this.style.animation = 'float 1s ease-in-out infinite';
-                });
-                
-                logo.addEventListener('mouseleave', function() {
-                    this.style.animation = 'float 3s ease-in-out infinite';
-                });
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleLightIcon.classList.add('hidden');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggle.addEventListener('click', function() {
+            // Toggle the theme
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeToggleLightIcon.classList.add('hidden');
+                themeToggleDarkIcon.classList.remove('hidden');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggleLightIcon.classList.remove('hidden');
+                themeToggleDarkIcon.classList.add('hidden');
             }
         });
     </script>
-    
-    <!-- Additional CSS for ripple effect -->
-    <style>
-        .ripple {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(0);
-            animation: ripple-animation 0.6s linear;
-            pointer-events: none;
-        }
-        
-        @keyframes ripple-animation {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 640px) {
-            .text-8xl {
-                font-size: 4rem;
-            }
-            
-            .glass-effect {
-                padding: 1.5rem;
-            }
-        }
-    </style>
 </body>
 </html>

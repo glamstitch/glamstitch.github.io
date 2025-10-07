@@ -83,7 +83,7 @@
           <!-- Gambar samping -->
           <div class="grid grid-cols-1 gap-6">
             <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
-              <img loading="lazy" src="https://media.istockphoto.com/id/1393264537/id/foto/model-mengenakan-hoodie-pria-kulit-hitam-maket-untuk-desain-anda-sendiri.jpg?s=612x612&w=0&k=20&c=8gN8pachrbhpSFlX5VQxUDKQsvaYNk9hb69vPwr577w=" 
+              <img loading="lazy" src="https://i.pinimg.com/1200x/c0/3d/d1/c03dd1324047bf85a4c86e474ed57b0a.jpg" 
                 alt="Model mengenakan hoodie hitam."
                 class="h-full w-full object-cover object-center">
             </div>
@@ -213,7 +213,7 @@
       <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         <!-- Hoodie/Sweater 1 -->
         <div class="group relative">
-          <img loading="lazy" src="https://media.istockphoto.com/id/2085676478/id/foto/mockup-hoodie-putih-pada-pria-berjanggut-kaus-oversized-dengan-saku-untuk-desain-branding.jpg?s=612x612&w=0&k=20&c=7QKD-7q--IDD5CV0p5JDNuWy6f26zHLa0qCI3cF8wOc=" alt="Hoodie/Sweater Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+          <img loading="lazy" src="https://i.pinimg.com/1200x/69/60/05/696005d91605b4099e04daf51193b7fe.jpg" alt="Hoodie/Sweater Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
@@ -225,7 +225,7 @@
 
         <!-- Hoodie/Sweater 2 -->
         <div class="group relative">
-          <img loading="lazy" src="https://media.istockphoto.com/id/2147500282/id/foto/template-hoodie-hitam-besar-pada-seorang-pria-brutal-dengan-tangan-di-saku-pakaian-lebar-untuk.jpg?s=612x612&w=0&k=20&c=O5ypltazwnlEkG_6VFkZjUN77G5hTlSzdoW5tGCnbhk=" alt="Hoodie/Sweater Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+          <img loading="lazy" src="https://i.pinimg.com/1200x/6a/58/0c/6a580cc3c6800bdc4cb02ba38e83e20d.jpg" alt="Hoodie/Sweater Glam Stitch warna hitam." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
@@ -237,7 +237,7 @@
 
         <!-- Hoodie/Sweater 3 -->
         <div class="group relative">
-          <img loading="lazy" src="https://media.istockphoto.com/id/1314499049/id/foto/wanita-pirang-fasion-dalam-hoodie-besar-coklat-kacamata-dan-jeans-biru-mockup-untuk-logo-atau.jpg?s=612x612&w=0&k=20&c=CvvE5nL93XofC5kdnAQcVli9cB8nrOaDZvZ2vs7XhNs=" alt="Hoodie/Sweater Glam Stitch warna coklat." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+          <img loading="lazy" src="https://i.pinimg.com/1200x/10/8c/ac/108cac2bb1f4e33c37c4e553f4b45547.jpg" alt="Hoodie/Sweater Glam Stitch warna coklat." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
@@ -249,7 +249,7 @@
 
         <!-- Hoodie/Sweater 4 -->
         <div class="group relative">
-          <img loading="lazy" src="https://media.istockphoto.com/id/1652781007/id/foto/wanita-muda-tersenyum-dengan-hoodie-ungu-biru-di-mockup-ruang-copy-latar-belakang-merah-ramah.jpg?s=612x612&w=0&k=20&c=y-fN3CbRpMECwJ1epGMKPf7Ys8GAXWNoBF3xZBF-Vyo=" alt="Hoodie/Sweater Glam Stitch warna biru." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+          <img loading="lazy" src="https://i.pinimg.com/1200x/62/09/01/620901c10de6d2ff03fb5abbad660e66.jpg" alt="Hoodie/Sweater Glam Stitch warna biru." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
