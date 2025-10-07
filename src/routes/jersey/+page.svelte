@@ -1,6 +1,7 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import ukurankaos from '$lib/assets/image/ukurankaos.png';
 </script>
 
 <svelte:head>
@@ -354,8 +355,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <h4 class="text-sm font-semibold text-blue-900dark:text-blue-900 mb-1">Tips Memilih Ukuran Jersey</h4>
-                    <p class="text-sm text-blue-800 dark:text-blue-200">
+                    <h4 class="text-sm font-semibold text-blue-900dark:text-blue-100 mb-1">Tips Memilih Ukuran Jersey</h4>
+                    <p class="text-sm text-blue-800dark:text-blue-200">
                       Jersey dirancang dengan fit atletis yang lebih ketat untuk performa optimal. Pilih ukuran yang pas untuk gerakan bebas tanpa terlalu longgar.
                     </p>
                   </div>
@@ -367,7 +368,7 @@
             <div class="space-y-6">
               <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
                 <img loading="lazy" 
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center" 
+                  src="{ukurankaos}" 
                   alt="Panduan ukuran jersey - cara mengukur jersey dengan benar"
                   class="h-full w-full object-cover object-center hover:scale-105 transition-transform duration-300">
               </div>
@@ -401,8 +402,8 @@
                       <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">3</span>
                     </div>
                     <div>
-                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Lingkar Dada</h4>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur keliling dada pada bagian terlebar</p>
+                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Lengan Kaos</h4>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur dari bahu hingga ujung lengan</p>
                     </div>
                   </div>
                 </div>

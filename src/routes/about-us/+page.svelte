@@ -90,7 +90,7 @@
             <a href="/contact-us" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition">
               Hubungi Kami
             </a>
-            <a href="/product" class="text-sm font-semibold text-gray-900 dark:text-white hover:underline">
+            <a href="/product" class="text-sm font-semibold text-gray-900dark:text-white hover:underline">
               Lihat Produk <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -129,7 +129,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Visi</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-center">
+                <p class="text-gray-600dark:text-gray-300 text-center">
                     Menjadi pemimpin terkemuka dalam industri konveksi yang dikenal akan kualitas unggul, inovasi, dan kepuasan pelanggan.
                 </p>
             </div>
@@ -142,7 +142,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Misi 1</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-center">
+                <p class="text-gray-600dark:text-gray-300 text-center">
                     Memberikan pakaian kustom berkualitas tinggi sesuai kebutuhan pelanggan dengan menerapkan praktik produksi yang berkelanjutan.
                 </p>
             </div>
@@ -155,7 +155,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Misi 2</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-center">
+                <p class="text-gray-600dark:text-gray-300 text-center">
                     Membangun hubungan jangka panjang dengan klien melalui layanan yang andal, inovatif, dan berfokus pada kepuasan pelanggan.
                 </p>
             </div>
@@ -168,7 +168,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Komitmen Kualitas</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-center">
+                <p class="text-gray-600dark:text-gray-300 text-center">
                     Kami percaya bahwa setiap pakaian harus dibuat dengan ketelitian dan standar tertinggi.
                 </p>
             </div>
@@ -181,7 +181,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Inovasi</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-center">
+                <p class="text-gray-600dark:text-gray-300 text-center">
                     Kami mengadopsi teknologi dan teknik terbaru untuk meningkatkan kemampuan produksi dan menciptakan solusi pakaian yang modern.
                 </p>
             </div>
@@ -194,7 +194,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Keberlanjutan</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-center">
+                <p class="text-gray-600dark:text-gray-300 text-center">
                     Glam Stitch berkomitmen mengurangi dampak lingkungan dengan menerapkan praktik produksi yang ramah lingkungan.
                 </p>
             </div>

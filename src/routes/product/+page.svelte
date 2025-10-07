@@ -117,7 +117,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kaos Polos Premium</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">30+ Pilihan Warna</p>
-            <a href="/tshirt" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/tshirt" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -135,7 +135,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kaos Polo Elegan</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">15+ Pilihan Warna</p>
-            <a href="/polo" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/polo" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -153,7 +153,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Jersey Olahraga</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">15+ Pilihan Warna</p>
-            <a href="/jersey" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/jersey" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -171,7 +171,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Hoodie Premium</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">10+ Pilihan Warna</p>
-            <a href="/jacket" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/jacket" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -189,7 +189,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kemeja Formal</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">10+ Pilihan Warna</p>
-            <a href="/shirts" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/shirts" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
