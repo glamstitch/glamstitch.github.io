@@ -1,6 +1,7 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import ukurankaos from '$lib/assets/image/ukurankaos.png'
 </script>
 
 <svelte:head>
@@ -235,7 +236,7 @@
                 <h3 class="text-sm text-gray-700 dark:text-gray-200">
                   Kaos Polos
                 </h3>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Putih</p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Charcoal</p>
               </div>
             </div>
   
@@ -246,7 +247,8 @@
                 <h3 class="text-sm text-gray-700 dark:text-gray-200">
                   Kaos Polos
                 </h3>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Abu Tua</p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Baby blue
+                </p>
               </div>
             </div>
   
@@ -257,7 +259,7 @@
                 <h3 class="text-sm text-gray-700 dark:text-gray-200">
                   Kaos Polos
                 </h3>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Coklat</p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Ungu Plum</p>
               </div>
             </div>
   
@@ -290,7 +292,7 @@
                       <th class="text-left py-3 px-2 font-semibold text-gray-900dark:text-white">Ukuran</th>
                       <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Panjang (cm)</th>
                       <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Lebar (cm)</th>
-                      <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Lingkar Dada (cm)</th>
+                      <th class="text-center py-3 px-2 font-semibold text-gray-900dark:text-white">Lengan Kaos (cm)</th>
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
@@ -298,49 +300,49 @@
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XS</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">63</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">42</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">85</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">18</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">S</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">65</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">45</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">90</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">19</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">M</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">67</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">48</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">95</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">20</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">L</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">69</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">51</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">100</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">21</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XL</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">71</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">54</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">105</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">22</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XXL</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">73</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">57</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">110</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">23</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XXXL</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">75</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">60</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">115</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">24</td>
                     </tr>
                     <tr>
                       <td class="py-3 px-2 font-medium text-gray-900dark:text-white">XXXXL</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">77</td>
                       <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">63</td>
-                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">120</td>
+                      <td class="py-3 px-2 text-center text-gray-700dark:text-gray-300">25</td>
                     </tr>
                   </tbody>
                 </table>
@@ -366,7 +368,7 @@
             <div class="space-y-6">
               <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
                 <img loading="lazy" 
-                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=600&fit=crop&crop=center" 
+                  src="{ukurankaos}" 
                   alt="Panduan ukuran kaos - cara mengukur kaos dengan benar"
                   class="h-full w-full object-cover object-center hover:scale-105 transition-transform duration-300">
               </div>
@@ -400,8 +402,8 @@
                       <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">3</span>
                     </div>
                     <div>
-                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Lingkar Dada</h4>
-                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur keliling dada pada bagian terlebar</p>
+                      <h4 class="text-sm font-medium text-gray-900 dark:text-white">Lengan Kaos</h4>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">Ukur panjang lengan dari bahu hingga ujung lengan</p>
                     </div>
                   </div>
                 </div>

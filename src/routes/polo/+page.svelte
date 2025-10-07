@@ -223,7 +223,7 @@
                 <h3 class="text-sm text-gray-700 dark:text-gray-200">
                   Kaos Polo
                 </h3>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Navy</p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Biru</p>
               </div>
             </div>
   
@@ -245,7 +245,7 @@
                 <h3 class="text-sm text-gray-700 dark:text-gray-200">
                   Kaos Polo
                 </h3>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Hitam</p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Orange</p>
               </div>
             </div>
   
@@ -256,7 +256,7 @@
                 <h3 class="text-sm text-gray-700 dark:text-gray-200">
                   Kaos Polo
                 </h3>
-                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Abu-abu</p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Hitam</p>
               </div>
             </div>
   

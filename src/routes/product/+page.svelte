@@ -102,12 +102,11 @@
         </p>
       </div>
   
-      <!-- Products Grid - Horizontal Layout with Scrollbar -->
-      <div class="overflow-x-auto pb-4">
-        <div class="flex gap-6 min-w-max">
+      <!-- Products Grid - Vertical Layout with 3 products per row -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- Kaos Polos -->
-        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
           <div class="relative overflow-hidden rounded-t-lg">
             <img loading="lazy" 
               src="https://i.pinimg.com/736x/50/31/57/5031570ca2bae383dc3d83f004bc0dfe.jpg" 
@@ -125,7 +124,7 @@
         </div>
   
         <!-- Kaos Polo -->
-        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
           <div class="relative overflow-hidden rounded-t-lg">
             <img loading="lazy" 
               src="https://i.pinimg.com/1200x/01/22/29/012229e1a04151b3b6c0210eee6b259b.jpg" 
@@ -143,7 +142,7 @@
         </div>
   
         <!-- Jersey -->
-        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
           <div class="relative overflow-hidden rounded-t-lg">
             <img loading="lazy" 
               src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg" 
@@ -161,7 +160,7 @@
         </div>
   
         <!-- Hoodie/Sweater -->
-        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
           <div class="relative overflow-hidden rounded-t-lg">
             <img loading="lazy" 
               src="https://i.pinimg.com/1200x/5a/6d/b1/5a6db1b76d8dcacfb279079a82e8bf4e.jpg" 
@@ -179,7 +178,7 @@
         </div>
 
         <!-- Kemeja -->
-        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-64 flex-shrink-0">
+        <div class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
           <div class="relative overflow-hidden rounded-t-lg">
             <img loading="lazy" 
               src="https://i.pinimg.com/1200x/a3/9f/93/a39f9311f2367a33dcbba0f849fc5c8c.jpg" 
@@ -194,7 +193,6 @@
               Lihat Detail
             </a>
           </div>
-        </div>
         </div>
       </div>
     </div>

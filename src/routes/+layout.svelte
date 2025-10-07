@@ -2,6 +2,9 @@
 	import '../app.css';
 	import { base } from '$app/paths';
 	import logoGlint from '$lib/assets/image/logo glint.png';
+	import instagramIcon from '$lib/assets/image/instagram.svg';
+	import facebookIcon from '$lib/assets/image/facebook.svg';
+	import youtubeIcon from '$lib/assets/image/youtube.svg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import { onMount } from 'svelte';
   
@@ -9,14 +12,38 @@
 	
 	// State for dropdown menus
 	let companyDropdownOpen = $state(false);
+	let socialDropdownOpen = $state(false);
+	let companyTimeout: ReturnType<typeof setTimeout> | undefined;
+	let socialTimeout: ReturnType<typeof setTimeout> | undefined;
 	
-	function toggleCompanyDropdown() {
-		companyDropdownOpen = !companyDropdownOpen;
-		
-		// Reset animations when closing
-		if (!companyDropdownOpen) {
-			resetDropdownAnimations();
+	function handleCompanyMouseEnter() {
+		if (companyTimeout) {
+			clearTimeout(companyTimeout);
+			companyTimeout = undefined;
 		}
+		companyDropdownOpen = true;
+	}
+	
+	function handleCompanyMouseLeave() {
+		companyTimeout = setTimeout(() => {
+			companyDropdownOpen = false;
+			resetDropdownAnimations();
+		}, 150);
+	}
+	
+	function handleSocialMouseEnter() {
+		if (socialTimeout) {
+			clearTimeout(socialTimeout);
+			socialTimeout = undefined;
+		}
+		socialDropdownOpen = true;
+	}
+	
+	function handleSocialMouseLeave() {
+		socialTimeout = setTimeout(() => {
+			socialDropdownOpen = false;
+			resetDropdownAnimations();
+		}, 150);
 	}
 	
 	// Function to close mobile menu
@@ -27,11 +54,12 @@
 		}
 	}
 	
-	// Close dropdowns when clicking outside
+	// Close dropdowns when clicking outside (for mobile)
 	function handleClickOutside(event: MouseEvent) {
 		const target = event.target as HTMLElement;
 		if (!target.closest('.dropdown-container')) {
 			companyDropdownOpen = false;
+			socialDropdownOpen = false;
 			resetDropdownAnimations();
 		}
 	}
@@ -49,6 +77,9 @@
 		document.addEventListener('click', handleClickOutside);
 		return () => {
 			document.removeEventListener('click', handleClickOutside);
+			// Cleanup timeouts
+			if (companyTimeout) clearTimeout(companyTimeout);
+			if (socialTimeout) clearTimeout(socialTimeout);
 		};
 	});
 </script>
@@ -161,6 +192,14 @@
 		opacity: 1;
 		transform: translateY(0);
 		transition: opacity 0.2s ease, transform 0.2s ease;
+		pointer-events: auto;
+	}
+	
+	/* Ensure dropdown stays open when hovering over menu items */
+	:global(.dropdown-container:hover .dropdown-menu) {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
 		pointer-events: auto;
 	}
 	
@@ -429,8 +468,9 @@
 			</a>
 
 			<!-- Company Info Dropdown -->
-			<div class="relative dropdown-container">
-				<button onclick={toggleCompanyDropdown} class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
+				<button class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
 					Perusahaan
 					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -487,6 +527,46 @@
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
 								</svg>
 								Pelanggan Kami
+							</span>
+						</a>
+					</div>
+					</div>
+				{/if}
+			</div>
+
+			<!-- Social Media Dropdown -->
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<div class="relative dropdown-container" onmouseenter={handleSocialMouseEnter} onmouseleave={handleSocialMouseLeave}>
+				<button class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
+					<span class="flex items-center gap-2">
+						Sosial Media
+					</span>
+					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+				</button>
+				{#if socialDropdownOpen}
+					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white/95 dark:bg-gray-900/95 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 backdrop-blur-md">
+					<div class="py-2">
+						<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
+							<span class="flex items-center gap-2">
+								<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
+								Instagram
+							</span>
+						</a>
+
+						<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
+							<span class="flex items-center gap-2">
+								<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
+								Facebook
+							</span>
+						</a>
+
+						<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
+							<span class="flex items-center gap-2">
+								<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
+								YouTube
 							</span>
 						</a>
 					</div>
@@ -608,6 +688,39 @@
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
 								</svg>
 								Pelanggan Kami
+							</span>
+						</a>
+				</div>
+			</div>
+
+			<!-- Social Media Dropdown -->
+			<div class="relative">
+				<input type="checkbox" id="mobile-social" class="peer/social hidden" />
+				<label for="mobile-social" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
+					<span class="flex items-center gap-2">
+						Sosial Media
+					</span>
+					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/social:rotate-180 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</label>
+				<div class="overflow-hidden max-h-0 peer-checked/social:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
+						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
+								Instagram
+							</span>
+						</a>
+						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
+								Facebook
+							</span>
+						</a>
+						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-3">
+								<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
+								YouTube
 							</span>
 						</a>
 				</div>

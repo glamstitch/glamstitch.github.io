@@ -215,17 +215,17 @@
               <img loading="lazy" src={kemejaImg} alt="Kemeja Glam Stitch warna biru." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru Navy</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Flannel Biru Navy</p>
                 </div>
               </div>
             </div>
       
             <!-- Kemeja 2 -->
             <div class="group relative">
-              <img loading="lazy" src="https://i.pinimg.com/474x/dc/0c/f8/dc0cf89c241e8da2ec335ab995fbfd3a.jpg" alt="Kemeja Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/1a/03/c5/1a03c52b23d0a86b0bdf8758b184df61.jpg" alt="Kemeja Glam Stitch warna putih." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Merah Maroon</p>
                 </div>
               </div>
             </div>
@@ -242,10 +242,10 @@
       
             <!-- Kemeja 4 -->
             <div class="group relative">
-              <img loading="lazy" src="https://img.freepik.com/premium-photo/black-denim-jacket-mock-up-front-back-views-jeans-jacket-set_1008660-4054.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&w=740" alt="Kemeja Glam Stitch warna abu-abu." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
+              <img loading="lazy" src="https://i.pinimg.com/1200x/42/0c/5f/420c5fc727a55357433bc434d141778a.jpg" alt="Kemeja Glam Stitch warna abu-abu." class="aspect-square w-full rounded-md bg-gray-200 dark:bg-gray-800 object-cover group-hover:opacity-75">
               <div class="mt-4 flex justify-between">
                 <div>
-                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Abu-abu</p>
+                  <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Coklat</p>
                 </div>
               </div>
             </div>

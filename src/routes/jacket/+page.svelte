@@ -217,7 +217,7 @@
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Putih</a>
+                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Hitam</a>
               </h3>
             </div>
           </div>
@@ -229,7 +229,7 @@
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Hitam</a>
+                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Biru Navy</a>
               </h3>
             </div>
           </div>
@@ -241,7 +241,7 @@
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Coklat</a>
+                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Pink</a>
               </h3>
             </div>
           </div>
@@ -253,7 +253,7 @@
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700 dark:text-gray-200">
-                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Biru Navy</a>
+                <a href="/jacket"><span aria-hidden="true" class="absolute inset-0"></span>Biru Awan</a>
               </h3>
             </div>
           </div>
