@@ -2,6 +2,7 @@
   // Page content only - dark mode handled by layout
   import kemejaImg from '$lib/assets/image/kemeja.jpg';
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import ukurankemeja from '$lib/assets/image/ukurankemeja.png'
 </script>
 
 <svelte:head>
@@ -364,7 +365,7 @@
             <div class="space-y-6">
               <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
                 <img loading="lazy" 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=center" 
+                  src="{ukurankemeja}" 
                   alt="Panduan ukuran kemeja - cara mengukur kemeja dengan benar"
                   class="h-full w-full object-cover object-center hover:scale-105 transition-transform duration-300">
               </div>

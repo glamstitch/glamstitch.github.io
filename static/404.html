@@ -22,12 +22,24 @@
             }
         }
     </style>
+    <script>
+        // Detect base path automatically
+        const getBasePath = () => {
+            const path = window.location.pathname;
+            // If we're in a subdirectory (like /glamstitch-company-profile/), use it
+            const match = path.match(/^\/[^\/]+\//);
+            return match ? match[0].slice(0, -1) : '';
+        };
+        
+        // Store base path for use in navigation
+        window.BASE_PATH = getBasePath();
+    </script>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center">
     <div class="max-w-md w-full mx-auto px-6 text-center">
         <!-- Logo -->
         <div class="mb-8">
-            <img src="/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-20 w-auto mx-auto mb-4">
+            <img src="/assets/image/logo glint.png" alt="Glam Stitch Logo" class="h-20 w-auto mx-auto mb-4" id="logo">
         </div>
 
         <!-- 404 Error -->
@@ -43,10 +55,10 @@
 
         <!-- Action Buttons -->
         <div class="space-y-4">
-            <a href="/" class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <a href="#" id="homeLink" class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
                 Kembali ke Beranda
             </a>
-            <a href="/contact-us" class="block w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+            <a href="#" id="contactLink" class="block w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
                 Hubungi Kami
             </a>
         </div>
@@ -65,6 +77,29 @@
         if (localStorage.getItem('darkMode') === 'true' || (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         }
+        
+        // Set correct paths with base path
+        document.addEventListener('DOMContentLoaded', function() {
+            const basePath = window.BASE_PATH || '';
+            
+            // Update logo src
+            const logo = document.getElementById('logo');
+            if (logo) {
+                logo.src = basePath + '/assets/image/logo glint.png';
+            }
+            
+            // Update home link
+            const homeLink = document.getElementById('homeLink');
+            if (homeLink) {
+                homeLink.href = basePath + '/';
+            }
+            
+            // Update contact link
+            const contactLink = document.getElementById('contactLink');
+            if (contactLink) {
+                contactLink.href = basePath + '/contact-us';
+            }
+        });
     </script>
 </body>
 </html>

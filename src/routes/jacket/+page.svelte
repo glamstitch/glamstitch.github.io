@@ -1,6 +1,7 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import ukuranjaket from '$lib/assets/image/ukuranjaket.png';
 </script>
 
 <svelte:head>
@@ -372,7 +373,7 @@
             <div class="space-y-6">
               <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
                 <img loading="lazy" 
-                  src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=600&fit=crop&crop=center" 
+                  src="{ukuranjaket}" 
                   alt="Panduan ukuran sweater/hoodie - cara mengukur sweater dengan benar"
                   class="h-full w-full object-cover object-center hover:scale-105 transition-transform duration-300">
               </div>

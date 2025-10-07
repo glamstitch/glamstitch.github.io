@@ -240,9 +240,9 @@
           <div class="text-center">
             <img src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo=" alt="Layanan Online" class="mx-auto mb-4 h-16 w-16 text-indigo-600">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Layanan Online</h3>
-            <p class="text-lg text-blue-500 dark:text-blue-400">24/7</p>
+            <p class="text-lg text-blue-500 dark:text-blue-400">Senin - Sabtu : 09:00 - 17:00</p>
             <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Website dan media sosial kami tersedia 24/7 untuk informasi produk, katalog, dan konsultasi awal. Tim kami akan merespons secepat mungkin.
+              Tim customer service kami siap melayani Anda melalui chat online, WhatsApp, dan email dari Senin hingga Sabtu, pukul 09:00 - 17:00 WIB.
             </p>
           </div>
         </div>

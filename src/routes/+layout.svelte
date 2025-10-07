@@ -7,6 +7,8 @@
 	import youtubeIcon from '$lib/assets/image/youtube.svg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import { onMount } from 'svelte';
+	import { fade, fly } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
   
 	let { children } = $props();
 	
@@ -15,6 +17,9 @@
 	let socialDropdownOpen = $state(false);
 	let companyTimeout: ReturnType<typeof setTimeout> | undefined;
 	let socialTimeout: ReturnType<typeof setTimeout> | undefined;
+	
+	// State for mobile menu
+	let mobileMenuOpen = $state(false);
 	
 	function handleCompanyMouseEnter() {
 		if (companyTimeout) {
@@ -46,12 +51,14 @@
 		}, 150);
 	}
 	
+	// Function to toggle mobile menu
+	function toggleMobileMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+	}
+	
 	// Function to close mobile menu
 	function closeMobileMenu() {
-		const menuToggle = document.getElementById('menu-toggle') as HTMLInputElement;
-		if (menuToggle) {
-			menuToggle.checked = false;
-		}
+		mobileMenuOpen = false;
 	}
 	
 	// Close dropdowns when clicking outside (for mobile)
@@ -346,6 +353,26 @@
 		transform: scale(0.95);
 	}
 	
+	/* Hamburger to X animation */
+	:global(.hamburger-line) {
+		transform-origin: center;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	/* When menu is checked, transform hamburger to X */
+	:global(.peer:checked ~ nav .hamburger-line:nth-child(1)) {
+		transform: rotate(45deg) translateY(8px);
+	}
+	
+	:global(.peer:checked ~ nav .hamburger-line:nth-child(2)) {
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	
+	:global(.peer:checked ~ nav .hamburger-line:nth-child(3)) {
+		transform: rotate(-45deg) translateY(-8px);
+	}
+	
 	/* Logo animation */
 	:global(.navbar-logo) {
 		transition: transform 0.2s ease;
@@ -371,22 +398,6 @@
 		}
 	}
 	
-	/* Mobile menu panel animations */
-	:global(.mobile-menu-panel) {
-		animation: slideInFromRight 0.3s ease-out;
-	}
-	
-	@keyframes slideInFromRight {
-		from {
-			transform: translateX(100%);
-			opacity: 0;
-		}
-		to {
-			transform: translateX(0);
-			opacity: 1;
-		}
-	}
-	
 	/* Mobile menu items */
 	:global(.mobile-menu-item) {
 		transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -396,29 +407,13 @@
 		transform: translateX(4px);
 	}
 	
-	/* Backdrop animation */
+	/* Backdrop - Now handled by Svelte transitions */
 	:global(.mobile-menu-backdrop) {
-		animation: fadeInBackdrop 0.3s ease-out;
-	}
-	
-	@keyframes fadeInBackdrop {
-		from {
-			opacity: 0;
-			backdrop-filter: blur(0px);
-		}
-		to {
-			opacity: 1;
-			backdrop-filter: blur(4px);
-		}
+		backdrop-filter: blur(4px);
 	}
 	
 	/* Mobile menu responsive improvements */
 	@media (max-width: 640px) {
-		:global(.mobile-menu-panel) {
-			width: 100vw;
-			max-width: 100vw;
-		}
-		
 		:global(.mobile-menu-item) {
 			padding: 1rem;
 			font-size: 1rem;
@@ -426,11 +421,6 @@
 	}
 	
 	@media (max-width: 480px) {
-		:global(.mobile-menu-panel) {
-			width: 100vw;
-			max-width: 100vw;
-		}
-		
 		:global(.mobile-menu-item) {
 			padding: 0.875rem;
 			font-size: 0.9rem;
@@ -446,7 +436,7 @@
 		<!-- Logo -->
 		<a href="{base}/" class="navbar-logo flex items-center gap-2 group">
 			<img src={logoGlint} alt="Glam Stitch Logo" class="h-10 w-10 object-contain dark:brightness-110">
-			<span class="hidden sm:block text-lg font-semibold text-gray-900dark:text-white  transition-colors duration-200">Glam Stitch</span>
+			<span class="hidden sm:block text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-200">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
@@ -472,7 +462,7 @@
 			<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
 				<button class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
 					Perusahaan
-					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
@@ -541,7 +531,7 @@
 					<span class="flex items-center gap-2">
 						Sosial Media
 					</span>
-					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
@@ -584,40 +574,39 @@
 			</div>
 
 			<!-- Mobile Menu Toggle -->
-			<label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-400 cursor-pointer transition-all duration-300 group">
+			<button onclick={toggleMobileMenu} class="lg:hidden p-2 rounded-lg hover:bg-gray-400 cursor-pointer transition-all duration-300 group">
 				<svg class="w-6 h-6 text-gray-700dark:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					{#if mobileMenuOpen}
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					{:else}
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					{/if}
 				</svg>
-			</label>
+			</button>
 		</div>
 	</div>
 </nav>
   
 <!-- Mobile Menu Container -->
+{#if mobileMenuOpen}
 <div class="lg:hidden">
-	<!-- Toggle Checkbox -->
-	<input type="checkbox" id="menu-toggle" class="peer hidden" autocomplete="off" />
-
 	<!-- Backdrop -->
-	<label for="menu-toggle" class="mobile-menu-backdrop fixed inset-0 z-40 bg-black/50 backdrop-blur-sm opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 cursor-pointer"></label>
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<div 
+		onclick={closeMobileMenu} 
+		class="mobile-menu-backdrop fixed inset-0 z-40 bg-black/30 cursor-pointer"
+		transition:fade={{ duration: 250, easing: cubicOut }}
+	></div>
 	
-	<!-- Menu Panel -->
-	<div class="mobile-menu-panel fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 bg-white/95 dark:bg-gray-900/95 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 ease-out overflow-y-auto backdrop-blur-md">
-		<!-- Header -->
-		<div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
-			<div class="flex items-center gap-2">
-				<img src={logoGlint} alt="Logo" class="h-10 w-10 dark:brightness-110" />
-				<span class="text-lg font-semibold text-gray-900dark:text-white">Glam Stitch</span>
-			</div>
-			<label for="menu-toggle" class="mobile-menu-close p-2 rounded-lg hover:bg-gray-400 transition-colors cursor-pointer">
-				<svg class="w-6 h-6 text-gray-900dark:text-white transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-				</svg>
-			</label>
-		</div>
-
+	<!-- Menu Panel - Dropdown dari bawah navbar dengan animasi menurun -->
+	<div 
+		class="mobile-menu-panel fixed top-[96px] left-4 right-4 mx-auto max-w-7xl z-50 bg-white/98 dark:bg-gray-900/98 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-lg border border-gray-200 dark:border-gray-700 max-h-[calc(100vh-112px)] overflow-y-auto"
+		transition:fly={{ y: -20, duration: 300, easing: cubicOut }}
+	>
+		
 		<!-- Navigation -->
-		<nav class="p-4 space-y-2">
+		<nav class="p-6 space-y-1">
 			<a href="{base}/" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
 				Beranda
 			</a>
@@ -640,55 +629,24 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/company:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
-						<a href="{base}/about-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
-								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-								</svg>
-								Tentang Kami
-							</span>
+				<div class="overflow-hidden max-h-0 peer-checked/company:max-h-80 transition-all duration-300 ease-in-out space-y-1">
+						<a href="{base}/about-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							Tentang Kami
 						</a>
-						<a href="{base}/contact-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
-								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-								</svg>
-								Hubungi Kami
-							</span>
+						<a href="{base}/contact-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							Hubungi Kami
 						</a>
-						<a href="{base}/store-location" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
-								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-								</svg>
-								Lokasi Toko
-							</span>
+						<a href="{base}/store-location" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							Lokasi Toko
 						</a>
-						<a href="{base}/gallery" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
-								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-								</svg>
-								Tim Kami
-							</span>
+						<a href="{base}/gallery" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							Tim Kami
 						</a>
-						<a href="{base}/supplier-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
-								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-								</svg>
-								Supplier Kami
-							</span>
+						<a href="{base}/supplier-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							Supplier Kami
 						</a>
-						<a href="{base}/pelanggan-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
-								<svg class="w-4 h-4 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-								</svg>
-								Pelanggan Kami
-							</span>
+						<a href="{base}/pelanggan-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							Pelanggan Kami
 						</a>
 				</div>
 			</div>
@@ -697,28 +655,26 @@
 			<div class="relative">
 				<input type="checkbox" id="mobile-social" class="peer/social hidden" />
 				<label for="mobile-social" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
-					<span class="flex items-center gap-2">
-						Sosial Media
-					</span>
+					<span>Sosial Media</span>
 					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/social:rotate-180 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/social:max-h-80 transition-all duration-300 ease-in-out ml-4 space-y-1">
-						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
+				<div class="overflow-hidden max-h-0 peer-checked/social:max-h-80 transition-all duration-300 ease-in-out space-y-1">
+						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-2">
 								<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
 								Instagram
 							</span>
 						</a>
-						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
+						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-2">
 								<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
 								Facebook
 							</span>
 						</a>
-						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-3">
+						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
+							<span class="flex items-center gap-2">
 								<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
 								YouTube
 							</span>
@@ -729,9 +685,10 @@
 		</nav>
 
 		<!-- Footer in Mobile Menu -->
-		<div class="p-6 border-t border-gray-200 dark:border-gray-800 mt-4">
-			<p class="text-sm text-gray-500 dark:text-gray-400 text-center">© 2025 Glam Stitch</p>
+		<div class="px-6 pb-6 pt-4 border-t border-gray-200 dark:border-gray-800">
+			<p class="text-sm text-gray-500dark:text-gray-400 text-center">© 2025 Glam Stitch</p>
 		</div>
 	</div>
 </div>
+{/if}
   
