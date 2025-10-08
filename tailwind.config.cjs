@@ -35,6 +35,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms') // <- tambahkan ini agar plugin forms aktif
+    require('@tailwindcss/forms')
   ],
 };
