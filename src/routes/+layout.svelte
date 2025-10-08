@@ -439,7 +439,7 @@
   
 <!-- Navbar -->
 <nav class="fixed top-4 inset-x-4 z-50">
-	<div class="mx-auto max-w-7xl px-6 py-0.5 bg-white/95 dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 shadow-lg dark:shadow-2xl flex items-center justify-between rounded-full backdrop-blur-md">
+	<div class="mx-auto max-w-7xl px-6 py-0.5 bg-white/95 border border-gray-200 shadow-lg flex items-center justify-between rounded-full backdrop-blur-md">
 		<!-- Logo -->
 		<a href="{base}/" class="navbar-logo flex items-center gap-2 group">
 			<img src={logoGlint} alt="Glam Stitch Logo" class="h-16 w-16 object-contain dark:brightness-110">
@@ -448,125 +448,125 @@
 
 		<!-- Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-8">
-			<a href="{base}/" class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
-				Beranda
-				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-			</a>
+		<a href="{base}/" class="navbar-link text-base text-gray-900 hover:text-indigo-600 relative group font-semibold transition-colors duration-200">
+			Beranda
+			<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+		</a>
 
-			<!-- Products Link -->
-			<a href="{base}/product" class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
-				Produk
-				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-			</a>
+		<!-- Products Link -->
+		<a href="{base}/product" class="navbar-link text-base text-gray-900 hover:text-indigo-600 relative group font-semibold transition-colors duration-200">
+			Produk
+			<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+		</a>
 
-			<a href="{base}/services" class="navbar-link text-base text-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
-				Layanan
-				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-			</a>
+		<a href="{base}/services" class="navbar-link text-base text-gray-900 hover:text-indigo-600 relative group font-semibold transition-colors duration-200">
+			Layanan
+			<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+		</a>
 
 			<!-- Company Info Dropdown -->
-			<!-- svelte-ignore a11y_no_static_element_interactions -->
-			<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
-				<button class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
-					Lainnya
-					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-				</button>
-				{#if companyDropdownOpen}
-					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white/95 dark:bg-gray-900/95 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 backdrop-blur-md">
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
+		<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
+			<button class="navbar-link text-base text-gray-900 hover:text-indigo-600 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
+				Lainnya
+				<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+				</svg>
+				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+			</button>
+			{#if companyDropdownOpen}
+				<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white/95 rounded-xl shadow-2xl border border-gray-200 z-50 backdrop-blur-md">
 					<div class="py-2">
-						<a href="{base}/about-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-								</svg>
-								Tentang Kami
-							</span>
-						</a>
+			<a href="{base}/about-us" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
+					Tentang Kami
+				</span>
+			</a>
 
-						<a href="{base}/contact-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-								</svg>
-								Hubungi Kami
-							</span>
-						</a>
-					<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-						<span class="flex items-center gap-2">
-							<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-							</svg>
-							Lokasi Toko
-						</span>
-					</a>
-						<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-								</svg>
-								Tim Kami
-							</span>
-						</a>
-						<a href="{base}/supplier-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-								</svg>
-								Supplier Kami
-							</span>
-						</a>
-						<a href="{base}/pelanggan-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-								</svg>
-								Pelanggan Kami
-							</span>
-						</a>
+			<a href="{base}/contact-us" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+					</svg>
+					Hubungi Kami
+				</span>
+			</a>
+		<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+			<span class="flex items-center gap-2">
+				<svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+				</svg>
+				Lokasi Toko
+			</span>
+		</a>
+			<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+					</svg>
+					Tim Kami
+				</span>
+			</a>
+			<a href="{base}/supplier-kami" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+					</svg>
+					Supplier Kami
+				</span>
+			</a>
+			<a href="{base}/pelanggan-kami" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+					</svg>
+					Pelanggan Kami
+				</span>
+			</a>
 					</div>
 					</div>
 				{/if}
 			</div>
 
 			<!-- Social Media Dropdown -->
-			<!-- svelte-ignore a11y_no_static_element_interactions -->
-			<div class="relative dropdown-container" onmouseenter={handleSocialMouseEnter} onmouseleave={handleSocialMouseLeave}>
-				<button class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
-					<span class="flex items-center gap-2">
-						Sosial Media
-					</span>
-					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-				</button>
-				{#if socialDropdownOpen}
-					<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white/95 dark:bg-gray-900/95 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 backdrop-blur-md">
-					<div class="py-2">
-						<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
-								Instagram
-							</span>
-						</a>
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
+		<div class="relative dropdown-container" onmouseenter={handleSocialMouseEnter} onmouseleave={handleSocialMouseLeave}>
+			<button class="navbar-link text-base text-gray-900 hover:text-indigo-600 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
+				<span class="flex items-center gap-2">
+					Sosial Media
+				</span>
+				<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+				</svg>
+				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+			</button>
+			{#if socialDropdownOpen}
+				<div class="dropdown-menu absolute left-0 lg:left-0 xl:left-0 top-full mt-2 w-48 lg:w-52 xl:w-56 bg-white/95 rounded-xl shadow-2xl border border-gray-200 z-50 backdrop-blur-md">
+				<div class="py-2">
+			<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
+					Instagram
+				</span>
+			</a>
 
-						<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
-								Facebook
-							</span>
-						</a>
+			<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
+					Facebook
+				</span>
+			</a>
 
-						<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
-								YouTube
-							</span>
-						</a>
+			<a href="{base}/404.html" class="dropdown-item block px-4 py-3 text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 transition-all duration-200 rounded-lg mx-2 font-medium">
+				<span class="flex items-center gap-2">
+					<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
+					YouTube
+				</span>
+			</a>
 					</div>
 					</div>
 				{/if}
@@ -579,16 +579,16 @@
 			<!-- Theme Switcher Component -->
 			<ThemeSwitcher />
 
-			<!-- Mobile Menu Toggle -->
-			<button onclick={toggleMobileMenu} class="lg:hidden p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition-all duration-300 group">
-				<svg class="w-5 h-5 text-gray-700 dark:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					{#if mobileMenuOpen}
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-					{:else}
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-					{/if}
-				</svg>
-			</button>
+		<!-- Mobile Menu Toggle -->
+		<button onclick={toggleMobileMenu} class="lg:hidden p-1.5 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-300 group">
+			<svg class="w-5 h-5 text-gray-900 transition-all duration-300 group-hover:scale-110 group-hover:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				{#if mobileMenuOpen}
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+				{:else}
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+				{/if}
+			</svg>
+		</button>
 		</div>
 	</div>
 </nav>
@@ -607,93 +607,93 @@
 	
 	<!-- Menu Panel - Dropdown dari bawah navbar dengan animasi menurun -->
 	<div 
-		class="mobile-menu-panel fixed top-[92px] left-4 right-4 mx-auto max-w-7xl z-50 bg-white/98 dark:bg-gray-900/98 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-lg border border-gray-200 dark:border-gray-700 max-h-[calc(100vh-108px)] overflow-y-auto"
+		class="mobile-menu-panel fixed top-[92px] left-4 right-4 mx-auto max-w-7xl z-50 bg-white/98 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-lg border border-gray-200 max-h-[calc(100vh-108px)] overflow-y-auto"
 		transition:fly={{ y: -20, duration: 300, easing: cubicOut }}
 	>
 		
-		<!-- Navigation -->
-		<nav class="p-6 space-y-1">
-			<a href="{base}/" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
-				Beranda
-			</a>
+	<!-- Navigation -->
+	<nav class="p-6 space-y-1">
+		<a href="{base}/" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-colors duration-200">
+			Beranda
+		</a>
 
-			<!-- Products Link -->
-			<a href="{base}/product" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
-				Produk
-			</a>
+		<!-- Products Link -->
+		<a href="{base}/product" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-colors duration-200">
+			Produk
+		</a>
 
-			<a href="{base}/services" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-200">
-				Layanan
-			</a>
+		<a href="{base}/services" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-colors duration-200">
+			Layanan
+		</a>
 
-			<!-- Company Info Dropdown -->
-			<div class="relative">
-				<input type="checkbox" id="mobile-company" class="peer/company hidden" />
-				<label for="mobile-company" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
-					<span>Lainnya</span>
-					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/company:max-h-80 transition-all duration-300 ease-in-out space-y-1">
-						<a href="{base}/about-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							Tentang Kami
-						</a>
-						<a href="{base}/contact-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							Hubungi Kami
-						</a>
-						<a href="{base}/store-location" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							Lokasi Toko
-						</a>
-						<a href="{base}/gallery" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							Tim Kami
-						</a>
-						<a href="{base}/supplier-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							Supplier Kami
-						</a>
-						<a href="{base}/pelanggan-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							Pelanggan Kami
-						</a>
-				</div>
+		<!-- Company Info Dropdown -->
+		<div class="relative">
+			<input type="checkbox" id="mobile-company" class="peer/company hidden" />
+			<label for="mobile-company" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium cursor-pointer transition-colors duration-200">
+				<span>Lainnya</span>
+				<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+				</svg>
+			</label>
+			<div class="overflow-hidden max-h-0 peer-checked/company:max-h-80 transition-all duration-300 ease-in-out space-y-1">
+					<a href="{base}/about-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						Tentang Kami
+					</a>
+					<a href="{base}/contact-us" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						Hubungi Kami
+					</a>
+					<a href="{base}/store-location" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						Lokasi Toko
+					</a>
+					<a href="{base}/gallery" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						Tim Kami
+					</a>
+					<a href="{base}/supplier-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						Supplier Kami
+					</a>
+					<a href="{base}/pelanggan-kami" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						Pelanggan Kami
+					</a>
 			</div>
+		</div>
 
-			<!-- Social Media Dropdown -->
-			<div class="relative">
-				<input type="checkbox" id="mobile-social" class="peer/social hidden" />
-				<label for="mobile-social" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
-					<span>Sosial Media</span>
-					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/social:rotate-180 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-				</label>
-				<div class="overflow-hidden max-h-0 peer-checked/social:max-h-80 transition-all duration-300 ease-in-out space-y-1">
-						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-2">
-								<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
-								Instagram
-							</span>
-						</a>
-						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-2">
-								<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
-								Facebook
-							</span>
-						</a>
-						<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200">
-							<span class="flex items-center gap-2">
-								<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
-								YouTube
-							</span>
-						</a>
-				</div>
+		<!-- Social Media Dropdown -->
+		<div class="relative">
+			<input type="checkbox" id="mobile-social" class="peer/social hidden" />
+			<label for="mobile-social" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium cursor-pointer transition-colors duration-200">
+				<span>Sosial Media</span>
+				<svg class="w-5 h-5 transition-transform duration-300 peer-checked/social:rotate-180 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+				</svg>
+			</label>
+			<div class="overflow-hidden max-h-0 peer-checked/social:max-h-80 transition-all duration-300 ease-in-out space-y-1">
+					<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						<span class="flex items-center gap-2">
+							<img src={instagramIcon} alt="Instagram" class="w-4 h-4" />
+							Instagram
+						</span>
+					</a>
+					<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						<span class="flex items-center gap-2">
+							<img src={facebookIcon} alt="Facebook" class="w-4 h-4" />
+							Facebook
+						</span>
+					</a>
+					<a href="{base}/404.html" onclick={closeMobileMenu} class="mobile-menu-item block px-4 py-3 rounded-lg text-gray-900 hover:bg-indigo-50 hover:text-indigo-600 font-medium transition-all duration-200">
+						<span class="flex items-center gap-2">
+							<img src={youtubeIcon} alt="YouTube" class="w-4 h-4" />
+							YouTube
+						</span>
+					</a>
 			</div>
+		</div>
 
 		</nav>
 
-		<!-- Footer in Mobile Menu -->
-		<div class="px-6 pb-6 pt-4 border-t border-gray-200 dark:border-gray-800">
-			<p class="text-sm text-gray-500 dark:text-gray-400 text-center">© 2025 Glam Stitch</p>
-		</div>
+	<!-- Footer in Mobile Menu -->
+	<div class="px-6 pb-6 pt-4 border-t border-gray-200">
+		<p class="text-sm text-gray-500 text-center">© 2025 Glam Stitch</p>
+	</div>
 	</div>
 </div>
 {/if}
