@@ -44,42 +44,52 @@
 <section class="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16 space-y-32">
 
-		<!-- 1. Supplier Kain Premium -->
+		<!-- 1. Knitto Textiles -->
 		<div class="flex flex-col lg:flex-row items-center gap-12">
 			<img loading="lazy"
-				src={supplier4}
-				alt="Supplier Kain Premium"
-				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
+				src="https://i.ytimg.com/vi/vksn-w3fCvY/maxresdefault.jpg"
+				alt="Knitto Textiles"
+				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg bg-white dark:bg-gray-800 p-4"
 			/>
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Supplier Kain Premium</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Knitto Textiles</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Kami bekerja sama dengan supplier kain terpercaya yang menyediakan berbagai jenis kain berkualitas tinggi.
-					Dari katun combed, polyester, hingga kain khusus untuk seragam. Setiap supplier telah melalui proses seleksi ketat
-					untuk memastikan kualitas bahan yang konsisten dan sesuai standar internasional.
+					Pelopor toko kain modern di Indonesia yang memproduksi kain di pabrik sendiri. 
+					Knitto menyediakan 500+ jenis kain berkualitas premium dengan 100+ stok warna tersedia, 
+					melayani lebih dari 10.000 pelanggan dan brand dengan kemudahan order online.
 				</p>
+				<a href="https://knitto.co.id/" target="_blank" rel="noopener noreferrer" 
+				   class="mt-6 inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-semibold">
+					Kunjungi Website →
+				</a>
 			</div>
 		</div>
 
-		<!-- 2. Supplier Benang & Aksesoris-->
+		<!-- 2. Dunia Sandang Pratama -->
 		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Supplier Benang & Aksesoris</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Dunia Sandang Pratama</h2>
 				<p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-					Untuk memastikan kualitas jahitan yang sempurna, kami bermitra dengan supplier benang terbaik.
-					Benang yang kami gunakan memiliki ketahanan tinggi, tidak mudah putus, dan memberikan hasil jahitan yang rapi.
-					Selain itu, kami juga bekerja sama dengan supplier aksesoris seperti kancing, resleting, dan label berkualitas.
+					Supplier tekstil dan bahan sandang yang menyediakan berbagai macam kain berkualitas untuk kebutuhan konveksi. 
+					Dunia Sandang Pratama menawarkan pilihan bahan yang beragam dengan harga kompetitif dan stok yang selalu tersedia 
+					untuk mendukung produksi kami.
 				</p>
+				<a href="https://www.instagram.com/duniasandangpratama/" target="_blank" rel="noopener noreferrer" 
+				   class="mt-6 inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-semibold">
+					Kunjungi Instagram →
+				</a>
 			</div>
 			<img loading="lazy"
-				src={poto7}
-				alt="Supplier Benang & Aksesoris"
+				src="https://media.licdn.com/dms/image/v2/D561BAQHj2-aGuqbN0w/company-background_10000/company-background_10000/0/1657850725764/dunia_sandang_cover?e=2147483647&v=beta&t=2za_pYSq-tytI9M7GGrfJP0AISvjXP5_tDSQUbOG698"
+				alt="Dunia Sandang Pratama"
 				class="gallery w-full lg:w-1/2 h-80 object-cover rounded-2xl shadow-lg"
 			/>
-		</div>
+	</div>
 
-		<!-- 3. Supplier Bahan Sablon -->
-		<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+	<!-- Supplier 3, 4, 5 - DISABLED -->
+	{#if false}
+	<!-- 3. Supplier Bahan Sablon -->
+	<div class="flex flex-col-reverse lg:flex-row items-center gap-12">
 			<img loading="lazy"
 				src={supplier1}
 				alt="Supplier Bahan Sablon"
@@ -126,10 +136,11 @@
 					Kami melakukan audit berkala untuk memastikan standar kualitas terjaga dan sesuai dengan ekspektasi pelanggan.
 					Hubungan kemitraan yang saling menguntungkan ini memungkinkan kami memberikan produk terbaik dengan harga kompetitif.
 				</p>
-			</div>
 		</div>
-
 	</div>
+	{/if}
+
+</div>
 </section>
 
 <!-- Footer -->
