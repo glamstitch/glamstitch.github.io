@@ -59,12 +59,14 @@
         </div>
     </div>
 
-    <!-- Dark Mode Toggle Script -->
+    <!-- Dark Mode Script - Manual Control Only -->
     <script>
-        // Simple dark mode detection
-        if (localStorage.getItem('darkMode') === 'true' || (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        // ONLY use saved preference - NO system detection
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
             document.documentElement.classList.add('dark');
         }
+        // Default to light mode if no preference is saved
     </script>
 </body>
 </html>

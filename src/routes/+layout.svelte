@@ -99,25 +99,6 @@
 		scroll-behavior: smooth;
 	}
 	
-	/* FORCE OVERRIDE: Prevent system dark mode from affecting the site */
-	@media (prefers-color-scheme: dark) {
-		:global(html:not(.dark)) {
-			color-scheme: light !important;
-			background-color: #ffffff !important;
-			color: #111827 !important;
-		}
-		
-		:global(html:not(.dark) body) {
-			background-color: #ffffff !important;
-			color: #111827 !important;
-		}
-		
-		/* Navbar should stay light when not in dark mode */
-		:global(html:not(.dark) nav) {
-			color-scheme: light !important;
-		}
-	}
-	
 	/* Smooth dark mode transitions */
 	:global(*) {
 		transition: background-color 0.2s ease, 
@@ -462,23 +443,23 @@
 		<!-- Logo -->
 		<a href="{base}/" class="navbar-logo flex items-center gap-2 group">
 			<img src={logoGlint} alt="Glam Stitch Logo" class="h-16 w-16 object-contain dark:brightness-110">
-			<span class="hidden sm:block text-xl font-medium text-gray-900 dark:text-white transition-colors duration-200">Glam Stitch</span>
+			<span class="hidden sm:block text-xl font-medium text-gray-900 transition-colors duration-200">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-8">
-			<a href="{base}/" class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
+			<a href="{base}/" class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
 				Beranda
 				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
 			<!-- Products Link -->
-			<a href="{base}/product" class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
+			<a href="{base}/product" class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
 				Produk
 				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
-			<a href="{base}/services" class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
+			<a href="{base}/services" class="navbar-link text-base text-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
 				Layanan
 				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
@@ -486,9 +467,9 @@
 			<!-- Company Info Dropdown -->
 			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
-				<button class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
+				<button class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
 					Lainnya
-					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
@@ -554,11 +535,11 @@
 			<!-- Social Media Dropdown -->
 			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<div class="relative dropdown-container" onmouseenter={handleSocialMouseEnter} onmouseleave={handleSocialMouseLeave}>
-				<button class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
+				<button class="navbar-link text-base text-gray-700  hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
 					<span class="flex items-center gap-2">
 						Sosial Media
 					</span>
-					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
