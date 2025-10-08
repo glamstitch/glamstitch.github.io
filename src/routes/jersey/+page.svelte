@@ -37,14 +37,6 @@
         <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">
           Tampil percaya diri di lapangan dengan jersey premium kami. Cocok untuk olahraga, tim, komunitas, hingga seragam event dengan kualitas dan desain terdepan.
         </p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/contact-us" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Pesan Sekarang
-            </a>
-            <a href="/product" class="text-sm font-semibold text-white hover:text-indigo-400 dark:text-gray-300 dark:hover:text-indigo-400 transition-all transform hover:scale-105">
-              Lihat Produk Lainnya <span aria-hidden="true">→</span>
-            </a>
-          </div>
       </div>
     </div>
   </div>
@@ -61,9 +53,6 @@
         <p class="mx-auto mt-8 max-w-xl text-base text-gray-600 dark:text-gray-400">
           Sebagian besar produk kami dibuat dalam jumlah terbatas. Segera pesan Jersey Glam Stitch berkualitas premium untuk tim atau komunitas Anda sebelum habis!
         </p>
-        <a href="/#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 text-white px-8 py-3 font-medium hover:bg-gray-800 sm:w-auto focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-indigo-600 dark:hover:bg-indigo-500">
-          Dapatkan Akses ke Produk Jersey Glam Stitch Kami
-        </a>
       </div>
     </section>
   </div>
@@ -191,7 +180,7 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="text-sm font-medium text-gray-600dark:text-gray-400">Warna</span>
-                  <span class="text-sm text-gray-900dark:text-white">20+ Pilihan Warna</span>
+                  <span class="text-sm text-gray-900dark:text-white">15+ Pilihan Warna</span>
                 </div>
               </div>
             </div>

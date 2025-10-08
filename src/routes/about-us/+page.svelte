@@ -28,9 +28,6 @@
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full bg-white/10 px-4 py-1.5 text-sm text-gray-300 ring-1 ring-white/20 hover:ring-white/30 transition">
             Selamat datang di Glam Stitch.
-            <a href="/product" class="ml-2 font-semibold text-white hover:underline">
-              <span class="absolute inset-0" aria-hidden="true"></span>Lihat Produk <span aria-hidden="true">→</span>
-            </a>
           </div>
         </div>
   
@@ -42,15 +39,6 @@
           <p class="mt-6 text-lg text-gray-300 sm:text-xl">
             Kami menyediakan berbagai layanan produksi pakaian — mulai dari kaos polos, jaket custom, hingga kemeja formal — dengan standar kualitas tinggi dan pengerjaan cepat.
           </p>
-  
-          <!-- CTA Buttons -->
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/contact-us"
-              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Hubungi Kami
-            </a>
-            <a href="/services" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Lihat Layanan <span aria-hidden="true">→</span></a>
-          </div>
         </div>
       </div>
     </div>
@@ -68,10 +56,6 @@
           <div class="hidden sm:flex sm:mt-24 lg:mt-12">
             <div class="relative rounded-full px-3 py-1 text-sm text-gray-500 dark:text-gray-300 ring-1 ring-gray-900/10 dark:ring-white/10 hover:ring-gray-900/20 dark:hover:ring-white/20 transition">
               Kami bangga melayani berbagai klien dengan produk pakaian berkualitas tinggi.
-              <a href="/services" class="ml-2 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
-                <span class="absolute inset-0" aria-hidden="true"></span>
-                Lihat Layanan <span aria-hidden="true">&rarr;</span>
-              </a>
             </div>
           </div>
   
@@ -84,16 +68,6 @@
           <p class="mt-6 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
             Glam Stitch adalah penyedia solusi pakaian kustom untuk berbagai kebutuhan bisnis, organisasi, dan acara. Kami siap memenuhi pesanan seragam, merchandise, atau pakaian promosi dengan hasil berkualitas tinggi yang disesuaikan dengan kebutuhan Anda.
           </p>
-  
-          <!-- Tombol CTA -->
-          <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
-            <a href="/contact-us" class="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition">
-              Hubungi Kami
-            </a>
-            <a href="/product" class="text-sm font-semibold text-gray-900dark:text-white hover:underline">
-              Lihat Produk <span aria-hidden="true">→</span>
-            </a>
-          </div>
         </div>
       </div>
   
@@ -115,8 +89,12 @@
 <!-- Visi -->
 <section class="bg-white dark:bg-gray-900 py-24 transition-colors duration-300">
     <div class="mx-auto max-w-7xl px-6 lg:px-16">
-        <div class="text-center">
-            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-8">Visi dan Misi</h2>
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Visi dan Misi</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                Komitmen kami adalah memberikan produk konveksi berkualitas tinggi dengan inovasi berkelanjutan, 
+                melayani setiap pelanggan dengan dedikasi penuh untuk mencapai kepuasan maksimal.
+            </p>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

@@ -1,6 +1,7 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
   import logoGlint from '$lib/assets/image/logo glint.png';
+  import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -28,9 +29,6 @@
         <div class="mb-5 flex justify-center">
           <div class="inline-flex items-center rounded-full bg-gray-100/10 dark:bg-white/10 px-4 py-1.5 text-sm text-gray-200 dark:text-white ring-1 ring-black/10 dark:ring-white/20 hover:ring-black/20 dark:hover:ring-white/40 transition">
             Lokasi Toko Glam Stitch
-            <a href="/#" class="ml-2 font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
-              Lihat di Maps <span aria-hidden="true">→</span>
-            </a>
           </div>
         </div>
   
@@ -43,15 +41,6 @@
         <p class="mt-6 text-lg text-gray-200 dark:text-gray-300 sm:text-xl">
           Kunjungi workshop dan toko kami di Desa Cijoged, Kecamatan Cisarua, Kabupaten Sumedang — mudah dijangkau dan siap melayani Anda secara langsung maupun online.
         </p>
-  
-        <!-- Buttons -->
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/#"
-              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Mulai Sekarang
-            </a>
-            <a href="/#" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
-          </div>
       </div>
     </div>
   </section>
@@ -110,9 +99,12 @@
   
           <!-- Link Maps -->
           <div>
-            <a href="https://maps.app.goo.gl/bHXM3HurzhfNRbENA" target="_blank"
-              class="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold hover:underline transition duration-300">
-              Buka di Google Maps → 
+            <a href="https://maps.app.goo.gl/bHXM3HurzhfNRbENA" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C7.802 0 4.403 3.399 4.403 7.597c0 5.148 7.597 16.403 7.597 16.403s7.597-11.255 7.597-16.403C19.597 3.399 16.198 0 12 0zm0 10.838c-1.789 0-3.241-1.452-3.241-3.241S10.211 4.356 12 4.356s3.241 1.452 3.241 3.241S13.789 10.838 12 10.838z"/>
+              </svg>
+              Buka di Google Maps
             </a>
           </div>
         </div>

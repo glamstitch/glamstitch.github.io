@@ -1,5 +1,6 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
+  import { base } from '$app/paths';
   import logoGlint from '$lib/assets/image/logo glint.png';
 </script>
 
@@ -41,15 +42,6 @@
           <p class="mt-4 text-base sm:text-lg text-gray-300 font-medium max-w-xl mx-auto">
             Kami menyediakan berbagai layanan produksi pakaian — mulai dari kaos polos, jaket custom, hingga kemeja formal — dengan standar kualitas tinggi dan pengerjaan cepat.
           </p>
-    
-          <!-- CTA Buttons -->
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/"
-              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Mulai Sekarang
-            </a>
-            <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
-          </div>
         </div>
       </div>
     </div>    
@@ -81,7 +73,7 @@
           <p class="text-gray-600 dark:text-gray-300 mb-4">
             Tingkatkan identitas brand Anda dengan hasil bordir presisi, tahan lama, dan elegan untuk segala kebutuhan.
           </p>
-          <a href="/#" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
+          <a href="{base}/404.html" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
             Pelajari Lebih Lanjut
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -101,7 +93,7 @@
           <p class="text-gray-600 dark:text-gray-300 mb-4">
             Layanan sablon dengan hasil warna tajam dan tahan lama, cocok untuk kaos komunitas, promosi, hingga distro.
           </p>
-          <a href="/project-sveltekit/#" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
+          <a href="{base}/404.html" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
             Pelajari Lebih Lanjut
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -121,7 +113,7 @@
           <p class="text-gray-600 dark:text-gray-300 mb-4">
             Bebaskan kreativitasmu! Bekerja sama dengan tim desain kami untuk menciptakan pakaian yang unik sesuai kebutuhan Anda.
           </p>
-          <a href="/project-sveltekit/#" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
+          <a href="{base}/404.html" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm transition">
             Pelajari Lebih Lanjut
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M17 8l4 4m0 0l-4 4m4-4H3" />

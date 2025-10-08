@@ -432,27 +432,27 @@
   
 <!-- Navbar -->
 <nav class="fixed top-4 inset-x-4 z-50">
-	<div class="mx-auto max-w-7xl px-6 py-4 bg-white/95 dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 shadow-lg dark:shadow-2xl flex items-center justify-between rounded-full backdrop-blur-md">
+	<div class="mx-auto max-w-7xl px-6 py-0.5 bg-white/95 dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 shadow-lg dark:shadow-2xl flex items-center justify-between rounded-full backdrop-blur-md">
 		<!-- Logo -->
 		<a href="{base}/" class="navbar-logo flex items-center gap-2 group">
-			<img src={logoGlint} alt="Glam Stitch Logo" class="h-10 w-10 object-contain dark:brightness-110">
-			<span class="hidden sm:block text-lg font-semibold text-gray-900dark:text-white transition-colors duration-200">Glam Stitch</span>
+			<img src={logoGlint} alt="Glam Stitch Logo" class="h-16 w-16 object-contain dark:brightness-110">
+			<span class="hidden sm:block text-xl font-medium text-gray-900dark:text-white transition-colors duration-200">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
 		<div class="hidden lg:flex items-center space-x-8">
-			<a href="{base}/" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+			<a href="{base}/" class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
 				Beranda
 				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
 			<!-- Products Link -->
-			<a href="{base}/product" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+			<a href="{base}/product" class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
 				Produk
 				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
 
-			<a href="{base}/services" class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-medium transition-colors duration-200">
+			<a href="{base}/services" class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 relative group font-semibold transition-colors duration-200">
 				Layanan
 				<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
 			</a>
@@ -460,8 +460,8 @@
 			<!-- Company Info Dropdown -->
 			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
-				<button class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
-					Perusahaan
+				<button class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
+					Lainnya
 					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
@@ -527,7 +527,7 @@
 			<!-- Social Media Dropdown -->
 			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<div class="relative dropdown-container" onmouseenter={handleSocialMouseEnter} onmouseleave={handleSocialMouseLeave}>
-				<button class="navbar-link text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-medium transition-colors duration-200">
+				<button class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
 					<span class="flex items-center gap-2">
 						Sosial Media
 					</span>
@@ -567,15 +567,13 @@
 		</div>
 
 		<!-- Right Side Actions -->
-		<div class="flex items-center gap-4">
+		<div class="flex items-center gap-3">
 			<!-- Theme Switcher Component -->
-			<div>
-				<ThemeSwitcher />
-			</div>
+			<ThemeSwitcher />
 
 			<!-- Mobile Menu Toggle -->
-			<button onclick={toggleMobileMenu} class="lg:hidden p-2 rounded-lg hover:bg-gray-400 cursor-pointer transition-all duration-300 group">
-				<svg class="w-6 h-6 text-gray-700dark:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<button onclick={toggleMobileMenu} class="lg:hidden p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer transition-all duration-300 group">
+				<svg class="w-5 h-5 text-gray-700 dark:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					{#if mobileMenuOpen}
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
 					{:else}
@@ -601,7 +599,7 @@
 	
 	<!-- Menu Panel - Dropdown dari bawah navbar dengan animasi menurun -->
 	<div 
-		class="mobile-menu-panel fixed top-[96px] left-4 right-4 mx-auto max-w-7xl z-50 bg-white/98 dark:bg-gray-900/98 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-lg border border-gray-200 dark:border-gray-700 max-h-[calc(100vh-112px)] overflow-y-auto"
+		class="mobile-menu-panel fixed top-[92px] left-4 right-4 mx-auto max-w-7xl z-50 bg-white/98 dark:bg-gray-900/98 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-lg border border-gray-200 dark:border-gray-700 max-h-[calc(100vh-108px)] overflow-y-auto"
 		transition:fly={{ y: -20, duration: 300, easing: cubicOut }}
 	>
 		
@@ -624,7 +622,7 @@
 			<div class="relative">
 				<input type="checkbox" id="mobile-company" class="peer/company hidden" />
 				<label for="mobile-company" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
-					<span>Perusahaan</span>
+					<span>Lainnya</span>
 					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>

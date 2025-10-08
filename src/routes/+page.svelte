@@ -79,15 +79,10 @@
 
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
 
-          <div class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+          <div class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-http://localhost:5173/product400 ring-1 ring-white/10 hover:ring-white/20">
 
             Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
 
-            <a href="/product" class="font-semibold text-indigo-600">
-
-              <span class="absolute inset-0" aria-hidden="true"></span>Selengkapnya <span aria-hidden="true">&rarr;</span>
-
-            </a>
 
           </div>
 
@@ -237,9 +232,9 @@
 
             </a>
 
-            <a href="/gallery" class="group text-indigo-600 dark:text-indigo-400 font-semibold hover:text-indigo-500 dark:hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
+            <a href="/about-us" class="group text-indigo-600 dark:text-indigo-400 font-semibold hover:text-indigo-500 dark:hover:text-indigo-300 transition-all duration-300 flex items-center gap-2">
 
-                Lihat Portofolio 
+                Selengkapnya 
 
                 <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
 
@@ -281,7 +276,7 @@
 
       <h2 class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-white text-center animate__animated animate__fadeIn animate__delay-300ms">Cara Pemesanan</h2>
 
-      <p class="mt-4 text-lg text-gray-500 dark:text-gray-300 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat, aman, dan terpercaya.</p>
+      <p class="mt-4 text-lg text-gray-500dark:text-gray-300 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat, aman, dan terpercaya.</p>
       
 
       <div class="mt-16 flex flex-col lg:flex-row items-center lg:items-start gap-10">
@@ -314,7 +309,7 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">1. Konsultasi</h3>
 
-            <p class="mt-2 text-base text-gray-500 dark:text-gray-200">Hubungi kami via WhatsApp, email, atau kunjungi toko untuk berdiskusi desain, bahan, dan kebutuhan Anda. Konsultasi gratis dan tidak mengikat.</p>
+            <p class="mt-2 text-base text-gray-500dark:text-gray-200">Hubungi kami via WhatsApp, email, atau kunjungi toko untuk berdiskusi desain, bahan, dan kebutuhan Anda. Konsultasi gratis dan tidak mengikat.</p>
 
           </div>
 
@@ -322,7 +317,7 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">2. Produksi</h3>
 
-            <p class="mt-2 text-base text-gray-500 dark:text-gray-200">Kami memproduksi dengan bahan berkualitas tinggi menggunakan teknologi modern. Tim ahli kami memastikan setiap detail sesuai permintaan Anda dengan update progress berkala.</p>
+            <p class="mt-2 text-base text-gray-500dark:text-gray-200">Kami memproduksi dengan bahan berkualitas tinggi menggunakan teknologi modern. Tim ahli kami memastikan setiap detail sesuai permintaan Anda dengan update progress berkala.</p>
 
           </div>
 
@@ -330,7 +325,7 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">3. Pengiriman</h3>
 
-            <p class="mt-2 text-base text-gray-500 dark:text-gray-200">Produk dikirim dengan aman ke alamat Anda. Kami menggunakan kurir terpercaya dengan tracking real-time, pengemasan rapi, dan menyediakan garansi kualitas.</p>
+            <p class="mt-2 text-base text-gray-500dark:text-gray-200">Produk dikirim dengan aman ke alamat Anda. Kami menggunakan kurir terpercaya dengan tracking real-time, pengemasan rapi, dan menyediakan garansi kualitas.</p>
 
           </div>
 
@@ -362,7 +357,7 @@
 
           <h2 class="text-4xl font-semibold text-gray-900 dark:text-white sm:text-5xl mb-4">Pencapaian Glam Stitch</h2>
 
-          <p class="text-lg text-gray-600 dark:text-gray-200">Dedikasi kami tercermin dari data. Berikut pencapaian kami dalam melayani kebutuhan fashion Anda.</p>
+          <p class="text-lg text-gray-600dark:text-gray-200">Dedikasi kami tercermin dari data. Berikut pencapaian kami dalam melayani kebutuhan fashion Anda.</p>
 
         </div>
 
@@ -376,7 +371,7 @@
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate__animated animate__zoomIn animate__delay-1s">
 
-            <div class="w-20 h-20 flex items-center justify-center bg-yellow-400/20 dark:bg-white  rounded-full text-yellow-600 text-4xl transition-transform duration-300 hover:scale-110">
+            <div class="w-20 h-20 flex items-center justify-center bg-yellow-400 dark:bg-white  rounded-full text-yellow-600 text-4xl transition-transform duration-300 hover:scale-110">
 
               👤
 
@@ -386,7 +381,7 @@
 
               <p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">1000+</p>
 
-              <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-200">Pelanggan</p>
+              <p class="text-lg sm:text-xl text-gray-500dark:text-gray-200">Pelanggan</p>
 
             </div>
 
@@ -398,7 +393,7 @@
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate__animated animate__zoomIn animate__delay-2s">
 
-            <div class="w-20 h-20 flex items-center justify-center bg-yellow-400/20 dark:bg-white  rounded-full text-yellow-600 text-4xl transition-transform duration-300 hover:scale-110">
+            <div class="w-20 h-20 flex items-center justify-center bg-yellow-400 dark:bg-white  rounded-full text-yellow-600 text-4xl transition-transform duration-300 hover:scale-110">
 
               📦
 
@@ -408,7 +403,7 @@
 
               <p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">150.000 PCS</p>
 
-              <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-200">Terjual Per-Tahun</p>
+              <p class="text-lg sm:text-xl text-gray-500dark:text-gray-200">Terjual Per-Tahun</p>
 
             </div>
 
@@ -420,7 +415,7 @@
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate__animated animate__zoomIn animate__delay-3s">
 
-            <div class="w-20 h-20 flex items-center justify-center bg-yellow-400/20 dark:bg-white rounded-full text-yellow-600 text-4xl transition-transform duration-300 hover:scale-110">
+            <div class="w-20 h-20 flex items-center justify-center bg-yellow-400 dark:bg-white rounded-full text-yellow-600 text-4xl transition-transform duration-300 hover:scale-110">
 
               📅
 
@@ -430,7 +425,7 @@
 
               <p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">5+ Tahun</p>
 
-              <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-200">Pengalaman</p>
+              <p class="text-lg sm:text-xl text-gray-500dark:text-gray-200">Pengalaman</p>
 
             </div>
 

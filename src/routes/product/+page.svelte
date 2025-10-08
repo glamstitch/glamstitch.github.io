@@ -23,9 +23,6 @@
         <div class="mb-6 flex justify-center">
           <div class="relative rounded-full px-4 py-1.5 text-sm text-gray-300 ring-1 ring-white/20 hover:ring-white/30 transition">
             Jelajahi beragam produk dari Konveksi Glam Stitch.
-            <a href="/product" class="ml-1 font-semibold text-white hover:underline">
-              Lihat Produk <span aria-hidden="true">→</span>
-            </a>
           </div>
         </div>
   
@@ -38,15 +35,6 @@
         <p class="mt-6 text-lg sm:text-xl text-gray-300 animate__animated animate__fadeIn animate__delay-1s">
           Temukan kaos polos, jaket, dan kemeja dengan desain menarik, bahan terbaik, dan jahitan rapi — cocok untuk brand, komunitas, maupun usaha Anda.
         </p>
-  
-        <!-- Tombol CTA -->
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="/"
-              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all transform hover:scale-105">
-              Mulai Sekarang
-            </a>
-            <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400 transition-all transform hover:scale-105">Jelajahi Lebih Lanjut <span aria-hidden="true">→</span></a>
-          </div>
       </div>
     </div>
   </section>
