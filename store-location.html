@@ -15,14 +15,14 @@
 		<link rel="dns-prefetch" href="https://images.unsplash.com" />
 		<link rel="dns-prefetch" href="https://img.freepik.com" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.BUF3vND5.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DCZg1pd1.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.B-4bx9_R.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/-39co5rt.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/CLDw1jqH.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Dy0d3JSM.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/UsvO8lX3.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/BMb1b4zj.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DSa-mX5e.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.8gbAwTvM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CLIWe-gU.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CmSyij0C.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Bzak7iHL.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/D4r85MYb.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/C0CtRK-v.js">
@@ -31,15 +31,15 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_1ec2m44 = {
+					__sveltekit_ce7agv = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.BUF3vND5.js"),
-						import("./_app/immutable/entry/app.8gbAwTvM.js")
+						import("./_app/immutable/entry/start.B-4bx9_R.js"),
+						import("./_app/immutable/entry/app.CmSyij0C.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
@@ -47,75 +47,58 @@
 			</script>
 		</div>
 		<script>
-			// Initialize theme immediately to prevent flash with smooth transitions
+			// Initialize theme immediately to prevent flash - ONLY from saved preference
 			(function() {
-				const savedTheme = localStorage.getItem('theme');
-				const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				const isDark = savedTheme === 'dark' || (savedTheme !== 'light' && systemPrefersDark);
-				
-				// Apply theme immediately without transitions first
-				if (isDark) {
-					document.documentElement.classList.add('dark');
-					document.documentElement.setAttribute('data-theme', 'dark');
-					document.body.classList.add('dark');
-					document.body.style.backgroundColor = '#111827';
-					document.body.style.color = '#f9fafb';
-				} else {
-					document.documentElement.classList.remove('dark');
-					document.documentElement.setAttribute('data-theme', 'light');
-					document.body.classList.remove('dark');
-					document.body.style.backgroundColor = '#ffffff';
-					document.body.style.color = '#111827';
-				}
-				
-				// Enable fast transitions after initial load
-				setTimeout(() => {
-					document.documentElement.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
-					document.body.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+				try {
+					const savedTheme = localStorage.getItem('theme');
+					// ONLY use saved theme, NEVER follow system preference
+					const isDark = savedTheme === 'dark';
 					
-					// Add global transition styles
-					const style = document.createElement('style');
-					style.textContent = `
-						* {
-							transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-										color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										fill 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-						}
-					`;
-					document.head.appendChild(style);
-				}, 50);
-				
-				// Listen for theme changes across tabs with smooth transitions
-				window.addEventListener('storage', function(e) {
-					if (e.key === 'theme') {
-						const isDark = e.newValue === 'dark';
-						
-						// Add transition class for smooth animation
-						document.documentElement.classList.add('theme-transitioning');
-						
-						if (isDark) {
-							document.documentElement.classList.add('dark');
-							document.documentElement.setAttribute('data-theme', 'dark');
-							document.body.classList.add('dark');
-							document.body.style.backgroundColor = '#111827';
-							document.body.style.color = '#f9fafb';
-						} else {
-							document.documentElement.classList.remove('dark');
-							document.documentElement.setAttribute('data-theme', 'light');
-							document.body.classList.remove('dark');
-							document.body.style.backgroundColor = '#ffffff';
-							document.body.style.color = '#111827';
-						}
-						
-						// Remove transition class after animation completes
-						setTimeout(() => {
-							document.documentElement.classList.remove('theme-transitioning');
-						}, 200);
+					// Apply theme immediately without transitions first
+					if (isDark) {
+						document.documentElement.classList.add('dark');
+						document.documentElement.setAttribute('data-theme', 'dark');
+						document.body.classList.add('dark');
+						document.body.style.backgroundColor = '#111827';
+						document.body.style.color = '#f9fafb';
+					} else {
+						document.documentElement.classList.remove('dark');
+						document.documentElement.setAttribute('data-theme', 'light');
+						document.body.classList.remove('dark');
+						document.body.style.backgroundColor = '#ffffff';
+						document.body.style.color = '#111827';
 					}
-				});
+					
+					// Enable smooth transitions after initial load
+					setTimeout(() => {
+						document.documentElement.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+						document.body.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+					}, 50);
+					
+					// Listen for theme changes across tabs for consistency
+					window.addEventListener('storage', function(e) {
+						if (e.key === 'theme') {
+							const isDark = e.newValue === 'dark';
+							
+							if (isDark) {
+								document.documentElement.classList.add('dark');
+								document.documentElement.setAttribute('data-theme', 'dark');
+								document.body.classList.add('dark');
+								document.body.style.backgroundColor = '#111827';
+								document.body.style.color = '#f9fafb';
+							} else {
+								document.documentElement.classList.remove('dark');
+								document.documentElement.setAttribute('data-theme', 'light');
+								document.body.classList.remove('dark');
+								document.body.style.backgroundColor = '#ffffff';
+								document.body.style.color = '#111827';
+							}
+						}
+					});
+				} catch (e) {
+					// Fallback to light mode if localStorage is not available
+					console.warn('Theme initialization failed:', e);
+				}
 			})();
 		</script>
 	</body>
