@@ -79,7 +79,7 @@
 
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
 
-          <div class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-http://localhost:5173/product400 ring-1 ring-white/10 hover:ring-white/20">
+          <div class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
 
             Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
 
