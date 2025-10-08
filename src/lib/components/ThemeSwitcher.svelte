@@ -1,50 +1,43 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { applyTheme, getInitialTheme, saveTheme, forceTheme } from '$lib/utils/theme';
+  import { applyTheme, getInitialTheme, toggleTheme } from '$lib/utils/theme';
   
   let isDark = $state(false);
+  let isInitialized = $state(false);
   
   onMount(() => {
-    // Initialize theme
+    // Initialize theme from saved preference only
     isDark = getInitialTheme();
     applyTheme(isDark);
+    isInitialized = true;
     
-    // Listen for system theme changes
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e: MediaQueryListEvent) => {
-      if (!localStorage.getItem('theme')) {
-        isDark = e.matches;
+    // Listen for storage events to sync across tabs
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'theme' && e.newValue) {
+        isDark = e.newValue === 'dark';
         applyTheme(isDark);
       }
     };
     
-    mediaQuery.addEventListener('change', handleChange);
+    window.addEventListener('storage', handleStorageChange);
     
     // Cleanup
     return () => {
-      mediaQuery.removeEventListener('change', handleChange);
+      window.removeEventListener('storage', handleStorageChange);
     };
   });
   
-  function toggleDarkMode() {
-    isDark = !isDark;
-    
-    // Apply theme immediately
-    applyTheme(isDark);
-    
-    // Save to localStorage
-    saveTheme(isDark);
-    
-    // Debug log
-    console.log('Theme switched to:', isDark ? 'dark' : 'light');
+  function handleToggle() {
+    isDark = toggleTheme(isDark);
   }
 </script>
 
 <!-- Simple Theme Toggle Switch -->
 <button 
-  onclick={toggleDarkMode}
+  onclick={handleToggle}
   class="relative w-11 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 dark:focus:ring-offset-gray-800"
   aria-label="Toggle dark mode"
+  disabled={!isInitialized}
 >
   <!-- Toggle Circle -->
   <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white dark:bg-gray-100 rounded-full shadow-lg transition-transform duration-300 {isDark ? 'translate-x-5' : 'translate-x-0'} flex items-center justify-center">

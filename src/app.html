@@ -19,75 +19,58 @@
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 		<script>
-			// Initialize theme immediately to prevent flash with smooth transitions
+			// Initialize theme immediately to prevent flash - ONLY from saved preference
 			(function() {
-				const savedTheme = localStorage.getItem('theme');
-				const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				const isDark = savedTheme === 'dark' || (savedTheme !== 'light' && systemPrefersDark);
-				
-				// Apply theme immediately without transitions first
-				if (isDark) {
-					document.documentElement.classList.add('dark');
-					document.documentElement.setAttribute('data-theme', 'dark');
-					document.body.classList.add('dark');
-					document.body.style.backgroundColor = '#111827';
-					document.body.style.color = '#f9fafb';
-				} else {
-					document.documentElement.classList.remove('dark');
-					document.documentElement.setAttribute('data-theme', 'light');
-					document.body.classList.remove('dark');
-					document.body.style.backgroundColor = '#ffffff';
-					document.body.style.color = '#111827';
-				}
-				
-				// Enable fast transitions after initial load
-				setTimeout(() => {
-					document.documentElement.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
-					document.body.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+				try {
+					const savedTheme = localStorage.getItem('theme');
+					// ONLY use saved theme, NEVER follow system preference
+					const isDark = savedTheme === 'dark';
 					
-					// Add global transition styles
-					const style = document.createElement('style');
-					style.textContent = `
-						* {
-							transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-										color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										fill 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-										stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-						}
-					`;
-					document.head.appendChild(style);
-				}, 50);
-				
-				// Listen for theme changes across tabs with smooth transitions
-				window.addEventListener('storage', function(e) {
-					if (e.key === 'theme') {
-						const isDark = e.newValue === 'dark';
-						
-						// Add transition class for smooth animation
-						document.documentElement.classList.add('theme-transitioning');
-						
-						if (isDark) {
-							document.documentElement.classList.add('dark');
-							document.documentElement.setAttribute('data-theme', 'dark');
-							document.body.classList.add('dark');
-							document.body.style.backgroundColor = '#111827';
-							document.body.style.color = '#f9fafb';
-						} else {
-							document.documentElement.classList.remove('dark');
-							document.documentElement.setAttribute('data-theme', 'light');
-							document.body.classList.remove('dark');
-							document.body.style.backgroundColor = '#ffffff';
-							document.body.style.color = '#111827';
-						}
-						
-						// Remove transition class after animation completes
-						setTimeout(() => {
-							document.documentElement.classList.remove('theme-transitioning');
-						}, 200);
+					// Apply theme immediately without transitions first
+					if (isDark) {
+						document.documentElement.classList.add('dark');
+						document.documentElement.setAttribute('data-theme', 'dark');
+						document.body.classList.add('dark');
+						document.body.style.backgroundColor = '#111827';
+						document.body.style.color = '#f9fafb';
+					} else {
+						document.documentElement.classList.remove('dark');
+						document.documentElement.setAttribute('data-theme', 'light');
+						document.body.classList.remove('dark');
+						document.body.style.backgroundColor = '#ffffff';
+						document.body.style.color = '#111827';
 					}
-				});
+					
+					// Enable smooth transitions after initial load
+					setTimeout(() => {
+						document.documentElement.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+						document.body.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+					}, 50);
+					
+					// Listen for theme changes across tabs for consistency
+					window.addEventListener('storage', function(e) {
+						if (e.key === 'theme') {
+							const isDark = e.newValue === 'dark';
+							
+							if (isDark) {
+								document.documentElement.classList.add('dark');
+								document.documentElement.setAttribute('data-theme', 'dark');
+								document.body.classList.add('dark');
+								document.body.style.backgroundColor = '#111827';
+								document.body.style.color = '#f9fafb';
+							} else {
+								document.documentElement.classList.remove('dark');
+								document.documentElement.setAttribute('data-theme', 'light');
+								document.body.classList.remove('dark');
+								document.body.style.backgroundColor = '#ffffff';
+								document.body.style.color = '#111827';
+							}
+						}
+					});
+				} catch (e) {
+					// Fallback to light mode if localStorage is not available
+					console.warn('Theme initialization failed:', e);
+				}
 			})();
 		</script>
 	</body>

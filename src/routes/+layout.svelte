@@ -99,6 +99,25 @@
 		scroll-behavior: smooth;
 	}
 	
+	/* FORCE OVERRIDE: Prevent system dark mode from affecting the site */
+	@media (prefers-color-scheme: dark) {
+		:global(html:not(.dark)) {
+			color-scheme: light !important;
+			background-color: #ffffff !important;
+			color: #111827 !important;
+		}
+		
+		:global(html:not(.dark) body) {
+			background-color: #ffffff !important;
+			color: #111827 !important;
+		}
+		
+		/* Navbar should stay light when not in dark mode */
+		:global(html:not(.dark) nav) {
+			color-scheme: light !important;
+		}
+	}
+	
 	/* Smooth dark mode transitions */
 	:global(*) {
 		transition: background-color 0.2s ease, 
@@ -109,11 +128,11 @@
 	
 	/* Ensure dark mode works properly */
 	:global(html.dark) {
-		color-scheme: dark;
+		color-scheme: dark !important;
 	}
 	
 	:global(html:not(.dark)) {
-		color-scheme: light;
+		color-scheme: light !important;
 	}
 	
 	/* Comprehensive dark mode styles */
@@ -443,7 +462,7 @@
 		<!-- Logo -->
 		<a href="{base}/" class="navbar-logo flex items-center gap-2 group">
 			<img src={logoGlint} alt="Glam Stitch Logo" class="h-16 w-16 object-contain dark:brightness-110">
-			<span class="hidden sm:block text-xl font-medium text-gray-900dark:text-white transition-colors duration-200">Glam Stitch</span>
+			<span class="hidden sm:block text-xl font-medium text-gray-900 dark:text-white transition-colors duration-200">Glam Stitch</span>
 		</a>
 
 		<!-- Desktop Navigation -->
@@ -469,7 +488,7 @@
 			<div class="relative dropdown-container" onmouseenter={handleCompanyMouseEnter} onmouseleave={handleCompanyMouseLeave}>
 				<button class="navbar-link text-base text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center gap-1 relative group font-semibold transition-colors duration-200">
 					Lainnya
-					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {companyDropdownOpen ? 'rotate-180' : ''} text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
@@ -479,7 +498,7 @@
 					<div class="py-2">
 						<a href="{base}/about-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
 								Tentang Kami
@@ -488,7 +507,7 @@
 
 						<a href="{base}/contact-us" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 								</svg>
 								Hubungi Kami
@@ -496,7 +515,7 @@
 						</a>
 					<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 						<span class="flex items-center gap-2">
-							<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 							</svg>
@@ -505,7 +524,7 @@
 					</a>
 						<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
 								</svg>
 								Tim Kami
@@ -513,7 +532,7 @@
 						</a>
 						<a href="{base}/supplier-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
 								</svg>
 								Supplier Kami
@@ -521,7 +540,7 @@
 						</a>
 						<a href="{base}/pelanggan-kami" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-4 h-4 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
 								</svg>
 								Pelanggan Kami
@@ -539,7 +558,7 @@
 					<span class="flex items-center gap-2">
 						Sosial Media
 					</span>
-					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-4 h-4 transition-all duration-300 {socialDropdownOpen ? 'rotate-180' : ''} text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 					<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
@@ -692,7 +711,7 @@
 
 		<!-- Footer in Mobile Menu -->
 		<div class="px-6 pb-6 pt-4 border-t border-gray-200 dark:border-gray-800">
-			<p class="text-sm text-gray-500dark:text-gray-400 text-center">© 2025 Glam Stitch</p>
+			<p class="text-sm text-gray-500 dark:text-gray-400 text-center">© 2025 Glam Stitch</p>
 		</div>
 	</div>
 </div>

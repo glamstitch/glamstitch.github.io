@@ -105,7 +105,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kaos Polos Premium</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">30+ Pilihan Warna</p>
-            <a href="/tshirt" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/tshirt" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -123,7 +123,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kaos Polo Elegan</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">15+ Pilihan Warna</p>
-            <a href="/polo" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/polo" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -141,7 +141,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Jersey Olahraga</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">15+ Pilihan Warna</p>
-            <a href="/jersey" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/jersey" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -159,7 +159,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Hoodie Premium</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">10+ Pilihan Warna</p>
-            <a href="/jacket" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/jacket" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -177,7 +177,7 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">Kemeja Formal</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">10+ Pilihan Warna</p>
-            <a href="/shirts" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
+            <a href="/shirts" class="block w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-2 px-4 rounded text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-center">
               Lihat Detail
             </a>
           </div>
@@ -213,7 +213,7 @@
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09L5.5 12.18.5 7.91l6.064-.88L10 2l3.436 5.03L19.5 7.91l-5 4.27 1.378 5.91z"/></svg>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09L5.5 12.18.5 7.91l6.064-.88L10 2l3.436 5.03L19.5 7.91l-5 4.27 1.378 5.91z"/></svg>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09L5.5 12.18.5 7.91l6.064-.88L10 2l3.436 5.03L19.5 7.91l-5 4.27 1.378 5.91z"/></svg>
-              <svg class="w-5 h-5 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09L5.5 12.18.5 7.91l6.064-.88L10 2l3.436 5.03L19.5 7.91l-5 4.27 1.378 5.91z"/></svg>
+              <svg class="w-5 h-5 text-gray-400 dark:text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09L5.5 12.18.5 7.91l6.064-.88L10 2l3.436 5.03L19.5 7.91l-5 4.27 1.378 5.91z"/></svg>
             </div>
           </div>
   
@@ -418,7 +418,7 @@
   {/if}
 
   <!-- Footer -->
-  <footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">
+  <footer class="bg-gray-900 dark:bg-gray-900" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8 animate__animated animate__fadeInUp">
@@ -451,36 +451,36 @@
           
           <!-- Navigasi -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white">Navigasi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
-              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
-              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
+              <li><a href="/" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Beranda</a></li>
+              <li><a href="/product" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Produk</a></li>
+              <li><a href="/services" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Layanan</a></li>
             </ul>
           </div>
           
           <!-- Products -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Produk</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white">Produk</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
-              <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
-              <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
-              <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
+              <li><a href="/tshirt" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kaos</a></li>
+              <li><a href="/polo" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
+              <li><a href="/jersey" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jersey</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
+              <li><a href="/shirts" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
           
           <!-- Discover Us -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
-              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
-              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
-              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
-              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
+              <li><a href="/about-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
+              <li><a href="/contact-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
+              <li><a href="/store-location" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>
@@ -489,7 +489,7 @@
   
       <!-- Footer Bottom -->
       <div class="mt-16 border-t border-white/10 pt-8 text-center animate__animated animate__fadeInUp animate__delay-3s">
-        <p class="text-sm leading-5 text-gray-400 dark:text-gray-900">&copy; 2025 Glam Stitch. All rights reserved.</p>
+        <p class="text-sm leading-5 text-gray-400">&copy; 2025 Glam Stitch. All rights reserved.</p>
       </div>
     </div>
   </footer>

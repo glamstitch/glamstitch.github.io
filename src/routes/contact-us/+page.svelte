@@ -123,7 +123,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">
+<footer class="bg-gray-900" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -132,7 +132,7 @@
         <img loading="lazy" class="h-24 w-24" src={logoGlint} alt="Glam Stitch Logo">
         <div class="flex space-x-6">
           <!-- Facebook -->
-          <a href="/" class="text-gray-500 dark:text-gray-600 hover:text-gray-400 dark:hover:text-gray-800 transition duration-300">
+          <a href="/" class="text-gray-500 hover:text-gray-400 transition duration-300">
             <span class="sr-only">Facebook</span>
             <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22 12a10 10 0 10-11.6 9.87v-6.99H8.1v-2.88h2.3V9.41c0-2.28 1.35-3.55 3.42-3.55.99 0 2.03.18 2.03.18v2.24h-1.14c-1.12 0-1.47.7-1.47 1.42v1.71h2.5l-.4 2.88h-2.1v6.99A10 10 0 0022 12z"/>
@@ -140,7 +140,7 @@
           </a>
           
           <!-- Instagram -->
-          <a href="/" class="text-gray-500 dark:text-gray-600 hover:text-gray-400 dark:hover:text-gray-800 transition duration-300">
+          <a href="/" class="text-gray-500 hover:text-gray-400 transition duration-300">
             <span class="sr-only">Instagram</span>
             <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-1a1 1 0 100 2 1 1 0 000-2z"/>
@@ -153,36 +153,36 @@
       <div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
         <!-- Navigasi -->
         <div>
-          <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
+          <h3 class="text-lg font-semibold leading-6 text-white">Navigasi</h3>
           <ul class="mt-6 space-y-4">
-            <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
-            <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
-            <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
+            <li><a href="/" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Beranda</a></li>
+            <li><a href="/product" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Produk</a></li>
+            <li><a href="/services" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Layanan</a></li>
           </ul>
         </div>
         
         <!-- Products -->
         <div>
-          <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Produk</h3>
+          <h3 class="text-lg font-semibold leading-6 text-white">Produk</h3>
           <ul class="mt-6 space-y-4">
-            <li><a href="/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
-            <li><a href="/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
-            <li><a href="/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-            <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
-            <li><a href="/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
+            <li><a href="/tshirt" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kaos</a></li>
+            <li><a href="/polo" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
+            <li><a href="/jersey" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jersey</a></li>
+            <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
+            <li><a href="/shirts" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kemeja</a></li>
           </ul>
         </div>
         
         <!-- Discover Us -->
         <div>
-          <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
+          <h3 class="text-lg font-semibold leading-6 text-white">Jelajahi</h3>
           <ul class="mt-6 space-y-4">
-            <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-            <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
-            <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
-            <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
-            <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
-            <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
+            <li><a href="/about-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
+            <li><a href="/contact-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
+            <li><a href="/store-location" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
+            <li><a href="/gallery" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
+            <li><a href="/pelanggan-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+            <li><a href="/supplier-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
           </ul>
         </div>
       </div>
@@ -190,7 +190,7 @@
 
     <!-- Footer Bottom -->
     <div class="mt-16 border-t border-white/10 dark:border-gray-300 pt-8 text-center">
-      <p class="text-sm leading-5 text-gray-400 dark:text-gray-900">&copy; 2025 Glam Stitch. All rights reserved.</p>
+      <p class="text-sm leading-5 text-gray-400">&copy; 2025 Glam Stitch. All rights reserved.</p>
     </div>
   </div>
 </footer>

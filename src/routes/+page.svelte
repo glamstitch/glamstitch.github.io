@@ -121,7 +121,7 @@
 
             </a>
 
-            <a href="/product" class="group text-white dark:text-gray-900 font-semibold hover:text-indigo-300 dark:hover:text-indigo-600 transition-all duration-300 flex items-center gap-2" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
+            <a href="/product" class="group text-white font-semibold hover:text-indigo-300 dark:hover:text-indigo-600 transition-all duration-300 flex items-center gap-2" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
 
               Jelajahi Produk Kami 
 
@@ -275,7 +275,7 @@
 
       <h2 class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-white text-center animate__animated animate__fadeIn animate__delay-300ms">Cara Pemesanan</h2>
 
-      <p class="mt-4 text-lg text-gray-500dark:text-gray-300 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat, aman, dan terpercaya.</p>
+      <p class="mt-4 text-lg text-gray-500 dark:text-gray-300 text-center animate__animated animate__fadeIn animate__delay-600ms">Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat, aman, dan terpercaya.</p>
       
 
       <div class="mt-16 flex flex-col lg:flex-row items-center lg:items-start gap-10">
@@ -308,7 +308,7 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">1. Konsultasi</h3>
 
-            <p class="mt-2 text-base text-gray-500dark:text-gray-200">Hubungi kami via WhatsApp, email, atau kunjungi toko untuk berdiskusi desain, bahan, dan kebutuhan Anda. Konsultasi gratis dan tidak mengikat.</p>
+            <p class="mt-2 text-base text-gray-500 dark:text-gray-200">Hubungi kami via WhatsApp, email, atau kunjungi toko untuk berdiskusi desain, bahan, dan kebutuhan Anda. Konsultasi gratis dan tidak mengikat.</p>
 
           </div>
 
@@ -316,7 +316,7 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">2. Produksi</h3>
 
-            <p class="mt-2 text-base text-gray-500dark:text-gray-200">Kami memproduksi dengan bahan berkualitas tinggi menggunakan teknologi modern. Tim ahli kami memastikan setiap detail sesuai permintaan Anda dengan update progress berkala.</p>
+            <p class="mt-2 text-base text-gray-500 dark:text-gray-200">Kami memproduksi dengan bahan berkualitas tinggi menggunakan teknologi modern. Tim ahli kami memastikan setiap detail sesuai permintaan Anda dengan update progress berkala.</p>
 
           </div>
 
@@ -324,7 +324,7 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">3. Pengiriman</h3>
 
-            <p class="mt-2 text-base text-gray-500dark:text-gray-200">Produk dikirim dengan aman ke alamat Anda. Kami menggunakan kurir terpercaya dengan tracking real-time, pengemasan rapi, dan menyediakan garansi kualitas.</p>
+            <p class="mt-2 text-base text-gray-500 dark:text-gray-200">Produk dikirim dengan aman ke alamat Anda. Kami menggunakan kurir terpercaya dengan tracking real-time, pengemasan rapi, dan menyediakan garansi kualitas.</p>
 
           </div>
 
@@ -356,7 +356,7 @@
 
           <h2 class="text-4xl font-semibold text-gray-900 dark:text-white sm:text-5xl mb-4">Pencapaian Glam Stitch</h2>
 
-          <p class="text-lg text-gray-600dark:text-gray-200">Dedikasi kami tercermin dari data. Berikut pencapaian kami dalam melayani kebutuhan fashion Anda.</p>
+          <p class="text-lg text-gray-600 dark:text-gray-200">Dedikasi kami tercermin dari data. Berikut pencapaian kami dalam melayani kebutuhan fashion Anda.</p>
 
         </div>
 
@@ -380,7 +380,7 @@
 
               <p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">1000+</p>
 
-              <p class="text-lg sm:text-xl text-gray-500dark:text-gray-200">Pelanggan</p>
+              <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-200">Pelanggan</p>
 
             </div>
 
@@ -402,7 +402,7 @@
 
               <p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">150.000 PCS</p>
 
-              <p class="text-lg sm:text-xl text-gray-500dark:text-gray-200">Terjual Per-Tahun</p>
+              <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-200">Terjual Per-Tahun</p>
 
             </div>
 
@@ -424,7 +424,7 @@
 
               <p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">5+ Tahun</p>
 
-              <p class="text-lg sm:text-xl text-gray-500dark:text-gray-200">Pengalaman</p>
+              <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-200">Pengalaman</p>
 
             </div>
 
@@ -541,7 +541,7 @@
 
               <li><a href="/jersey" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jersey</a></li>
 
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
 
               <li><a href="/shirts" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kemeja</a></li>
 

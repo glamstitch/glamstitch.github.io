@@ -107,7 +107,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Visi</h3>
-                <p class="text-gray-600dark:text-gray-300 text-center">
+                <p class="text-gray-600 dark:text-gray-300 text-center">
                     Menjadi pemimpin terkemuka dalam industri konveksi yang dikenal akan kualitas unggul, inovasi, dan kepuasan pelanggan.
                 </p>
             </div>
@@ -120,7 +120,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Misi 1</h3>
-                <p class="text-gray-600dark:text-gray-300 text-center">
+                <p class="text-gray-600 dark:text-gray-300 text-center">
                     Memberikan pakaian kustom berkualitas tinggi sesuai kebutuhan pelanggan dengan menerapkan praktik produksi yang berkelanjutan.
                 </p>
             </div>
@@ -133,7 +133,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Misi 2</h3>
-                <p class="text-gray-600dark:text-gray-300 text-center">
+                <p class="text-gray-600 dark:text-gray-300 text-center">
                     Membangun hubungan jangka panjang dengan klien melalui layanan yang andal, inovatif, dan berfokus pada kepuasan pelanggan.
                 </p>
             </div>
@@ -146,7 +146,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Komitmen Kualitas</h3>
-                <p class="text-gray-600dark:text-gray-300 text-center">
+                <p class="text-gray-600 dark:text-gray-300 text-center">
                     Kami percaya bahwa setiap pakaian harus dibuat dengan ketelitian dan standar tertinggi.
                 </p>
             </div>
@@ -159,7 +159,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Inovasi</h3>
-                <p class="text-gray-600dark:text-gray-300 text-center">
+                <p class="text-gray-600 dark:text-gray-300 text-center">
                     Kami mengadopsi teknologi dan teknik terbaru untuk meningkatkan kemampuan produksi dan menciptakan solusi pakaian yang modern.
                 </p>
             </div>
@@ -172,7 +172,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Keberlanjutan</h3>
-                <p class="text-gray-600dark:text-gray-300 text-center">
+                <p class="text-gray-600 dark:text-gray-300 text-center">
                     Glam Stitch berkomitmen mengurangi dampak lingkungan dengan menerapkan praktik produksi yang ramah lingkungan.
                 </p>
             </div>
@@ -196,7 +196,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2017</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2017" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700dark:text-gray-300 text-lg">
+              <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Awal mula berdirinya Glam Stitch di Kecamatan Kalijati pada tahun 2017, dimulai dari sebuah rumah kecil dengan mesin jahit sederhana dan semangat besar untuk memberikan kualitas terbaik.
               </div>
             </div>
@@ -207,7 +207,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2020</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2020" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700dark:text-gray-300 text-lg">
+              <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Mulai meluaskan layanan dengan menerima pesanan dalam jumlah besar dari komunitas dan sekolah. Glam Stitch mulai dikenal di wilayah lokal dan sekitarnya.
               </div>
             </div>
@@ -218,7 +218,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2023</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2023" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700dark:text-gray-300 text-lg">
+              <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Pembangunan pabrik baru untuk meningkatkan kapasitas produksi dan melayani permintaan yang semakin besar dari pelanggan.
               </div>
             </div>
@@ -229,7 +229,7 @@
             <div class="absolute -left-5 top-1 w-10 h-10 bg-indigo-500 dark:bg-indigo-300 rounded-full flex items-center justify-center text-white font-bold shadow-md">2025</div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img loading="lazy" src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="2025" class="rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300">
-              <div class="text-gray-700dark:text-gray-300 text-lg">
+              <div class="text-gray-700 dark:text-gray-300 text-lg">
                 Mencapai pencapaian luar biasa dengan 1000+ pelanggan aktif dan 150 ribu pcs terjual per tahun. Glam Stitch telah menjadi konveksi terpercaya di Indonesia.
               </div>
             </div>
@@ -274,36 +274,36 @@
           
           <!-- Navigasi -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Navigasi</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white">Navigasi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Beranda</a></li>
-              <li><a href="/product" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Produk</a></li>
-              <li><a href="/services" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Layanan</a></li>
+              <li><a href="/" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Beranda</a></li>
+              <li><a href="/product" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Produk</a></li>
+              <li><a href="/services" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Layanan</a></li>
             </ul>
           </div>
           
           <!-- Products -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Produk</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white">Produk</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="{base}/tshirt" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos</a></li>
-              <li><a href="{base}/polo" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
-              <li><a href="{base}/jersey" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Jersey</a></li>
-              <li><a href="/jacket" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
-              <li><a href="{base}/shirts" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Kemeja</a></li>
+              <li><a href="{base}/tshirt" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kaos</a></li>
+              <li><a href="{base}/polo" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kaos Polo</a></li>
+              <li><a href="{base}/jersey" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Jersey</a></li>
+              <li><a href="/jacket" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hoodie/Sweater</a></li>
+              <li><a href="{base}/shirts" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Kemeja</a></li>
             </ul>
           </div>
           
           <!-- Discover Us -->
           <div>
-            <h3 class="text-lg font-semibold leading-6 text-white dark:text-gray-900">Jelajahi</h3>
+            <h3 class="text-lg font-semibold leading-6 text-white">Jelajahi</h3>
             <ul class="mt-6 space-y-4">
-              <li><a href="/about-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
-              <li><a href="/contact-us" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
-              <li><a href="/store-location" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
-              <li><a href="/gallery" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
-              <li><a href="/pelanggan-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
-              <li><a href="/supplier-kami" class="text-base text-gray-300 dark:text-gray-600 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
+              <li><a href="/about-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tentang Kami</a></li>
+              <li><a href="/contact-us" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Hubungi Kami</a></li>
+              <li><a href="/store-location" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Lokasi Toko</a></li>
+              <li><a href="/gallery" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Tim Kami</a></li>
+              <li><a href="/pelanggan-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Pelanggan Kami</a></li>
+              <li><a href="/supplier-kami" class="text-base text-gray-300 hover:text-blue-400 transition duration-200">Supplier Kami</a></li>
 
             </ul>
           </div>
