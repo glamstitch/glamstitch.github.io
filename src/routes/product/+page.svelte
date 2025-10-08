@@ -13,7 +13,7 @@
     />
   
     <!-- Overlay Hitam -->
-    <div class="absolute inset-0 -z-10 bg-black/60"></div>
+    <div class="absolute inset-0 -z-10 bg-black/10"></div>
   
     <!-- Konten Hero -->
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -21,7 +21,7 @@
         
         <!-- Box Highlight -->
         <div class="mb-6 flex justify-center">
-          <div class="relative rounded-full px-4 py-1.5 text-sm text-gray-300 ring-1 ring-white/20 hover:ring-white/30 transition">
+          <div class="relative rounded-full px-4 py-1.5 text-sm text-gray-200 ring-1 ring-white/20 hover:ring-white/30 transition">
             Jelajahi beragam produk dari Konveksi Glam Stitch.
           </div>
         </div>
@@ -32,7 +32,7 @@
         </h1>
   
         <!-- Deskripsi -->
-        <p class="mt-6 text-lg sm:text-xl text-gray-300 animate__animated animate__fadeIn animate__delay-1s">
+        <p class="mt-6 text-lg sm:text-xl text-gray-200 animate__animated animate__fadeIn animate__delay-1s">
           Temukan kaos polos, jaket, dan kemeja dengan desain menarik, bahan terbaik, dan jahitan rapi — cocok untuk brand, komunitas, maupun usaha Anda.
         </p>
       </div>
@@ -186,15 +186,15 @@
     </div>
   </section>
 
-  <!-- Reviews Section -->
-<section class="bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-16 py-16">
-      <div class="text-center">
-        <h2 class="text-4xl sm:text-2xl font-bold text-gray-900 dark:text-white">Testimoni Pelanggan: Pengalaman Memuaskan dari Glam Stitch!</h2>
+  <!-- Reviews Section - DISABLED (Change showTestimonials to true to enable) -->
+  {#if false}
+  <section class="bg-white dark:bg-gray-900 py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-16">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 dark:text-white">Testimoni Pelanggan</h2>
         <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Review dari para pelanggan setia kami.</p>
       </div>
-  
-      <div class="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         
         <!-- Review Card -->
         <div class="bg-white dark:bg-gray-700 shadow-xl rounded-3xl p-8 border border-gray-100 dark:border-gray-600 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
@@ -412,11 +412,10 @@
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">"Kaos polo untuk seragam tim marketing sangat bagus! Kualitas premium, jahitan rapi, dan desainnya profesional. Klien pun terkesan dengan penampilan tim kami."</p>
         </div>
   
-        <!-- Add more review cards with similar structure -->
-  
       </div>
     </div>
   </section>
+  {/if}
 
   <!-- Footer -->
   <footer class="bg-gray-900 dark:bg-white" aria-labelledby="footer-heading">

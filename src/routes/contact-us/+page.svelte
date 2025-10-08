@@ -16,13 +16,13 @@
     alt="Stylish tailor working on shirts" 
     class="absolute inset-0 -z-10 w-full h-full object-cover"
   />
-  <div class="absolute inset-0 -z-10 bg-black/50"></div>
+  <div class="absolute inset-0 -z-10 bg-black/20"></div>
   
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32 text-center">
       <!-- Badge -->
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div class="relative rounded-full px-3 py-1 text-sm text-gray-400 ring-1 ring-white/10 hover:ring-white/20 transition">
+        <div class="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-white/10 hover:ring-white/20 transition">
           Kami siap membantu kebutuhan konveksi Anda.
           <a href="/#" class="font-semibold text-white hover:text-indigo-400" aria-label="Kembali ke Beranda">
             <span class="absolute inset-0" aria-hidden="true"></span>Beranda <span aria-hidden="true">&rarr;</span>

@@ -19,7 +19,7 @@
       class="absolute inset-0 -z-10 w-full h-full object-cover"
     />
     <!-- Overlay -->
-    <div class="absolute inset-0 -z-10 bg-black/50"></div>
+    <div class="absolute inset-0 -z-10 bg-black/20"></div>
   
     <!-- Content Container -->
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

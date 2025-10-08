@@ -1,7 +1,8 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
   import logoGlint from '$lib/assets/image/logo glint.png';
-  import ukurankaos from '$lib/assets/image/ukurankaos.png';
+  // @ts-expect-error - vite-imagetools query parameters
+  import ukurankaos from '$lib/assets/image/ukurankaos.png?w=800&format=webp&quality=85';
 </script>
 
 <svelte:head>
@@ -19,12 +20,12 @@
       alt="Jersey olahraga" class="absolute inset-0 -z-10 w-full h-full object-cover">
   
     <!-- Dark Overlay -->
-    <div class="absolute inset-0 -z-10 bg-black/50"></div>
+    <div class="absolute inset-0 -z-10 bg-black/30"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32 text-center">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+          <div class="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-white/10 hover:ring-white/20">
             Koleksi jersey olahraga berkualitas premium dari Glam Stitch untuk performa maksimal dan tampilan sporty.
             <a href="/" class="font-semibold text-white">
               <span class="absolute inset-0" aria-hidden="true"></span>Beranda <span aria-hidden="true">&rarr;</span>

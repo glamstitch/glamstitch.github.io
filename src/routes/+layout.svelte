@@ -6,9 +6,11 @@
 	import facebookIcon from '$lib/assets/image/facebook.svg';
 	import youtubeIcon from '$lib/assets/image/youtube.svg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import LoadingScreen from '$lib/components/LoadingScreen.svelte';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
+	import { navigating } from '$app/stores';
   
 	let { children } = $props();
 	
@@ -428,6 +430,11 @@
 	}
 </style>
 
+<!-- Loading Screen during navigation -->
+{#if $navigating}
+  <LoadingScreen />
+{/if}
+
 {@render children()}
   
 <!-- Navbar -->
@@ -487,14 +494,15 @@
 								Hubungi Kami
 							</span>
 						</a>
-						<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
-							<span class="flex items-center gap-2">
-								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20l-4.172-4.172a2 2 0 00-2.828 0L4 18.172V4a2 2 0 012-2h12a2 2 0 012 2v12.172l-2.343-2.343a2 2 0 00-2.828 0z" />
-								</svg>
-								Lokasi Toko
-							</span>
-						</a>
+					<a href="{base}/store-location" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
+						<span class="flex items-center gap-2">
+							<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+							</svg>
+							Lokasi Toko
+						</span>
+					</a>
 						<a href="{base}/gallery" class="dropdown-item block px-4 py-3 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-gray-800/80 transition-all duration-200 rounded-lg mx-2 font-medium">
 							<span class="flex items-center gap-2">
 								<svg class="w-4 h-4 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -623,7 +631,7 @@
 				<input type="checkbox" id="mobile-company" class="peer/company hidden" />
 				<label for="mobile-company" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
 					<span>Lainnya</span>
-					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/company:rotate-180 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
@@ -654,7 +662,7 @@
 				<input type="checkbox" id="mobile-social" class="peer/social hidden" />
 				<label for="mobile-social" class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium cursor-pointer transition-colors duration-200">
 					<span>Sosial Media</span>
-					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/social:rotate-180 text-gray-700dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-5 h-5 transition-transform duration-300 peer-checked/social:rotate-180 text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 					</svg>
 				</label>
@@ -689,4 +697,4 @@
 	</div>
 </div>
 {/if}
-  
+

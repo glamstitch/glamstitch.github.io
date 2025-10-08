@@ -1,7 +1,8 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
   import logoGlint from '$lib/assets/image/logo glint.png';
-  import ukuranjaket from '$lib/assets/image/ukuranjaket.png';
+  // @ts-expect-error - vite-imagetools query parameters
+  import ukuranjaket from '$lib/assets/image/ukuranjaket.png?w=800&format=webp&quality=85';
 </script>
 
 <svelte:head>
@@ -15,12 +16,12 @@
 <!-- Hero Section -->
 <div class="hero-section relative isolate overflow-hidden pt-6">
     <img loading="lazy" src="https://img.freepik.com/free-photo/fashionable-men-jacket-hanging-clothing-store-generated-by-ai_188544-40066.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740" alt="Sweater Glam Stitch" class="absolute inset-0 -z-10 w-full h-full object-cover">
-    <div class="absolute inset-0 -z-10 bg-black/50"></div>
+    <div class="absolute inset-0 -z-10 bg-black/20"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32 text-center">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+          <div class="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-white/10 hover:ring-white/20">
             Eksplor pilihan sweater custom berkualitas dari Glam Stitch.
             <a href="/" class="font-semibold text-white">
               <span class="absolute inset-0" aria-hidden="true"></span>Beranda <span aria-hidden="true">&rarr;</span>

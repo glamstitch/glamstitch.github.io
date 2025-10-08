@@ -20,7 +20,7 @@
     />
   
     <!-- Overlay -->
-    <div class="absolute inset-0 -z-10 bg-black/50"></div>
+    <div class="absolute inset-0 -z-10 bg-black/20"></div>
   
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">

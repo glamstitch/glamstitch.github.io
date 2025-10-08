@@ -1,12 +1,18 @@
 <script lang="ts">
   // Page content only - dark mode handled by layout
-  import supplierMain from '$lib/assets/image/gallery.jpg';
-  import supplier1 from '$lib/assets/image/gallery1.jpg';
-  import supplier2 from '$lib/assets/image/gallery2.jpg';
-  import supplier3 from '$lib/assets/image/gallery3.jpg';
-  import supplier4 from '$lib/assets/image/gallery4.jpg';
+  // @ts-expect-error - vite-imagetools query parameters
+  import supplierMain from '$lib/assets/image/gallery.jpg?w=1920&format=webp&quality=85';
+  // @ts-expect-error - vite-imagetools query parameters
+  import supplier1 from '$lib/assets/image/gallery1.jpg?w=800&format=webp&quality=80';
+  // @ts-expect-error - vite-imagetools query parameters
+  import supplier2 from '$lib/assets/image/gallery2.jpg?w=800&format=webp&quality=80';
+  // @ts-expect-error - vite-imagetools query parameters
+  import supplier3 from '$lib/assets/image/gallery3.jpg?w=800&format=webp&quality=80';
+  // @ts-expect-error - vite-imagetools query parameters
+  import supplier4 from '$lib/assets/image/gallery4.jpg?w=800&format=webp&quality=80';
   import logoGlint from '$lib/assets/image/logo glint.png';
-  import poto7 from '$lib/assets/image/poto7.jpg'
+  // @ts-expect-error - vite-imagetools query parameters
+  import poto7 from '$lib/assets/image/poto7.jpg?w=800&format=webp&quality=80'
 </script>
 
 <svelte:head>
@@ -21,7 +27,7 @@
 		src={supplierMain}
 		alt="Supplier Glam Stitch"
 		class="hero-section absolute inset-0 -z-10 w-full h-full object-cover"/>
-	<div class="absolute inset-0 -z-10 bg-black/50"></div>
+	<div class="absolute inset-0 -z-10 bg-black/20"></div>
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40 text-center">
