@@ -484,7 +484,7 @@
 						</li>
 						<li>
 							<a
-								href="/services"
+								href="{base}/404.html"
 								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
 								>Layanan</a
 							>
@@ -567,7 +567,7 @@
 						</li>
 						<li>
 							<a
-								href="/pelanggan-kami"
+								href="{base}/404.html"
 								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
 								>Pelanggan Kami</a
 							>

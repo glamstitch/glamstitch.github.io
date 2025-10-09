@@ -2,9 +2,6 @@
 	import '../app.css';
 	import { base } from '$app/paths';
 	import logoGlint from '$lib/assets/image/logo glint.png';
-	import instagramIcon from '$lib/assets/image/instagram.svg';
-	import facebookIcon from '$lib/assets/image/facebook.svg';
-	import youtubeIcon from '$lib/assets/image/youtube.svg';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import LoadingScreen from '$lib/components/LoadingScreen.svelte';
 	import { onMount } from 'svelte';
@@ -16,9 +13,7 @@
 
 	// State for dropdown menus
 	let companyDropdownOpen = $state(false);
-	let socialDropdownOpen = $state(false);
 	let companyTimeout: ReturnType<typeof setTimeout> | undefined;
-	let socialTimeout: ReturnType<typeof setTimeout> | undefined;
 
 	// State for mobile menu
 	let mobileMenuOpen = $state(false);
@@ -38,21 +33,6 @@
 		}, 150);
 	}
 
-	function handleSocialMouseEnter() {
-		if (socialTimeout) {
-			clearTimeout(socialTimeout);
-			socialTimeout = undefined;
-		}
-		socialDropdownOpen = true;
-	}
-
-	function handleSocialMouseLeave() {
-		socialTimeout = setTimeout(() => {
-			socialDropdownOpen = false;
-			resetDropdownAnimations();
-		}, 150);
-	}
-
 	// Function to toggle mobile menu
 	function toggleMobileMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
@@ -68,7 +48,6 @@
 		const target = event.target as HTMLElement;
 		if (!target.closest('.dropdown-container')) {
 			companyDropdownOpen = false;
-			socialDropdownOpen = false;
 			resetDropdownAnimations();
 		}
 	}
@@ -88,7 +67,6 @@
 			document.removeEventListener('click', handleClickOutside);
 			// Cleanup timeouts
 			if (companyTimeout) clearTimeout(companyTimeout);
-			if (socialTimeout) clearTimeout(socialTimeout);
 		};
 	});
 </script>
@@ -141,7 +119,7 @@
 			</a>
 
 			<a
-				href="{base}/services"
+				href="{base}/404.html"
 				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
 			>
 				Layanan
@@ -298,7 +276,7 @@
 								</span>
 							</a>
 							<a
-								href="{base}/pelanggan-kami"
+								href="{base}/404.html"
 								class="dropdown-item mx-2 block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
 							>
 								<span class="flex items-center gap-2">
@@ -323,74 +301,16 @@
 				{/if}
 			</div>
 
-			<!-- Social Media Dropdown -->
-			<!-- svelte-ignore a11y_no_static_element_interactions -->
-			<div
-				class="dropdown-container relative"
-				onmouseenter={handleSocialMouseEnter}
-				onmouseleave={handleSocialMouseLeave}
+			<!-- Social Media Link -->
+			<a
+				href="{base}/sosial-media"
+				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
 			>
-				<button
-					class="navbar-link group relative flex items-center gap-1 text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
-				>
-					<span class="flex items-center gap-2"> Sosial Media </span>
-					<svg
-						class="h-4 w-4 transition-all duration-300 {socialDropdownOpen
-							? 'rotate-180'
-							: ''} text-gray-900"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M19 9l-7 7-7-7"
-						/>
-					</svg>
-					<span
-						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"
-					></span>
-				</button>
-				{#if socialDropdownOpen}
-					<div
-						class="dropdown-menu absolute top-full left-0 z-50 mt-2 w-48 rounded-xl border border-gray-200 bg-white/95 shadow-2xl backdrop-blur-md lg:left-0 lg:w-52 xl:left-0 xl:w-56"
-					>
-						<div class="py-2">
-							<a
-								href="{base}/404.html"
-								class="dropdown-item mx-2 block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-							>
-								<span class="flex items-center gap-2">
-									<img src={instagramIcon} alt="Instagram" class="h-4 w-4" />
-									Instagram
-								</span>
-							</a>
-
-							<a
-								href="{base}/404.html"
-								class="dropdown-item mx-2 block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-							>
-								<span class="flex items-center gap-2">
-									<img src={facebookIcon} alt="Facebook" class="h-4 w-4" />
-									Facebook
-								</span>
-							</a>
-
-							<a
-								href="{base}/404.html"
-								class="dropdown-item mx-2 block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-							>
-								<span class="flex items-center gap-2">
-									<img src={youtubeIcon} alt="YouTube" class="h-4 w-4" />
-									YouTube
-								</span>
-							</a>
-						</div>
-					</div>
-				{/if}
-			</div>
+				Sosial Media
+				<span
+					class="absolute -bottom-1 left-0 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"
+				></span>
+			</a>
 		</div>
 
 		<!-- Right Side Actions -->
@@ -467,7 +387,7 @@
 				</a>
 
 				<a
-					href="{base}/services"
+					href="{base}/404.html"
 					onclick={closeMobileMenu}
 					class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-colors duration-200 hover:bg-indigo-50 hover:text-indigo-600"
 				>
@@ -535,7 +455,7 @@
 							Supplier Kami
 						</a>
 						<a
-							href="{base}/pelanggan-kami"
+							href="{base}/404.html"
 							onclick={closeMobileMenu}
 							class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
 						>
@@ -544,63 +464,14 @@
 					</div>
 				</div>
 
-				<!-- Social Media Dropdown -->
-				<div class="relative">
-					<input type="checkbox" id="mobile-social" class="peer/social hidden" />
-					<label
-						for="mobile-social"
-						class="mobile-menu-item flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 font-medium text-gray-900 transition-colors duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-					>
-						<span>Sosial Media</span>
-						<svg
-							class="h-5 w-5 text-gray-900 transition-transform duration-300 peer-checked/social:rotate-180"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M19 9l-7 7-7-7"
-							/>
-						</svg>
-					</label>
-					<div
-						class="max-h-0 space-y-1 overflow-hidden transition-all duration-300 ease-in-out peer-checked/social:max-h-80"
-					>
-						<a
-							href="{base}/404.html"
-							onclick={closeMobileMenu}
-							class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-						>
-							<span class="flex items-center gap-2">
-								<img src={instagramIcon} alt="Instagram" class="h-4 w-4" />
-								Instagram
-							</span>
-						</a>
-						<a
-							href="{base}/404.html"
-							onclick={closeMobileMenu}
-							class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-						>
-							<span class="flex items-center gap-2">
-								<img src={facebookIcon} alt="Facebook" class="h-4 w-4" />
-								Facebook
-							</span>
-						</a>
-						<a
-							href="{base}/404.html"
-							onclick={closeMobileMenu}
-							class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-						>
-							<span class="flex items-center gap-2">
-								<img src={youtubeIcon} alt="YouTube" class="h-4 w-4" />
-								YouTube
-							</span>
-						</a>
-					</div>
-				</div>
+				<!-- Social Media Link -->
+				<a
+					href="{base}/sosial-media"
+					onclick={closeMobileMenu}
+					class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-colors duration-200 hover:bg-indigo-50 hover:text-indigo-600"
+				>
+					Sosial Media
+				</a>
 			</nav>
 
 			<!-- Footer in Mobile Menu -->
