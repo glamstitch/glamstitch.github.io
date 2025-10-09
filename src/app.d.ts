@@ -16,6 +16,7 @@ declare module '*&imagetools' {
 	export default out;
 }
 
+// Image files with query parameters
 declare module '*.jpg?*' {
 	const out: string;
 	export default out;
@@ -41,5 +42,35 @@ declare module '*.gif?*' {
 	export default out;
 }
 
-export {};
+// Image files without query parameters
+declare module '*.jpg' {
+	const out: string;
+	export default out;
+}
 
+declare module '*.jpeg' {
+	const out: string;
+	export default out;
+}
+
+declare module '*.png' {
+	const out: string;
+	export default out;
+}
+
+declare module '*.webp' {
+	const out: string;
+	export default out;
+}
+
+declare module '*.gif' {
+	const out: string;
+	export default out;
+}
+
+declare module '*.svg' {
+	const out: string;
+	export default out;
+}
+
+export {};
