@@ -1,8 +1,25 @@
 <script lang="ts">
 	// Page content only - dark mode handled by layout
 	import logoGlint from '$lib/assets/image/logo glint.png';
+	import polo1 from '$lib/assets/image/polo1.jpg';
+	import kaos1 from '$lib/assets/image/kaos1.jpg';
+	import jersey1 from '$lib/assets/image/jersey1.jpg';
+	import hoodie1 from '$lib/assets/image/hoodie1.jpg';
+	import kemeja1 from '$lib/assets/image/kemeja1.jpg';
 	import { base } from '$app/paths';
 </script>
+
+<svelte:head>
+	<title>Produk - Glam Stitch | Produk Berkualitas</title>
+	<meta
+		name="description"
+		content="Layanan konveksi lengkap dari Glam Stitch: sablon, bordir, konveksi kaos, jersey, jaket, dan kemeja. Kualitas terjamin dengan harga kompetitif."
+	/>
+	<meta
+		name="keywords"
+		content="layanan konveksi, sablon, bordir, konveksi kaos, jersey, jaket, kemeja, kualitas terjamin"
+	/>
+</svelte:head>
 
 <!-- Hero Section Produk -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
@@ -113,7 +130,7 @@
 				<div class="relative overflow-hidden rounded-t-lg">
 					<img
 						loading="lazy"
-						src="https://i.pinimg.com/736x/50/31/57/5031570ca2bae383dc3d83f004bc0dfe.jpg"
+						src={kaos1}
 						alt="Kaos Polos Glam Stitch"
 						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
 					/>
@@ -139,7 +156,7 @@
 				<div class="relative overflow-hidden rounded-t-lg">
 					<img
 						loading="lazy"
-						src="https://i.pinimg.com/1200x/01/22/29/012229e1a04151b3b6c0210eee6b259b.jpg"
+						src={polo1}
 						alt="Kaos Polo Glam Stitch"
 						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
 					/>
@@ -163,7 +180,7 @@
 				<div class="relative overflow-hidden rounded-t-lg">
 					<img
 						loading="lazy"
-						src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg"
+						src={jersey1}
 						alt="Jersey Glam Stitch"
 						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
 					/>
@@ -187,7 +204,7 @@
 				<div class="relative overflow-hidden rounded-t-lg">
 					<img
 						loading="lazy"
-						src="https://i.pinimg.com/1200x/5a/6d/b1/5a6db1b76d8dcacfb279079a82e8bf4e.jpg"
+						src={hoodie1}
 						alt="Hoodie/Sweater Glam Stitch"
 						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
 					/>
@@ -211,7 +228,7 @@
 				<div class="relative overflow-hidden rounded-t-lg">
 					<img
 						loading="lazy"
-						src="https://i.pinimg.com/1200x/a3/9f/93/a39f9311f2367a33dcbba0f849fc5c8c.jpg"
+						src={kemeja1}
 						alt="Kemeja Glam Stitch"
 						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
 					/>

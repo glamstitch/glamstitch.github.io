@@ -195,7 +195,7 @@
 									</svg>
 								</div>
 								<p class="text-sm text-gray-700 dark:text-gray-300">
-									Sudah dicuci dan disusutkan sebelumnya
+									Sudah melalui tahap penyempurnaan bahan sebelumnya
 								</p>
 							</div>
 							<div class="flex items-start space-x-3">

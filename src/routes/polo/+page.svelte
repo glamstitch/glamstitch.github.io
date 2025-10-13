@@ -5,6 +5,10 @@
 	import poto6 from '$lib/assets/image/poto6.jpg?w=800&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukuranpolo from '$lib/assets/image/ukuranpolo.png?w=800&format=webp&quality=85';
+	import polo2 from '$lib/assets/image/polo2.jpg';
+	import polo3 from '$lib/assets/image/polo3.jpg';
+	import polo4 from '$lib/assets/image/polo4.jpg';
+	import polo5 from '$lib/assets/image/polo5.jpg';
 	import { base } from '$app/paths';
 </script>
 
@@ -285,7 +289,7 @@
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/1200x/55/35/e7/5535e7c317e5c98887da060ef5694470.jpg"
+							src={polo3}
 							alt="Kaos Polo Glam Stitch warna navy."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
@@ -299,7 +303,7 @@
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/1200x/01/22/29/012229e1a04151b3b6c0210eee6b259b.jpg"
+							src={polo2}
 							alt="Kaos Polo Glam Stitch warna putih."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
@@ -313,13 +317,13 @@
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/1200x/e1/29/f8/e129f8cbbd978329b2428f9fc5eb6ae3.jpg"
+							src={polo4}
 							alt="Kaos Polo Glam Stitch warna hitam."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4">
 							<h3 class="text-sm text-gray-700 dark:text-gray-200">Kaos Polo</h3>
-							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Orange</p>
+							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Hijau</p>
 						</div>
 					</div>
 
@@ -327,7 +331,7 @@
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/736x/ed/9d/96/ed9d96d3337265eab4ad4b8d43362c79.jpg"
+							src={polo5}
 							alt="Kaos Polo Glam Stitch warna abu-abu."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>

@@ -119,7 +119,7 @@
 			</a>
 
 			<a
-				href="{base}/404.html"
+				href="{base}/services"
 				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
 			>
 				Layanan

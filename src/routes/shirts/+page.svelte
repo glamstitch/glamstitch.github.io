@@ -5,6 +5,10 @@
 	import logoGlint from '$lib/assets/image/logo glint.png';
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukurankemeja from '$lib/assets/image/ukurankemeja.png?w=800&format=webp&quality=85';
+	import kemeja3 from '$lib/assets/image/kemeja3.jpg';
+	import kemeja4 from '$lib/assets/image/kemeja4.jpg';
+	import kemeja5 from '$lib/assets/image/kemeja5.jpg';
+	import kemeja6 from '$lib/assets/image/kemeja6.jpg';
 	import { base } from '$app/paths';
 </script>
 
@@ -291,38 +295,8 @@
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src={kemejaImg}
+							src={kemeja3}
 							alt="Kemeja Glam Stitch warna biru."
-							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
-						/>
-						<div class="mt-4 flex justify-between">
-							<div>
-								<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Flannel Biru Navy</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Kemeja 2 -->
-					<div class="group relative">
-						<img
-							loading="lazy"
-							src="https://i.pinimg.com/1200x/1a/03/c5/1a03c52b23d0a86b0bdf8758b184df61.jpg"
-							alt="Kemeja Glam Stitch warna putih."
-							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
-						/>
-						<div class="mt-4 flex justify-between">
-							<div>
-								<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Merah Maroon</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Kemeja 3 -->
-					<div class="group relative">
-						<img
-							loading="lazy"
-							src="https://img.freepik.com/premium-photo/mens-black-short-sleeve-shirt_53876-1021210.jpg?ga=GA1.1.1868222757.1738365469&w=740"
-							alt="Kemeja Glam Stitch warna hitam."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4 flex justify-between">
@@ -332,17 +306,47 @@
 						</div>
 					</div>
 
+					<!-- Kemeja 2 -->
+					<div class="group relative">
+						<img
+							loading="lazy"
+							src={kemeja4}
+							alt="Kemeja Glam Stitch warna putih."
+							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
+						/>
+						<div class="mt-4 flex justify-between">
+							<div>
+								<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Biru</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Kemeja 3 -->
+					<div class="group relative">
+						<img
+							loading="lazy"
+							src={kemeja5}
+							alt="Kemeja Glam Stitch warna hitam."
+							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
+						/>
+						<div class="mt-4 flex justify-between">
+							<div>
+								<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Putih</p>
+							</div>
+						</div>
+					</div>
+
 					<!-- Kemeja 4 -->
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/1200x/42/0c/5f/420c5fc727a55357433bc434d141778a.jpg"
+							src={kemeja6}
 							alt="Kemeja Glam Stitch warna abu-abu."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4 flex justify-between">
 							<div>
-								<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Coklat</p>
+								<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Hijau</p>
 							</div>
 						</div>
 					</div>

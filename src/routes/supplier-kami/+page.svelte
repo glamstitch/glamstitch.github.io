@@ -56,7 +56,7 @@
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
 			<img
 				loading="lazy"
-				src="https://i.ytimg.com/vi/vksn-w3fCvY/maxresdefault.jpg"
+				src="https://awsimages.detik.net.id/community/media/visual/2023/08/17/knitto-textiles.jpeg?w=1200"
 				alt="Knitto Textiles"
 				class="gallery h-80 w-full rounded-2xl bg-white object-cover p-4 shadow-lg lg:w-1/2 dark:bg-gray-800"
 			/>
@@ -81,25 +81,25 @@
 		<!-- 2. Dunia Sandang Pratama -->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
 			<div class="lg:w-1/2">
-				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Dunia Sandang Pratama</h2>
+				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Nirwana Textile</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Supplier tekstil dan bahan sandang yang menyediakan berbagai macam kain berkualitas untuk
 					kebutuhan konveksi. Dunia Sandang Pratama menawarkan pilihan bahan yang beragam dengan
 					harga kompetitif dan stok yang selalu tersedia untuk mendukung produksi kami.
 				</p>
 				<a
-					href="https://www.instagram.com/duniasandangpratama/"
+					href="https://gateway.nirwanatextile.com/"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="mt-6 inline-flex items-center gap-2 font-semibold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
 				>
-					Kunjungi Instagram →
+					Kunjungi Website →
 				</a>
 			</div>
 			<img
 				loading="lazy"
-				src="https://media.licdn.com/dms/image/v2/D561BAQHj2-aGuqbN0w/company-background_10000/company-background_10000/0/1657850725764/dunia_sandang_cover?e=2147483647&v=beta&t=2za_pYSq-tytI9M7GGrfJP0AISvjXP5_tDSQUbOG698"
-				alt="Dunia Sandang Pratama"
+				src="https://admin.printex.id/storage/500/NIRWANA-BANNER.jpg"
+				alt="Nirwana Textile"
 				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
 			/>
 		</div>
