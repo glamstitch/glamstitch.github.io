@@ -56,9 +56,9 @@
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
 			<img
 				loading="lazy"
-				src="https://awsimages.detik.net.id/community/media/visual/2023/08/17/knitto-textiles.jpeg?w=1200"
+				src="https://cms.disway.id/uploads/6243de5657616b5d0f48d5f28b9df10d.jpg"
 				alt="Knitto Textiles"
-				class="gallery h-80 w-full rounded-2xl bg-white object-cover p-4 shadow-lg lg:w-1/2 dark:bg-gray-800"
+				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
 			/>
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Knitto Textiles</h2>
@@ -83,9 +83,10 @@
 			<div class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Nirwana Textile</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-					Supplier tekstil dan bahan sandang yang menyediakan berbagai macam kain berkualitas untuk
-					kebutuhan konveksi. Dunia Sandang Pratama menawarkan pilihan bahan yang beragam dengan
-					harga kompetitif dan stok yang selalu tersedia untuk mendukung produksi kami.
+					Nirwana Textile adalah supplier tekstil dan bahan sandang yang menyediakan berbagai macam
+					kain berkualitas untuk kebutuhan konveksi. Nirwana Textile menawarkan pilihan bahan yang
+					beragam dengan harga kompetitif serta stok yang selalu tersedia untuk mendukung kelancaran
+					produksi kami.
 				</p>
 				<a
 					href="https://gateway.nirwanatextile.com/"
@@ -98,7 +99,7 @@
 			</div>
 			<img
 				loading="lazy"
-				src="https://admin.printex.id/storage/500/NIRWANA-BANNER.jpg"
+				src="https://www.nirwanatextile.com/images/stores/store%20bkr.png"
 				alt="Nirwana Textile"
 				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
 			/>

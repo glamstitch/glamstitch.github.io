@@ -4,6 +4,7 @@
 	import logoGlint from '$lib/assets/image/logo glint.png';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import LoadingScreen from '$lib/components/LoadingScreen.svelte';
+	import WhatsAppButton from '$lib/components/WhatsAppButton.svelte';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
@@ -119,7 +120,7 @@
 			</a>
 
 			<a
-				href="{base}/services"
+				href="{base}/404.html"
 				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
 			>
 				Layanan
@@ -481,6 +482,9 @@
 		</div>
 	</div>
 {/if}
+
+<!-- WhatsApp Floating Button -->
+<WhatsAppButton />
 
 <style>
 	/* Smooth scrolling */
