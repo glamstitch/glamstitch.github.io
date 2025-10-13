@@ -194,9 +194,7 @@
 										/>
 									</svg>
 								</div>
-								<p class="text-sm text-gray-700 dark:text-gray-300">
-									Sudah melalui tahap penyempurnaan bahan sebelumnya
-								</p>
+								<p class="text-sm text-gray-700 dark:text-gray-300">Tidak mudah luntur dan kusut</p>
 							</div>
 							<div class="flex items-start space-x-3">
 								<div class="flex-shrink-0">
