@@ -1,14 +1,19 @@
 <script lang="ts">
 	// Page content only - dark mode handled by layout
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import poto6 from '$lib/assets/image/poto6.jpg?w=800&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukuranpolo from '$lib/assets/image/ukuranpolo.png?w=800&format=webp&quality=85';
-	import polo2 from '$lib/assets/image/polo2.jpg';
-	import polo3 from '$lib/assets/image/polo3.jpg';
-	import polo4 from '$lib/assets/image/polo4.jpg';
-	import polo5 from '$lib/assets/image/polo5.jpg';
+	// @ts-expect-error - vite-imagetools query parameters
+	import polo2 from '$lib/assets/image/polo2.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import polo3 from '$lib/assets/image/polo3.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import polo4 from '$lib/assets/image/polo4.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import polo5 from '$lib/assets/image/polo5.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
 </script>
 
@@ -173,7 +178,7 @@
 									</svg>
 								</div>
 								<p class="text-sm text-gray-700 dark:text-gray-300">
-									Bahan pique cotton premium breathable
+									Bahan lacoste CVC pique premium
 								</p>
 							</div>
 							<div class="flex items-start space-x-3">

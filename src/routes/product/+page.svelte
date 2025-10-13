@@ -1,11 +1,17 @@
 <script lang="ts">
 	// Page content only - dark mode handled by layout
-	import logoGlint from '$lib/assets/image/logo glint.png';
-	import polo1 from '$lib/assets/image/polo1.jpg';
-	import kaos1 from '$lib/assets/image/kaos1.jpg';
-	import jersey1 from '$lib/assets/image/jersey1.jpg';
-	import hoodie1 from '$lib/assets/image/hoodie1.jpg';
-	import kemeja1 from '$lib/assets/image/kemeja1.jpg';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
+	// @ts-expect-error - vite-imagetools query parameters
+	import polo1 from '$lib/assets/image/polo1.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kaos1 from '$lib/assets/image/kaos1.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import jersey1 from '$lib/assets/image/jersey1.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import hoodie1 from '$lib/assets/image/hoodie1.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kemeja1 from '$lib/assets/image/kemeja1.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
 </script>
 

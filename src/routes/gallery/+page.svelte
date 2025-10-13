@@ -7,12 +7,13 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import gallery2 from '$lib/assets/image/gallery2.jpg?w=800&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
-	import gallery3 from '$lib/assets/image/gallery3.jpg?w=800&format=webp&quality=80';
-	// @ts-expect-error - vite-imagetools query parameters
 	import gallery4 from '$lib/assets/image/gallery4.jpg?w=800&format=webp&quality=80';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import poto7 from '$lib/assets/image/poto7.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kasir from '$lib/assets/image/kasir.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
 </script>
 
@@ -135,7 +136,7 @@
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
 			<img
 				loading="lazy"
-				src={gallery3}
+				src={kasir}
 				alt="Kasir Glam Stitch"
 				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
 			/>

@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 </script>
 
 <svelte:head>

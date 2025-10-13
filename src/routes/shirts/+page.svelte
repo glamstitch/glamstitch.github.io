@@ -2,13 +2,18 @@
 	// Page content only - dark mode handled by layout
 	// @ts-expect-error - vite-imagetools query parameters
 	import kemejaImg from '$lib/assets/image/kemeja.jpg?w=600&format=webp&quality=80';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukurankemeja from '$lib/assets/image/ukurankemeja.png?w=800&format=webp&quality=85';
-	import kemeja3 from '$lib/assets/image/kemeja3.jpg';
-	import kemeja4 from '$lib/assets/image/kemeja4.jpg';
-	import kemeja5 from '$lib/assets/image/kemeja5.jpg';
-	import kemeja6 from '$lib/assets/image/kemeja6.jpg';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kemeja3 from '$lib/assets/image/kemeja3.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kemeja4 from '$lib/assets/image/kemeja4.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kemeja5 from '$lib/assets/image/kemeja5.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kemeja6 from '$lib/assets/image/kemeja6.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
 </script>
 

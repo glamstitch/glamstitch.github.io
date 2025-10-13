@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Page content only - dark mode handled by layout
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukurankaos from '$lib/assets/image/ukurankaos.png?w=800&format=webp&quality=85';
 	import { base } from '$app/paths';

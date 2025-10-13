@@ -10,7 +10,8 @@
 	import supplier3 from '$lib/assets/image/gallery3.jpg?w=800&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
 	import supplier4 from '$lib/assets/image/gallery4.jpg?w=800&format=webp&quality=80';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import poto7 from '$lib/assets/image/poto7.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';

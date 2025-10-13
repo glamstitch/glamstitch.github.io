@@ -5,7 +5,8 @@
 	import youtubeIcon from '$lib/assets/image/youtube.svg';
 	import { fade, fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 </script>
 
 <svelte:head>

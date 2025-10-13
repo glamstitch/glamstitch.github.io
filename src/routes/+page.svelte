@@ -5,7 +5,8 @@
 	import gambar4 from '$lib/assets/image/gambar4.jpg?w=600&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
 	import gallery5 from '$lib/assets/image/gallery5.jpg?w=800&format=webp&quality=80';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	import { base } from '$app/paths';
 
 	// Modal state

@@ -1,8 +1,10 @@
 <script lang="ts">
 	// Page content only - dark mode handled by layout
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	import { base } from '$app/paths';
-	import ukuranjaket from '$lib/assets/image/ukuranjaket.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import ukuranjaket from '$lib/assets/image/ukuranjaket.png?w=800&format=webp&quality=85';
 </script>
 
 <svelte:head>

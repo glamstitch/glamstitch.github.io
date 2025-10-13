@@ -1,7 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	import { base } from '$app/paths';
-	import logoGlint from '$lib/assets/image/logo glint.png';
+	// @ts-expect-error - vite-imagetools query parameters
+	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import LoadingScreen from '$lib/components/LoadingScreen.svelte';
 	import WhatsAppButton from '$lib/components/WhatsAppButton.svelte';
