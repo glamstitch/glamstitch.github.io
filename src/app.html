@@ -7,8 +7,14 @@
 		<link rel="apple-touch-icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#4f46e5" />
-		<meta name="description" content="Glam Stitch - Konveksi Berkualitas Tinggi | Kaos, Jersey, Jaket & Kemeja" />
-		<meta name="keywords" content="konveksi, kaos, jersey, jaket, kemeja, sablon, bordir, konveksi berkualitas" />
+		<meta
+			name="description"
+			content="Glam Stitch - Konveksi Berkualitas Tinggi | Kaos, Jersey, Jaket & Kemeja"
+		/>
+		<meta
+			name="keywords"
+			content="konveksi, kaos, jersey, jaket, kemeja, sablon, bordir, konveksi berkualitas"
+		/>
 		<meta name="author" content="Glam Stitch" />
 		<link rel="preconnect" href="https://images.unsplash.com" />
 		<link rel="preconnect" href="https://img.freepik.com" />
@@ -20,12 +26,12 @@
 		<div style="display: contents">%sveltekit.body%</div>
 		<script>
 			// Initialize theme immediately to prevent flash - ONLY from saved preference
-			(function() {
+			(function () {
 				try {
 					const savedTheme = localStorage.getItem('theme');
 					// ONLY use saved theme, NEVER follow system preference
 					const isDark = savedTheme === 'dark';
-					
+
 					// Apply theme immediately without transitions first
 					if (isDark) {
 						document.documentElement.classList.add('dark');
@@ -40,18 +46,20 @@
 						document.body.style.backgroundColor = '#ffffff';
 						document.body.style.color = '#111827';
 					}
-					
+
 					// Enable smooth transitions after initial load
 					setTimeout(() => {
-						document.documentElement.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
-						document.body.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+						document.documentElement.style.transition =
+							'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+						document.body.style.transition =
+							'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
 					}, 50);
-					
+
 					// Listen for theme changes across tabs for consistency
-					window.addEventListener('storage', function(e) {
+					window.addEventListener('storage', function (e) {
 						if (e.key === 'theme') {
 							const isDark = e.newValue === 'dark';
-							
+
 							if (isDark) {
 								document.documentElement.classList.add('dark');
 								document.documentElement.setAttribute('data-theme', 'dark');

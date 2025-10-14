@@ -7,6 +7,8 @@
 	import gallery5 from '$lib/assets/image/gallery5.jpg?w=800&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
+	// @ts-expect-error - vite-imagetools query parameters
+	import homepage from '$lib/assets/image/homepage.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
 
 	// Modal state
@@ -63,12 +65,14 @@
 		<!-- Enhanced background with gradient overlay -->
 
 		<img
-			src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+			src={homepage}
 			alt="Glam Stitch Konveksi"
 			class="hero-section absolute inset-0 -z-10 h-full w-full object-cover"
 			loading="eager"
 			fetchpriority="high"
 		/>
+
+		<div class="absolute inset-0 -z-10 bg-black/20"></div>
 
 		<div class="mx-auto max-w-7xl px-6 lg:px-8">
 			<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
@@ -76,7 +80,7 @@
 
 				<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 					<div
-						class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
+						class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-200 ring-1 ring-white/10 hover:ring-white/20"
 					>
 						Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
 					</div>
