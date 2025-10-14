@@ -7,38 +7,44 @@
 		<link rel="apple-touch-icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#4f46e5" />
-		<meta name="description" content="Glam Stitch - Konveksi Berkualitas Tinggi | Kaos, Jersey, Jaket & Kemeja" />
-		<meta name="keywords" content="konveksi, kaos, jersey, jaket, kemeja, sablon, bordir, konveksi berkualitas" />
+		<meta
+			name="description"
+			content="Glam Stitch - Konveksi Berkualitas Tinggi | Kaos, Jersey, Jaket & Kemeja"
+		/>
+		<meta
+			name="keywords"
+			content="konveksi, kaos, jersey, jaket, kemeja, sablon, bordir, konveksi berkualitas"
+		/>
 		<meta name="author" content="Glam Stitch" />
 		<link rel="preconnect" href="https://images.unsplash.com" />
 		<link rel="preconnect" href="https://img.freepik.com" />
 		<link rel="dns-prefetch" href="https://images.unsplash.com" />
 		<link rel="dns-prefetch" href="https://img.freepik.com" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CImx4Gy7.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BNZfIV3u.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DLoTNPK5.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CpxnisHp.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CZWKu5DM.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DoKFN4CW.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.DqqkLLCN.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CHWMYLvP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DjBRAQNg.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bi9Q5zBM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/-fp4aSZY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CA0AzN9y.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/COsctFlN.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D5BkC1PI.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Bzak7iHL.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BycJK8Ro.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/COTw76LC.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B2zHIelN.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CKgaiMkt.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_1bl5h68 = {
+					__sveltekit_1peop20 = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CImx4Gy7.js"),
-						import("./_app/immutable/entry/app.DqqkLLCN.js")
+						import("./_app/immutable/entry/start.CHWMYLvP.js"),
+						import("./_app/immutable/entry/app.D5BkC1PI.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
@@ -47,12 +53,12 @@
 		</div>
 		<script>
 			// Initialize theme immediately to prevent flash - ONLY from saved preference
-			(function() {
+			(function () {
 				try {
 					const savedTheme = localStorage.getItem('theme');
 					// ONLY use saved theme, NEVER follow system preference
 					const isDark = savedTheme === 'dark';
-					
+
 					// Apply theme immediately without transitions first
 					if (isDark) {
 						document.documentElement.classList.add('dark');
@@ -67,18 +73,20 @@
 						document.body.style.backgroundColor = '#ffffff';
 						document.body.style.color = '#111827';
 					}
-					
+
 					// Enable smooth transitions after initial load
 					setTimeout(() => {
-						document.documentElement.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
-						document.body.style.transition = 'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+						document.documentElement.style.transition =
+							'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
+						document.body.style.transition =
+							'background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
 					}, 50);
-					
+
 					// Listen for theme changes across tabs for consistency
-					window.addEventListener('storage', function(e) {
+					window.addEventListener('storage', function (e) {
 						if (e.key === 'theme') {
 							const isDark = e.newValue === 'dark';
-							
+
 							if (isDark) {
 								document.documentElement.classList.add('dark');
 								document.documentElement.setAttribute('data-theme', 'dark');
