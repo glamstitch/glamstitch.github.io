@@ -115,16 +115,6 @@
 				></span>
 			</a>
 
-			<a
-				href="{base}/404.html"
-				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
-			>
-				Layanan
-				<span
-					class="absolute -bottom-1 left-0 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"
-				></span>
-			</a>
-
 			<div
 				class="dropdown-container relative"
 				role="navigation"
@@ -373,14 +363,6 @@
 					class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-colors duration-200 hover:bg-indigo-50 hover:text-indigo-600"
 				>
 					Produk
-				</a>
-
-				<a
-					href="{base}/404.html"
-					onclick={closeMobileMenu}
-					class="mobile-menu-item block rounded-lg px-4 py-3 font-medium text-gray-900 transition-colors duration-200 hover:bg-indigo-50 hover:text-indigo-600"
-				>
-					Layanan
 				</a>
 
 				<div class="relative">
