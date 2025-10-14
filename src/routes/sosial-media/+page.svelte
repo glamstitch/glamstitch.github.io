@@ -7,6 +7,8 @@
 	import { quintOut } from 'svelte/easing';
 	// @ts-expect-error - vite-imagetools query parameters
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -14,22 +16,17 @@
 	<meta name="description" content="Ikuti kami di sosial media untuk mendapatkan update terbaru" />
 </svelte:head>
 
-<!-- Hero Section -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
-	<!-- Background Image -->
 	<img
 		loading="lazy"
 		src="https://i.pinimg.com/1200x/61/54/4c/61544cdb7afd8c7f7962c07ad426762a.jpg"
 		alt="Social Media Background"
 		class="absolute inset-0 -z-10 h-full w-full object-cover"
 	/>
-	<!-- Overlay -->
 	<div class="absolute inset-0 -z-10 bg-black/40"></div>
 
-	<!-- Content Container -->
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
-			<!-- Welcome Badge -->
+		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40">
 			<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 				<div
 					class="relative rounded-full bg-white/10 px-4 py-1.5 text-sm text-gray-200 ring-1 ring-white/20 transition hover:ring-white/30"
@@ -38,8 +35,7 @@
 				</div>
 			</div>
 
-			<!-- Hero Text -->
-			<div class="text-center">
+			<div class="animate-fade-in text-center">
 				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
 					Ikuti Kami di Sosial Media
 				</h1>
@@ -54,12 +50,10 @@
 
 <div class="bg-gray-50 py-16 dark:bg-gray-900">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<!-- Social Media Cards -->
 		<div
 			class="mx-auto grid max-w-5xl gap-8 sm:grid-cols-1 md:grid-cols-3"
 			in:fade={{ duration: 600, easing: quintOut }}
 		>
-			<!-- Instagram Card -->
 			<div
 				class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
 			>
@@ -94,7 +88,6 @@
 				</div>
 			</div>
 
-			<!-- Facebook Card -->
 			<div
 				class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
 			>
@@ -129,7 +122,6 @@
 				</div>
 			</div>
 
-			<!-- YouTube Card -->
 			<div
 				class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-gray-700 dark:bg-gray-800"
 			>
@@ -165,7 +157,6 @@
 			</div>
 		</div>
 
-		<!-- Additional Info Section -->
 		<div
 			class="mx-auto mt-16 max-w-3xl rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-md dark:border-gray-700 dark:bg-gray-800"
 		>
@@ -268,13 +259,10 @@
 	</div>
 </div>
 
-<!-- Footer -->
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -283,7 +271,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -297,7 +284,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -313,9 +299,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -343,7 +327,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -384,7 +367,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -435,7 +417,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

@@ -15,6 +15,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import poto7 from '$lib/assets/image/poto7.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -29,7 +31,6 @@
 	/>
 </svelte:head>
 
-<!-- Hero Header -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
 	<img
 		loading="lazy"
@@ -41,27 +42,33 @@
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 text-center sm:py-48 lg:py-40">
-			<h1 class="text-4xl font-bold text-white sm:text-6xl">Pelanggan Terpercaya Kami</h1>
-			<p class="mt-6 text-lg text-gray-300 sm:text-xl">
-				Berkat kepercayaan pelanggan setia, Glam Stitch terus berkembang — dari perusahaan besar,
-				komunitas, hingga individu yang mempercayai kualitas layanan kami.
-			</p>
+			<div class="animate-fade-in">
+				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+					Pelanggan Terpercaya Kami
+				</h1>
+				<p class="mt-6 text-lg text-gray-300 sm:text-xl">
+					Berkat kepercayaan pelanggan setia, Glam Stitch terus berkembang — dari perusahaan besar,
+					komunitas, hingga individu yang mempercayai kualitas layanan kami.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Customer Section -->
 <section class="bg-white py-24 transition-colors duration-300 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl space-y-32 px-6 lg:px-16">
-		<!-- 1. Perusahaan & Korporasi -->
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src={customer4}
-				alt="Pelanggan Perusahaan"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={customer4}
+						alt="Pelanggan Perusahaan"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Perusahaan & Korporasi</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Kami bangga melayani berbagai perusahaan dan korporasi untuk kebutuhan seragam karyawan,
@@ -69,12 +76,11 @@
 					pentingnya kualitas dan ketepatan waktu. Setiap proyek dikerjakan dengan standar tinggi
 					untuk memenuhi ekspektasi profesional.
 				</p>
-			</div>
+			</ScrollReveal>
 		</div>
 
-		<!-- 2. Komunitas & Organisasi-->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Komunitas & Organisasi</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Banyak komunitas dan organisasi mempercayai Glam Stitch untuk kebutuhan seragam dan
@@ -82,24 +88,31 @@
 					Kami memahami bahwa setiap komunitas memiliki identitas unik yang perlu diwujudkan melalui
 					desain dan kualitas produk yang tepat.
 				</p>
-			</div>
-			<img
-				loading="lazy"
-				src={poto7}
-				alt="Pelanggan Komunitas"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={poto7}
+						alt="Pelanggan Komunitas"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 
-		<!-- 3. Event & Wedding -->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src={customer1}
-				alt="Pelanggan Event & Wedding"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={customer1}
+						alt="Pelanggan Event & Wedding"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Event & Wedding</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Untuk momen-momen spesial seperti pernikahan, ulang tahun, dan acara keluarga, kami
@@ -107,12 +120,11 @@
 					keluarga, seragam bridesmaid, hingga merchandise event. Setiap detail diperhatikan untuk
 					menciptakan kenangan yang berharga.
 				</p>
-			</div>
+			</ScrollReveal>
 		</div>
 
-		<!-- 4. Sekolah & Pendidikan -->
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Sekolah & Pendidikan</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Banyak sekolah dan institusi pendidikan mempercayai Glam Stitch untuk kebutuhan seragam
@@ -120,24 +132,31 @@
 					daya tahan untuk aktivitas sehari-hari siswa. Setiap produk dirancang dengan
 					mempertimbangkan kebutuhan praktis.
 				</p>
-			</div>
-			<img
-				loading="lazy"
-				src={customer2}
-				alt="Pelanggan Sekolah"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={customer2}
+						alt="Pelanggan Sekolah"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 
-		<!-- 5. Testimoni & Kepuasan -->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src={customer3}
-				alt="Testimoni Pelanggan"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={customer3}
+						alt="Testimoni Pelanggan"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Testimoni & Kepuasan</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Kepuasan pelanggan adalah prioritas utama kami. Banyak pelanggan yang kembali dan
@@ -145,17 +164,15 @@
 					kepercayaan yang berkelanjutan menjadi bukti komitmen kami dalam memberikan layanan
 					terbaik dan produk berkualitas tinggi.
 				</p>
-			</div>
+			</ScrollReveal>
 		</div>
 	</div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -164,7 +181,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -178,7 +194,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -194,9 +209,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -224,7 +237,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -265,7 +277,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -316,7 +327,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

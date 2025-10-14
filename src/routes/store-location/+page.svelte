@@ -3,6 +3,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -17,11 +19,9 @@
 	/>
 </svelte:head>
 
-<!-- Header -->
 <section
 	class="hero-section relative isolate overflow-hidden bg-white pt-32 pb-20 sm:pt-36 sm:pb-32 dark:bg-gray-900"
 >
-	<!-- Background Image -->
 	<img
 		loading="lazy"
 		src="https://img.freepik.com/premium-photo/asian-seamstress-work-sewing-machine_50401-138.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
@@ -29,12 +29,10 @@
 		class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
 	/>
 
-	<!-- Overlay -->
 	<div class="absolute inset-0 -z-10 bg-black/20"></div>
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl text-center">
-			<!-- Badge -->
 			<div class="mb-5 flex justify-center">
 				<div
 					class="inline-flex items-center rounded-full bg-gray-100/10 px-4 py-1.5 text-sm text-gray-200 ring-1 ring-black/10 transition hover:ring-black/20 dark:bg-white/10 dark:text-white dark:ring-white/20 dark:hover:ring-white/40"
@@ -43,21 +41,20 @@
 				</div>
 			</div>
 
-			<!-- Heading -->
-			<h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl dark:text-white">
-				Glam Stitch Mitra Konveksi Terpercaya Anda
-			</h1>
+			<div class="animate-fade-in">
+				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl dark:text-white">
+					Glam Stitch Mitra Konveksi Terpercaya Anda
+				</h1>
 
-			<!-- Description -->
-			<p class="mt-6 text-lg text-gray-200 sm:text-xl dark:text-gray-300">
-				Kunjungi workshop dan toko kami di Desa Cijoged, Kecamatan Cisarua, Kabupaten Sumedang —
-				mudah dijangkau dan siap melayani Anda secara langsung maupun online.
-			</p>
+				<p class="mt-6 text-lg text-gray-200 sm:text-xl dark:text-gray-300">
+					Kunjungi workshop dan toko kami di Desa Cijoged, Kecamatan Cisarua, Kabupaten Sumedang —
+					mudah dijangkau dan siap melayani Anda secara langsung maupun online.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Location Section -->
 <section class="bg-gray-50 py-24 sm:py-32 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16">
 		<div class="mb-16 text-center">
@@ -71,10 +68,9 @@
 		</div>
 
 		<div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
-			<!-- Map -->
 			<div class="overflow-hidden rounded-2xl shadow-xl ring-1 ring-gray-200 dark:ring-gray-700">
-				<!-- svelte-ignore a11y_missing_attribute -->
 				<iframe
+					title="Google Maps lokasi toko Glam Stitch"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.001924246237!2d107.63708791074282!3d-6.52143746372805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69157b1927e5a3%3A0x1182e42524259d7!2sKaos%20Polos%20Glam%20Stitch!5e0!3m2!1sid!2sid!4v1746449536701!5m2!1sid!2sid"
 					width="100%"
 					height="400"
@@ -86,9 +82,7 @@
 				</iframe>
 			</div>
 
-			<!-- Location Details -->
 			<div class="space-y-6">
-				<!-- Address -->
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0">
 						<img
@@ -106,7 +100,6 @@
 					</div>
 				</div>
 
-				<!-- Operating Hours -->
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0">
 						<img
@@ -123,7 +116,6 @@
 					</div>
 				</div>
 
-				<!-- Link Maps -->
 				<div>
 					<a
 						href="https://maps.app.goo.gl/bHXM3HurzhfNRbENA"
@@ -144,12 +136,10 @@
 	</div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -158,7 +148,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -172,7 +161,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -188,9 +176,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -218,7 +204,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -259,7 +244,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -310,7 +294,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

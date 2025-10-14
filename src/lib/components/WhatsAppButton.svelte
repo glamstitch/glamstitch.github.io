@@ -25,7 +25,6 @@
 </a>
 
 <style>
-	/* Fade in from bottom animation on load */
 	.whatsapp-btn {
 		animation: fadeInUp 0.5s ease-out;
 	}
@@ -41,7 +40,6 @@
 		}
 	}
 
-	/* Subtle pulse ring animation */
 	.pulse-ring {
 		animation: pulse 2s ease-out infinite;
 	}
@@ -61,7 +59,6 @@
 		}
 	}
 
-	/* Mobile responsive */
 	@media (max-width: 640px) {
 		.whatsapp-btn {
 			bottom: 1.5rem;

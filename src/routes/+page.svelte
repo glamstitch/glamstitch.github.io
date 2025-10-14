@@ -1,6 +1,4 @@
 <script lang="ts">
-	// Page content only - dark mode handled by layout
-
 	// @ts-expect-error - vite-imagetools query parameters
 	import gambar4 from '$lib/assets/image/gambar4.jpg?w=600&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
@@ -9,9 +7,22 @@
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import homepage from '$lib/assets/image/homepage.jpg?w=800&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import gallery1 from '$lib/assets/image/gallery1.jpg?w=600&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import gallery2 from '$lib/assets/image/gallery2.jpg?w=600&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import gallery3 from '$lib/assets/image/gallery3.jpg?w=600&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import gallery4 from '$lib/assets/image/gallery4.jpg?w=600&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import kaos1 from '$lib/assets/image/kaos1.jpg?w=600&format=webp&quality=80';
+	// @ts-expect-error - vite-imagetools query parameters
+	import polo1 from '$lib/assets/image/polo1.jpg?w=600&format=webp&quality=80';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 
-	// Modal state
 	let showModal = $state(false);
 	let selectedImage = $state('');
 	let selectedAlt = $state('');
@@ -20,17 +31,16 @@
 		selectedImage = imageSrc;
 		selectedAlt = altText;
 		showModal = true;
-		document.body.style.overflow = 'hidden'; // Prevent background scrolling
+		document.body.style.overflow = 'hidden';
 	}
 
 	function closeModal() {
 		showModal = false;
 		selectedImage = '';
 		selectedAlt = '';
-		document.body.style.overflow = 'auto'; // Restore scrolling
+		document.body.style.overflow = 'auto';
 	}
 
-	// Cleanup on component destroy
 	$effect(() => {
 		return () => {
 			document.body.style.overflow = 'auto';
@@ -58,346 +68,517 @@
 	/>
 </svelte:head>
 
-<!--header-->
-
 <main>
-	<section class="hero-section relative isolate overflow-hidden pt-6">
-		<!-- Enhanced background with gradient overlay -->
-
+	<section
+		class="hero-section relative isolate overflow-hidden bg-gray-900 pt-32 pb-20 sm:pt-48 sm:pb-32 lg:pt-40"
+	>
 		<img
 			src={homepage}
-			alt="Glam Stitch Konveksi"
-			class="hero-section absolute inset-0 -z-10 h-full w-full object-cover"
+			alt="Glam Stitch Konveksi - Tim profesional sedang bekerja di workshop"
+			class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
 			loading="eager"
 			fetchpriority="high"
 		/>
 
-		<div class="absolute inset-0 -z-10 bg-black/20"></div>
+		<div class="absolute inset-0 -z-10 bg-black/40"></div>
 
-		<div class="mx-auto max-w-7xl px-6 lg:px-8">
-			<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
-				<!-- Tagline Section -->
-
-				<div class="hidden sm:mb-8 sm:flex sm:justify-center">
+		<div class="mx-auto max-w-7xl px-6 lg:px-16">
+			<div class="mx-auto max-w-4xl text-center">
+				<div class="mb-8 flex justify-center">
 					<div
-						class="relative rounded-full px-3 py-4 text-sm font-medium text-gray-200 ring-1 ring-white/10 hover:ring-white/20"
+						class="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/20 backdrop-blur-sm transition hover:ring-white/30"
 					>
-						Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi untuk merek Anda.
+						Konveksi Glam Stitch — Produksi pakaian berkualitas tinggi
 					</div>
 				</div>
 
-				<!-- Main Heading and Description with Animation -->
-
-				<div class="animate__animated animate__fadeIn animate__delay-1s text-center">
-					<h1
-						class="animate__animated animate__fadeIn animate__delay-1s text-4xl font-semibold tracking-tight text-white sm:text-7xl"
-						style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);"
-					>
+				<ScrollReveal animation="fade-up">
+					<h1 class="text-4xl font-bold tracking-tight text-white sm:text-7xl">
 						Glam Stitch Mitra Konveksi Terpercaya Anda
 					</h1>
 
-					<p
-						class="animate__animated animate__fadeIn animate__delay-2s mt-8 text-lg font-medium text-gray-300 sm:text-xl"
-						style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);"
-					>
+					<p class="mt-6 text-lg text-gray-200 sm:text-xl">
 						Kami menyediakan layanan produksi pakaian yang terpercaya dan profesional untuk membantu
 						pertumbuhan bisnis Anda — dengan kualitas tinggi, proses cepat, dan harga bersaing.
 					</p>
+				</ScrollReveal>
 
-					<!-- Enhanced Call to Action Buttons -->
-
-					<div class="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+				<ScrollReveal animation="fade-up" delay={300}>
+					<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
 						<a
 							href="/contact-us"
-							class="group relative transform overflow-hidden rounded-xl bg-indigo-500 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+							class="group relative transform overflow-hidden rounded-xl bg-indigo-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-indigo-700 hover:shadow-xl"
 						>
 							<span class="relative z-10">Mulai Sekarang</span>
 						</a>
 
 						<a
 							href="/product"
-							class="group flex items-center gap-2 font-semibold text-white transition-all duration-300 hover:text-indigo-300 dark:hover:text-indigo-600"
-							style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);"
+							class="group flex items-center gap-2 font-semibold text-white transition-all duration-300 hover:text-indigo-300"
 						>
 							Jelajahi Produk Kami
-
 							<span
 								aria-hidden="true"
-								class="inline-block transition-transform group-hover:translate-x-2">→</span
+								class="inline-block transition-transform group-hover:translate-x-1"
 							>
+								→
+							</span>
 						</a>
 					</div>
-				</div>
+				</ScrollReveal>
 			</div>
 		</div>
 	</section>
 
-	<!--why choose -->
-
-	<div class="bg-white dark:bg-gray-900">
-		<section
-			class="relative isolate overflow-hidden bg-white text-gray-900 dark:bg-gray-900 dark:text-white"
-		>
-			<!-- Decorative Background Shape -->
-
-			<div
-				class="absolute top-10 left-1/2 -z-10 -translate-x-1/2 transform blur-3xl sm:-translate-x-[18rem] lg:top-[calc(50%-30rem)] lg:left-48 xl:-translate-x-[24rem]"
-				aria-hidden="true"
-			>
-				<div
-					class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] via-[#4f46e5] to-[#ec4899] opacity-30 dark:opacity-20"
-					style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-				></div>
-			</div>
-
-			<div
-				class="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:items-center lg:justify-between lg:px-16 lg:py-24"
-			>
-				<!-- Text Content -->
-
-				<div class="animate__animated animate__fadeIn animate__delay-600ms max-w-2xl">
-					<div
-						class="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-500/10 px-4 py-2 text-sm font-semibold text-indigo-600 ring-1 ring-indigo-500/20 ring-inset dark:text-indigo-400"
-					>
-						<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-							<path
-								fill-rule="evenodd"
-								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-
-						Kenapa Memilih Kami?
-					</div>
-
+	<section class="bg-white py-24 dark:bg-gray-800">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<ScrollReveal animation="fade-up">
+				<div class="mb-16 text-center">
 					<h2
-						class="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-4xl font-bold tracking-tight text-pretty text-transparent sm:text-6xl dark:from-white dark:to-gray-300"
+						class="mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white"
 					>
-						Kenapa Harus Glam Stitch?
+						Koleksi Produk Kami
 					</h2>
-
-					<p
-						class="mt-6 text-lg leading-relaxed font-medium text-gray-600 sm:text-xl dark:text-gray-400"
-					>
-						Kami menghadirkan layanan konveksi berkualitas tinggi dengan proses mudah, hasil
-						presisi, dan pelayanan profesional.
-
-						<span class="font-semibold text-indigo-600 dark:text-indigo-400">Glam Stitch</span> adalah
-						solusi terpercaya untuk kebutuhan pakaian custom Anda.
+					<p class="mx-auto max-w-2xl text-lg text-gray-600 sm:text-xl dark:text-gray-300">
+						Jelajahi berbagai produk berkualitas tinggi yang telah kami hasilkan dengan standar
+						terbaik.
 					</p>
+				</div>
+			</ScrollReveal>
 
-					<ul class="mt-6 space-y-3 text-base leading-relaxed text-gray-400 dark:text-gray-400">
-						<li>✅ Bahan Berkualitas Premium</li>
-
-						<li>✅ Tim Desain dan Produksi Profesional</li>
-
-						<li>✅ Waktu Pengerjaan Cepat dan Tepat Waktu</li>
-
-						<li>✅ Harga Kompetitif dan Transparan</li>
-
-						<li>✅ Dukungan Konsultasi dan Revisi Desain</li>
-					</ul>
-
-					<div class="mt-10 flex items-center gap-x-6">
-						<a
-							href="/contact-us"
-							class="group relative transform overflow-hidden rounded-lg bg-indigo-500 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				<ScrollReveal animation="zoom-in" delay={100}>
+					<AnimatedCard hoverEffect="lift">
+						<div
+							class="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:bg-gray-900"
 						>
-							<span class="relative z-10">Hubungi Kami</span>
-						</a>
-
-						<a
-							href="/about-us"
-							class="group flex items-center gap-2 font-semibold text-indigo-600 transition-all duration-300 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
-						>
-							Selengkapnya
-
-							<span
-								aria-hidden="true"
-								class="inline-block transition-transform group-hover:translate-x-1">→</span
+							<img
+								src="https://i.pinimg.com/1200x/f0/5c/6a/f05c6a88a05df3ab54c00c87accda0ed.jpg"
+								alt="Produk konveksi berkualitas tinggi"
+								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								loading="lazy"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							></div>
+							<div
+								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 							>
-						</a>
-					</div>
-				</div>
+								<h3 class="text-lg font-semibold">Produk Premium</h3>
+								<p class="text-sm text-gray-200">Kualitas terbaik untuk kebutuhan Anda</p>
+							</div>
+						</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-				<!-- Image Section -->
+				<ScrollReveal animation="zoom-in" delay={200}>
+					<AnimatedCard hoverEffect="lift">
+						<div
+							class="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:bg-gray-900"
+						>
+							<img
+								src="https://i.pinimg.com/1200x/72/65/b3/7265b3abe5835c903f9d531d72631ef8.jpg"
+								alt="Tim produksi profesional"
+								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								loading="lazy"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							></div>
+							<div
+								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							>
+								<h3 class="text-lg font-semibold">Tim Profesional</h3>
+								<p class="text-sm text-gray-200">Dikerjakan oleh ahli berpengalaman</p>
+							</div>
+						</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-				<div
-					class="animate__animated animate__fadeIn animate__delay-1800ms mt-16 w-full lg:mt-0 lg:ml-16 lg:w-1/2"
-				>
-					<img
-						src={gallery5}
-						alt="Tim produksi Glam Stitch sedang menjahit kaos custom"
-						class="product-image h-96 w-full transform rounded-2xl bg-white object-cover shadow-2xl transition duration-500 hover:scale-105 hover:shadow-2xl lg:h-[500px] dark:bg-gray-800"
-						loading="lazy"
-					/>
-				</div>
+				<ScrollReveal animation="zoom-in" delay={300}>
+					<AnimatedCard hoverEffect="lift">
+						<div
+							class="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:bg-gray-900"
+						>
+							<img
+								src="https://i.pinimg.com/736x/d2/42/fd/d242fd6081206b1e34abd0876b4e5a26.jpg"
+								alt="Proses produksi modern"
+								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								loading="lazy"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							></div>
+							<div
+								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							>
+								<h3 class="text-lg font-semibold">Teknologi Modern</h3>
+								<p class="text-sm text-gray-200">Menggunakan peralatan terdepan</p>
+							</div>
+						</div>
+					</AnimatedCard>
+				</ScrollReveal>
+
+				<ScrollReveal animation="zoom-in" delay={400}>
+					<AnimatedCard hoverEffect="lift">
+						<div
+							class="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:bg-gray-900"
+						>
+							<img
+								src="https://i.pinimg.com/736x/db/1a/6d/db1a6dac55c3891bb3054d6d98d290e9.jpg"
+								alt="Hasil produksi berkualitas"
+								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								loading="lazy"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							></div>
+							<div
+								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							>
+								<h3 class="text-lg font-semibold">Hasil Terbaik</h3>
+								<p class="text-sm text-gray-200">Standar kualitas internasional</p>
+							</div>
+						</div>
+					</AnimatedCard>
+				</ScrollReveal>
 			</div>
-		</section>
-	</div>
 
-	<!--how to buy-->
+			<ScrollReveal animation="fade-up" delay={900}></ScrollReveal>
+		</div>
+	</section>
+
+	<section class="bg-white py-24 dark:bg-gray-900">
+		<div class="mx-auto max-w-7xl px-6 lg:px-16">
+			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+				<ScrollReveal animation="fade-right">
+					<div class="max-w-2xl">
+						<div class="mb-6 flex items-center gap-2">
+							<div
+								class="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400"
+							>
+								<svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+								Kenapa Memilih Kami?
+							</div>
+						</div>
+
+						<h2
+							class="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white"
+						>
+							Kenapa Harus Glam Stitch?
+						</h2>
+
+						<p class="mb-8 text-lg text-gray-600 sm:text-xl dark:text-gray-300">
+							Kami menghadirkan layanan konveksi berkualitas tinggi dengan proses mudah, hasil
+							presisi, dan pelayanan profesional. <span
+								class="font-semibold text-indigo-600 dark:text-indigo-400">Glam Stitch</span
+							> adalah solusi terpercaya untuk kebutuhan pakaian custom Anda.
+						</p>
+
+						<div class="mb-10 space-y-4">
+							<div class="flex items-start gap-3">
+								<div class="flex-shrink-0">
+									<div
+										class="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30"
+									>
+										<svg
+											class="h-4 w-4 text-green-600 dark:text-green-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+								</div>
+								<p class="text-base text-gray-600 dark:text-gray-300">Bahan Berkualitas Premium</p>
+							</div>
+
+							<div class="flex items-start gap-3">
+								<div class="flex-shrink-0">
+									<div
+										class="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30"
+									>
+										<svg
+											class="h-4 w-4 text-green-600 dark:text-green-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+								</div>
+								<p class="text-base text-gray-600 dark:text-gray-300">
+									Tim Desain dan Produksi Profesional
+								</p>
+							</div>
+
+							<div class="flex items-start gap-3">
+								<div class="flex-shrink-0">
+									<div
+										class="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30"
+									>
+										<svg
+											class="h-4 w-4 text-green-600 dark:text-green-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+								</div>
+								<p class="text-base text-gray-600 dark:text-gray-300">
+									Waktu Pengerjaan Cepat dan Tepat Waktu
+								</p>
+							</div>
+
+							<div class="flex items-start gap-3">
+								<div class="flex-shrink-0">
+									<div
+										class="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30"
+									>
+										<svg
+											class="h-4 w-4 text-green-600 dark:text-green-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+								</div>
+								<p class="text-base text-gray-600 dark:text-gray-300">
+									Harga Kompetitif dan Transparan
+								</p>
+							</div>
+
+							<div class="flex items-start gap-3">
+								<div class="flex-shrink-0">
+									<div
+										class="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30"
+									>
+										<svg
+											class="h-4 w-4 text-green-600 dark:text-green-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+								</div>
+								<p class="text-base text-gray-600 dark:text-gray-300">
+									Dukungan Konsultasi dan Revisi Desain
+								</p>
+							</div>
+						</div>
+
+						<div class="flex flex-col gap-4 sm:flex-row">
+							<a
+								href="/contact-us"
+								class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-indigo-700 hover:shadow-xl"
+							>
+								Hubungi Kami
+							</a>
+
+							<a
+								href="/about-us"
+								class="inline-flex items-center justify-center gap-2 rounded-xl border border-indigo-600 px-6 py-3 font-semibold text-indigo-600 transition-all duration-300 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-900/20"
+							>
+								Selengkapnya
+								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M9 5l7 7-7 7"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</ScrollReveal>
+
+				<ScrollReveal animation="fade-left" delay={200}>
+					<AnimatedCard hoverEffect="lift">
+						<img
+							src={gallery5}
+							alt="Tim produksi Glam Stitch sedang menjahit kaos custom"
+							class="h-96 w-full rounded-2xl bg-white object-cover shadow-2xl lg:h-[500px] dark:bg-gray-800"
+							loading="lazy"
+						/>
+					</AnimatedCard>
+				</ScrollReveal>
+			</div>
+		</div>
+	</section>
 
 	<section class="bg-white text-black dark:bg-gray-900 dark:text-white">
 		<div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-16">
-			<h2
-				class="animate__animated animate__fadeIn animate__delay-300ms text-center text-5xl font-semibold tracking-tight text-gray-900 dark:text-white"
-			>
-				Cara Pemesanan
-			</h2>
+			<ScrollReveal animation="fade-up">
+				<h2 class="text-center text-5xl font-semibold tracking-tight text-gray-900 dark:text-white">
+					Cara Pemesanan
+				</h2>
 
-			<p
-				class="animate__animated animate__fadeIn animate__delay-600ms mt-4 text-center text-lg text-gray-500 dark:text-gray-300"
-			>
-				Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang cepat,
-				aman, dan terpercaya.
-			</p>
+				<p class="mt-4 text-center text-lg text-gray-500 dark:text-gray-300">
+					Ikuti 3 langkah mudah untuk memesan produk berkualitas dari Glam Stitch. Proses yang
+					cepat, aman, dan terpercaya.
+				</p>
+			</ScrollReveal>
 
 			<div class="mt-16 flex flex-col items-center gap-10 lg:flex-row lg:items-start">
-				<!-- Gambar -->
-
-				<div class="animate__animated animate__fadeInUp animate__delay-900ms w-full lg:w-1/2">
-					<img
-						src={gambar4}
-						alt="Ilustrasi cara pemesanan"
-						class="product-image h-full w-full transform rounded-2xl bg-white object-contain p-4 shadow-2xl transition duration-500 hover:scale-105 hover:shadow-2xl lg:h-[400px] dark:bg-gray-800"
-						loading="lazy"
-					/>
-				</div>
-
-				<!-- Langkah-langkah -->
+				<ScrollReveal animation="zoom-in" delay={200} class="w-full lg:w-1/2">
+					<AnimatedCard hoverEffect="lift">
+						<img
+							src={gambar4}
+							alt="Ilustrasi cara pemesanan"
+							class="h-full w-full rounded-2xl bg-white object-contain p-4 shadow-2xl lg:h-[400px] dark:bg-gray-800"
+							loading="lazy"
+						/>
+					</AnimatedCard>
+				</ScrollReveal>
 
 				<div class="w-full space-y-12 lg:w-2/4">
-					<div class="group animate__animated animate__fadeInUp animate__delay-1200ms block">
-						<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">1. Konsultasi</h3>
+					<ScrollReveal animation="fade-left" delay={300}>
+						<div class="process-step group block">
+							<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">1. Konsultasi</h3>
 
-						<p class="mt-2 text-base text-gray-500 dark:text-gray-200">
-							Hubungi kami via WhatsApp, email, atau kunjungi toko untuk berdiskusi desain, bahan,
-							dan kebutuhan Anda. Konsultasi gratis dan tidak mengikat.
-						</p>
-					</div>
+							<p class="mt-2 text-base text-gray-500 dark:text-gray-200">
+								Hubungi kami via WhatsApp, email, atau kunjungi toko untuk berdiskusi desain, bahan,
+								dan kebutuhan Anda. Konsultasi gratis dan tidak mengikat.
+							</p>
+						</div>
+					</ScrollReveal>
 
-					<div class="group animate__animated animate__fadeInUp animate__delay-1500ms block">
-						<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">2. Produksi</h3>
+					<ScrollReveal animation="fade-left" delay={450}>
+						<div class="process-step group block">
+							<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">2. Produksi</h3>
 
-						<p class="mt-2 text-base text-gray-500 dark:text-gray-200">
-							Kami memproduksi dengan bahan berkualitas tinggi menggunakan teknologi modern. Tim
-							ahli kami memastikan setiap detail sesuai permintaan Anda dengan update progress
-							berkala.
-						</p>
-					</div>
+							<p class="mt-2 text-base text-gray-500 dark:text-gray-200">
+								Kami memproduksi dengan bahan berkualitas tinggi menggunakan teknologi modern. Tim
+								ahli kami memastikan setiap detail sesuai permintaan Anda dengan update progress
+								berkala.
+							</p>
+						</div>
+					</ScrollReveal>
 
-					<div class="group animate__animated animate__fadeInUp animate__delay-1800ms block">
-						<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">3. Pengiriman</h3>
+					<ScrollReveal animation="fade-left" delay={600}>
+						<div class="process-step group block">
+							<h3 class="text-2xl font-semibold text-gray-900 dark:text-white">3. Pengiriman</h3>
 
-						<p class="mt-2 text-base text-gray-500 dark:text-gray-200">
-							Produk dikirim dengan aman ke alamat Anda. Kami menggunakan kurir terpercaya dengan
-							tracking real-time, pengemasan rapi, dan menyediakan garansi kualitas.
-						</p>
-					</div>
+							<p class="mt-2 text-base text-gray-500 dark:text-gray-200">
+								Produk dikirim dengan aman ke alamat Anda. Kami menggunakan kurir terpercaya dengan
+								tracking real-time, pengemasan rapi, dan menyediakan garansi kualitas.
+							</p>
+						</div>
+					</ScrollReveal>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Product Gallery -->
-
-	<!--stats-->
-
-	<section
-		class="relative isolate overflow-hidden bg-white text-black dark:bg-gray-900 dark:text-white"
-	>
-		<!-- Background Gradient Blob -->
-
-		<div
-			class="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:items-center lg:justify-between lg:px-16 lg:py-24"
-		>
-			<div class="mx-auto max-w-4xl px-4 py-10">
-				<!-- Heading -->
-
-				<div class="animate__animated animate__fadeInDown animate__slow mb-12 text-center">
-					<h2 class="mb-4 text-4xl font-semibold text-gray-900 sm:text-5xl dark:text-white">
+	<section class="bg-gray-50 py-24 dark:bg-gray-800">
+		<div class="mx-auto max-w-7xl px-6 lg:px-16">
+			<ScrollReveal animation="fade-up">
+				<div class="mb-16 text-center">
+					<h2
+						class="mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white"
+					>
 						Pencapaian Glam Stitch
 					</h2>
-
-					<p class="text-lg text-gray-600 dark:text-gray-200">
+					<p class="mx-auto max-w-2xl text-lg text-gray-600 sm:text-xl dark:text-gray-300">
 						Dedikasi kami tercermin dari data. Berikut pencapaian kami dalam melayani kebutuhan
 						fashion Anda.
 					</p>
 				</div>
+			</ScrollReveal>
 
-				<!-- Statistik Grid -->
-
-				<div
-					class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-12 text-center sm:grid-cols-3"
-				>
-					<!-- Pengguna -->
-
-					<div
-						class="animate__animated animate__zoomIn animate__delay-1s flex flex-col items-center justify-center gap-4 sm:flex-row"
-					>
-						<div
-							class="flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400 text-4xl text-yellow-600 transition-transform duration-300 hover:scale-110 dark:bg-white"
-						>
-							👤
+			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+				<ScrollReveal animation="fade-up" delay={200}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="rounded-2xl bg-white p-8 text-center shadow-xl dark:bg-gray-900">
+							<div
+								class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400"
+							>
+								<svg class="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+									/>
+								</svg>
+							</div>
+							<h3 class="mb-2 text-4xl font-bold text-gray-900 dark:text-white">1000+</h3>
+							<p class="text-lg text-gray-600 dark:text-gray-300">Pelanggan</p>
 						</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-						<div>
-							<p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">1000+</p>
-
-							<p class="text-lg text-gray-500 sm:text-xl dark:text-gray-200">Pelanggan</p>
+				<ScrollReveal animation="fade-up" delay={400}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="rounded-2xl bg-white p-8 text-center shadow-xl dark:bg-gray-900">
+							<div
+								class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400"
+							>
+								<svg class="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M20 6h-2l-2-2H8L6 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"
+									/>
+								</svg>
+							</div>
+							<h3 class="mb-2 text-4xl font-bold text-gray-900 dark:text-white">150.000</h3>
+							<p class="text-lg text-gray-600 dark:text-gray-300">PCS Terjual Per-Tahun</p>
 						</div>
-					</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-					<!-- Pesanan -->
-
-					<div
-						class="animate__animated animate__zoomIn animate__delay-2s flex flex-col items-center justify-center gap-4 sm:flex-row"
-					>
-						<div
-							class="flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400 text-4xl text-yellow-600 transition-transform duration-300 hover:scale-110 dark:bg-white"
-						>
-							📦
+				<ScrollReveal animation="fade-up" delay={600}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="rounded-2xl bg-white p-8 text-center shadow-xl dark:bg-gray-900">
+							<div
+								class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400"
+							>
+								<svg class="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
+									/>
+								</svg>
+							</div>
+							<h3 class="mb-2 text-4xl font-bold text-gray-900 dark:text-white">5+</h3>
+							<p class="text-lg text-gray-600 dark:text-gray-300">Tahun Pengalaman</p>
 						</div>
-
-						<div>
-							<p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">150.000 PCS</p>
-
-							<p class="text-lg text-gray-500 sm:text-xl dark:text-gray-200">Terjual Per-Tahun</p>
-						</div>
-					</div>
-
-					<!-- Pengalaman -->
-
-					<div
-						class="animate__animated animate__zoomIn animate__delay-3s flex flex-col items-center justify-center gap-4 sm:flex-row"
-					>
-						<div
-							class="flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400 text-4xl text-yellow-600 transition-transform duration-300 hover:scale-110 dark:bg-white"
-						>
-							📅
-						</div>
-
-						<div>
-							<p class="mt-4 text-4xl font-bold text-gray-900 dark:text-white">5+ Tahun</p>
-
-							<p class="text-lg text-gray-500 sm:text-xl dark:text-gray-200">Pengalaman</p>
-						</div>
-					</div>
-				</div>
+					</AnimatedCard>
+				</ScrollReveal>
 			</div>
 		</div>
 	</section>
-
-	<!-- Footer -->
 
 	<footer class="bg-gray-900 dark:bg-gray-900" aria-labelledby="footer-heading">
 		<h2 id="footer-heading" class="sr-only">Footer</h2>
 
 		<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 			<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-				<!-- Logo & Description -->
-
 				<div class="space-y-6">
 					<img
 						class="footer-logo animate__animated animate__zoomIn animate__delay-1s h-16 w-16"
@@ -406,8 +587,6 @@
 					/>
 
 					<div class="flex space-x-6">
-						<!-- Facebook -->
-
 						<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 							<span class="sr-only">Facebook</span>
 
@@ -421,8 +600,6 @@
 								/>
 							</svg>
 						</a>
-
-						<!-- Instagram -->
 
 						<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 							<span class="sr-only">Instagram</span>
@@ -440,11 +617,7 @@
 					</div>
 				</div>
 
-				<!-- Navigation Links -->
-
 				<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-					<!-- Navigasi -->
-
 					<div>
 						<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 
@@ -474,8 +647,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<!-- Products -->
 
 					<div>
 						<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
@@ -522,8 +693,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<!-- Discover Us -->
 
 					<div>
 						<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
@@ -581,8 +750,6 @@
 				</div>
 			</div>
 
-			<!-- Footer Bottom -->
-
 			<div
 				class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 			>
@@ -592,7 +759,6 @@
 	</footer>
 </main>
 
-<!-- Modal untuk menampilkan gambar -->
 {#if showModal}
 	<div
 		class="fixed inset-0 z-[99999] flex items-center justify-center bg-black/80 backdrop-blur-sm"
@@ -603,7 +769,6 @@
 		tabindex="-1"
 	>
 		<div class="relative mx-4 max-h-[85vh] max-w-4xl">
-			<!-- Tombol close -->
 			<button
 				class="absolute -top-12 right-0 z-10 rounded-full bg-black/60 p-2 text-white transition-colors duration-200 hover:bg-black/80 hover:text-gray-300"
 				onclick={closeModal}
@@ -619,7 +784,6 @@
 				</svg>
 			</button>
 
-			<!-- Gambar Container -->
 			<div class="rounded-xl bg-white p-6 shadow-2xl dark:bg-gray-800">
 				<img
 					src={selectedImage}
@@ -628,7 +792,6 @@
 				/>
 			</div>
 
-			<!-- Caption -->
 			<div class="mt-4 text-center">
 				<p class="rounded-lg bg-black/60 px-4 py-2 text-lg font-medium text-white">{selectedAlt}</p>
 			</div>

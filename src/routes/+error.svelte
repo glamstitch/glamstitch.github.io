@@ -15,12 +15,10 @@
 
 <main class="flex min-h-screen items-center justify-center bg-white px-6 py-24 dark:bg-gray-900">
 	<div class="mx-auto w-full max-w-md text-center">
-		<!-- Logo -->
 		<div class="mb-8">
 			<img src={logoGlint} alt="Glam Stitch Logo" class="mx-auto mb-4 h-20 w-auto" />
 		</div>
 
-		<!-- 404 Error -->
 		<div class="mb-8">
 			<h1 class="mb-4 animate-bounce text-8xl font-bold text-gray-900 dark:text-white">
 				{$page.status || 404}
@@ -39,7 +37,6 @@
 			</p>
 		</div>
 
-		<!-- Action Buttons -->
 		<div class="space-y-4">
 			<a
 				href="{base}/"
@@ -55,7 +52,6 @@
 			</a>
 		</div>
 
-		<!-- Footer -->
 		<div class="mt-12 text-center">
 			<p class="text-sm text-gray-500 dark:text-gray-400">
 				&copy; 2025 Glam Stitch. All rights reserved.

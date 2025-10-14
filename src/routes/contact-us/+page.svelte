@@ -3,6 +3,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -17,7 +19,6 @@
 	/>
 </svelte:head>
 
-<!-- Hero Section -->
 <section class="hero-section relative isolate overflow-hidden bg-white pt-6 dark:bg-gray-900">
 	<img
 		loading="lazy"
@@ -29,7 +30,6 @@
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 text-center sm:py-48 lg:py-32">
-			<!-- Badge -->
 			<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 				<div
 					class="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-white/10 transition hover:ring-white/20"
@@ -46,24 +46,22 @@
 				</div>
 			</div>
 
-			<!-- Heading -->
-			<h1 class="mb-6 text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-				Hubungi Tim Glam Stitch
-			</h1>
+			<div class="animate-fade-in">
+				<h1 class="mb-6 text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+					Hubungi Tim Glam Stitch
+				</h1>
 
-			<!-- Description -->
-			<p class="mx-auto mt-6 max-w-2xl text-lg text-gray-200 sm:text-xl">
-				Tim customer service Glam Stitch siap membantu Anda dengan konsultasi gratis, pemesanan, dan
-				layanan terbaik untuk semua kebutuhan konveksi.
-			</p>
+				<p class="mx-auto mt-6 max-w-2xl text-lg text-gray-200 sm:text-xl">
+					Tim customer service Glam Stitch siap membantu Anda dengan konsultasi gratis, pemesanan,
+					dan layanan terbaik untuk semua kebutuhan konveksi.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Contact Us Section -->
 <section class="bg-white py-24 sm:py-32 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-		<!-- Header Section -->
 		<div class="mb-16 text-center">
 			<h2 class="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
 				Butuh Bantuan? Kami Siap Membantu!
@@ -75,14 +73,11 @@
 			</p>
 		</div>
 
-		<!-- Contact Info -->
 		<div class="mx-auto max-w-4xl space-y-8">
-			<!-- WhatsApp -->
 			<div
 				class="rounded-2xl border border-green-100 bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl dark:border-green-800 dark:bg-gray-800"
 			>
 				<div class="flex flex-col items-center gap-6 md:flex-row">
-					<!-- WhatsApp Icon -->
 					<div class="flex-shrink-0">
 						<div class="rounded-full bg-green-500 p-4 shadow-lg">
 							<svg class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -93,7 +88,6 @@
 						</div>
 					</div>
 
-					<!-- Content -->
 					<div class="flex-1 text-center md:text-left">
 						<h3 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
 							Hubungi Kami via WhatsApp
@@ -116,12 +110,10 @@
 				</div>
 			</div>
 
-			<!-- Business Hours -->
 			<div
 				class="rounded-2xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl dark:border-orange-800 dark:bg-gray-800"
 			>
 				<div class="flex flex-col items-center gap-6 md:flex-row">
-					<!-- Clock Icon -->
 					<div class="flex-shrink-0">
 						<div class="rounded-full bg-orange-500 p-4 shadow-lg">
 							<svg
@@ -140,7 +132,6 @@
 						</div>
 					</div>
 
-					<!-- Content -->
 					<div class="flex-1 text-center md:text-left">
 						<h3 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">Jam Operasional</h3>
 						<div class="mb-4 space-y-1 text-lg text-gray-600 dark:text-gray-300">
@@ -149,7 +140,6 @@
 								Minggu : <span class="font-semibold text-red-600 dark:text-red-400">Tutup</span>
 							</p>
 						</div>
-						<!-- Info Note -->
 						<div
 							class="bg-orange-50dark:bg-orange-900/20 rounded-lg border border-orange-200 p-3 dark:border-orange-800"
 						>
@@ -171,16 +161,13 @@
 	</div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img loading="lazy" class="h-24 w-24" src={logoGlint} alt="Glam Stitch Logo" />
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
@@ -190,7 +177,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
@@ -202,9 +188,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -232,7 +216,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -273,7 +256,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -324,7 +306,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div class="mt-16 border-t border-white/10 pt-8 text-center dark:border-gray-300">
 			<p class="text-sm leading-5 text-gray-400">&copy; 2025 Glam Stitch. All rights reserved.</p>
 		</div>

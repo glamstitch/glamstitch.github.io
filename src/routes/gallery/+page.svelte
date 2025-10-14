@@ -15,6 +15,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import kasir from '$lib/assets/image/kasir.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -29,7 +31,6 @@
 	/>
 </svelte:head>
 
-<!-- Hero Header -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
 	<img
 		loading="lazy"
@@ -41,27 +42,33 @@
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 text-center sm:py-48 lg:py-40">
-			<h1 class="text-4xl font-bold text-white sm:text-6xl">Informasi Tim Glam Stitch</h1>
-			<p class="mt-6 text-lg text-gray-300 sm:text-xl">
-				Menyajikan gambaran lengkap tentang aktivitas dan suasana kerja di Glam Stitch — mulai dari
-				toko utama, gudang penyimpanan, proses produksi hingga area kasir.
-			</p>
+			<div class="animate-fade-in">
+				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+					Informasi Tim Glam Stitch
+				</h1>
+				<p class="mt-6 text-lg text-gray-300 sm:text-xl">
+					Menyajikan gambaran lengkap tentang aktivitas dan suasana kerja di Glam Stitch — mulai
+					dari toko utama, gudang penyimpanan, proses produksi hingga area kasir.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Gallery Section -->
 <section class="bg-white py-24 transition-colors duration-300 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl space-y-32 px-6 lg:px-16">
-		<!-- 1. Toko -->
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src={gallery4}
-				alt="Toko Glam Stitch"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={gallery4}
+						alt="Toko Glam Stitch"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Toko Utama Glam Stitch</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Di toko utama Glam Stitch, pelanggan dapat melihat langsung beragam contoh produk seperti
@@ -70,12 +77,11 @@
 					Tim kami siap membantu Anda menemukan desain terbaik sesuai kebutuhan bisnis, komunitas,
 					atau acara.
 				</p>
-			</div>
+			</ScrollReveal>
 		</div>
 
-		<!-- 2. Tim Glam Stitch-->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Tim Kami</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Tim profesional Glam Stitch terdiri dari desainer berpengalaman, penjahit terampil, dan
@@ -84,24 +90,31 @@
 					bekerja sama dengan kompak untuk menghasilkan produk berkualitas tinggi yang memenuhi
 					standar terbaik sesuai kebutuhan pelanggan.
 				</p>
-			</div>
-			<img
-				loading="lazy"
-				src={poto7}
-				alt="Tim Glam Stitch"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={poto7}
+						alt="Tim Glam Stitch"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 
-		<!-- 3. Gudang -->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src={gallery1}
-				alt="Gudang Glam Stitch"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={gallery1}
+						alt="Gudang Glam Stitch"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Gudang Penyimpanan</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Gudang Glam Stitch menjadi pusat penyimpanan bahan baku seperti kain, benang, dan
@@ -109,12 +122,11 @@
 					memastikan setiap bahan mudah dilacak dan diambil kapan saja dibutuhkan. Kebersihan dan
 					sirkulasi udara gudang selalu dijaga untuk mempertahankan kualitas bahan terbaik.
 				</p>
-			</div>
+			</ScrollReveal>
 		</div>
 
-		<!-- 4. Tempat Produksi -->
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Produksi & Penjahitan</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Area produksi adalah jantung dari Glam Stitch. Di sinilah seluruh proses penjahitan,
@@ -123,24 +135,31 @@
 					berpengalaman. Kami selalu mengutamakan ketelitian dan kebersihan di setiap tahap untuk
 					menghasilkan produk yang sempurna.
 				</p>
-			</div>
-			<img
-				loading="lazy"
-				src={gallery2}
-				alt="Tempat Produksi Glam Stitch"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={gallery2}
+						alt="Tempat Produksi Glam Stitch"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 
-		<!-- 5. Kasir -->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src={kasir}
-				alt="Kasir Glam Stitch"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src={kasir}
+						alt="Kasir Glam Stitch"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Area Kasir & Pelayanan</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Bagian kasir merupakan tempat akhir dari pengalaman berbelanja pelanggan di Glam Stitch.
@@ -149,18 +168,15 @@
 					bagi pelanggan yang telah melakukan pemesanan sebelumnya. Kami berkomitmen memberikan
 					pengalaman terbaik dari awal hingga akhir proses pembelian Anda.
 				</p>
-			</div>
+			</ScrollReveal>
 		</div>
 	</div>
 </section>
 
-<!-- Footer -->
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -169,7 +185,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -183,7 +198,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -199,9 +213,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -229,7 +241,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -270,7 +281,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -321,7 +331,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

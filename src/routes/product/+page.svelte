@@ -13,6 +13,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import kemeja1 from '$lib/assets/image/kemeja1.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -27,9 +29,7 @@
 	/>
 </svelte:head>
 
-<!-- Hero Section Produk -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
-	<!-- Background Image -->
 	<img
 		loading="lazy"
 		src="https://img.freepik.com/free-photo/family-tailors-having-leather-industry_1303-23397.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
@@ -37,13 +37,10 @@
 		class="hero-section absolute inset-0 -z-10 h-full w-full object-cover object-center"
 	/>
 
-	<!-- Overlay Hitam -->
 	<div class="absolute inset-0 -z-10 bg-black/20"></div>
 
-	<!-- Konten Hero -->
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 text-center sm:py-48 lg:py-32">
-			<!-- Box Highlight -->
 			<div class="mb-6 flex justify-center">
 				<div
 					class="relative rounded-full px-4 py-1.5 text-sm text-gray-200 ring-1 ring-white/20 transition hover:ring-white/30"
@@ -52,40 +49,39 @@
 				</div>
 			</div>
 
-			<!-- Judul -->
-			<h1
-				class="animate__animated animate__fadeIn text-4xl font-bold tracking-tight text-white sm:text-6xl"
-			>
-				Produk Berkualitas dari Glam Stitch
-			</h1>
+			<div class="animate-fade-in">
+				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+					Produk Berkualitas dari Glam Stitch
+				</h1>
 
-			<!-- Deskripsi -->
-			<p
-				class="animate__animated animate__fadeIn animate__delay-1s mt-6 text-lg text-gray-200 sm:text-xl"
-			>
-				Temukan kaos polos, jaket, dan kemeja dengan desain menarik, bahan terbaik, dan jahitan rapi
-				— cocok untuk brand, komunitas, maupun usaha Anda.
-			</p>
+				<p class="mt-6 text-lg text-gray-200 sm:text-xl">
+					Temukan kaos polos, jaket, dan kemeja dengan desain menarik, bahan terbaik, dan jahitan
+					rapi — cocok untuk brand, komunitas, maupun usaha Anda.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Hero Section with Animations -->
 <section class="relative overflow-hidden bg-white py-12 sm:py-20 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-col items-center gap-10 lg:flex-row">
-			<!-- Left: Image -->
-			<div class="animate-fade-slide-left w-full lg:w-1/2">
-				<img
-					loading="lazy"
-					src="https://img.freepik.com/free-photo/carpenter-works-with-tree_1157-18667.jpg"
-					alt="Produk Konveksi"
-					class="product-image h-auto w-full rounded-lg object-cover shadow-xl"
-				/>
-			</div>
+			<ScrollReveal animation="fade-right" delay={200} class="w-full lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src="https://img.freepik.com/free-photo/carpenter-works-with-tree_1157-18667.jpg"
+						alt="Produk Konveksi"
+						class="product-image h-auto w-full rounded-lg object-cover shadow-xl"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<!-- Right: Text Content -->
-			<div class="animate-fade-slide-right w-full text-center lg:w-1/2 lg:text-left">
+			<ScrollReveal
+				animation="fade-left"
+				delay={400}
+				class="w-full text-center lg:w-1/2 lg:text-left"
+			>
 				<h2 class="text-4xl leading-tight font-bold text-gray-900 sm:text-5xl dark:text-white">
 					Koleksi Fashion Terlengkap dari <span class="text-indigo-600 dark:text-indigo-400"
 						>Glam Stitch</span
@@ -111,12 +107,11 @@
 						Konsultasi Gratis
 					</a>
 				</div>
-			</div>
+			</ScrollReveal>
 		</div>
 	</div>
 </section>
 
-<!-- Product Section -->
 <section class="bg-white py-20 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-16">
 		<div class="mb-14 text-center">
@@ -127,9 +122,7 @@
 			</p>
 		</div>
 
-		<!-- Products Grid - Vertical Layout with 3 products per row -->
 		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<!-- Kaos Polos -->
 			<div
 				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 			>
@@ -155,7 +148,6 @@
 				</div>
 			</div>
 
-			<!-- Kaos Polo -->
 			<div
 				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 			>
@@ -179,7 +171,6 @@
 				</div>
 			</div>
 
-			<!-- Jersey -->
 			<div
 				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 			>
@@ -203,7 +194,6 @@
 				</div>
 			</div>
 
-			<!-- Hoodie/Sweater -->
 			<div
 				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 			>
@@ -227,7 +217,6 @@
 				</div>
 			</div>
 
-			<!-- Kemeja -->
 			<div
 				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 			>
@@ -254,7 +243,6 @@
 	</div>
 </section>
 
-<!-- Reviews Section - DISABLED (Change showTestimonials to true to enable) -->
 {#if false}
 	<section class="bg-white py-24 dark:bg-gray-900">
 		<div class="mx-auto max-w-7xl px-6 lg:px-16">
@@ -265,7 +253,6 @@
 				</p>
 			</div>
 			<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-				<!-- Review Card -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -286,7 +273,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -325,7 +311,6 @@
 					</p>
 				</div>
 
-				<!-- Review Card 3 -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -346,7 +331,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -382,7 +366,6 @@
 					</p>
 				</div>
 
-				<!-- Review Card 4 -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -403,7 +386,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -439,7 +421,6 @@
 					</p>
 				</div>
 
-				<!-- Review Card 5 -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -460,7 +441,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -496,7 +476,6 @@
 					</p>
 				</div>
 
-				<!-- Review Card 6 -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -517,7 +496,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -553,7 +531,6 @@
 					</p>
 				</div>
 
-				<!-- Example Review Card -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -574,7 +551,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -630,7 +606,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -666,7 +641,6 @@
 					</p>
 				</div>
 
-				<!-- Review Card 7 -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -687,7 +661,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -723,7 +696,6 @@
 					</p>
 				</div>
 
-				<!-- Review Card 8 -->
 				<div
 					class="transform rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700"
 				>
@@ -744,7 +716,6 @@
 					</div>
 
 					<div class="mb-3 flex items-center">
-						<!-- Stars -->
 						<div class="flex space-x-1 text-yellow-400">
 							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
 								><path
@@ -784,12 +755,10 @@
 	</section>
 {/if}
 
-<!-- Footer -->
 <footer class="bg-gray-900 dark:bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -798,7 +767,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -812,7 +780,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -828,9 +795,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -858,7 +823,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -899,7 +863,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -950,7 +913,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

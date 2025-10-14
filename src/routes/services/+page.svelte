@@ -3,6 +3,8 @@
 	import { base } from '$app/paths';
 	// @ts-expect-error - vite-imagetools query parameters
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -17,9 +19,7 @@
 	/>
 </svelte:head>
 
-<!--header-->
 <section class="relative isolate overflow-hidden bg-gray-900 pt-4 dark:bg-gray-950">
-	<!-- Background Image -->
 	<img
 		src="https://img.freepik.com/premium-photo/pensive-young-man-leather-apron-drinking-coffee-while-taking-break-leather-workshop_274679-7615.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
 		alt="Layanan Konveksi"
@@ -28,10 +28,8 @@
 	/>
 	<div class="absolute inset-0 -z-10 bg-black/30"></div>
 
-	<!-- Container -->
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 text-center sm:py-48 lg:py-32">
-			<!-- Badge Link -->
 			<div class="mb-6 hidden justify-center sm:flex">
 				<div
 					class="relative rounded-full bg-white/10 px-4 py-1.5 text-sm text-gray-200 ring-1 ring-white/20 transition hover:ring-white/40"
@@ -43,9 +41,8 @@
 				</div>
 			</div>
 
-			<!-- Heading & Content -->
-			<div class="text-center">
-				<h1 class="text-4xl leading-tight font-bold tracking-tight text-white sm:text-5xl">
+			<div class="animate-fade-in text-center">
+				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
 					Layanan Konveksi Profesional dari Glam Stitch
 				</h1>
 				<p class="mx-auto mt-4 max-w-xl text-base font-medium text-gray-300 sm:text-lg">
@@ -57,142 +54,148 @@
 	</div>
 </section>
 
-<!-- CTA Section -->
 <section class="bg-white py-24 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16">
-		<div class="mb-16 text-center">
-			<h2 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
-				Layanan Unggulan Glam Stitch
-			</h2>
-			<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-				Nikmati layanan bordir, sablon, dan custom desain yang elegan, cepat, dan sesuai identitas
-				brand Anda.
-			</p>
-		</div>
+		<ScrollReveal animation="fade-up">
+			<div class="mb-16 text-center">
+				<h2 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+					Layanan Unggulan Glam Stitch
+				</h2>
+				<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+					Nikmati layanan bordir, sablon, dan custom desain yang elegan, cepat, dan sesuai identitas
+					brand Anda.
+				</p>
+			</div>
+		</ScrollReveal>
 
 		<div class="grid grid-cols-1 gap-10 md:grid-cols-3">
-			<!-- Card -->
-			<div
-				class="group rounded-3xl border border-transparent bg-white p-8 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50 dark:hover:shadow-gray-900/80"
-			>
-				<div class="relative mb-6 overflow-hidden rounded-2xl">
-					<img
-						src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?w=740"
-						alt="Jasa Bordir"
-						class="h-60 w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
-					/>
-					<div
-						class="absolute top-4 left-4 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white"
-					>
-						Bordir
-					</div>
-				</div>
-				<h3 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
-					Jasa Bordir Profesional
-				</h3>
-				<p class="mb-4 text-gray-600 dark:text-gray-300">
-					Tingkatkan identitas brand Anda dengan hasil bordir presisi, tahan lama, dan elegan untuk
-					segala kebutuhan.
-				</p>
-				<a
-					href="{base}/contact-us"
-					class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:underline dark:text-blue-400"
+			<ScrollReveal animation="zoom-in" delay={200}>
+				<AnimatedCard
+					hoverEffect="lift"
+					class="group rounded-3xl border border-transparent bg-white p-8 shadow-md dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50"
 				>
-					Pelajari Lebih Lanjut
-					<svg
-						class="h-4 w-4"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						viewBox="0 0 24 24"
+					<div class="relative mb-6 overflow-hidden rounded-2xl">
+						<img
+							src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?w=740"
+							alt="Jasa Bordir"
+							class="h-60 w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
+						/>
+						<div
+							class="absolute top-4 left-4 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white"
+						>
+							Bordir
+						</div>
+					</div>
+					<h3 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
+						Jasa Bordir Profesional
+					</h3>
+					<p class="mb-4 text-gray-600 dark:text-gray-300">
+						Tingkatkan identitas brand Anda dengan hasil bordir presisi, tahan lama, dan elegan
+						untuk segala kebutuhan.
+					</p>
+					<a
+						href="{base}/contact-us"
+						class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:underline dark:text-blue-400"
 					>
-						<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
-					</svg>
-				</a>
-			</div>
+						Pelajari Lebih Lanjut
+						<svg
+							class="h-4 w-4"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+						>
+							<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+						</svg>
+					</a>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<!-- Card -->
-			<div
-				class="group rounded-3xl border border-transparent bg-white p-8 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50 dark:hover:shadow-gray-900/80"
-			>
-				<div class="relative mb-6 overflow-hidden rounded-2xl">
-					<img
-						src="https://img.freepik.com/premium-photo/close-up-person-working-textile-industry_1048944-24648174.jpg?w=740"
-						alt="Jasa Sablon"
-						class="h-60 w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
-					/>
-					<div
-						class="absolute top-4 left-4 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white"
-					>
-						Sablon
-					</div>
-				</div>
-				<h3 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
-					Sablon Kaos Berkualitas
-				</h3>
-				<p class="mb-4 text-gray-600 dark:text-gray-300">
-					Layanan sablon dengan hasil warna tajam dan tahan lama, cocok untuk kaos komunitas,
-					promosi, hingga distro.
-				</p>
-				<a
-					href="{base}/contact-us"
-					class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:underline dark:text-blue-400"
+			<ScrollReveal animation="zoom-in" delay={350}>
+				<AnimatedCard
+					hoverEffect="lift"
+					class="group rounded-3xl border border-transparent bg-white p-8 shadow-md dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50"
 				>
-					Pelajari Lebih Lanjut
-					<svg
-						class="h-4 w-4"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						viewBox="0 0 24 24"
+					<div class="relative mb-6 overflow-hidden rounded-2xl">
+						<img
+							src="https://img.freepik.com/premium-photo/close-up-person-working-textile-industry_1048944-24648174.jpg?w=740"
+							alt="Jasa Sablon"
+							class="h-60 w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
+						/>
+						<div
+							class="absolute top-4 left-4 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white"
+						>
+							Sablon
+						</div>
+					</div>
+					<h3 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
+						Sablon Kaos Berkualitas
+					</h3>
+					<p class="mb-4 text-gray-600 dark:text-gray-300">
+						Layanan sablon dengan hasil warna tajam dan tahan lama, cocok untuk kaos komunitas,
+						promosi, hingga distro.
+					</p>
+					<a
+						href="{base}/contact-us"
+						class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:underline dark:text-blue-400"
 					>
-						<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
-					</svg>
-				</a>
-			</div>
+						Pelajari Lebih Lanjut
+						<svg
+							class="h-4 w-4"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+						>
+							<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+						</svg>
+					</a>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<!-- Card -->
-			<div
-				class="group rounded-3xl border border-transparent bg-white p-8 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50 dark:hover:shadow-gray-900/80"
-			>
-				<div class="relative mb-6 overflow-hidden rounded-2xl">
-					<img
-						src="https://img.freepik.com/free-photo/drawing-fabric_1098-18012.jpg?w=740"
-						alt="Custom Desain Baju"
-						class="h-60 w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
-					/>
-					<div
-						class="absolute top-4 left-4 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white"
-					>
-						Custom
-					</div>
-				</div>
-				<h3 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">Custom</h3>
-				<p class="mb-4 text-gray-600 dark:text-gray-300">
-					Bebaskan kreativitasmu! Bekerja sama dengan tim desain kami untuk menciptakan pakaian yang
-					unik sesuai kebutuhan Anda.
-				</p>
-				<a
-					href="{base}/contact-us"
-					class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:underline dark:text-blue-400"
+			<ScrollReveal animation="zoom-in" delay={500}>
+				<AnimatedCard
+					hoverEffect="lift"
+					class="group rounded-3xl border border-transparent bg-white p-8 shadow-md dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50"
 				>
-					Pelajari Lebih Lanjut
-					<svg
-						class="h-4 w-4"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						viewBox="0 0 24 24"
+					<div class="relative mb-6 overflow-hidden rounded-2xl">
+						<img
+							src="https://img.freepik.com/free-photo/drawing-fabric_1098-18012.jpg?w=740"
+							alt="Custom Desain Baju"
+							class="h-60 w-full rounded-2xl object-cover transition duration-500 group-hover:scale-105"
+						/>
+						<div
+							class="absolute top-4 left-4 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white"
+						>
+							Custom
+						</div>
+					</div>
+					<h3 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">Custom</h3>
+					<p class="mb-4 text-gray-600 dark:text-gray-300">
+						Bebaskan kreativitasmu! Bekerja sama dengan tim desain kami untuk menciptakan pakaian
+						yang unik sesuai kebutuhan Anda.
+					</p>
+					<a
+						href="{base}/contact-us"
+						class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:underline dark:text-blue-400"
 					>
-						<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
-					</svg>
-				</a>
-			</div>
+						Pelajari Lebih Lanjut
+						<svg
+							class="h-4 w-4"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+						>
+							<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+						</svg>
+					</a>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 	</div>
 </section>
 
-<!-- superiority Section -->
 <section class="bg-white py-16 dark:bg-gray-900">
 	<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-32">
 		<div class="mb-12 text-center">
@@ -204,7 +207,6 @@
 			</p>
 		</div>
 		<div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-			<!-- Asal Produksi -->
 			<div
 				class="transform rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
 			>
@@ -214,7 +216,6 @@
 				</dd>
 			</div>
 
-			<!-- Bahan -->
 			<div
 				class="transform rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
 			>
@@ -224,7 +225,6 @@
 				</dd>
 			</div>
 
-			<!-- Ukuran -->
 			<div
 				class="transform rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
 			>
@@ -234,7 +234,6 @@
 				</dd>
 			</div>
 
-			<!-- Finishing -->
 			<div
 				class="transform rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
 			>
@@ -244,7 +243,6 @@
 				</dd>
 			</div>
 
-			<!-- Paket -->
 			<div
 				class="transform rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
 			>
@@ -254,7 +252,6 @@
 				</dd>
 			</div>
 
-			<!-- Catatan -->
 			<div
 				class="transform rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 p-8 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
 			>
@@ -267,7 +264,6 @@
 	</div>
 </section>
 
-<!-- Jam Kerja -->
 <section class="bg-white py-12 sm:py-16 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16">
 		<div class="text-center">
@@ -278,7 +274,6 @@
 		</div>
 
 		<div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-			<!-- Senin - Sabtu -->
 			<div
 				class="flex items-center justify-center rounded-xl border border-transparent bg-white p-6 shadow-lg transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50"
 			>
@@ -298,7 +293,6 @@
 				</div>
 			</div>
 
-			<!-- Minggu -->
 			<div
 				class="flex items-center justify-center rounded-xl border border-transparent bg-white p-6 shadow-lg transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50"
 			>
@@ -317,7 +311,6 @@
 				</div>
 			</div>
 
-			<!-- Layanan Online -->
 			<div
 				class="flex items-center justify-center rounded-xl border border-transparent bg-white p-6 shadow-lg transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800 dark:shadow-gray-900/50"
 			>
@@ -339,7 +332,6 @@
 	</div>
 </section>
 
-<!-- Incentives -->
 <section class="bg-white dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-16">
 		<div
@@ -355,7 +347,6 @@
 				<div
 					class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3"
 				>
-					<!-- Produksi Cepat -->
 					<div class="text-center sm:flex sm:text-left lg:block lg:text-center">
 						<div class="sm:shrink-0">
 							<div class="flow-root">
@@ -375,7 +366,6 @@
 						</div>
 					</div>
 
-					<!-- Jaminan Kualitas -->
 					<div class="text-center sm:flex sm:text-left lg:block lg:text-center">
 						<div class="sm:shrink-0">
 							<div class="flow-root">
@@ -395,7 +385,6 @@
 						</div>
 					</div>
 
-					<!-- Pesanan Kustom -->
 					<div class="text-center sm:flex sm:text-left lg:block lg:text-center">
 						<div class="sm:shrink-0">
 							<div class="flow-root">
@@ -420,12 +409,10 @@
 	</div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					class="animate__animated animate__zoomIn animate__delay-1s h-24 w-24"
@@ -433,7 +420,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -447,7 +433,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -463,9 +448,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -493,7 +476,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -534,7 +516,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -585,7 +566,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

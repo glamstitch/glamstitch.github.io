@@ -73,19 +73,16 @@
 	});
 </script>
 
-<!-- Loading Screen during navigation -->
 {#if $navigating}
 	<LoadingScreen />
 {/if}
 
 {@render children()}
 
-<!-- Navbar -->
 <nav class="fixed inset-x-4 top-4 z-50">
 	<div
 		class="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-gray-200 bg-white/95 px-6 py-0.5 shadow-lg backdrop-blur-md"
 	>
-		<!-- Logo -->
 		<a href="{base}/" class="navbar-logo group flex items-center gap-2">
 			<img
 				src={logoGlint}
@@ -97,7 +94,6 @@
 			>
 		</a>
 
-		<!-- Desktop Navigation -->
 		<div class="hidden items-center space-x-8 lg:flex">
 			<a
 				href="{base}/"
@@ -109,7 +105,6 @@
 				></span>
 			</a>
 
-			<!-- Products Link -->
 			<a
 				href="{base}/product"
 				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
@@ -130,10 +125,9 @@
 				></span>
 			</a>
 
-			<!-- Company Info Dropdown -->
-			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<div
 				class="dropdown-container relative"
+				role="navigation"
 				onmouseenter={handleCompanyMouseEnter}
 				onmouseleave={handleCompanyMouseLeave}
 			>
@@ -303,7 +297,6 @@
 				{/if}
 			</div>
 
-			<!-- Social Media Link -->
 			<a
 				href="{base}/sosial-media"
 				class="navbar-link group relative text-base font-semibold text-gray-900 transition-colors duration-200 hover:text-indigo-600"
@@ -315,12 +308,9 @@
 			</a>
 		</div>
 
-		<!-- Right Side Actions -->
 		<div class="flex items-center gap-3">
-			<!-- Theme Switcher Component -->
 			<ThemeSwitcher />
 
-			<!-- Mobile Menu Toggle -->
 			<button
 				onclick={toggleMobileMenu}
 				class="group cursor-pointer rounded-lg p-1.5 transition-all duration-300 hover:bg-gray-100 lg:hidden"
@@ -352,24 +342,22 @@
 	</div>
 </nav>
 
-<!-- Mobile Menu Container -->
 {#if mobileMenuOpen}
 	<div class="lg:hidden">
-		<!-- Backdrop -->
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
 			onclick={closeMobileMenu}
+			onkeydown={(e) => e.key === 'Escape' && closeMobileMenu()}
+			role="button"
+			tabindex="-1"
+			aria-label="Close menu"
 			class="mobile-menu-backdrop fixed inset-0 z-40 cursor-pointer bg-black/30"
 			transition:fade={{ duration: 250, easing: cubicOut }}
 		></div>
 
-		<!-- Menu Panel - Dropdown dari bawah navbar dengan animasi menurun -->
 		<div
 			class="mobile-menu-panel fixed top-[92px] right-4 left-4 z-50 mx-auto max-h-[calc(100vh-108px)] max-w-7xl overflow-hidden overflow-y-auto rounded-2xl border border-gray-200 bg-white/98 shadow-2xl backdrop-blur-lg"
 			transition:fly={{ y: -20, duration: 300, easing: cubicOut }}
 		>
-			<!-- Navigation -->
 			<nav class="space-y-1 p-6">
 				<a
 					href="{base}/"
@@ -379,7 +367,6 @@
 					Beranda
 				</a>
 
-				<!-- Products Link -->
 				<a
 					href="{base}/product"
 					onclick={closeMobileMenu}
@@ -396,7 +383,6 @@
 					Layanan
 				</a>
 
-				<!-- Company Info Dropdown -->
 				<div class="relative">
 					<input type="checkbox" id="mobile-company" class="peer/company hidden" />
 					<label
@@ -466,7 +452,6 @@
 					</div>
 				</div>
 
-				<!-- Social Media Link -->
 				<a
 					href="{base}/sosial-media"
 					onclick={closeMobileMenu}
@@ -476,7 +461,6 @@
 				</a>
 			</nav>
 
-			<!-- Footer in Mobile Menu -->
 			<div class="border-t border-gray-200 px-6 pt-4 pb-6">
 				<p class="text-center text-sm text-gray-500">© 2025 Glam Stitch</p>
 			</div>
@@ -484,7 +468,6 @@
 	</div>
 {/if}
 
-<!-- WhatsApp Floating Button -->
 <WhatsAppButton />
 
 <style>

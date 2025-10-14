@@ -1,5 +1,4 @@
 <script lang="ts">
-	// Page content only - dark mode handled by layout
 	// @ts-expect-error - vite-imagetools query parameters
 	import supplierMain from '$lib/assets/image/gallery.jpg?w=1920&format=webp&quality=85';
 	// @ts-expect-error - vite-imagetools query parameters
@@ -15,6 +14,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import poto7 from '$lib/assets/image/poto7.jpg?w=800&format=webp&quality=80';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -29,7 +30,6 @@
 	/>
 </svelte:head>
 
-<!-- Hero Header -->
 <section class="hero-section relative isolate overflow-hidden pt-6">
 	<img
 		loading="lazy"
@@ -41,27 +41,33 @@
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 text-center sm:py-48 lg:py-40">
-			<h1 class="text-4xl font-bold text-white sm:text-6xl">Supplier Terpercaya Kami</h1>
-			<p class="mt-6 text-lg text-gray-300 sm:text-xl">
-				Bekerja sama dengan supplier terbaik untuk menyediakan bahan berkualitas tinggi — mulai dari
-				kain premium, benang berkualitas, hingga aksesoris konveksi terbaik.
-			</p>
+			<div class="animate-fade-in">
+				<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+					Supplier Terpercaya Kami
+				</h1>
+				<p class="mt-6 text-lg text-gray-300 sm:text-xl">
+					Bekerja sama dengan supplier terbaik untuk menyediakan bahan berkualitas tinggi — mulai
+					dari kain premium, benang berkualitas, hingga aksesoris konveksi terbaik.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Supplier Section -->
 <section class="bg-white py-24 transition-colors duration-300 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl space-y-32 px-6 lg:px-16">
-		<!-- 1. Knitto Textiles -->
 		<div class="flex flex-col items-center gap-12 lg:flex-row">
-			<img
-				loading="lazy"
-				src="https://cms.disway.id/uploads/6243de5657616b5d0f48d5f28b9df10d.jpg"
-				alt="Knitto Textiles"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src="https://cms.disway.id/uploads/6243de5657616b5d0f48d5f28b9df10d.jpg"
+						alt="Knitto Textiles"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Knitto Textiles</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Pelopor toko kain modern di Indonesia yang memproduksi kain di pabrik sendiri. Knitto
@@ -76,12 +82,11 @@
 				>
 					Kunjungi Website →
 				</a>
-			</div>
+			</ScrollReveal>
 		</div>
 
-		<!-- 2. Dunia Sandang Pratama -->
 		<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
-			<div class="lg:w-1/2">
+			<ScrollReveal animation="fade-right" delay={200} class="lg:w-1/2">
 				<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Nirwana Textile</h2>
 				<p class="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 					Nirwana Textile adalah supplier tekstil dan bahan sandang yang menyediakan berbagai macam
@@ -97,18 +102,20 @@
 				>
 					Kunjungi Website →
 				</a>
-			</div>
-			<img
-				loading="lazy"
-				src="https://www.nirwanatextile.com/images/stores/store%20bkr.png"
-				alt="Nirwana Textile"
-				class="gallery h-80 w-full rounded-2xl object-cover shadow-lg lg:w-1/2"
-			/>
+			</ScrollReveal>
+			<ScrollReveal animation="fade-left" delay={400} class="lg:w-1/2">
+				<AnimatedCard hoverEffect="zoom">
+					<img
+						loading="lazy"
+						src="https://www.nirwanatextile.com/images/stores/store%20bkr.png"
+						alt="Nirwana Textile"
+						class="h-80 w-full rounded-2xl object-cover shadow-lg"
+					/>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 
-		<!-- Supplier 3, 4, 5 - DISABLED -->
 		{#if false}
-			<!-- 3. Supplier Bahan Sablon -->
 			<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
 				<img
 					loading="lazy"
@@ -127,7 +134,6 @@
 				</div>
 			</div>
 
-			<!-- 4. Supplier Mesin & Peralatan -->
 			<div class="flex flex-col items-center gap-12 lg:flex-row">
 				<div class="lg:w-1/2">
 					<h2 class="text-3xl font-bold text-gray-900 dark:text-white">
@@ -148,7 +154,6 @@
 				/>
 			</div>
 
-			<!-- 5. Komitmen Kualitas -->
 			<div class="flex flex-col-reverse items-center gap-12 lg:flex-row">
 				<img
 					loading="lazy"
@@ -172,12 +177,10 @@
 	</div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -186,7 +189,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -200,7 +202,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -216,9 +217,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -246,7 +245,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -287,7 +285,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -338,7 +335,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>

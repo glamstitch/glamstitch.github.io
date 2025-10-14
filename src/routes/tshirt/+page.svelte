@@ -5,6 +5,8 @@
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukurankaos from '$lib/assets/image/ukurankaos.png?w=800&format=webp&quality=85';
 	import { base } from '$app/paths';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
+	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
 </script>
 
 <svelte:head>
@@ -19,7 +21,6 @@
 	/>
 </svelte:head>
 
-<!-- Hero Section -->
 <div class="hero-section relative isolate overflow-hidden pt-6">
 	<img
 		loading="lazy"
@@ -30,7 +31,7 @@
 	<div class="absolute inset-0 -z-10 bg-black/10"></div>
 
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
+		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40">
 			<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 				<div
 					class="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-white/10 transition hover:ring-white/20 dark:ring-gray-600 dark:hover:ring-gray-500"
@@ -45,7 +46,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="text-center">
+			<div class="animate-fade-in text-center">
 				<h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl dark:text-white">
 					Produk Kaos Polos Glam Stitch
 				</h1>
@@ -58,9 +59,7 @@
 	</div>
 </div>
 
-<!--promo-->
 <div class="relative z-0 overflow-hidden bg-white dark:bg-gray-900">
-	<!-- Callout Section -->
 	<section
 		aria-labelledby="sale-heading"
 		class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-24 text-center sm:px-6 lg:px-8"
@@ -80,7 +79,6 @@
 	</section>
 </div>
 
-<!-- Products Sections -->
 <div class="bg-white dark:bg-gray-900">
 	<main class="pt-10 sm:pt-8">
 		<nav aria-label="Breadcrumb">
@@ -90,10 +88,8 @@
 			></ol>
 		</nav>
 
-		<!-- Galeri Produk -->
 		<div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
-				<!-- Gambar utama - lebih besar -->
 				<div class="lg:col-span-2">
 					<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 						<img
@@ -105,7 +101,6 @@
 					</div>
 				</div>
 
-				<!-- Gambar samping -->
 				<div class="grid grid-cols-1 gap-6">
 					<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 						<img
@@ -127,10 +122,8 @@
 			</div>
 		</div>
 
-		<!-- Info Produk -->
 		<div class="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-				<!-- Informasi Produk -->
 				<div class="space-y-8">
 					<div>
 						<h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
@@ -141,7 +134,6 @@
 						</p>
 					</div>
 
-					<!-- Deskripsi -->
 					<div class="space-y-6">
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deskripsi Produk</h3>
 						<p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
@@ -153,7 +145,6 @@
 						</p>
 					</div>
 
-					<!-- Fitur Unggulan -->
 					<div class="space-y-4">
 						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Fitur Unggulan</h3>
 						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -213,7 +204,6 @@
 					</div>
 				</div>
 
-				<!-- Detail Produk -->
 				<div class="space-y-8">
 					<div class="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
 						<h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Detail Produk</h3>
@@ -236,7 +226,6 @@
 						</div>
 					</div>
 
-					<!-- CTA Button -->
 					<div class="space-y-4">
 						<a
 							href="/contact-us"
@@ -263,7 +252,6 @@
 			</div>
 		</div>
 
-		<!-- Produk Terkait -->
 		<section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
 			<div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
 				<h2
@@ -278,7 +266,6 @@
 				<div
 					class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
 				>
-					<!-- Produk 1 -->
 					<div class="group relative">
 						<img
 							loading="lazy"
@@ -292,7 +279,6 @@
 						</div>
 					</div>
 
-					<!-- Produk 2 -->
 					<div class="group relative">
 						<img
 							loading="lazy"
@@ -306,7 +292,6 @@
 						</div>
 					</div>
 
-					<!-- Produk 3 -->
 					<div class="group relative">
 						<img
 							loading="lazy"
@@ -320,7 +305,6 @@
 						</div>
 					</div>
 
-					<!-- Produk 4 -->
 					<div class="group relative">
 						<img
 							loading="lazy"
@@ -337,7 +321,6 @@
 			</div>
 		</section>
 
-		<!-- Size Chart Section -->
 		<section aria-labelledby="size-chart-heading" class="bg-white py-16 dark:bg-gray-900">
 			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<div class="mb-12 text-center">
@@ -354,7 +337,6 @@
 				</div>
 
 				<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-					<!-- Size Chart Table -->
 					<div class="rounded-xl bg-gray-50 p-8 dark:bg-gray-800">
 						<h3 class="mb-6 text-center text-xl font-semibold text-gray-900 dark:text-white">
 							Tabel Ukuran Kaos Glam Stitch
@@ -430,7 +412,6 @@
 							</table>
 						</div>
 
-						<!-- Tips -->
 						<div class="mt-6 rounded-lg bg-gray-800 p-4">
 							<div class="flex items-start">
 								<svg
@@ -457,7 +438,6 @@
 						</div>
 					</div>
 
-					<!-- Size Chart Image -->
 					<div class="space-y-6">
 						<div class="w-full rounded-xl bg-gray-100 p-4 dark:bg-gray-800">
 							<img
@@ -468,7 +448,6 @@
 							/>
 						</div>
 
-						<!-- How to Measure Guide -->
 						<div class="rounded-xl bg-gray-50 p-6 dark:bg-gray-800">
 							<h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
 								Cara Mengukur Kaos
@@ -521,7 +500,6 @@
 					</div>
 				</div>
 
-				<!-- CTA Section -->
 				<div class="mt-12 text-center">
 					<p class="mb-6 text-lg text-gray-600 dark:text-gray-400">
 						Masih bingung dengan ukuran? Tim customer service kami siap membantu Anda!
@@ -546,12 +524,10 @@
 	</main>
 </div>
 
-<!-- Footer -->
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8">
 		<div class="animate__animated animate__fadeInUp xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo & Description -->
 			<div class="space-y-6">
 				<img
 					loading="lazy"
@@ -560,7 +536,6 @@
 					alt="Glam Stitch Logo"
 				/>
 				<div class="flex space-x-6">
-					<!-- Facebook -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Facebook</span>
 						<svg
@@ -574,7 +549,6 @@
 						</svg>
 					</a>
 
-					<!-- Instagram -->
 					<a href="/" class="text-gray-500 transition duration-300 hover:text-gray-400">
 						<span class="sr-only">Instagram</span>
 						<svg
@@ -590,9 +564,7 @@
 				</div>
 			</div>
 
-			<!-- Navigation Links -->
 			<div class="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-2 xl:mt-0">
-				<!-- Navigasi -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Navigasi</h3>
 					<ul class="mt-6 space-y-4">
@@ -620,7 +592,6 @@
 					</ul>
 				</div>
 
-				<!-- Products -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Produk</h3>
 					<ul class="mt-6 space-y-4">
@@ -661,7 +632,6 @@
 					</ul>
 				</div>
 
-				<!-- Discover Us -->
 				<div>
 					<h3 class="text-lg leading-6 font-semibold text-white">Jelajahi</h3>
 					<ul class="mt-6 space-y-4">
@@ -712,7 +682,6 @@
 			</div>
 		</div>
 
-		<!-- Footer Bottom -->
 		<div
 			class="animate__animated animate__fadeInUp animate__delay-3s mt-16 border-t border-white/10 pt-8 text-center"
 		>
