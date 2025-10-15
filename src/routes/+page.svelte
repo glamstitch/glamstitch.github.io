@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	// @ts-expect-error - vite-imagetools query parameters
 	import gambar4 from '$lib/assets/image/gambar4.jpg?w=600&format=webp&quality=80';
 	// @ts-expect-error - vite-imagetools query parameters
@@ -111,19 +112,6 @@
 						>
 							<span class="relative z-10">Mulai Sekarang</span>
 						</a>
-
-						<a
-							href="/product"
-							class="group flex items-center gap-2 font-semibold text-white transition-all duration-300 hover:text-indigo-300"
-						>
-							Jelajahi Produk Kami
-							<span
-								aria-hidden="true"
-								class="inline-block transition-transform group-hover:translate-x-1"
-							>
-								→
-							</span>
-						</a>
 					</div>
 				</ScrollReveal>
 			</div>
@@ -146,7 +134,7 @@
 				</div>
 			</ScrollReveal>
 
-			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+			<div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
 				<ScrollReveal animation="zoom-in" delay={100}>
 					<AnimatedCard hoverEffect="lift">
 						<div
@@ -155,14 +143,14 @@
 							<img
 								src="https://i.pinimg.com/1200x/f0/5c/6a/f05c6a88a05df3ab54c00c87accda0ed.jpg"
 								alt="Produk konveksi berkualitas tinggi"
-								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								class="aspect-[9/16] w-full object-cover transition-transform duration-300 group-hover:scale-110"
 								loading="lazy"
 							/>
 							<div
-								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							></div>
 							<div
-								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute right-4 bottom-4 left-4 text-white opacity-100 transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							>
 								<h3 class="text-lg font-semibold">Produk Premium</h3>
 								<p class="text-sm text-gray-200">Kualitas terbaik untuk kebutuhan Anda</p>
@@ -179,14 +167,14 @@
 							<img
 								src="https://i.pinimg.com/1200x/72/65/b3/7265b3abe5835c903f9d531d72631ef8.jpg"
 								alt="Tim produksi profesional"
-								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								class="aspect-[9/16] w-full object-cover transition-transform duration-300 group-hover:scale-110"
 								loading="lazy"
 							/>
 							<div
-								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							></div>
 							<div
-								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute right-4 bottom-4 left-4 text-white opacity-100 transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							>
 								<h3 class="text-lg font-semibold">Tim Profesional</h3>
 								<p class="text-sm text-gray-200">Dikerjakan oleh ahli berpengalaman</p>
@@ -203,14 +191,14 @@
 							<img
 								src="https://i.pinimg.com/736x/d2/42/fd/d242fd6081206b1e34abd0876b4e5a26.jpg"
 								alt="Proses produksi modern"
-								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								class="aspect-[9/16] w-full object-cover transition-transform duration-300 group-hover:scale-110"
 								loading="lazy"
 							/>
 							<div
-								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							></div>
 							<div
-								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute right-4 bottom-4 left-4 text-white opacity-100 transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							>
 								<h3 class="text-lg font-semibold">Teknologi Modern</h3>
 								<p class="text-sm text-gray-200">Menggunakan peralatan terdepan</p>
@@ -227,14 +215,14 @@
 							<img
 								src="https://i.pinimg.com/736x/db/1a/6d/db1a6dac55c3891bb3054d6d98d290e9.jpg"
 								alt="Hasil produksi berkualitas"
-								class="mx-auto aspect-[9/16] w-full max-w-[200px] object-cover transition-transform duration-300 group-hover:scale-110 sm:mx-0 sm:max-w-none"
+								class="aspect-[9/16] w-full object-cover transition-transform duration-300 group-hover:scale-110"
 								loading="lazy"
 							/>
 							<div
-								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							></div>
 							<div
-								class="absolute right-4 bottom-4 left-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								class="absolute right-4 bottom-4 left-4 text-white opacity-100 transition-opacity duration-300 group-hover:opacity-100 sm:opacity-0"
 							>
 								<h3 class="text-lg font-semibold">Hasil Terbaik</h3>
 								<p class="text-sm text-gray-200">Standar kualitas internasional</p>
@@ -245,10 +233,20 @@
 			</div>
 
 			<ScrollReveal animation="fade-up" delay={900}></ScrollReveal>
+			<ScrollReveal animation="fade-up" delay={300}>
+				<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+					<a
+						href="/product"
+						class="group relative w-full transform overflow-hidden rounded-xl bg-indigo-600 px-6 py-3 text-center font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-indigo-700 hover:shadow-xl"
+					>
+						<span class="relative z-10 block w-full text-center">Jelajahi Produk Kami </span>
+					</a>
+				</div>
+			</ScrollReveal>
 		</div>
 	</section>
 
-	<section class="bg-white py-24 dark:bg-gray-900">
+	<section class="bg-white py-16 dark:bg-gray-900">
 		<div class="mx-auto max-w-7xl px-6 lg:px-16">
 			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
 				<ScrollReveal animation="fade-right">
@@ -500,7 +498,7 @@
 		</div>
 	</section>
 
-	<section class="bg-gray-50 py-24 dark:bg-gray-800">
+	<section class="dark:bg-gray-850 bg-gray-50 py-24">
 		<div class="mx-auto max-w-7xl px-6 lg:px-16">
 			<ScrollReveal animation="fade-up">
 				<div class="mb-16 text-center">

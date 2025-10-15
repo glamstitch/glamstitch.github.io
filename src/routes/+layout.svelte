@@ -303,7 +303,7 @@
 
 			<button
 				onclick={toggleMobileMenu}
-				class="group cursor-pointer rounded-lg p-1.5 transition-all duration-300 hover:bg-gray-100 lg:hidden"
+				class="group cursor-pointer rounded-lg p-1.5 transition-all duration-300 lg:hidden"
 			>
 				<svg
 					class="h-5 w-5 text-gray-900 transition-all duration-300 group-hover:scale-110 group-hover:rotate-90"
