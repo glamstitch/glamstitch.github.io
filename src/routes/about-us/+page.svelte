@@ -138,95 +138,114 @@
 
 <section class="bg-white py-20 dark:bg-gray-900" id="our-journey">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16">
-		<div class="mb-16 text-center">
-			<h2 class="text-4xl font-bold text-gray-800 dark:text-white">Perjalanan Kami</h2>
-			<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-				Kami menggabungkan semangat tim, keahlian, dan komitmen untuk selalu memberikan produk
-				terbaik bagi setiap pelanggan kami, sejak pertama kali kami berdiri.
-			</p>
-		</div>
+		<ScrollReveal animation="fade-up">
+			<div class="mb-16 text-center">
+				<h2 class="text-4xl font-bold text-gray-800 dark:text-white">Perjalanan Kami</h2>
+				<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+					Kami menggabungkan semangat tim, keahlian, dan komitmen untuk selalu memberikan produk
+					terbaik bagi setiap pelanggan kami, sejak pertama kali kami berdiri.
+				</p>
+			</div>
+		</ScrollReveal>
+
 		<div class="relative space-y-16">
 			<div class="relative space-y-16 border-l-4 border-indigo-500 pl-8 dark:border-indigo-300">
-				<div class="animate__animated animate__fadeIn animate__delay-1s relative">
-					<div
-						class="absolute top-1 -left-5 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
-					>
-						2017
-					</div>
-					<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-						<img
-							loading="lazy"
-							src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-							alt="2017"
-							class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
-						/>
-						<div class="text-lg text-gray-700 dark:text-gray-300">
-							Awal mula berdirinya Glam Stitch di Kecamatan Kalijati pada tahun 2017, dimulai dari
-							sebuah rumah kecil dengan mesin jahit sederhana dan semangat besar untuk memberikan
-							kualitas terbaik.
+				<ScrollReveal animation="fade-left" delay={200}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="relative">
+							<div
+								class="absolute top-1 -left-12 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
+							>
+								2017
+							</div>
+							<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+								<img
+									loading="lazy"
+									src="https://img.freepik.com/premium-photo/tailors-shop-with-equipment-work-benches_126745-1092.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+									alt="2017"
+									class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+								/>
+								<div class="text-lg text-gray-700 dark:text-gray-300">
+									Awal mula berdirinya Glam Stitch di Kecamatan Kalijati pada tahun 2017, dimulai
+									dari sebuah rumah kecil dengan mesin jahit sederhana dan semangat besar untuk
+									memberikan kualitas terbaik.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-				<div class="animate__animated animate__fadeIn animate__delay-2s relative">
-					<div
-						class="absolute top-1 -left-5 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
-					>
-						2020
-					</div>
-					<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-						<img
-							loading="lazy"
-							src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-							alt="2020"
-							class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
-						/>
-						<div class="text-lg text-gray-700 dark:text-gray-300">
-							Mulai meluaskan layanan dengan menerima pesanan dalam jumlah besar dari komunitas dan
-							sekolah. Glam Stitch mulai dikenal di wilayah lokal dan sekitarnya.
+				<ScrollReveal animation="fade-left" delay={300}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="relative">
+							<div
+								class="absolute top-1 -left-12 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
+							>
+								2020
+							</div>
+							<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+								<img
+									loading="lazy"
+									src="https://img.freepik.com/free-photo/woman-business-owner-working-her-tailor-shop_1150-11672.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+									alt="2020"
+									class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+								/>
+								<div class="text-lg text-gray-700 dark:text-gray-300">
+									Mulai meluaskan layanan dengan menerima pesanan dalam jumlah besar dari komunitas
+									dan sekolah. Glam Stitch mulai dikenal di wilayah lokal dan sekitarnya.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-				<div class="animate__animated animate__fadeIn animate__delay-3s relative">
-					<div
-						class="absolute top-1 -left-5 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
-					>
-						2023
-					</div>
-					<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-						<img
-							loading="lazy"
-							src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-							alt="2023"
-							class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
-						/>
-						<div class="text-lg text-gray-700 dark:text-gray-300">
-							Pembangunan pabrik baru untuk meningkatkan kapasitas produksi dan melayani permintaan
-							yang semakin besar dari pelanggan.
+				<ScrollReveal animation="fade-left" delay={400}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="relative">
+							<div
+								class="absolute top-1 -left-12 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
+							>
+								2023
+							</div>
+							<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+								<img
+									loading="lazy"
+									src="https://img.freepik.com/free-photo/portrait-businesswoman-owner_23-2148828328.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+									alt="2023"
+									class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+								/>
+								<div class="text-lg text-gray-700 dark:text-gray-300">
+									Pembangunan pabrik baru untuk meningkatkan kapasitas produksi dan melayani
+									permintaan yang semakin besar dari pelanggan.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-				<div class="animate__animated animate__fadeIn animate__delay-4s relative">
-					<div
-						class="absolute top-1 -left-5 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
-					>
-						2025
-					</div>
-					<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-						<img
-							loading="lazy"
-							src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-							alt="2025"
-							class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
-						/>
-						<div class="text-lg text-gray-700 dark:text-gray-300">
-							Mencapai pencapaian luar biasa dengan 1000+ pelanggan aktif dan 150 ribu pcs terjual
-							per tahun. Glam Stitch telah menjadi konveksi terpercaya di Indonesia.
+				<ScrollReveal animation="fade-left" delay={500}>
+					<AnimatedCard hoverEffect="lift">
+						<div class="relative">
+							<div
+								class="absolute top-1 -left-12 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 font-bold text-white shadow-md dark:bg-indigo-300"
+							>
+								2025
+							</div>
+							<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+								<img
+									loading="lazy"
+									src="https://img.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg?uid=R108872572&ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+									alt="2025"
+									class="h-64 w-full transform rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+								/>
+								<div class="text-lg text-gray-700 dark:text-gray-300">
+									Mencapai pencapaian luar biasa dengan 1000+ pelanggan aktif dan 150 ribu pcs
+									terjual per tahun. Glam Stitch telah menjadi konveksi terpercaya di Indonesia.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+					</AnimatedCard>
+				</ScrollReveal>
 			</div>
 		</div>
 	</div>
@@ -288,13 +307,6 @@
 								href="/product"
 								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
 								>Produk</a
-							>
-						</li>
-						<li>
-							<a
-								href="{base}/404.html"
-								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
-								>Layanan</a
 							>
 						</li>
 					</ul>

@@ -114,131 +114,161 @@
 
 <section class="bg-white py-20 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-16">
-		<div class="mb-14 text-center">
-			<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Produk Kami</h2>
-			<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-				Temukan pilihan fashion terbaik dari kami, dibuat dengan kualitas tinggi dan sentuhan desain
-				yang stylish.
-			</p>
-		</div>
+		<ScrollReveal animation="fade-up">
+			<div class="mb-14 text-center">
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Produk Kami</h2>
+				<p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+					Temukan pilihan fashion terbaik dari kami, dibuat dengan kualitas tinggi dan sentuhan
+					desain yang stylish.
+				</p>
+			</div>
+		</ScrollReveal>
 
 		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<div
-				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
-			>
-				<div class="relative overflow-hidden rounded-t-lg">
-					<img
-						loading="lazy"
-						src={kaos1}
-						alt="Kaos Polos Glam Stitch"
-						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
-					/>
-				</div>
-				<div class="p-4">
-					<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-						Kaos Polos Premium
-					</h3>
-					<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">30+ Pilihan Warna</p>
-					<a
-						href="/tshirt"
-						class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+			<ScrollReveal animation="fade-up" delay={100}>
+				<AnimatedCard hoverEffect="lift">
+					<div
+						class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 					>
-						Lihat Detail
-					</a>
-				</div>
-			</div>
+						<div class="relative overflow-hidden rounded-t-lg">
+							<img
+								loading="lazy"
+								src={kaos1}
+								alt="Kaos Polos Glam Stitch"
+								class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-4">
+							<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+								Kaos Polos Premium
+							</h3>
+							<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">30+ Pilihan Warna</p>
+							<a
+								href="/tshirt"
+								class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+							>
+								Lihat Detail
+							</a>
+						</div>
+					</div>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<div
-				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
-			>
-				<div class="relative overflow-hidden rounded-t-lg">
-					<img
-						loading="lazy"
-						src={polo1}
-						alt="Kaos Polo Glam Stitch"
-						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
-					/>
-				</div>
-				<div class="p-4">
-					<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Kaos Polo Elegan</h3>
-					<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">15+ Pilihan Warna</p>
-					<a
-						href="/polo"
-						class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+			<ScrollReveal animation="fade-up" delay={200}>
+				<AnimatedCard hoverEffect="lift">
+					<div
+						class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 					>
-						Lihat Detail
-					</a>
-				</div>
-			</div>
+						<div class="relative overflow-hidden rounded-t-lg">
+							<img
+								loading="lazy"
+								src={polo1}
+								alt="Kaos Polo Glam Stitch"
+								class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-4">
+							<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+								Kaos Polo Elegan
+							</h3>
+							<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">15+ Pilihan Warna</p>
+							<a
+								href="/polo"
+								class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+							>
+								Lihat Detail
+							</a>
+						</div>
+					</div>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<div
-				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
-			>
-				<div class="relative overflow-hidden rounded-t-lg">
-					<img
-						loading="lazy"
-						src={jersey1}
-						alt="Jersey Glam Stitch"
-						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
-					/>
-				</div>
-				<div class="p-4">
-					<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Jersey Olahraga</h3>
-					<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">15+ Pilihan Warna</p>
-					<a
-						href="/jersey"
-						class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+			<ScrollReveal animation="fade-up" delay={300}>
+				<AnimatedCard hoverEffect="lift">
+					<div
+						class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 					>
-						Lihat Detail
-					</a>
-				</div>
-			</div>
+						<div class="relative overflow-hidden rounded-t-lg">
+							<img
+								loading="lazy"
+								src={jersey1}
+								alt="Jersey Glam Stitch"
+								class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-4">
+							<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+								Jersey Olahraga
+							</h3>
+							<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">15+ Pilihan Warna</p>
+							<a
+								href="/jersey"
+								class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+							>
+								Lihat Detail
+							</a>
+						</div>
+					</div>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<div
-				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
-			>
-				<div class="relative overflow-hidden rounded-t-lg">
-					<img
-						loading="lazy"
-						src={hoodie1}
-						alt="Hoodie/Sweater Glam Stitch"
-						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
-					/>
-				</div>
-				<div class="p-4">
-					<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Hoodie Premium</h3>
-					<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">10+ Pilihan Warna</p>
-					<a
-						href="/jacket"
-						class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+			<ScrollReveal animation="fade-up" delay={400}>
+				<AnimatedCard hoverEffect="lift">
+					<div
+						class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 					>
-						Lihat Detail
-					</a>
-				</div>
-			</div>
+						<div class="relative overflow-hidden rounded-t-lg">
+							<img
+								loading="lazy"
+								src={hoodie1}
+								alt="Hoodie/Sweater Glam Stitch"
+								class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-4">
+							<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+								Hoodie Premium
+							</h3>
+							<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">10+ Pilihan Warna</p>
+							<a
+								href="/jacket"
+								class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+							>
+								Lihat Detail
+							</a>
+						</div>
+					</div>
+				</AnimatedCard>
+			</ScrollReveal>
 
-			<div
-				class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
-			>
-				<div class="relative overflow-hidden rounded-t-lg">
-					<img
-						loading="lazy"
-						src={kemeja1}
-						alt="Kemeja Glam Stitch"
-						class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
-					/>
-				</div>
-				<div class="p-4">
-					<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Kemeja Formal</h3>
-					<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">10+ Pilihan Warna</p>
-					<a
-						href="/shirts"
-						class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+			<ScrollReveal animation="fade-up" delay={500}>
+				<AnimatedCard hoverEffect="lift">
+					<div
+						class="group relative rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800"
 					>
-						Lihat Detail
-					</a>
-				</div>
-			</div>
+						<div class="relative overflow-hidden rounded-t-lg">
+							<img
+								loading="lazy"
+								src={kemeja1}
+								alt="Kemeja Glam Stitch"
+								class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-4">
+							<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+								Kemeja Formal
+							</h3>
+							<p class="mb-4 text-sm text-gray-600 dark:text-gray-400">10+ Pilihan Warna</p>
+							<a
+								href="/shirts"
+								class="block w-full rounded bg-gray-100 px-4 py-2 text-center text-sm font-medium text-gray-900 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+							>
+								Lihat Detail
+							</a>
+						</div>
+					</div>
+				</AnimatedCard>
+			</ScrollReveal>
 		</div>
 	</div>
 </section>
@@ -811,13 +841,6 @@
 								href="/product"
 								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
 								>Produk</a
-							>
-						</li>
-						<li>
-							<a
-								href="{base}/404.html"
-								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
-								>Layanan</a
 							>
 						</li>
 					</ul>

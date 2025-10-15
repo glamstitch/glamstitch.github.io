@@ -637,14 +637,6 @@
 									>Produk</a
 								>
 							</li>
-
-							<li>
-								<a
-									href="{base}/404.html"
-									class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
-									>Layanan</a
-								>
-							</li>
 						</ul>
 					</div>
 

@@ -57,81 +57,98 @@
 
 <section class="bg-gray-50 py-24 sm:py-32 dark:bg-gray-900">
 	<div class="mx-auto max-w-7xl px-6 lg:px-16">
-		<div class="mb-16 text-center">
-			<h2 class="mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
-				Lokasi Toko Glam Stitch
-			</h2>
-			<p class="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-				Temukan toko kami di lokasi strategis yang mudah dijangkau. Kunjungi dan diskusikan langsung
-				kebutuhan konveksi Anda bersama tim profesional kami!
-			</p>
-		</div>
+		<ScrollReveal animation="fade-up">
+			<div class="mb-16 text-center">
+				<h2
+					class="mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white"
+				>
+					Lokasi Toko Glam Stitch
+				</h2>
+				<p class="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300">
+					Temukan toko kami di lokasi strategis yang mudah dijangkau. Kunjungi dan diskusikan
+					langsung kebutuhan konveksi Anda bersama tim profesional kami!
+				</p>
+			</div>
+		</ScrollReveal>
 
 		<div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
-			<div class="overflow-hidden rounded-2xl shadow-xl ring-1 ring-gray-200 dark:ring-gray-700">
-				<iframe
-					title="Google Maps lokasi toko Glam Stitch"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.001924246237!2d107.63708791074282!3d-6.52143746372805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69157b1927e5a3%3A0x1182e42524259d7!2sKaos%20Polos%20Glam%20Stitch!5e0!3m2!1sid!2sid!4v1746449536701!5m2!1sid!2sid"
-					width="100%"
-					height="400"
-					style="border:0;"
-					allowfullscreen
-					loading="lazy"
-					class="h-[400px] w-full transform rounded-xl border-none shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
-				>
-				</iframe>
-			</div>
-
-			<div class="space-y-6">
-				<div class="flex items-start gap-4">
-					<div class="flex-shrink-0">
-						<img
-							loading="lazy"
-							src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg?ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
-							alt="Icon Lokasi"
-							class="h-14 w-14 transform rounded-xl object-cover shadow-md transition-transform hover:scale-105"
-						/>
-					</div>
-					<div>
-						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Alamat</h3>
-						<p class="text-gray-600 dark:text-gray-300">
-							Kampung Dayacipta, Tanggulun Bar., Kec. Kalijati, Kabupaten Subang, Jawa Barat 41271
-						</p>
-					</div>
-				</div>
-
-				<div class="flex items-start gap-4">
-					<div class="flex-shrink-0">
-						<img
-							loading="lazy"
-							src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo="
-							alt="Icon Jam"
-							class="h-14 w-14 transform rounded-xl object-cover shadow-md transition-transform hover:scale-105"
-						/>
-					</div>
-					<div>
-						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Jam Operasional</h3>
-						<p class="text-gray-600 dark:text-gray-300">Senin - Sabtu, 09.00 - 17.00 WIB</p>
-						<p class="text-gray-600 dark:text-gray-300">Minggu, Tutup</p>
-					</div>
-				</div>
-
-				<div>
-					<a
-						href="https://maps.app.goo.gl/bHXM3HurzhfNRbENA"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="inline-flex transform items-center gap-3 rounded-xl bg-indigo-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-indigo-700 hover:shadow-xl dark:bg-indigo-500 dark:hover:bg-indigo-600"
+			<ScrollReveal animation="fade-right" delay={200}>
+				<AnimatedCard hoverEffect="glow">
+					<div
+						class="overflow-hidden rounded-2xl shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
 					>
-						<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-							<path
-								d="M12 0C7.802 0 4.403 3.399 4.403 7.597c0 5.148 7.597 16.403 7.597 16.403s7.597-11.255 7.597-16.403C19.597 3.399 16.198 0 12 0zm0 10.838c-1.789 0-3.241-1.452-3.241-3.241S10.211 4.356 12 4.356s3.241 1.452 3.241 3.241S13.789 10.838 12 10.838z"
-							/>
-						</svg>
-						Buka di Google Maps
-					</a>
+						<iframe
+							title="Google Maps lokasi toko Glam Stitch"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.001924246237!2d107.63708791074282!3d-6.52143746372805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69157b1927e5a3%3A0x1182e42524259d7!2sKaos%20Polos%20Glam%20Stitch!5e0!3m2!1sid!2sid!4v1746449536701!5m2!1sid!2sid"
+							width="100%"
+							height="400"
+							style="border:0;"
+							allowfullscreen
+							loading="lazy"
+							class="h-[400px] w-full transform rounded-xl border-none shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
+						>
+						</iframe>
+					</div>
+				</AnimatedCard>
+			</ScrollReveal>
+
+			<ScrollReveal animation="fade-left" delay={400}>
+				<div class="space-y-6">
+					<AnimatedCard hoverEffect="lift">
+						<div class="flex items-start gap-4 rounded-xl bg-white p-6 shadow-lg dark:bg-gray-800">
+							<div class="flex-shrink-0">
+								<img
+									loading="lazy"
+									src="https://img.freepik.com/free-vector/location-pin-map-glyph_78370-1576.jpg?ga=GA1.1.1868222757.1738365469&semt=ais_hybrid&w=740"
+									alt="Icon Lokasi"
+									class="h-14 w-14 transform rounded-xl object-cover shadow-md transition-transform hover:scale-105"
+								/>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Alamat</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									Kampung Dayacipta, Tanggulun Bar., Kec. Kalijati, Kabupaten Subang, Jawa Barat
+									41271
+								</p>
+							</div>
+						</div>
+					</AnimatedCard>
+
+					<AnimatedCard hoverEffect="lift">
+						<div class="flex items-start gap-4 rounded-xl bg-white p-6 shadow-lg dark:bg-gray-800">
+							<div class="flex-shrink-0">
+								<img
+									loading="lazy"
+									src="https://media.istockphoto.com/id/1283403359/id/vektor/ikon-waktu-di-latar-belakang-transparan.jpg?s=612x612&w=0&k=20&c=foEv6n4528X0AkgcQZBX6TqWlZAOezpBEgoDRS-5LDo="
+									alt="Icon Jam"
+									class="h-14 w-14 transform rounded-xl object-cover shadow-md transition-transform hover:scale-105"
+								/>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Jam Operasional</h3>
+								<p class="text-gray-600 dark:text-gray-300">Senin - Sabtu, 09.00 - 17.00 WIB</p>
+								<p class="text-gray-600 dark:text-gray-300">Minggu, Tutup</p>
+							</div>
+						</div>
+					</AnimatedCard>
+
+					<div>
+						<a
+							href="https://maps.app.goo.gl/bHXM3HurzhfNRbENA"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex transform items-center gap-3 rounded-xl bg-indigo-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-indigo-700 hover:shadow-xl dark:bg-indigo-500 dark:hover:bg-indigo-600"
+						>
+							<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M12 0C7.802 0 4.403 3.399 4.403 7.597c0 5.148 7.597 16.403 7.597 16.403s7.597-11.255 7.597-16.403C19.597 3.399 16.198 0 12 0zm0 10.838c-1.789 0-3.241-1.452-3.241-3.241S10.211 4.356 12 4.356s3.241 1.452 3.241 3.241S13.789 10.838 12 10.838z"
+								/>
+							</svg>
+							Buka di Google Maps
+						</a>
+					</div>
 				</div>
-			</div>
+			</ScrollReveal>
 		</div>
 	</div>
 </section>
@@ -192,13 +209,6 @@
 								href="/product"
 								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
 								>Produk</a
-							>
-						</li>
-						<li>
-							<a
-								href="{base}/404.html"
-								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
-								>Layanan</a
 							>
 						</li>
 					</ul>

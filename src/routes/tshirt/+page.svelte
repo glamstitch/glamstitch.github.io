@@ -64,18 +64,20 @@
 		aria-labelledby="sale-heading"
 		class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-24 text-center sm:px-6 lg:px-8"
 	>
-		<div class="mx-auto max-w-2xl lg:max-w-none">
-			<h2
-				id="sale-heading"
-				class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-5xl dark:text-white"
-			>
-				Dapatkan Kualitas Terbaik untuk Kaos Polos Glam Stitch Anda
-			</h2>
-			<p class="mx-auto mt-8 max-w-xl text-base text-gray-600 dark:text-gray-400">
-				Sebagian besar produk kami dibuat dalam jumlah terbatas. Segera pesan Kaos Polos Glam Stitch
-				berkualitas tinggi sebelum habis!
-			</p>
-		</div>
+		<ScrollReveal animation="fade-up">
+			<div class="mx-auto max-w-2xl lg:max-w-none">
+				<h2
+					id="sale-heading"
+					class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-5xl dark:text-white"
+				>
+					Dapatkan Kualitas Terbaik untuk Kaos Polos Glam Stitch Anda
+				</h2>
+				<p class="mx-auto mt-8 max-w-xl text-base text-gray-600 dark:text-gray-400">
+					Sebagian besar produk kami dibuat dalam jumlah terbatas. Segera pesan Kaos Polos Glam
+					Stitch berkualitas tinggi sebelum habis!
+				</p>
+			</div>
+		</ScrollReveal>
 	</section>
 </div>
 
@@ -90,179 +92,205 @@
 
 		<div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
-				<div class="lg:col-span-2">
-					<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
-						<img
-							loading="lazy"
-							src="https://i.pinimg.com/1200x/69/8c/0b/698c0bc6c0735846460fd45c9a5ab58f.jpg"
-							alt="Model mengenakan kaos putih polos."
-							class="h-full w-full object-cover object-center"
-						/>
-					</div>
-				</div>
+				<ScrollReveal animation="fade-right" delay={200} class="lg:col-span-2">
+					<AnimatedCard hoverEffect="zoom">
+						<div
+							class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800"
+						>
+							<img
+								loading="lazy"
+								src="https://i.pinimg.com/1200x/69/8c/0b/698c0bc6c0735846460fd45c9a5ab58f.jpg"
+								alt="Model mengenakan kaos putih polos."
+								class="h-full w-full object-cover object-center"
+							/>
+						</div>
+					</AnimatedCard>
+				</ScrollReveal>
 
-				<div class="grid grid-cols-1 gap-6">
-					<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
-						<img
-							loading="lazy"
-							src="https://i.pinimg.com/736x/02/bc/ed/02bced26b270af2ae2f32bded7440a77.jpg"
-							alt="Model mengenakan kaos hitam polos."
-							class="h-full w-full object-cover object-center"
-						/>
-					</div>
-					<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
-						<img
-							loading="lazy"
-							src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg"
-							alt="Model mengenakan kaos abu polos."
-							class="h-full w-full object-cover object-center"
-						/>
-					</div>
-				</div>
+				<ScrollReveal animation="fade-left" delay={400} class="grid grid-cols-1 gap-6">
+					<AnimatedCard hoverEffect="zoom">
+						<div
+							class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800"
+						>
+							<img
+								loading="lazy"
+								src="https://i.pinimg.com/736x/02/bc/ed/02bced26b270af2ae2f32bded7440a77.jpg"
+								alt="Model mengenakan kaos hitam polos."
+								class="h-full w-full object-cover object-center"
+							/>
+						</div>
+					</AnimatedCard>
+					<AnimatedCard hoverEffect="zoom">
+						<div
+							class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800"
+						>
+							<img
+								loading="lazy"
+								src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg"
+								alt="Model mengenakan kaos abu polos."
+								class="h-full w-full object-cover object-center"
+							/>
+						</div>
+					</AnimatedCard>
+				</ScrollReveal>
 			</div>
 		</div>
 
 		<div class="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-				<div class="space-y-8">
-					<div>
-						<h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-							Kaos Glam Stitch
-						</h1>
-						<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-							Kaos berkualitas tinggi dengan desain simpel dan elegan
-						</p>
-					</div>
-
-					<div class="space-y-6">
-						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deskripsi Produk</h3>
-						<p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
-							Kaos Glam Stitch dibuat dengan bahan katun yang super nyaman dan adem di kulit. Bahan
-							berkualitas tinggi ini memiliki tekstur halus, tidak mudah kusut, dan menyerap
-							keringat dengan baik. Jahitan rapi dan presisi memastikan kaos tahan lama meski dicuci
-							berkali-kali. Cocok untuk aktivitas sehari-hari dengan kenyamanan maksimal sepanjang
-							hari.
-						</p>
-					</div>
-
-					<div class="space-y-4">
-						<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Fitur Unggulan</h3>
-						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-							<div class="flex items-start space-x-3">
-								<div class="flex-shrink-0">
-									<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-										<path
-											fill-rule="evenodd"
-											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								</div>
-								<p class="text-sm text-gray-700 dark:text-gray-300">
-									Dijahit secara manual oleh tenaga lokal
-								</p>
-							</div>
-							<div class="flex items-start space-x-3">
-								<div class="flex-shrink-0">
-									<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-										<path
-											fill-rule="evenodd"
-											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								</div>
-								<p class="text-sm text-gray-700 dark:text-gray-300">
-									Menggunakan pewarna eksklusif
-								</p>
-							</div>
-							<div class="flex items-start space-x-3">
-								<div class="flex-shrink-0">
-									<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-										<path
-											fill-rule="evenodd"
-											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								</div>
-								<p class="text-sm text-gray-700 dark:text-gray-300">Tidak mudah luntur dan kusut</p>
-							</div>
-							<div class="flex items-start space-x-3">
-								<div class="flex-shrink-0">
-									<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-										<path
-											fill-rule="evenodd"
-											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								</div>
-								<p class="text-sm text-gray-700 dark:text-gray-300">100% katun super lembut</p>
-							</div>
+				<ScrollReveal animation="fade-right" delay={200}>
+					<div class="space-y-8">
+						<div>
+							<h1
+								class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+							>
+								Kaos Glam Stitch
+							</h1>
+							<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+								Kaos berkualitas tinggi dengan desain simpel dan elegan
+							</p>
 						</div>
-					</div>
-				</div>
 
-				<div class="space-y-8">
-					<div class="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
-						<h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Detail Produk</h3>
+						<div class="space-y-6">
+							<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deskripsi Produk</h3>
+							<p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+								Kaos Glam Stitch dibuat dengan bahan katun yang super nyaman dan adem di kulit.
+								Bahan berkualitas tinggi ini memiliki tekstur halus, tidak mudah kusut, dan menyerap
+								keringat dengan baik. Jahitan rapi dan presisi memastikan kaos tahan lama meski
+								dicuci berkali-kali. Cocok untuk aktivitas sehari-hari dengan kenyamanan maksimal
+								sepanjang hari.
+							</p>
+						</div>
+
 						<div class="space-y-4">
-							<div class="flex justify-between">
-								<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Bahan</span>
-								<span class="text-sm text-gray-900 dark:text-white">100% Katun</span>
-							</div>
-
-							<div class="flex justify-between">
-								<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
-								<span class="text-sm text-gray-900 dark:text-white"
-									>XS, S, M, L, XL, XXL, XXXL, XXXXL</span
-								>
-							</div>
-							<div class="flex justify-between">
-								<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
-								<span class="text-sm text-gray-900 dark:text-white">30++ Pilihan Warna</span>
+							<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Fitur Unggulan</h3>
+							<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+								<div class="flex items-start space-x-3">
+									<div class="flex-shrink-0">
+										<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+									<p class="text-sm text-gray-700 dark:text-gray-300">
+										Dijahit secara manual oleh tenaga lokal
+									</p>
+								</div>
+								<div class="flex items-start space-x-3">
+									<div class="flex-shrink-0">
+										<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+									<p class="text-sm text-gray-700 dark:text-gray-300">
+										Menggunakan pewarna eksklusif
+									</p>
+								</div>
+								<div class="flex items-start space-x-3">
+									<div class="flex-shrink-0">
+										<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+									<p class="text-sm text-gray-700 dark:text-gray-300">
+										Tidak mudah luntur dan kusut
+									</p>
+								</div>
+								<div class="flex items-start space-x-3">
+									<div class="flex-shrink-0">
+										<svg class="h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+											<path
+												fill-rule="evenodd"
+												d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+												clip-rule="evenodd"
+											/>
+										</svg>
+									</div>
+									<p class="text-sm text-gray-700 dark:text-gray-300">100% katun super lembut</p>
+								</div>
 							</div>
 						</div>
 					</div>
+				</ScrollReveal>
 
-					<div class="space-y-4">
-						<a
-							href="/contact-us"
-							class="flex w-full items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 font-semibold text-white transition-colors duration-200 hover:bg-indigo-700"
-						>
-							<svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-								/>
-							</svg>
-							Pesan Sekarang
-						</a>
-						<a
-							href="/product"
-							class="flex w-full items-center justify-center rounded-lg border border-gray-300 px-6 py-3 font-semibold text-gray-600 transition-colors duration-200 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
-						>
-							Lihat Produk Lainnya
-						</a>
+				<ScrollReveal animation="fade-left" delay={400}>
+					<div class="space-y-8">
+						<AnimatedCard hoverEffect="lift">
+							<div class="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
+								<h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
+									Detail Produk
+								</h3>
+								<div class="space-y-4">
+									<div class="flex justify-between">
+										<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Bahan</span>
+										<span class="text-sm text-gray-900 dark:text-white">100% Katun</span>
+									</div>
+
+									<div class="flex justify-between">
+										<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Ukuran</span>
+										<span class="text-sm text-gray-900 dark:text-white"
+											>XS, S, M, L, XL, XXL, XXXL, XXXXL</span
+										>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-sm font-medium text-gray-600 dark:text-gray-400">Warna</span>
+										<span class="text-sm text-gray-900 dark:text-white">30++ Pilihan Warna</span>
+									</div>
+								</div>
+							</div>
+						</AnimatedCard>
+
+						<div class="space-y-4">
+							<a
+								href="/contact-us"
+								class="flex w-full items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 font-semibold text-white transition-colors duration-200 hover:bg-indigo-700"
+							>
+								<svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+									/>
+								</svg>
+								Pesan Sekarang
+							</a>
+							<a
+								href="/product"
+								class="flex w-full items-center justify-center rounded-lg border border-gray-300 px-6 py-3 font-semibold text-gray-600 transition-colors duration-200 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+							>
+								Lihat Produk Lainnya
+							</a>
+						</div>
 					</div>
-				</div>
+				</ScrollReveal>
 			</div>
 		</div>
 
 		<section aria-labelledby="related-products-heading" class="bg-white dark:bg-gray-900">
 			<div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
-				<h2
-					id="related-products-heading"
-					class="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-				>
-					Contoh Produk
-				</h2>
-				<p class="mt-2 text-center text-lg text-gray-600 dark:text-gray-400">
-					Tersedia berbagai pilihan stylish dan warna untuk setiap kesempatan.
-				</p>
+				<ScrollReveal animation="fade-up">
+					<h2
+						id="related-products-heading"
+						class="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+					>
+						Contoh Produk
+					</h2>
+					<p class="mt-2 text-center text-lg text-gray-600 dark:text-gray-400">
+						Tersedia berbagai pilihan stylish dan warna untuk setiap kesempatan.
+					</p>
+				</ScrollReveal>
 				<div
 					class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
 				>
@@ -323,202 +351,228 @@
 
 		<section aria-labelledby="size-chart-heading" class="bg-white py-16 dark:bg-gray-900">
 			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div class="mb-12 text-center">
-					<h2
-						id="size-chart-heading"
-						class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
-					>
-						Panduan Ukuran Kaos
-					</h2>
-					<p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-						Gunakan panduan ukuran berikut untuk memastikan Anda mendapatkan kaos dengan ukuran yang
-						tepat dan nyaman.
-					</p>
-				</div>
+				<ScrollReveal animation="fade-up">
+					<div class="mb-12 text-center">
+						<h2
+							id="size-chart-heading"
+							class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+						>
+							Panduan Ukuran Kaos
+						</h2>
+						<p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+							Gunakan panduan ukuran berikut untuk memastikan Anda mendapatkan kaos dengan ukuran
+							yang tepat dan nyaman.
+						</p>
+					</div>
+				</ScrollReveal>
 
 				<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-					<div class="rounded-xl bg-gray-50 p-8 dark:bg-gray-800">
-						<h3 class="mb-6 text-center text-xl font-semibold text-gray-900 dark:text-white">
-							Tabel Ukuran Kaos Glam Stitch
-						</h3>
-						<div class="overflow-x-auto">
-							<table class="w-full text-sm">
-								<thead>
-									<tr class="border-b border-gray-200 dark:border-gray-700">
-										<th class="px-2 py-3 text-left font-semibold text-gray-900 dark:text-white"
-											>Ukuran</th
-										>
-										<th class="px-2 py-3 text-center font-semibold text-gray-900 dark:text-white"
-											>Panjang (cm)</th
-										>
-										<th class="px-2 py-3 text-center font-semibold text-gray-900 dark:text-white"
-											>Lebar (cm)</th
-										>
-										<th class="px-2 py-3 text-center font-semibold text-gray-900 dark:text-white"
-											>Lengan Kaos (cm)</th
-										>
-									</tr>
-								</thead>
-								<tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XS</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">63</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">42</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">18</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">S</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">65</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">45</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">19</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">M</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">67</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">48</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">20</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">L</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">69</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">51</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">21</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XL</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">71</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">54</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">22</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XXL</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">73</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">57</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">23</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XXXL</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">75</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">60</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">24</td>
-									</tr>
-									<tr>
-										<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XXXXL</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">77</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">63</td>
-										<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">25</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+					<ScrollReveal animation="fade-right" delay={200}>
+						<AnimatedCard hoverEffect="lift">
+							<div class="rounded-xl bg-gray-50 p-8 dark:bg-gray-800">
+								<h3 class="mb-6 text-center text-xl font-semibold text-gray-900 dark:text-white">
+									Tabel Ukuran Kaos Glam Stitch
+								</h3>
+								<div class="overflow-x-auto">
+									<table class="w-full text-sm">
+										<thead>
+											<tr class="border-b border-gray-200 dark:border-gray-700">
+												<th class="px-2 py-3 text-left font-semibold text-gray-900 dark:text-white"
+													>Ukuran</th
+												>
+												<th
+													class="px-2 py-3 text-center font-semibold text-gray-900 dark:text-white"
+													>Panjang (cm)</th
+												>
+												<th
+													class="px-2 py-3 text-center font-semibold text-gray-900 dark:text-white"
+													>Lebar (cm)</th
+												>
+												<th
+													class="px-2 py-3 text-center font-semibold text-gray-900 dark:text-white"
+													>Lengan Kaos (cm)</th
+												>
+											</tr>
+										</thead>
+										<tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XS</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">63</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">42</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">18</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">S</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">65</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">45</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">19</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">M</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">67</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">48</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">20</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">L</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">69</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">51</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">21</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XL</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">71</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">54</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">22</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XXL</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">73</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">57</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">23</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XXXL</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">75</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">60</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">24</td>
+											</tr>
+											<tr>
+												<td class="px-2 py-3 font-medium text-gray-900 dark:text-white">XXXXL</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">77</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">63</td>
+												<td class="px-2 py-3 text-center text-gray-700 dark:text-gray-300">25</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 
-						<div class="mt-6 rounded-lg bg-gray-800 p-4">
-							<div class="flex items-start">
-								<svg
-									class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 text-blue-400"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+								<div class="mt-6 rounded-lg bg-gray-800 p-4">
+									<div class="flex items-start">
+										<svg
+											class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 text-blue-400"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+											/>
+										</svg>
+										<div>
+											<h4 class="mb-1 text-sm font-semibold text-blue-100">Tips Memilih Ukuran</h4>
+											<p class="text-sm text-blue-200">
+												Ukuran ini adalah panduan umum. Untuk hasil terbaik, ukur kaos yang sudah
+												ada dan bandingkan dengan tabel di atas.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</AnimatedCard>
+					</ScrollReveal>
+
+					<ScrollReveal animation="fade-left" delay={400}>
+						<div class="space-y-6">
+							<AnimatedCard hoverEffect="zoom">
+								<div class="w-full rounded-xl bg-gray-100 p-4 dark:bg-gray-800">
+									<img
+										loading="lazy"
+										src={ukurankaos}
+										alt="Panduan ukuran kaos - cara mengukur kaos dengan benar"
+										class="h-auto w-full object-contain transition-transform duration-300 hover:scale-105"
 									/>
-								</svg>
-								<div>
-									<h4 class="mb-1 text-sm font-semibold text-blue-100">Tips Memilih Ukuran</h4>
-									<p class="text-sm text-blue-200">
-										Ukuran ini adalah panduan umum. Untuk hasil terbaik, ukur kaos yang sudah ada
-										dan bandingkan dengan tabel di atas.
-									</p>
 								</div>
-							</div>
-						</div>
-					</div>
+							</AnimatedCard>
 
-					<div class="space-y-6">
-						<div class="w-full rounded-xl bg-gray-100 p-4 dark:bg-gray-800">
-							<img
-								loading="lazy"
-								src={ukurankaos}
-								alt="Panduan ukuran kaos - cara mengukur kaos dengan benar"
-								class="h-auto w-full object-contain transition-transform duration-300 hover:scale-105"
-							/>
+							<AnimatedCard hoverEffect="lift">
+								<div class="rounded-xl bg-gray-50 p-6 dark:bg-gray-800">
+									<h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
+										Cara Mengukur Kaos
+									</h3>
+									<div class="space-y-4">
+										<div class="flex items-start space-x-3">
+											<div
+												class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900"
+											>
+												<span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400"
+													>1</span
+												>
+											</div>
+											<div>
+												<h4 class="text-sm font-medium text-gray-900 dark:text-white">
+													Panjang Kaos
+												</h4>
+												<p class="text-sm text-gray-600 dark:text-gray-400">
+													Ukur dari bahu hingga bagian bawah kaos
+												</p>
+											</div>
+										</div>
+										<div class="flex items-start space-x-3">
+											<div
+												class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900"
+											>
+												<span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400"
+													>2</span
+												>
+											</div>
+											<div>
+												<h4 class="text-sm font-medium text-gray-900 dark:text-white">
+													Lebar Kaos
+												</h4>
+												<p class="text-sm text-gray-600 dark:text-gray-400">
+													Ukur dari ketiak kiri hingga ketiak kanan
+												</p>
+											</div>
+										</div>
+										<div class="flex items-start space-x-3">
+											<div
+												class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900"
+											>
+												<span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400"
+													>3</span
+												>
+											</div>
+											<div>
+												<h4 class="text-sm font-medium text-gray-900 dark:text-white">
+													Lengan Kaos
+												</h4>
+												<p class="text-sm text-gray-600 dark:text-gray-400">
+													Ukur panjang lengan dari bahu hingga ujung lengan
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</AnimatedCard>
 						</div>
-
-						<div class="rounded-xl bg-gray-50 p-6 dark:bg-gray-800">
-							<h3 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
-								Cara Mengukur Kaos
-							</h3>
-							<div class="space-y-4">
-								<div class="flex items-start space-x-3">
-									<div
-										class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900"
-									>
-										<span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">1</span
-										>
-									</div>
-									<div>
-										<h4 class="text-sm font-medium text-gray-900 dark:text-white">Panjang Kaos</h4>
-										<p class="text-sm text-gray-600 dark:text-gray-400">
-											Ukur dari bahu hingga bagian bawah kaos
-										</p>
-									</div>
-								</div>
-								<div class="flex items-start space-x-3">
-									<div
-										class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900"
-									>
-										<span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">2</span
-										>
-									</div>
-									<div>
-										<h4 class="text-sm font-medium text-gray-900 dark:text-white">Lebar Kaos</h4>
-										<p class="text-sm text-gray-600 dark:text-gray-400">
-											Ukur dari ketiak kiri hingga ketiak kanan
-										</p>
-									</div>
-								</div>
-								<div class="flex items-start space-x-3">
-									<div
-										class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900"
-									>
-										<span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">3</span
-										>
-									</div>
-									<div>
-										<h4 class="text-sm font-medium text-gray-900 dark:text-white">Lengan Kaos</h4>
-										<p class="text-sm text-gray-600 dark:text-gray-400">
-											Ukur panjang lengan dari bahu hingga ujung lengan
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					</ScrollReveal>
 				</div>
 
-				<div class="mt-12 text-center">
-					<p class="mb-6 text-lg text-gray-600 dark:text-gray-400">
-						Masih bingung dengan ukuran? Tim customer service kami siap membantu Anda!
-					</p>
-					<a
-						href="/contact-us"
-						class="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white transition-colors duration-200 hover:bg-indigo-700"
-					>
-						<svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-							/>
-						</svg>
-						Konsultasi Ukuran
-					</a>
-				</div>
+				<ScrollReveal animation="fade-up" delay={600}>
+					<div class="mt-12 text-center">
+						<p class="mb-6 text-lg text-gray-600 dark:text-gray-400">
+							Masih bingung dengan ukuran? Tim customer service kami siap membantu Anda!
+						</p>
+						<a
+							href="/contact-us"
+							class="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white transition-colors duration-200 hover:bg-indigo-700"
+						>
+							<svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+								/>
+							</svg>
+							Konsultasi Ukuran
+						</a>
+					</div>
+				</ScrollReveal>
 			</div>
 		</section>
 	</main>
@@ -580,13 +634,6 @@
 								href="/product"
 								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
 								>Produk</a
-							>
-						</li>
-						<li>
-							<a
-								href="{base}/404.html"
-								class="text-base text-gray-300 transition duration-200 hover:text-blue-400"
-								>Layanan</a
 							>
 						</li>
 					</ul>
