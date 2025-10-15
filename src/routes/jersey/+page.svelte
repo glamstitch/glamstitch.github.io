@@ -4,6 +4,10 @@
 	import logoGlint from '$lib/assets/image/logo glint.png?w=256&quality=90';
 	// @ts-expect-error - vite-imagetools query parameters
 	import ukurankaos from '$lib/assets/image/ukurankaos.png?w=800&format=webp&quality=85';
+	import jersey2 from '$lib/assets/image/jersey2.jpg';
+	import jersey3 from '$lib/assets/image/jersey3.jpg';
+	import jersey4 from '$lib/assets/image/jersey4.jpg';
+	import jersey5 from '$lib/assets/image/jersey5.jpg';
 	import { base } from '$app/paths';
 	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 	import AnimatedCard from '$lib/components/AnimatedCard.svelte';
@@ -307,52 +311,52 @@
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/1200x/4c/ae/ef/4caeef490939279146dfcce1830b7b6f.jpg"
+							src={jersey2}
 							alt="Jersey Glam Stitch warna biru royal."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4">
 							<h3 class="text-sm text-gray-700 dark:text-gray-200">Jersey</h3>
-							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Biru Royal</p>
+							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">-</p>
 						</div>
 					</div>
 
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/736x/41/bb/b0/41bbb08d32e9a922edff196d732a497f.jpg"
+							src={jersey3}
 							alt="Jersey Glam Stitch warna putih."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4">
 							<h3 class="text-sm text-gray-700 dark:text-gray-200">Jersey</h3>
-							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Putih</p>
+							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">-</p>
 						</div>
 					</div>
 
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/736x/ed/bb/f2/edbbf2e37109ace2298f5d45cca938d7.jpg"
+							src={jersey4}
 							alt="Jersey Glam Stitch warna merah."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4">
 							<h3 class="text-sm text-gray-700 dark:text-gray-200">Jersey</h3>
-							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Merah</p>
+							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">-</p>
 						</div>
 					</div>
 
 					<div class="group relative">
 						<img
 							loading="lazy"
-							src="https://i.pinimg.com/736x/29/bf/c2/29bfc2c2abd2a741cbc6af3b144b48f3.jpg"
+							src={jersey5}
 							alt="Jersey Glam Stitch warna hijau."
 							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 dark:bg-gray-800"
 						/>
 						<div class="mt-4">
 							<h3 class="text-sm text-gray-700 dark:text-gray-200">Jersey</h3>
-							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Warna Hijau</p>
+							<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">-</p>
 						</div>
 					</div>
 				</div>
